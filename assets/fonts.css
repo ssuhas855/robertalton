@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'Brandon Text';
+    src: url('//cdn.shopify.com/s/files/1/0694/8565/8154/files/BrandonText-Regular.eot');
+    src: url('//cdn.shopify.com/s/files/1/0694/8565/8154/files/BrandonText-Regular.eot?#iefix') format('embedded-opentype'),
+        url('//cdn.shopify.com/s/files/1/0694/8565/8154/files/BrandonText-Regular.woff2') format('woff2'),
+        url('//cdn.shopify.com/s/files/1/0694/8565/8154/files/BrandonText-Regular.woff') format('woff'),
+        url('//cdn.shopify.com/s/files/1/0694/8565/8154/files/BrandonText-Regular.ttf') format('truetype'),
+        url('//cdn.shopify.com/s/files/1/0694/8565/8154/files/BrandonText-Regular.svg#BrandonText-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+	--FONT-STACK-BODY: 'Brandon Text';
+    --FONT-STYLE-BODY: 'normal';
+    --FONT-WEIGHT-BODY: 'normal';
+    --LETTER-SPACING-BODY: '0.8px';
+    --FONT-SIZE-body: '12px';
+}
+body {
+	font-family: var(--FONT-STACK-BODY);
+	font-style: var(--FONT-STYLE-BODY);
+	font-weight: var(--FONT-WEIGHT-BODY);
+	letter-spacing: var(--LETTER-SPACING-BODY);	
+    font-size:var(--FONT-SIZE-body);	
+}
+p{
+    font-family: var(--FONT-STACK-BODY);
+	font-style: var(--FONT-STYLE-BODY);
+	font-weight: var(--FONT-WEIGHT-BODY);
+	letter-spacing: var(--LETTER-SPACING-BODY);	
+    font-size:var(--FONT-SIZE-body);
+}
+.btn--text{
+    font-family: var(--FONT-STACK-BODY);
+	font-style: var(--FONT-STYLE-BODY);
+	font-weight: var(--FONT-WEIGHT-BODY);
+	letter-spacing: 0.5px;	
+    font-size:11px;
+    text-transform:uppercase;
+}
+h1.product__title {
+	font-family: var(--FONT-STACK-BODY);
+	font-style: var(--FONT-STYLE-BODY);
+	font-weight: var(--FONT-WEIGHT-BODY);
+	letter-spacing: 0.5px;	
+    font-size:11px;
+    text-transform:uppercase;
+}
+h6 {
+	font-family: var(--FONT-STACK-BODY);
+	font-style: var(--FONT-STYLE-BODY);
+	font-weight: var(--FONT-WEIGHT-BODY);
+	letter-spacing: 0.5px;	
+    font-size:11px;
+    text-transform:uppercase;
+}
+h2.hero__title{
+    font-family: var(--FONT-STACK-BODY);
+	font-style: var(--FONT-STYLE-BODY);
+	font-weight: var(--FONT-WEIGHT-BODY);
+	letter-spacing: 0.5px;	
+    font-size:11px;
+    text-transform:uppercase;
+    margin-bottom: 20px;
+}
+.btn--text:not(.btn--text-no-underline) span::after {
+	bottom: 0px;
+	height: 1px;
+	width: 100%;
+    left:0;
+    transition: left .3s cubic-bezier(.39,.575,.565,1);
+}
+.btn--text:hover span::after {
+	  left:101%;
+}
+.btn--text span{
+    overflow: hidden;
+    padding-bottom:2.5px;
+}
+.collection-item__info span{
+    position:relative;
+    overflow: hidden;
+    padding-bottom:2px;
+}
+.collection-item__info span::after{
+    bottom: 0px;
+    height: 1px;
+    width: 0;
+    left:0;
+    transition: width .3s cubic-bezier(.39,.575,.565,1);
+    content: "";
+    position: absolute;
+    background: currentColor;
+}
+.collection-item__info:hover span::after{
+width: 100%;
+}
+.body-medium {
+	font-size: 11px;
+}
+.drawer__heading {
+	font-size: 12px;
+}
+.product-item__info {
+	padding: 10px 0;
+	text-transform: uppercase;
+}
+.product-item {
+	margin-bottom: 30px;
+}
+.badge-box {
+	border: 1px solid;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+    padding: 6.5px 15px;
+}
+.badge-box-container {
+	padding: 10px;
+}
+.product__block .swatch__button--square input~label[data-swatch="Black/Rose"],
+.product-item .radio__fieldset--swatches .swatch__button a[data-swatch="Black/Rose"]{
+	background: #eda78e;
+    background: linear-gradient(90deg, rgba(237, 167, 142, 1) 0%, rgba(237, 167, 142, 1) 50%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
+}
+.product__block .swatch__button--square input~label[data-swatch="Silver/Blue"],
+.product-item .radio__fieldset--swatches .swatch__button a[data-swatch="Silver/Blue"]{
+	background: #143374;
+background: linear-gradient(90deg, #9C9C9C 0%, #9C9C9C 50%, #143374 50%, #143374 100%);
+}
+.product__block .swatch__button--square input~label[data-swatch="Black/Blue"],
+.product-item .radio__fieldset--swatches .swatch__button a[data-swatch="Black/Blue"]{
+	background: #143374;
+background: linear-gradient(90deg,#143374 0%, #143374 50%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
+}
+.product__block .swatch__button--square input~label[data-swatch="Silver/Black"],
+.product-item .radio__fieldset--swatches .swatch__button a[data-swatch="Silver/Black"]{
+background: #E6E3E3;
+background: linear-gradient(90deg,rgba(230, 227, 227, 1) 0%, rgba(230, 227, 227, 1) 50%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
+}
+.product__block .swatch__button--square input~label[data-swatch="Gold/Silver"],
+.product-item .radio__fieldset--swatches .swatch__button a[data-swatch="Gold/Silver"]{
+	background: #E0BF48;
+background: linear-gradient(90deg, rgba(224, 191, 72, 1) 0%, rgba(224, 191, 72, 1) 50%, rgba(230, 227, 227, 1) 50%, rgba(230, 227, 227, 1) 100%);
+}
+
+.product__block .swatch__button--square input~label[data-swatch="Black/White Diamond"],
+.product-item .radio__fieldset--swatches .swatch__button a[data-swatch="Black/White Diamond"]{
+	background: #fff;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+}
+.tooltip-default{
+    display:none!important;
+}

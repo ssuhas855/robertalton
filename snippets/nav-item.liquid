@@ -1,0 +1,192 @@
+{%- liquid
+  assign highlight_item = highlight_item | downcase | strip_html | escape
+  assign link_title_lowercase = link.title | downcase | strip_html | escape
+  assign parent = false
+  assign grandparent = false
+  if link.levels == 1
+    assign parent = true
+  endif
+  if link.levels == 2
+    assign grandparent = true
+  endif
+
+  assign child_count = 0
+  if grandparent
+    assign child_count = link.links.size
+    if child_count > 10
+      assign child_count = 10
+    endif
+  endif
+
+  assign index = index | append: ''
+  assign image_count = 0
+  assign image_wide_count = 0
+  assign images_space = 0
+  for block in section.blocks
+    if block.settings.position == index
+      assign grandparent = true
+      assign image_count = image_count | plus: 1
+      assign image_space = 1
+
+      if block.settings.wide_image
+        assign image_space = 3
+        assign image_wide_count = image_wide_count | plus: 1
+      endif
+
+      assign images_space = images_space | plus: image_space
+    endif
+  endfor
+
+  if parent or grandparent
+    assign expands = true
+    assign key = link.url | append: link.title | append: link.levels | md5
+  endif
+
+  if parent and link.levels == 1
+    assign child_count = child_count | plus: 1
+  endif
+
+  if image_count and child_count == 0
+    assign only_images = ' grandparent--all-images'
+  endif
+
+  assign item_tag = 'div'
+  if expands
+    assign item_tag = 'hover-disclosure'
+  endif
+-%}
+
+{% capture classes %}{% if grandparent %} grandparent kids-{{ child_count }}{% if image_count > 0 %} images-{{ image_count }}{% endif %} {{ only_images }} {% elsif parent %} parent{% else %} child{% endif %}{% endcapture %}
+
+<{{ item_tag }}
+  class="menu__item {{ classes }}"
+  {% if expands %}
+    aria-haspopup="true"
+    aria-expanded="false"
+    aria-controls="dropdown-{{ key }}"
+    role="button"
+  {% endif %}
+>
+  <a
+    href="{{ link.url }}"
+    data-top-link
+    class="navlink navlink--toplevel{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %} top_link_{{  link.title | handle }}"
+  >
+    <span class="navtext">{{ link.title | strip_html | escape }}</span>
+
+<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_137_1521df)">
+<path d="M7.8658 0C7.97885 0 8.1375 0.0918511 8.24798 0.123325C8.28909 0.135529 8.88451 0.323727 8.90185 0.295465C8.90185 0.295465 7.8703 2.02843 7.86965 2.02908L7.86708 2.03357C7.68788 2.33032 7.51124 2.61872 7.33653 2.89877L7.10787 3.26489L7.10466 3.25975L7.10144 3.26489L6.87278 2.89877C6.69807 2.61808 6.52143 2.32968 6.34223 2.03357L6.33966 2.02908L5.30746 0.295465C5.3248 0.323727 5.91958 0.135529 5.96133 0.123325C6.07181 0.0912088 6.23046 0 6.34351 0H0V15H6.34287C6.22982 15 6.07117 14.9081 5.96069 14.8767C5.91958 14.8645 5.32416 14.6763 5.30681 14.7045C5.30681 14.7045 6.33837 12.9716 6.33902 12.9709L6.34158 12.9664C6.52079 12.6697 6.69743 12.3813 6.87214 12.1012L7.1008 11.7351L7.10401 11.7402L7.10722 11.7351L7.33589 12.1012C7.5106 12.3819 7.68724 12.6703 7.86644 12.9664L7.86901 12.9709L8.90121 14.7045C8.88387 14.6763 8.28909 14.8645 8.24733 14.8767C8.13686 14.9088 7.9782 15 7.86516 15H14.208V0H7.86516H7.8658ZM7.9782 4.29902C9.13052 2.58339 10.0709 1.08808 10.3676 0.611485L10.4466 0.484948H10.595C10.7909 0.483664 10.9727 0.481095 11.1063 0.479168C11.6889 0.470175 12.2567 0.368689 12.829 0.265919V3.38179L12.6678 3.45245C12.0595 3.71965 11.4692 4.07357 10.9534 4.54374L10.9142 4.58035C10.5044 4.9606 10.0182 5.51043 9.49086 6.16559L9.2699 6.43986L9.06372 6.15531L8.9314 5.97225C8.62181 5.5419 8.3045 5.08457 7.97885 4.59898L7.878 4.44868L7.97885 4.29902H7.9782ZM1.38034 0.266561C1.95264 0.369332 2.52045 0.47146 3.10303 0.47981C3.23663 0.481737 3.4184 0.484306 3.61431 0.484948H3.76269C3.76269 0.484948 3.84169 0.611485 3.84169 0.612127C4.13844 1.08808 5.07879 2.58404 6.23111 4.29966L6.33195 4.44932L6.23111 4.59962C5.90545 5.08521 5.58815 5.54254 5.27855 5.97289L5.14623 6.15595L4.94005 6.4405L4.71909 6.16623C4.19175 5.51107 3.70552 4.96125 3.29572 4.581L3.25654 4.54438C2.74076 4.07421 2.15047 3.72029 1.5422 3.45309L1.38098 3.38243V0.266561H1.38034ZM1.38034 6.63127C1.37841 6.15146 1.48439 5.67036 1.7593 5.26956L1.94493 4.99914L2.1736 5.23359L2.28022 5.34342C2.81591 5.89967 3.39079 6.55098 4.0042 7.31662L4.13908 7.48491L4.12688 7.49968L4.13908 7.51445L4.0042 7.68274C3.39143 8.44774 2.81591 9.09969 2.28022 9.65593L2.1736 9.76577L1.94493 10.0002L1.7593 9.7298C1.48439 9.32899 1.37841 8.8479 1.38034 8.36809C1.38034 8.29358 1.38226 7.49904 1.38162 7.49904C1.38291 7.49904 1.38098 6.70449 1.38034 6.62998V6.63127ZM6.23111 10.701C5.07879 12.4166 4.13844 13.9119 3.84169 14.3885L3.76269 14.5151H3.61431C3.4184 14.5163 3.23663 14.5189 3.10303 14.5208C2.52045 14.5298 1.95264 14.6313 1.38034 14.7341V11.6182L1.54156 11.5476C2.14983 11.2803 2.74012 10.9264 3.2559 10.4563L3.29508 10.4196C3.70488 10.0394 4.19111 9.48957 4.71845 8.83441L4.93941 8.56014L5.14559 8.84469L5.27791 9.02775C5.58751 9.4581 5.90481 9.91543 6.23046 10.401L6.33131 10.5513L6.23046 10.701H6.23111ZM7.32882 9.10932L7.10787 9.4247L7.10401 9.41956L7.10016 9.4247L6.8792 9.10932C6.53942 8.62309 6.19449 8.13943 5.85214 7.67439L5.7346 7.51445L5.74487 7.50032L5.7346 7.48619L5.85214 7.32625C6.19449 6.86122 6.53942 6.37691 6.8792 5.89132L7.10016 5.57594L7.10401 5.58108L7.10787 5.57594L7.32882 5.89132C7.66861 6.37755 8.01353 6.86122 8.35589 7.32625L8.47343 7.48619L8.46315 7.50032L8.47343 7.51445L8.35589 7.67439C8.01353 8.13943 7.66861 8.62373 7.32882 9.10932ZM12.8283 14.7341C12.256 14.6313 11.6882 14.5292 11.1056 14.5208C10.972 14.5189 10.7903 14.5163 10.5944 14.5157H10.446C10.446 14.5157 10.367 14.3892 10.367 14.3885C10.0702 13.9126 9.12988 12.4166 7.97756 10.701L7.87672 10.5513L7.97756 10.401C8.30322 9.91543 8.62052 9.4581 8.93012 9.02775L9.06243 8.84469L9.26862 8.56014L9.48957 8.83441C10.0169 9.48957 10.5031 10.0394 10.9129 10.4196L10.9521 10.4563C11.4679 10.9264 12.0582 11.2803 12.6665 11.5476L12.8277 11.6182V14.7341H12.8283ZM12.8283 8.36937C12.8303 8.84918 12.7243 9.33028 12.4494 9.73108L12.2637 10.0015L12.0351 9.76705L11.9284 9.65722C11.3928 9.10097 10.8179 8.44966 10.2045 7.68402L10.0696 7.51574L10.0818 7.50096L10.0696 7.48619L10.2045 7.3179C10.8172 6.55291 11.3928 5.90095 11.9284 5.34471L12.0351 5.23487L12.2637 5.00043L12.4494 5.27084C12.7243 5.67165 12.8303 6.15274 12.8283 6.63255C12.8283 6.70706 12.8264 7.50161 12.827 7.50161C12.8258 7.50161 12.8277 8.29615 12.8283 8.37066V8.36937Z" fill="#131111"/>
+</g>
+<defs>
+<clipPath id="clip0_137_1521">
+<rect width="14.2087" height="15" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+ 
+  </a>
+  {% if expands %}
+    <div
+      class="header__dropdown"
+      id="dropdown-{{ key }}"
+    >
+      <div class="header__dropdown__wrapper">
+        <div class="header__dropdown__inner">
+          {%- if grandparent -%}
+            {%- unless only_images -%}
+              <div class="header__grandparent__links">
+                {% if link.levels == 2 %}
+                  {% for link in link.links %}
+                    {%- assign link_title_lowercase = link.title | downcase | strip_html | escape -%}
+                    <div class="dropdown__family">
+                      <a
+                        href="{{ link.url }}"
+                        data-stagger-first
+                        class="navlink navlink--child{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}"
+                      >
+                        <span class="navtext">
+                          {{ link.title | strip_html | escape }}
+
+                          {%- render 'superscript', link_collection: link -%}
+                        </span>
+                      </a>
+                      {% for link in link.links %}
+                        {%- assign link_title_lowercase = link.title | downcase | strip_html | escape -%}
+                        <a
+                          href="{{ link.url }}"
+                          data-stagger-second
+                          class="navlink navlink--grandchild{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}"
+                        >
+                          <span class="navtext">
+                            {{ link.title | strip_html | escape }}
+
+                            {%- render 'superscript', link_collection: link -%}
+                          </span>
+                        </a>
+                      {% endfor %}
+                    </div>
+                  {% endfor %}
+                {% elsif link.levels == 1 %}
+                  <div class="dropdown__family">
+                    {% for link in link.links %}
+                      {%- assign link_title_lowercase = link.title | downcase | strip_html | escape -%}
+                      <a
+                        href="{{ link.url }}"
+                        data-stagger
+                        class="navlink navlink--grandchild{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}"
+                      >
+                        <span class="navtext">
+                          {{ link.title | strip_html | escape }}
+
+                          {%- render 'superscript', link_collection: link -%}
+                        </span>
+                      </a>
+                    {% endfor %}
+                  </div>
+                {% endif %}
+              </div>
+            {%- endunless -%}
+
+            {%- if image_count > 0 -%}
+              {%- liquid
+                if image_count == 2 and image_wide_count == 1
+                  assign images_space = images_space | minus: 1
+                elsif image_count == 2 and image_wide_count == 2
+                  assign images_space = images_space | minus: 2
+                endif
+              -%}
+
+              <div class="menu__blocks" style="--images-space: {{ images_space }};">
+                {%- liquid
+                  for block in section.blocks
+                    if block.settings.position == index
+                      render 'header-block', block: block, image_count: image_count, only_images: only_images, link_columns: link.links.size
+                    endif
+                  endfor
+                -%}
+              </div>
+            {%- endif -%}
+
+          {%- else -%}
+            {% comment %} Simple dropdown {% endcomment %}
+            {% for link in link.links %}
+              {%- assign link_title_lowercase = link.title | downcase | strip_html | escape -%}
+              <a
+                href="{{ link.url }}"
+                data-stagger
+                class="navlink navlink--child{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}"
+              >
+                <span class="navtext">
+                  {{ link.title | strip_html | escape }}
+
+                  {%- render 'superscript', link_collection: link -%}
+                </span>
+              </a>
+            {% endfor %}
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+</{{ item_tag }}>
