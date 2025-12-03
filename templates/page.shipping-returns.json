@@ -29,31 +29,31 @@
     "sidebar": {
       "type": "section-sidebar",
       "blocks": {
-        "header_1": {
+        "header_jexMR4": {
           "type": "header",
           "settings": {
-            "title": "FAQS"
+            "title": "Shipping & Returns"
           }
         },
-        "text": {
+        "text_mVngk8": {
           "type": "text",
           "settings": {
             "text": "<h6>Where do you ship from?</h6><p>Lorem ipsum dolor sit amet. Id consectetur quia sed adipisci internos hic perspiciatis galisum ad minus minima et quia atque aut dolor sunt ab tempora eaque. Ut omnis eveniet est iste </p>"
           }
         },
-        "text_zeJbtc": {
+        "text_8w43JH": {
           "type": "text",
           "settings": {
             "text": "<h6>Where do you ship from?</h6><p>Lorem ipsum dolor sit amet. Id consectetur quia sed adipisci internos hic perspiciatis galisum ad minus minima et quia atque aut dolor sunt ab tempora eaque. Ut omnis eveniet est iste </p>"
           }
         },
-        "text_xy8jhE": {
+        "text_VJ4RTQ": {
           "type": "text",
           "settings": {
             "text": "<h6>Where do you ship from?</h6><p>Lorem ipsum dolor sit amet. Id consectetur quia sed adipisci internos hic perspiciatis galisum ad minus minima et quia atque aut dolor sunt ab tempora eaque. Ut omnis eveniet est iste </p>"
           }
         },
-        "text_YBgyni": {
+        "text_bxND6x": {
           "type": "text",
           "settings": {
             "text": "<h6>Where do you ship from?</h6><p>Lorem ipsum dolor sit amet. Id consectetur quia sed adipisci internos hic perspiciatis galisum ad minus minima et quia atque aut dolor sunt ab tempora eaque. Ut omnis eveniet est iste </p>"
@@ -61,17 +61,17 @@
         }
       },
       "block_order": [
-        "header_1",
-        "text",
-        "text_zeJbtc",
-        "text_xy8jhE",
-        "text_YBgyni"
+        "header_jexMR4",
+        "text_mVngk8",
+        "text_8w43JH",
+        "text_VJ4RTQ",
+        "text_bxND6x"
       ],
       "settings": {
         "heading_font_size": "heading-x-small",
         "width": "wrapper--full-padded",
         "color_scheme": "",
-        "padding_top": 100,
+        "padding_top": 80,
         "padding_bottom": 100
       }
     }

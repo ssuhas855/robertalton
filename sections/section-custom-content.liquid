@@ -59,7 +59,7 @@
   class="section-padding {{ color_scheme }}"
 >
   {%- if section.blocks.size > 0 -%}
-    <div class="brick__section{% if section.settings.reverse_blocks %} brick__section--reversed-mobile{% endif %}{% if section.settings.gutters %} brick--margin{% endif %} {{ border_class }} {{ width }}">
+    <div id="custom_{{ handle }}" class="brick__section{% if section.settings.reverse_blocks %} brick__section--reversed-mobile{% endif %}{% if section.settings.gutters %} brick--margin{% endif %} {{ border_class }} {{ width }}">
       {%- for block in section.blocks -%}
         {%- liquid
           assign animation_order = 0

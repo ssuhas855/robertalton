@@ -30,7 +30,7 @@
       {{- aside_html -}}
 
       {%- if block.type == 'header' and title != blank -%}
-        <li>
+        <li>       
           <scroll-spy data-scroll-spy-container="#Sidebar--{{ section.id }}">
             <scroll-to-element>
               <button type="button" class="widget__link{% if first_element_flag %} is-selected{% endif %}"
@@ -42,7 +42,7 @@
                 {{- title -}}
               </button>
             </scroll-to-element>
-          </scroll-spy>
+          </scroll-spy>             
         </li>
         {%- assign first_element_flag = false -%}
       {%- endif -%}
@@ -101,7 +101,12 @@
           >
             <div class="section-sidebar__widget">
               <ul class="widget__links widget__links--secondary">
-                {{ aside_html }}
+               {% comment %} {{ aside_html }} {% endcomment %}
+                 {% for link in linklists.faq-page.links %}
+      <li>
+        <a class="widget__link {% if link.active %} is-selected{% endif %}" href="{{ link.url }}">{{ link.title }}</a>
+      </li>
+    {% endfor %}
               </ul>
             </div>
           </div>

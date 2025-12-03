@@ -31,6 +31,9 @@
         endunless
       -%}
 
+
+      
+
       <{{ heading_tag }}
         class="contact__form__heading {{ section.settings.heading_font_size }}"
         data-aos="hero"
@@ -42,11 +45,11 @@
     {%- endif -%}
 
     {%- form 'contact', id: 'contact-us-page' -%}
-      {%- if form.posted_successfully? -%}
-        <p class="form-success">
-          {{ 'contact.form.post_success' | t }}
-        </p>
-      {%- endif -%}
+
+<h6>{{ page.title }}</h6>
+
+
+ 
 
       {{ form.errors | default_errors }}
 
@@ -60,7 +63,7 @@
           assign required = ''
           if block.settings.required
             assign required = 'required'
-            assign placeholder = title | append: '*'
+            assign placeholder = title | append: ''
 
             unless has_required_field
               assign has_required_field = true
@@ -92,7 +95,7 @@
 
           {%- when 'body' -%}
             <div
-              class="custom-form__block"
+              class="custom-form__block textarea_full"
               data-aos="hero"
               data-aos-anchor="{{ animation_anchor }}"
               data-aos-order="{{ animation_order }}"
@@ -132,7 +135,7 @@
 
           {%- when 'textarea' -%}
             <div
-              class="custom-form__block"
+              class="custom-form__block textarea_full"
               data-aos="hero"
               data-aos-anchor="{{ animation_anchor }}"
               data-aos-order="{{ animation_order }}"
@@ -146,11 +149,11 @@
                 name="contact[{{ title | handleize | default: 'textarea' }}]"
                 placeholder="{{ placeholder }}"
                 {{ required -}}
-              ></textarea>
+              ></textarea> 
             </div>
 
           {%- when 'telephone' -%}
-            <div
+            <div 
               class="custom-form__block"
               data-aos="hero"
               data-aos-anchor="{{ animation_anchor }}"
@@ -397,7 +400,7 @@
         -%}
 
         <div
-          class="custom-form__block"
+          class="custom-form__block textarea_full"
           data-aos="hero"
           data-aos-anchor="{{ animation_anchor }}"
           data-aos-order="{{ animation_order }}"
@@ -423,21 +426,19 @@
         <button type="submit" class="btn btn--primary btn--solid btn--full">
           {{ 'contact.form.send' | t }}
         </button>
+
+  
+
+
       </div>
-
-      {%- if has_required_field -%}
-        {%- assign animation_order = animation_order | plus: 1 -%}
-
-        <div
-          class="custom-form__required-text"
-          data-aos="hero"
-          data-aos-anchor="{{ animation_anchor }}"
-          data-aos-order="{{ animation_order }}"
-        >
-          {{ 'contact.form.required_field_text' | t }}
-        </div>
+   {%- if form.posted_successfully? -%}
+        <p class="form-success">
+          {{ 'contact.form.post_success' | t }}
+        </p>
       {%- endif -%}
 
+
+   
       {%- if section.settings.terms -%}
         {%- assign animation_order = animation_order | plus: 1 -%}
         <div

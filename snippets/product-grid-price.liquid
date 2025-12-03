@@ -29,7 +29,7 @@
         {{ 'general.money.free' | t }}
       {%- else -%}
         {{ product_price_min }}
-      {%- endif -%}
+      {%- endif -%} {{ shop.currency }}
     </span>
     {% if product.compare_at_price > product.price %}
       <span class="old-price">{{ product_compare_at_price }}</span>

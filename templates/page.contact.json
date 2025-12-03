@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "divider": {
@@ -12,6 +21,7 @@
     },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "subheading": "",
         "show_title": true,
@@ -32,14 +42,21 @@
         "heading": {
           "type": "formHeading",
           "settings": {
-            "title": "All products in this store are for demo purposes only. No orders can be placed on this store."
+            "title": "By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more."
           }
         },
         "Name": {
           "type": "text",
           "settings": {
             "title": "Full Name",
-            "required": false
+            "required": true
+          }
+        },
+        "text_eKNiMy": {
+          "type": "text",
+          "settings": {
+            "title": "Last Name",
+            "required": true
           }
         },
         "Email": {
@@ -49,128 +66,44 @@
             "required": true
           }
         },
-        "Message": {
-          "type": "body",
+        "text_AxyXqY": {
+          "type": "text",
           "settings": {
-            "title": "Message",
-            "required": true
-          }
-        },
-        "Optional-text": {
-          "type": "formHeading",
-          "settings": {
-            "title": "Optional"
-          }
-        },
-        "Urgent-checkbox": {
-          "type": "checkbox",
-          "settings": {
-            "title": "This is urgent",
+            "title": "Order No",
             "required": false
           }
         },
-        "Options-select": {
-          "type": "select",
+        "Message": {
+          "type": "body",
           "settings": {
-            "title": "Select an option",
-            "required": false,
-            "label-one": "- Pick an option -",
-            "label-two": "Option one",
-            "label-three": "Option two",
-            "label-four": "Option three",
-            "label-five": "Option four",
-            "label-six": "Option five"
+            "title": "Enter your messages",
+            "required": false
           }
         }
       },
       "block_order": [
         "heading",
         "Name",
+        "text_eKNiMy",
         "Email",
-        "Message",
-        "Optional-text",
-        "Urgent-checkbox",
-        "Options-select"
+        "text_AxyXqY",
+        "Message"
       ],
       "settings": {
         "title": "",
         "heading_font_size": "heading-large",
-        "terms": true,
+        "terms": false,
         "width": "wrapper--narrow",
         "color_scheme": "",
-        "padding_top": 50,
-        "padding_bottom": 50,
+        "padding_top": 100,
+        "padding_bottom": 100,
         "heading_tag": "automatic"
-      }
-    },
-    "faq": {
-      "type": "section-accordion-group",
-      "blocks": {
-        "heading-0": {
-          "type": "heading",
-          "settings": {
-            "title": "FAQ"
-          }
-        },
-        "question-1": {
-          "type": "question",
-          "settings": {
-            "default_open": false,
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
-            "show_icon": false,
-            "icon_name": "icon-award",
-            "icon_size": 20,
-            "icon_color": ""
-          }
-        },
-        "question-2": {
-          "type": "question",
-          "settings": {
-            "default_open": false,
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
-            "show_icon": false,
-            "icon_name": "icon-award",
-            "icon_size": 20,
-            "icon_color": ""
-          }
-        },
-        "question-3": {
-          "type": "question",
-          "settings": {
-            "default_open": false,
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
-            "show_icon": false,
-            "icon_name": "icon-award",
-            "icon_size": 20,
-            "icon_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading-0",
-        "question-1",
-        "question-2",
-        "question-3"
-      ],
-      "disabled": true,
-      "settings": {
-        "heading_font_size": "heading-medium",
-        "question_font_size": "heading-small",
-        "width": "wrapper--narrow",
-        "columns": "1",
-        "color_scheme": "",
-        "padding_top": 50,
-        "padding_bottom": 50
       }
     }
   },
   "order": [
     "divider",
     "main",
-    "contact",
-    "faq"
+    "contact"
   ]
 }

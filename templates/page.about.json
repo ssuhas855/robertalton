@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -11,39 +20,96 @@
         "text_font_size": "body-medium",
         "align_text": "text-left",
         "width": "wrapper",
+        "color_scheme": "",
         "padding_top": 50,
-        "padding_bottom": 50
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
       }
     },
-    "double-1": {
-      "type": "section-double",
+    "section_hero_cNikkF": {
+      "type": "section-hero",
+      "name": "Image banner",
+      "settings": {
+        "image_1": "shopify://shop_images/ab1.jpg",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "text_below": false,
+        "color_scheme": "",
+        "show_text_background": false,
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_custom_content_VYBRpM": {
+      "type": "section-custom-content",
       "blocks": {
-        "heading-1-1": {
-          "type": "heading",
-          "settings": {
-            "heading_font_size": "heading-x-large"
-          }
-        },
-        "text-1-1": {
+        "text_cN4NLd": {
           "type": "text",
           "settings": {
-            "text_font_size": "body-medium"
+            "subheading": "",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "<h6>Robert Alton began with a purpose — to redefine men’s jewelry.</h6>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        },
+        "text_XH7eaA": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "<p>Born in the heart of Los Angeles’ Jewelry District, the brand blends history with innovation, crafting sophisticated pieces that unite contemporary materials, natural gemstones, and timeless artistry. Each design embodies a balance of refinement and individuality, created to inspire confidence in the modern man.</p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
           }
         }
       },
       "block_order": [
-        "heading-1-1",
-        "text-1-1"
+        "text_cN4NLd",
+        "text_XH7eaA"
       ],
+      "name": "Custom section",
       "settings": {
-        "image_width": "one-half",
-        "text_alignment": "text-left",
-        "layout": "is-reversed",
-        "width": "wrapper--full",
-        "height": "sixty-fifty-height-hero",
-        "mobile_height": "four-fifty-height-hero--mobile",
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full-padded",
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
         "padding_top": 0,
-        "padding_bottom": 50
+        "padding_bottom": 0
       }
     },
     "columns": {
@@ -52,197 +118,89 @@
         "image-1": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/ab2.jpg",
+            "image_width": 66,
+            "image_shape": "normal",
+            "title": "",
+            "heading_font_size": "heading-small",
+            "text": "",
+            "text_font_size": "body-medium",
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary hero__btn",
+            "button_size": "",
             "button_style": "btn--solid",
-            "image_aspect_ratio": 1.2
-          }
-        },
-        "image-2": {
-          "type": "image",
-          "settings": {
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary hero__btn",
-            "button_style": "btn--solid",
-            "image_aspect_ratio": 1.2
-          }
-        },
-        "image-3": {
-          "type": "image",
-          "settings": {
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary hero__btn",
-            "button_style": "btn--solid",
-            "image_aspect_ratio": 1.2
+            "show_arrow": false,
+            "image_aspect_ratio": 1.2,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
           }
         }
       },
       "block_order": [
-        "image-1",
-        "image-2",
-        "image-3"
-      ],
-      "settings": {
-        "align_text": "text-center",
-        "width": "wrapper--full-padded",
-        "align_columns": "flex-align-top",
-        "layout_mobile": "slider",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
-    "double-2": {
-      "type": "section-double",
-      "blocks": {
-        "heading-2-1": {
-          "type": "heading",
-          "settings": {
-            "heading_font_size": "heading-x-large"
-          }
-        },
-        "text-2-1": {
-          "type": "text",
-          "settings": {
-            "text_font_size": "body-medium"
-          }
-        }
-      },
-      "block_order": [
-        "heading-2-1",
-        "text-2-1"
-      ],
-      "settings": {
-        "image_width": "one-half",
-        "text_alignment": "text-left",
-        "width": "wrapper--full",
-        "height": "sixty-fifty-height-hero",
-        "mobile_height": "four-fifty-height-hero--mobile",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
-    "announcement": {
-      "type": "section-announcement",
-      "blocks": {
-        "text": {
-          "type": "text",
-          "settings": {
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        }
-      },
-      "block_order": [
-        "text"
-      ],
-      "settings": {
-        "slider_speed": 7,
-        "marquee_speed": 100,
-        "layout": "marquee",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "collections-list": {
-      "type": "section-collections-list",
-      "blocks": {
-        "collection-1": {
-          "type": "collection",
-          "settings": {}
-        },
-        "collection-2": {
-          "type": "collection",
-          "settings": {}
-        },
-        "collection-3": {
-          "type": "collection",
-          "settings": {}
-        },
-        "collection-4": {
-          "type": "collection",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "collection-1",
-        "collection-2",
-        "collection-3",
-        "collection-4"
+        "image-1"
       ],
       "settings": {
         "title": "",
-        "aspect_ratio": 1.2,
+        "heading_font_size": "heading-medium",
+        "align_heading": "text-left",
+        "align_text": "text-center",
+        "width": "wrapper--full-padded",
+        "align_columns": "flex-align-top",
         "layout": "grid",
-        "padding_top": 50,
-        "padding_bottom": 32
+        "grid": 3,
+        "layout_mobile": "slider",
+        "color_scheme": "",
+        "padding_top": 20,
+        "padding_bottom": 100,
+        "heading_tag": "automatic"
       }
     },
-    "press-logos": {
-      "type": "section-press-logos",
+    "section_hero_EEczzw": {
+      "type": "section-hero",
       "blocks": {
-        "logo-item-1": {
-          "type": "logo-item-header",
+        "button_pDyCMn": {
+          "type": "button",
           "settings": {
-            "logo_width": 150,
-            "link": ""
-          }
-        },
-        "logo-item-2": {
-          "type": "logo-item-header",
-          "settings": {
-            "logo_width": 150,
-            "link": ""
-          }
-        },
-        "logo-item-3": {
-          "type": "logo-item-header",
-          "settings": {
-            "logo_width": 150,
-            "link": ""
-          }
-        },
-        "logo-item-4": {
-          "type": "logo-item-header",
-          "settings": {
-            "logo_width": 150,
-            "link": ""
+            "link_text": "SHOP New Collcetion",
+            "link": "shopify://collections/shop-all",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "full_width": false,
+            "padding_bottom": 8
           }
         }
       },
       "block_order": [
-        "logo-item-1",
-        "logo-item-2",
-        "logo-item-3",
-        "logo-item-4"
+        "button_pDyCMn"
       ],
+      "name": "Image banner",
       "settings": {
-        "enable_heading_slider": false,
-        "logo_opacity": 60,
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
-    "divider": {
-      "type": "section-divider",
-      "settings": {
-        "show_line": true,
+        "image_1": "shopify://shop_images/ab3.jpg",
+        "link": "",
         "width": "wrapper--full-padded",
-        "padding_top": 31,
-        "padding_bottom": 50
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "text_below": true,
+        "color_scheme": "",
+        "show_text_background": false,
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 120,
+        "show_placeholder": true
       }
     }
   },
   "order": [
     "main",
-    "double-1",
+    "section_hero_cNikkF",
+    "section_custom_content_VYBRpM",
     "columns",
-    "double-2",
-    "announcement",
-    "collections-list",
-    "press-logos",
-    "divider"
+    "section_hero_EEczzw"
   ]
 }

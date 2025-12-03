@@ -30,7 +30,7 @@
   if empty_search_menu != blank
     assign show_empty_search = true
     assign show_empty_search_menu = true
-    assign empty_search_product_list_size = empty_search_product_list_size | at_most: 4
+    assign empty_search_product_list_size = empty_search_product_list_size | at_most: 2
   endif
 
   if empty_search_product_list != blank
@@ -55,6 +55,8 @@
         role="search"
       >
         <input name="options[prefix]" type="hidden" value="last">
+        <!-- NEW HIDDEN FIELD TO FORCE PRODUCT SEARCH -->
+  <input type="hidden" name="type" value="product">
 
         <button class="search-popdown__submit" type="submit" aria-label="{{ 'layout.header.search' | t }}">
           {%- render 'icon-search' -%}
@@ -66,6 +68,7 @@
             type="search"
             id="SearchInput--{{ unique }}"
             data-predictive-search-input="search-popdown-results"
+            data-predictive-search-type="product"
             name="q"
             value="{{ search.terms | escape }}"
             placeholder="{{ 'general.search.search' | t }}"
@@ -150,7 +153,7 @@
                 <div class="predictive-search__group">
                   <div class="predictive-search__products__list grid-outer">
                     <div class="grid">
-                      {%- for product in empty_search_product_list limit: empty_search_product_list_size -%}
+                      {%- for product in empty_search_product_list limit: 2 -%}
                         {%- render 'search-product-item',
                           product: product,
                           animation_delay: animation_delay,

@@ -193,16 +193,20 @@
         data-aos-duration="{{ animation_duration }}"
         data-aos-anchor="{{ animation_anchor }}"
       >
+
+<span>Search for "{{ predictive_search.terms }}"</span>
+
+
         <button
-          class="btn btn--outline btn--primary"
+          class="btn btn--text btn--black"
           tabindex="-1"
           role="option"
           aria-selected="false"
         >
           <span data-predictive-search-search-for-text>
-            {{- 'general.search.search_for' | t: terms: predictive_search.terms -}}
+           View Result
           </span>
-          {%- render 'icon-nav-arrow-right' -%}
+         
         </button>
       </div>
 
