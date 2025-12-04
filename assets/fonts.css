@@ -84,7 +84,31 @@ h1.product__title {
     margin: 0 0 40px;
     text-align: left;
 }
-
+.page__heading, .account-header h2, #AddressNewForm h2, addresses-component  h2, strong.h6 {
+	font-family: var(--FONT-STACK-BODY);
+	font-style: var(--FONT-STYLE-BODY);
+	font-weight: var(--FONT-WEIGHT-BODY);
+	letter-spacing: 0.5px;	
+    font-size:11px;
+    text-transform:uppercase;
+}
+.account-sidebar ul li, .account-sidebar__title.strong{
+    font-family: var(--FONT-STACK-BODY);
+	font-style: var(--FONT-STYLE-BODY);
+	font-weight: var(--FONT-WEIGHT-BODY);
+	letter-spacing: 0.5px;	
+    font-size:11px;
+    text-transform:uppercase;
+}
+hr, .hr {
+	border-color: #696969;
+}
+.text-link {
+	font-size: 12px;
+}
+.hide{
+    display: none!important;
+}
 
 h6 {
 	font-family: var(--FONT-STACK-BODY);

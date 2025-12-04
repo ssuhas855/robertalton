@@ -5,7 +5,7 @@
     <div class="customer-register">
       <h2 class="page__heading">{{ 'customer.register.title' | t }}</h2>
 
-      <p>{{ 'customer.register.sign_in_prompt' | t }} <span class="text-link"><a href="{{ routes.account_login_url }}">{{ 'customer.register.sign_in_cta' | t }}</a></span>.</p>
+     
 
       {% form 'create_customer' %}
       	<div class="form-field">{{ form.errors | default_errors }}</div>
@@ -31,7 +31,7 @@
         </div>
 
         <div class="form-field action-bottom">
-          <button type="submit" class="btn btn--primary btn--solid">
+          <button type="submit" class="btn btn--primary btn--outline">
             <span>{{ 'customer.register.submit' | t }}</span>
           </button>
         </div>
@@ -40,6 +40,7 @@
           {{ 'shopify.online_store.spam_detection.disclaimer_html' | t }}
         </div>
       {% endform %}
+       <p>{{ 'customer.register.sign_in_prompt' | t }} <span class="text-link"><a href="{{ routes.account_login_url }}">{{ 'customer.register.sign_in_cta' | t }}</a></span>.</p>
     </div>
   </div>
 </section>

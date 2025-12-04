@@ -6,7 +6,7 @@
     <div class="login fade-toggle{% if shop.checkout.guest_login %} align-left{% endif %}" data-login-form>
       <h2 class="page__heading text-left">{{ 'customer.login.title' | t }}</h2>
 
-      <p>{{ 'customer.login.create_account_prompt' | t }} <a href="{{ routes.account_register_url }}" class="text-link">{{ 'customer.login.create_account_cta' | t }}</a>.</p>
+      
 
       {% form 'customer_login' %}
         <div class="form-field">{{ form.errors | default_errors }}</div>
@@ -19,6 +19,7 @@
             spellcheck="false"
             autocomplete="off"
             autocapitalize="off"
+            placeholder="{{ 'customer.login.email' | t }}"
             autofocus>
         </div>
 
@@ -32,7 +33,7 @@
 
             <div class="forgot-password">
               <div>
-                <button type="submit" class="btn btn--primary btn--solid">
+                <button type="submit" class="btn btn--primary btn--outline">
                   <span>{{ 'customer.login.sign_in' | t }}</span>
                 </button>
               </div>
@@ -47,12 +48,14 @@
         {% endif %}
 
         <div class="form-field action-bottom">
-          <a href="{{ routes.root_url }}" class="text-link small">{{ 'customer.login.cancel' | t }}</a>
+          <a href="{{ routes.root_url }}" class="text-link small hide">{{ 'customer.login.cancel' | t }}</a>
 
           <div class="form__legal">
             {{ 'shopify.online_store.spam_detection.disclaimer_html' | t }}
           </div>
         </div>
+
+        <p>{{ 'customer.login.create_account_prompt' | t }} <a href="{{ routes.account_register_url }}" class="text-link">{{ 'customer.login.create_account_cta' | t }}</a>.</p>
       {% endform %}
     </div>
 
@@ -72,11 +75,11 @@
 
         <div class="form-field">
           <label for="email">{{ 'customer.login.email' | t }}</label>
-          <input type="email" value="" size="30" name="email" id="recover-email" class="large">
+          <input type="email" value="" size="30" name="email" id="recover-email" class="large" placeholder="{{ 'customer.login.email' | t }}">
         </div>
 
         <div class="form-field action-bottom">
-          <button type="submit" class="btn btn--primary btn--solid">
+          <button type="submit" class="btn btn--primary btn--outline">
             <span>{{ 'customer.recover_password.submit' | t }}</span>
           </button>
 
@@ -99,7 +102,7 @@
           <h2 class="page__heading">{{ 'customer.login.guest_title' | t }}</h2>
 
           {%- form 'guest_login' -%}
-            <button class="caps--link" type="submit">
+            <button class="caps--link btn btn--primary btn--outline" type="submit">
               <span>{{ 'customer.login.guest_continue' | t }}</span>
             </button>
           {%- endform -%}

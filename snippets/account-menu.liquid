@@ -1,5 +1,5 @@
 {%- capture links -%}
-  <ul>
+  <ul class="widget__links widget__links--secondary">
     {%- assign needs_completion = true -%}
     {%- for block in section.blocks -%}
       {%- case block.type -%}
@@ -17,8 +17,8 @@
 
         {%- when 'account' -%}
           {%- assign needs_completion = false -%}
-          <li {% if template == 'customers/account' %} class="is-current"{% endif %}><a href="{{ routes.account_url }}">{{ 'customer.orders.title' | t }}</a></li>
-          <li {% if template contains 'addresses' %} class="is-current"{% endif %}><a href="{{ routes.account_addresses_url }}">{{ 'customer.account.view_addresses' | t }}</a></li>
+          <li {% if template == 'customers/account' %} class="is-current"{% endif %}><a class="widget__link {% if template == 'customers/account' %}is-selected{% endif %}" href="{{ routes.account_url }}">{{ 'customer.orders.title' | t }}</a></li>
+          <li {% if template contains 'addresses' %} class="is-current"{% endif %}><a class="widget__link {% if template == 'addresses' %}is-selected{% endif %}" href="{{ routes.account_addresses_url }}">Addresses</a></li>
           <li>{{ 'layout.customer.log_out' | t | customer_logout_link }}</li>
 
       {%- endcase -%}
@@ -26,7 +26,7 @@
 
     {%- if needs_completion -%}
       <li {% if template == 'customers/account' %} class="is-current"{% endif %}><a href="{{ routes.account_url }}">{{ 'customer.orders.title' | t }}</a></li>
-      <li {% if template contains 'addresses' %} class="is-current"{% endif %}><a href="{{ routes.account_addresses_url }}">{{ 'customer.account.view_addresses' | t }}</a></li>
+      <li {% if template contains 'addresses' %} class="is-current"{% endif %}><a href="{{ routes.account_addresses_url }}">Addresses</a></li>
       <li>{{ 'layout.customer.log_out' | t | customer_logout_link }}</li>
     {%- endif -%}
   </ul>
