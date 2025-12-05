@@ -6718,7 +6718,7 @@ hover-disclosure {
   .header__mobile__button.navlink--toplevel::after {
     content: none;
   }
-}
+} 
 
 .header__mobile__button:last-child .header__mobile__hamburger,
 .header__mobile__button:last-child .navlink {

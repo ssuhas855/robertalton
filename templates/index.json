@@ -1,1 +1,464 @@
-{"sections":{"section_slideshow_nested":{"type":"section-slideshow-nested","blocks":{"slide_image_1":{"type":"_slide-image","settings":{"image":"shopify:\/\/shop_images\/banner.webp","link":"","flex_align_desktop":"align--bottom-left-desktop","flex_align_mobile":"align--middle-center-mobile","show_text_background":false,"bg_color":"","color":"#ffffff","overlay_type":"text"},"blocks":{"heading":{"type":"heading","disabled":true,"settings":{"text":"Everyday Luxury","heading_font_size":"heading-large","heading_tag":"automatic","padding_bottom":8},"blocks":{}},"text":{"type":"text","disabled":true,"settings":{"text":"Beautiful pieces to pass down for generations","text_font_size":"body-large","padding_bottom":8},"blocks":{}},"group_buttons":{"type":"_group-buttons","name":"Side by side buttons","disabled":true,"settings":{"button_text":"Shop all products","button_url":"shopify:\/\/collections\/all","button_type":"btn--black","button_size":"","button_style":"btn--solid","show_arrow":false,"button_secondary_text":"Shop sale","button_secondary_url":"shopify:\/\/collections\/all","button_secondary_type":"btn--white","button_secondary_size":"","button_secondary_style":"btn--solid","show_secondary_arrow":false,"padding_bottom":8},"blocks":{}}},"block_order":["heading","text","group_buttons"]},"slide_video_1":{"type":"_slide-video","name":"Video","disabled":true,"settings":{"link":"","flex_align_desktop":"align--middle-center-desktop","flex_align_mobile":"align--middle-center-mobile","show_text_background":false,"bg_color":"","color":"#ffffff","overlay_type":"opacity"},"blocks":{"heading_":{"type":"heading","settings":{"text":"Light That Lives With You","heading_font_size":"heading-large","heading_tag":"automatic","padding_bottom":8},"blocks":{}},"text":{"type":"text","name":"Text","settings":{"text":"Crafted to glow with meaning, every day","text_font_size":"body-large","padding_bottom":8},"blocks":{}},"button":{"type":"button","settings":{"text":"Shop the Gemstone Collection","link":"","type":"btn--white","size":"","style":"btn--solid","show_arrow":false,"full_width":false,"padding_bottom":8},"blocks":{}}},"block_order":["heading_","text","button"]},"slide_image_2":{"type":"_slide-image","name":"Image","disabled":true,"settings":{"link":"","flex_align_desktop":"align--middle-center-desktop","flex_align_mobile":"align--middle-center-mobile","show_text_background":false,"bg_color":"","color":"#ffffff","overlay_type":"disabled"},"blocks":{"heading":{"type":"heading","settings":{"text":"Sleek. Sculptural. Striking.","heading_font_size":"heading-large","heading_tag":"automatic","padding_bottom":8},"blocks":{}},"text":{"type":"text","settings":{"text":"A modern statement in form and finish, designed to stand apart.","text_font_size":"body-large","padding_bottom":8},"blocks":{}},"button":{"type":"button","settings":{"text":"Shop all rings","link":"","type":"btn--white","size":"","style":"btn--solid","show_arrow":false,"full_width":false,"padding_bottom":8},"blocks":{}}},"block_order":["heading","text","button"]}},"block_order":["slide_image_1","slide_video_1","slide_image_2"],"name":"Slideshow (Nested)","settings":{"transition":"slide","show_arrows":true,"autoplay":true,"autoplay_speed":4,"width":"wrapper--full","height":"seven-fifty-height-hero","mobile_height":"screen-height-full--mobile","color_scheme":"scheme-5","padding_top":0,"padding_bottom":0}},"section_collections_list_pW6J9e":{"type":"section-collections-list","blocks":{"collection_RBeDQm":{"type":"collection","settings":{"collection":"necklace","collection_image":"shopify:\/\/shop_images\/c1.jpg","title":""}},"collection_mtPyUE":{"type":"collection","settings":{"collection":"ring","collection_image":"shopify:\/\/shop_images\/c2.jpg","title":""}},"collection_mFNCVF":{"type":"collection","settings":{"collection":"earrings","collection_image":"shopify:\/\/shop_images\/c3.jpg","title":""}},"collection_CG8WXN":{"type":"collection","settings":{"collection":"bracelet","collection_image":"shopify:\/\/shop_images\/c4.jpg","title":""}}},"block_order":["collection_RBeDQm","collection_mtPyUE","collection_mFNCVF","collection_CG8WXN"],"name":"Collection list","settings":{"title":"","heading_font_size":"heading-x-small","description":"","text_font_size":"body-medium","button_text":"Discover ALL collection","button_url":"shopify:\/\/collections","button_type":"btn--primary","button_size":"","button_style":"btn--text","show_arrow":false,"aspect_ratio":1.3,"width":"wrapper--full-padded","layout":"grid","grid":4,"layout_mobile":"slider","color_scheme":"","padding_top":22,"padding_bottom":40,"heading_tag":"automatic"}},"section_hero_PcRGdH":{"type":"section-hero","blocks":{"button_X6kmVK":{"type":"button","settings":{"link_text":"SHOP BRACELET","link":"shopify:\/\/collections\/bracelet","button_type":"btn--black","button_size":"","button_style":"btn--text","show_arrow":false,"full_width":false,"padding_bottom":8}}},"block_order":["button_X6kmVK"],"name":"Image banner","settings":{"image_1":"shopify:\/\/shop_images\/hero2.webp","link":"","width":"wrapper--full","height":"image-height","flex_align_desktop":"align--middle-center-desktop","content_width":50,"mobile_height":"screen-height-three-quarters--mobile","flex_align_mobile":"align--middle-center-mobile","text_below":true,"color_scheme":"scheme-1","show_text_background":false,"overlay_type":"disabled","padding_top":0,"padding_bottom":0,"show_placeholder":true}},"double":{"type":"section-double","blocks":{"image_ycnEVH":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/navdrop2_6166d109-32f9-4eab-929b-348c4c7ace32.jpg","image_width":70,"padding_bottom":0}}},"block_order":["image_ycnEVH"],"settings":{"image_1":"shopify:\/\/shop_images\/Reference.jpg","image_width":"three-quarters","text_alignment":"text-center","layout":"","width":"wrapper--full-padded","height":"image-height","mobile_height":"four-fifty-height-hero--mobile","reverse_blocks":true,"color_scheme":"scheme-1","padding_top":0,"padding_bottom":0,"show_placeholder":true}},"section_rich_text_LXTWpT":{"type":"section-rich-text","blocks":{"buttons_NX3Ff8":{"type":"buttons","settings":{"button_text":"SHOP the diamond band","button_url":"shopify:\/\/collections\/ring","button_type":"btn--primary","button_size":"","button_style":"btn--text","show_arrow":false,"padding_bottom":16}}},"block_order":["buttons_NX3Ff8"],"name":"Rich text","settings":{"align_text":"text-center","width":"wrapper--full-padded","color_scheme":"","overlay_type":"disabled","padding_top":20,"padding_bottom":80}},"section_hero_GYDzFR":{"type":"section-hero","blocks":{"button_NRBRYw":{"type":"button","settings":{"link_text":"Discover 24K Jewelry Collection","link":"#","button_type":"btn--primary","button_size":"","button_style":"btn--text","show_arrow":false,"full_width":false,"padding_bottom":8}}},"block_order":["button_NRBRYw"],"name":"Image banner","settings":{"image_1":"shopify:\/\/shop_images\/hero3.jpg","link":"","width":"wrapper--full","height":"image-height","flex_align_desktop":"align--bottom-center-desktop","content_width":50,"mobile_height":"image-height--mobile","flex_align_mobile":"align--bottom-center-mobile","text_below":false,"color_scheme":"","show_text_background":false,"overlay_type":"disabled","padding_top":0,"padding_bottom":0,"show_placeholder":true}},"section_double_tYnKWg":{"type":"section-double","blocks":{"image_k8hGiL":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Frame2aS147237107.jpg","image_width":85,"padding_bottom":0}},"buttons_wLn99a":{"type":"buttons","settings":{"button_text":"Lorem Ipsum","button_url":"#","button_type":"btn--primary","button_size":"","button_style":"btn--text","show_arrow":false,"padding_bottom":16}}},"block_order":["image_k8hGiL","buttons_wLn99a"],"name":"Image with text","settings":{"image_1":"shopify:\/\/shop_images\/Reference1.jpg","image_width":"three-quarters","text_alignment":"text-left","layout":"is-reversed","width":"wrapper--full","height":"image-height","mobile_height":"image-height--mobile","reverse_blocks":false,"color_scheme":"","padding_top":80,"padding_bottom":80,"show_placeholder":true}}},"order":["section_slideshow_nested","section_collections_list_pW6J9e","section_hero_PcRGdH","double","section_rich_text_LXTWpT","section_hero_GYDzFR","section_double_tYnKWg"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "section_slideshow_nested": {
+      "type": "section-slideshow-nested",
+      "blocks": {
+        "slide_image_1": {
+          "type": "_slide-image",
+          "settings": {
+            "image": "shopify://shop_images/banner.webp",
+            "link": "",
+            "flex_align_desktop": "align--bottom-left-desktop",
+            "mobile_image": "shopify://shop_images/banner_mo.jpg",
+            "flex_align_mobile": "align--middle-center-mobile",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "text"
+          },
+          "blocks": {
+            "heading": {
+              "type": "heading",
+              "disabled": true,
+              "settings": {
+                "text": "Everyday Luxury",
+                "heading_font_size": "heading-large",
+                "heading_tag": "automatic",
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            },
+            "text": {
+              "type": "text",
+              "disabled": true,
+              "settings": {
+                "text": "Beautiful pieces to pass down for generations",
+                "text_font_size": "body-large",
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            },
+            "group_buttons": {
+              "type": "_group-buttons",
+              "name": "Side by side buttons",
+              "disabled": true,
+              "settings": {
+                "button_text": "Shop all products",
+                "button_url": "shopify://collections/all",
+                "button_type": "btn--black",
+                "button_size": "",
+                "button_style": "btn--solid",
+                "show_arrow": false,
+                "button_secondary_text": "Shop sale",
+                "button_secondary_url": "shopify://collections/all",
+                "button_secondary_type": "btn--white",
+                "button_secondary_size": "",
+                "button_secondary_style": "btn--solid",
+                "show_secondary_arrow": false,
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading",
+            "text",
+            "group_buttons"
+          ]
+        },
+        "slide_video_1": {
+          "type": "_slide-video",
+          "name": "Video",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "flex_align_desktop": "align--middle-center-desktop",
+            "flex_align_mobile": "align--middle-center-mobile",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "opacity"
+          },
+          "blocks": {
+            "heading_": {
+              "type": "heading",
+              "settings": {
+                "text": "Light That Lives With You",
+                "heading_font_size": "heading-large",
+                "heading_tag": "automatic",
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            },
+            "text": {
+              "type": "text",
+              "name": "Text",
+              "settings": {
+                "text": "Crafted to glow with meaning, every day",
+                "text_font_size": "body-large",
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            },
+            "button": {
+              "type": "button",
+              "settings": {
+                "text": "Shop the Gemstone Collection",
+                "link": "",
+                "type": "btn--white",
+                "size": "",
+                "style": "btn--solid",
+                "show_arrow": false,
+                "full_width": false,
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_",
+            "text",
+            "button"
+          ]
+        },
+        "slide_image_2": {
+          "type": "_slide-image",
+          "name": "Image",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "flex_align_desktop": "align--middle-center-desktop",
+            "flex_align_mobile": "align--middle-center-mobile",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled"
+          },
+          "blocks": {
+            "heading": {
+              "type": "heading",
+              "settings": {
+                "text": "Sleek. Sculptural. Striking.",
+                "heading_font_size": "heading-large",
+                "heading_tag": "automatic",
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            },
+            "text": {
+              "type": "text",
+              "settings": {
+                "text": "A modern statement in form and finish, designed to stand apart.",
+                "text_font_size": "body-large",
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            },
+            "button": {
+              "type": "button",
+              "settings": {
+                "text": "Shop all rings",
+                "link": "",
+                "type": "btn--white",
+                "size": "",
+                "style": "btn--solid",
+                "show_arrow": false,
+                "full_width": false,
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading",
+            "text",
+            "button"
+          ]
+        }
+      },
+      "block_order": [
+        "slide_image_1",
+        "slide_video_1",
+        "slide_image_2"
+      ],
+      "name": "Slideshow (Nested)",
+      "settings": {
+        "transition": "slide",
+        "show_arrows": true,
+        "autoplay": true,
+        "autoplay_speed": 4,
+        "width": "wrapper--full",
+        "height": "seven-fifty-height-hero",
+        "mobile_height": "image-height--mobile",
+        "color_scheme": "scheme-5",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_collections_list_pW6J9e": {
+      "type": "section-collections-list",
+      "blocks": {
+        "collection_RBeDQm": {
+          "type": "collection",
+          "settings": {
+            "collection": "necklace",
+            "collection_image": "shopify://shop_images/c1.jpg",
+            "title": ""
+          }
+        },
+        "collection_mtPyUE": {
+          "type": "collection",
+          "settings": {
+            "collection": "ring",
+            "collection_image": "shopify://shop_images/c2.jpg",
+            "title": ""
+          }
+        },
+        "collection_mFNCVF": {
+          "type": "collection",
+          "settings": {
+            "collection": "earrings",
+            "collection_image": "shopify://shop_images/c3.jpg",
+            "title": ""
+          }
+        },
+        "collection_CG8WXN": {
+          "type": "collection",
+          "settings": {
+            "collection": "bracelet",
+            "collection_image": "shopify://shop_images/c4.jpg",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_RBeDQm",
+        "collection_mtPyUE",
+        "collection_mFNCVF",
+        "collection_CG8WXN"
+      ],
+      "name": "Collection list",
+      "settings": {
+        "title": "",
+        "heading_font_size": "heading-x-small",
+        "description": "",
+        "text_font_size": "body-medium",
+        "button_text": "Discover ALL collection",
+        "button_url": "shopify://collections",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--text",
+        "show_arrow": false,
+        "aspect_ratio": 1.3,
+        "width": "wrapper--full-padded",
+        "layout": "grid",
+        "grid": 4,
+        "layout_mobile": "slider",
+        "color_scheme": "",
+        "padding_top": 22,
+        "padding_bottom": 40,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_hero_PcRGdH": {
+      "type": "section-hero",
+      "blocks": {
+        "button_X6kmVK": {
+          "type": "button",
+          "settings": {
+            "link_text": "SHOP BRACELET",
+            "link": "shopify://collections/bracelet",
+            "button_type": "btn--black",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "full_width": false,
+            "padding_bottom": 8
+          }
+        }
+      },
+      "block_order": [
+        "button_X6kmVK"
+      ],
+      "name": "Image banner",
+      "settings": {
+        "image_1": "shopify://shop_images/hero2.webp",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "text_below": true,
+        "color_scheme": "scheme-1",
+        "show_text_background": false,
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "double": {
+      "type": "section-double",
+      "blocks": {
+        "image_ycnEVH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/image634.jpg",
+            "image_width": 70,
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_ycnEVH"
+      ],
+      "settings": {
+        "image_1": "shopify://shop_images/Reference.jpg",
+        "image_width": "three-quarters",
+        "text_alignment": "text-center",
+        "layout": "",
+        "width": "wrapper--full-padded",
+        "height": "image-height",
+        "mobile_height": "four-fifty-height-hero--mobile",
+        "reverse_blocks": true,
+        "color_scheme": "scheme-1",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_rich_text_LXTWpT": {
+      "type": "section-rich-text",
+      "blocks": {
+        "buttons_NX3Ff8": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "SHOP the diamond band",
+            "button_url": "shopify://collections/ring",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "buttons_NX3Ff8"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "align_text": "text-center",
+        "width": "wrapper--full-padded",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 20,
+        "padding_bottom": 80
+      }
+    },
+    "section_hero_GYDzFR": {
+      "type": "section-hero",
+      "blocks": {
+        "button_NRBRYw": {
+          "type": "button",
+          "settings": {
+            "link_text": "Discover 24K Jewelry Collection",
+            "link": "#",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "full_width": false,
+            "padding_bottom": 8
+          }
+        }
+      },
+      "block_order": [
+        "button_NRBRYw"
+      ],
+      "name": "Image banner",
+      "settings": {
+        "image_1": "shopify://shop_images/hero3.jpg",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--bottom-center-desktop",
+        "content_width": 50,
+        "mobile_image": "shopify://shop_images/Frame2147237175_mo.jpg",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--bottom-center-mobile",
+        "text_below": false,
+        "color_scheme": "",
+        "show_text_background": false,
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_double_tYnKWg": {
+      "type": "section-double",
+      "blocks": {
+        "image_k8hGiL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Frame2aS147237107.jpg",
+            "image_width": 85,
+            "padding_bottom": 0
+          }
+        },
+        "buttons_wLn99a": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Lorem Ipsum",
+            "button_url": "#",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "image_k8hGiL",
+        "buttons_wLn99a"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image_1": "shopify://shop_images/Reference1.jpg",
+        "image_width": "three-quarters",
+        "text_alignment": "text-left",
+        "layout": "is-reversed",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "show_placeholder": true
+      }
+    }
+  },
+  "order": [
+    "section_slideshow_nested",
+    "section_collections_list_pW6J9e",
+    "section_hero_PcRGdH",
+    "double",
+    "section_rich_text_LXTWpT",
+    "section_hero_GYDzFR",
+    "section_double_tYnKWg"
+  ]
+}

@@ -759,6 +759,8 @@
   <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script>
 {% endif %}
 
+<link rel="stylesheet" href="https://use.typekit.net/kfp8kiu.css">
+
 <!-- Theme Javascript ============================================================== -->
 <script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
@@ -786,3 +788,4 @@
 <!-- Shopify app scripts =========================================================== -->
 {{ 'fonts.css' | asset_url | stylesheet_tag }}
 {{ 'style.css' | asset_url | stylesheet_tag }}
+{{ 'responsive.css' | asset_url | stylesheet_tag }}

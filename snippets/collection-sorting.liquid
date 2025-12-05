@@ -29,7 +29,7 @@
       data-popout-toggle>
       <span class="popout__toggle__text">{{ sort_translation }}</span>
 
-      <span class="popout__toggle__text" data-sort-button-text>{{ currently_selected.name }}</span>
+      <span class="popout__toggle__text" data-sort-button-text>Relevance {{ currently_selected.name }}</span>
 
       {%- render 'icon-nav-arrow-down' -%}
     </button>
@@ -46,7 +46,7 @@
             {% if active %}aria-current="true"{% endif %}
             data-popout-option
             data-sort-link>
-            <span>{{ option.name }}</span>
+            <span>{{ option.name | replace: 'Featured', 'Newest' | replace:'Price, low to high', 'Price highest' | replace:'Price, high to low', 'Price lowest' }}</span>
           </a>
         </li>
 

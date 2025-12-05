@@ -58,9 +58,7 @@
         <!-- NEW HIDDEN FIELD TO FORCE PRODUCT SEARCH -->
   <input type="hidden" name="type" value="product">
 
-        <button class="search-popdown__submit" type="submit" aria-label="{{ 'layout.header.search' | t }}">
-          {%- render 'icon-search' -%}
-        </button>
+     
 
         <div class="input-holder">
           <label for="SearchInput--{{ unique }}" class="visually-hidden">{{ 'general.search.search' | t }}</label>
@@ -84,6 +82,9 @@
             autocapitalize="off"
             spellcheck="false"
           >
+             <button class="search-popdown__submit" type="submit" aria-label="{{ 'layout.header.search' | t }}">
+          {%- render 'icon-search' -%}
+        </button>
 
           <button
             type="reset"

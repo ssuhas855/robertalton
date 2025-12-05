@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
     font-family: 'Brandon Text';
     src: url('//cdn.shopify.com/s/files/1/0694/8565/8154/files/BrandonText-Regular.eot');
     src: url('//cdn.shopify.com/s/files/1/0694/8565/8154/files/BrandonText-Regular.eot?#iefix') format('embedded-opentype'),
@@ -9,15 +9,17 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}
+}*/
 
 :root {
-	--FONT-STACK-BODY: 'Brandon Text';
+	--FONT-STACK-BODY: 'brandon-grotesque';
+	--FONT-STACK-NAV: 'brandon-grotesque';
     --FONT-STYLE-BODY: 'normal';
-    --FONT-WEIGHT-BODY: 'normal';
-    --LETTER-SPACING-BODY: '0px';
+    --FONT-WEIGHT-BODY: '400';
+    --LETTER-SPACING-BODY: '0.3px';
     --FONT-SIZE-body: '12px';
 }
+
 body {
 	font-family: var(--FONT-STACK-BODY);
 	font-style: var(--FONT-STYLE-BODY);
@@ -38,6 +40,9 @@ p{
 	font-weight: var(--FONT-WEIGHT-BODY);
 	letter-spacing: var(--LETTER-SPACING-BODY);	
    font-size: 12px;
+}
+.dropdown__family .navlink--child {
+	font-weight: 400;
 }
 .field {
      font-family: var(--FONT-STACK-BODY);
@@ -109,8 +114,31 @@ hr, .hr {
 .hide{
     display: none!important;
 }
-
+.cart-bar__product__title{
+	font-family: var(--FONT-STACK-BODY);
+	font-style: var(--FONT-STYLE-BODY);
+	font-weight: var(--FONT-WEIGHT-BODY);
+	letter-spacing: 0.5px;	
+    font-size:11px;
+    text-transform:uppercase;
+}
+.cart-bar__product__price {
+	font-family: var(--FONT-STACK-BODY);
+	font-style: var(--FONT-STYLE-BODY);
+	font-weight: var(--FONT-WEIGHT-BODY);
+	letter-spacing: 0.5px;	
+    font-size:11px;
+    text-transform:uppercase;
+}
 h6 {
+	font-family: var(--FONT-STACK-BODY);
+	font-style: var(--FONT-STYLE-BODY);
+	font-weight: var(--FONT-WEIGHT-BODY);
+	letter-spacing: 0.5px;	
+    font-size:11px;
+    text-transform:uppercase;
+}
+.btn, .shopify-payment-button .shopify-payment-button__button--unbranded, #challenge .shopify-challenge__button{
 	font-family: var(--FONT-STACK-BODY);
 	font-style: var(--FONT-STYLE-BODY);
 	font-weight: var(--FONT-WEIGHT-BODY);
@@ -214,4 +242,8 @@ background: linear-gradient(90deg, rgba(224, 191, 72, 1) 0%, rgba(224, 191, 72, 
 }
 .tooltip-default{
     display:none!important;
+}
+.body-x-small {
+	font-size: 12px;
+	letter-spacing: 0.3px;
 }

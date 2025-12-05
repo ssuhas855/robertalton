@@ -335,7 +335,14 @@
       </button>
     </div>
 
-    {%- if section.settings.enable_search -%}
+    
+  </div>
+
+  {{ logos }}
+
+  <div class="header__mobile__right{% if settings.type_nav_caps %} caps{% endif %}">
+
+{%- if section.settings.enable_search -%}
       <div class="header__mobile__button{% if settings.type_nav_caps %} caps{% endif %}">
         <header-search-popdown>
           <details>
@@ -352,11 +359,7 @@
         </header-search-popdown>
       </div>
     {%- endif -%}
-  </div>
 
-  {{ logos }}
-
-  <div class="header__mobile__right{% if settings.type_nav_caps %} caps{% endif %}">
     {{ cta }}
 
     {%- if header_popouts -%}
