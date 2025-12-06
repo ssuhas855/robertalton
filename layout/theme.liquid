@@ -83,25 +83,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  const swatches = document.querySelectorAll("[data-swatch]");
+  const inputs = document.querySelectorAll('input[type="radio"][data-index="option1"]');
   const slides = document.querySelectorAll(".product__slide");
 
-  swatches.forEach((swatch) => {
-    swatch.addEventListener("click", () => {
+  inputs.forEach((input) => {
+    input.addEventListener("change", () => {
 
-      const value = swatch.getAttribute("data-swatch").trim();
+      const value = input.value.trim();   // "Gray"
 
       slides.forEach((slide) => {
         const id = slide.getAttribute("data-id")?.trim();
 
-        // Remove active class
         slide.classList.remove("media--active");
 
-        // If match → activate
         if (id && id.toLowerCase() === value.toLowerCase()) {
           slide.classList.add("media--active");
 
-          // Scroll to the selected image if vertical scroll
           slide.scrollIntoView({
             behavior: "smooth",
             block: "start"
@@ -113,6 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
 
 
   </script>
