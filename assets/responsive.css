@@ -282,6 +282,9 @@
 .collection__nav--filter.collection__nav--sort {
 	margin-top: 20px;
 }
+.vertical-scroll .product__slide, .vertical-scroll [data-slide], .vertical-scroll .media, .vertical-scroll .product__photo {
+	height: 50vh !important;
+}
 
 }
 /*END 767px 22*/
