@@ -457,5 +457,9 @@ body .shopify-policy__container {
 .account {
 	margin: 40px 0 80px;
 }
+.account-sidebar__title {
+	padding: 10px 15px;
+	border: 1px solid #696969;
+}
 }
 /*END 767px 22*/
