@@ -467,7 +467,7 @@ body .shopify-policy__container {
 }
 .widget__links.widget__links--secondary li {
 	margin: 0;
-	padding: 0;
+	padding: 0 10px 12px;
 	border: none;
 }
 .account-sidebar a {
