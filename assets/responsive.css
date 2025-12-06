@@ -397,6 +397,10 @@
 	font-size: 11px;
 	letter-spacing: 0.5px;
 }
+.faqdropdown-trigger .icon.icon-nav-arrow-down {
+	width: 10px;
+	height: auto;
+}
 
 }
 /*END 767px 22*/
