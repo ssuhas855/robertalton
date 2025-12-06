@@ -522,5 +522,8 @@ body .shopify-policy__container {
 	display: flex;
 	flex-direction: column;
 }
+.predictive-search {
+	min-height: 80vh;
+}
 }
 /*END 767px 22*/
