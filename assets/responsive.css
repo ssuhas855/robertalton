@@ -486,5 +486,8 @@ body .shopify-policy__container {
 .cart .cart__item__content__left {
 	flex-wrap: wrap;
 }
+.cart__quantity-wrapper {
+	padding: 0;
+}
 }
 /*END 767px 22*/
