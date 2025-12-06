@@ -1451,3 +1451,12 @@ margin-top: 25px;
   letter-spacing: 0.5px;
   font-size: 11px;
 }
+.pswp[data-pswp-option-classes*="pswp-zoom-gallery"] .pswp__caption .pswp__caption-close .icon{
+	--icon-size: 22px;
+	position: absolute;
+	top: 9px;
+	left: 19px;
+	stroke: currentcolor;
+	fill: none;
+	pointer-events: none;
+}
