@@ -315,5 +315,9 @@
 .footer__blocks {	
 	flex-direction: column-reverse;
 }
+.rte.footer__newsletter__text {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
 }
 /*END 767px 22*/
