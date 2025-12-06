@@ -423,6 +423,8 @@
 }
 .faqmenu_mo {
 	position: relative;
+	float: left;
+	width: 100%;
 }
 }
 /*END 767px 22*/
