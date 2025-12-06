@@ -188,8 +188,11 @@
 }
 .header__mobile__hamburger.navlink.navlink--toplevel .navtext {
 	display: inherit;
-	font-size: 9px;
+	font-size: 11px;
 	letter-spacing: 0.5px;
+}
+.header__mobile__hamburger.navlink.navlink--toplevel .icon.icon-menu {
+	display: none;
 }
 
 }
