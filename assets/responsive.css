@@ -312,5 +312,8 @@
 .accordion__content {
 	padding: 20px 0;
 }
+.footer__blocks {	
+	flex-direction: column-reverse;
+}
 }
 /*END 767px 22*/
