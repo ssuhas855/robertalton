@@ -504,5 +504,8 @@ body .shopify-policy__container {
 .popout--sort .popout-list {
 	margin-top: 20px;
 }
+#cart-drawer .cart__quantity-wrapper {
+	padding: 0 10px;
+}
 }
 /*END 767px 22*/
