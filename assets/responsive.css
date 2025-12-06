@@ -288,6 +288,9 @@
 .vertical-scroll {
 	height: 50vh;
 }
+.template-product [data-section-type="custom-content"] .brick__block__text {
+	padding: 0;
+}
 
 }
 /*END 767px 22*/
