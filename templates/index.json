@@ -312,6 +312,18 @@
     "double": {
       "type": "section-double",
       "blocks": {
+        "buttons_bFxPzJ": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "SHOP the diamond band",
+            "button_url": "shopify://collections/shop-all",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        },
         "image_ycnEVH": {
           "type": "image",
           "settings": {
@@ -322,6 +334,7 @@
         }
       },
       "block_order": [
+        "buttons_bFxPzJ",
         "image_ycnEVH"
       ],
       "settings": {
