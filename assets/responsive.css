@@ -433,6 +433,10 @@
 	display: inherit;
 	position: relative;
 	z-index: 9;
+} 
+.widget__links.widget__links--secondary li {
+	margin: 0;
+	padding: 8px 15px;
 }
 }
 /*END 767px 22*/
