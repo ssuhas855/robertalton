@@ -614,6 +614,9 @@ div.index-collections-list {
 .brick__block__text {
 	padding: 0;
 }
+.index-image-text .hero__content {
+	align-items: flex-end;
+}
 
 }
 /*END 767px 22*/
