@@ -1465,3 +1465,7 @@ margin-top: 25px;
 	height: 40px;
 	padding: 8px;
 }
+.pswp[data-pswp-option-classes*="pswp-zoom-gallery"] .pswp__button--arrow--right, .pswp[data-pswp-option-classes*="pswp-zoom-gallery"] .pswp__button--arrow--left, .pswp-zoom-gallery .pswp__button--arrow--right, .pswp-zoom-gallery .pswp__button--arrow--left {
+	width: 40px;
+	height: 40px;
+}
