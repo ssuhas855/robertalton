@@ -384,6 +384,7 @@
   transition: height 0.3s ease;
   overflow: hidden;
   height: 0;
+  clear: both;
 }
 
 .faqdropdown-menu.is-open {  
