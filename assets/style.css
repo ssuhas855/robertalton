@@ -1472,3 +1472,6 @@ margin-top: 25px;
 .footer__quicklinks li a::after {
 	bottom: -1px;
 }
+.large--hide{
+	display: none!important;
+}
