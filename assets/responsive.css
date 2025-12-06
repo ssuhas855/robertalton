@@ -380,12 +380,27 @@
 	display: none!important;
 }
 .faqdropdown-menu {
-  display: none;
+  display: block;
+  transition: height 0.3s ease;
+  overflow: hidden;
+  height: 0;
+}
+
+.faqdropdown-menu.is-open {  
+  height: 150px;
+}
+
+.faqdropdown-menu {
+  overflow: hidden;
+  height: 0;
+  transition: height 0.3s ease;
 }
 
 .faqdropdown-menu.is-open {
-  display: block;
+  /* height is set dynamically by JS */
 }
+
+
 
 .faqdropdown-trigger {
 	float: left;
