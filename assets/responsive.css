@@ -461,5 +461,9 @@ body .shopify-policy__container {
 	padding: 10px 15px;
 	border: 1px solid #696969;
 }
+.account-sidebar__title .icon.icon-nav-arrow-down {
+	width: 10px;
+	height: auto;
+}
 }
 /*END 767px 22*/
