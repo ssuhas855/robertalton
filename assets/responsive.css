@@ -474,8 +474,11 @@ body .shopify-policy__container {
 	padding: 0;
 }
 .account-main .page__heading {
-	padding-bottom: 30px;
-	
+	padding-bottom: 30px;	
+}
+.account-header h2 {
+	margin: 0 0 30px;
+	padding: 0 0 30px;
 }
 }
 /*END 767px 22*/
