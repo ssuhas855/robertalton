@@ -197,6 +197,9 @@
 .header__mobile__button .navlink__cart__content > .navtext {
 	display: inherit;
 }
+.header__mobile__button .navlink--toplevel .icon {
+    display: none;
+  }
 
 }
 /*END 989px*/
