@@ -587,8 +587,8 @@ margin-right: 5px;
 .collection-item__info span {
 	font-size: 9px;
 }
-#CollectionsList--template--25793607106858__section_collections_list_pW6J9e {
-	padding-bottom: 12px;
+div.index-collections-list {
+	padding-bottom: 12px!important;
 }
 
 }
