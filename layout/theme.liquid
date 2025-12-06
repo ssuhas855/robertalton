@@ -80,6 +80,41 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const swatches = document.querySelectorAll("[data-swatch]");
+  const slides = document.querySelectorAll(".product__slide");
+
+  swatches.forEach((swatch) => {
+    swatch.addEventListener("click", () => {
+
+      const value = swatch.getAttribute("data-swatch").trim();
+
+      slides.forEach((slide) => {
+        const id = slide.getAttribute("data-id")?.trim();
+
+        // Remove active class
+        slide.classList.remove("media--active");
+
+        // If match → activate
+        if (id && id.toLowerCase() === value.toLowerCase()) {
+          slide.classList.add("media--active");
+
+          // Scroll to the selected image if vertical scroll
+          slide.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+        }
+      });
+
+    });
+  });
+
+});
+
+
   </script>
 
   </body>
