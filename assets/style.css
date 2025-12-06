@@ -1478,3 +1478,6 @@ margin-top: 25px;
 .predictive-search__grid-item .product-item__info.body-medium {
 	flex-direction: column; 
 }  
+#shopify-section-template--25793607106858__double .hero__content.hero__content--compact.hero__content--no-padding .hero__button{
+	display: none;
+}
