@@ -480,5 +480,8 @@ body .shopify-policy__container {
 	margin: 0 0 30px;
 	padding: 0 0 30px;
 }
+.account form {
+	padding: 10px 0;
+}
 }
 /*END 767px 22*/
