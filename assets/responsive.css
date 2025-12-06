@@ -515,5 +515,8 @@ body .shopify-policy__container {
 	padding: 10px 15px 0;
 	border: none;
 }
+.faqmenu_mo .widget__link.is-selected {
+	margin-bottom: 4px;
+}
 }
 /*END 767px 22*/
