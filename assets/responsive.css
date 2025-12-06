@@ -348,6 +348,12 @@
 #Hero--template--25793607270698__section_hero_EEczzw {
 	padding-bottom: 20px;
 }
+.section-sidebar__title {
+	margin-bottom: 25px;
+}
+.section-sidebar__aside {
+	display: inherit;
+}
 
 }
 /*END 767px 22*/
