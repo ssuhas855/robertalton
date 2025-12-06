@@ -501,5 +501,8 @@ body .shopify-policy__container {
 	height: auto;
 	right: 0;
 }
+.popout--sort .popout-list {
+	margin-top: 20px;
+}
 }
 /*END 767px 22*/
