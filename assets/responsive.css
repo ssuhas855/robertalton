@@ -596,6 +596,10 @@ div.index-collections-list {
 .hero_text_below_true .hero__content {
 	margin: 10px 0 20px;
 }
+.brick__block--three-quarters {
+	flex: 0 0 275px;
+	margin: 0 auto;
+}
 
 }
 /*END 767px 22*/
