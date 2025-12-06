@@ -285,6 +285,9 @@
 .vertical-scroll .product__slide, .vertical-scroll [data-slide], .vertical-scroll .media, .vertical-scroll .product__photo {
 	height: 50vh !important;
 }
+.vertical-scroll {
+	height: 50vh;
+}
 
 }
 /*END 767px 22*/
