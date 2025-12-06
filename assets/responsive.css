@@ -333,6 +333,12 @@
 	width: 100%;
 	margin: 0 0 5px;
 }
+.site-footer-wrapper.section-padding {
+	padding-bottom: 20px;
+}
+.rte.footer__newsletter__text p {
+	text-align: left;
+}
 
 
 }
