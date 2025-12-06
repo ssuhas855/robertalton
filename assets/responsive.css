@@ -578,6 +578,9 @@ body {
 	width: calc(100% - 210px);
 margin-right: 5px;
 }
+.grid__items-holder {
+	margin-top: 21px;
+}
 
 }
 /*END 767px 22*/
