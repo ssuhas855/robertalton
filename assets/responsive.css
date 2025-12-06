@@ -329,6 +329,10 @@
 .supporting-menu__copyright {
 	gap: 20px;
 }
+.supporting-menu__copyright {
+	width: 100%;
+	margin: 0 0 5px;
+}
 
 
 }
