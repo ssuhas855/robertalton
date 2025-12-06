@@ -489,5 +489,12 @@ body .shopify-policy__container {
 .cart__quantity-wrapper {
 	padding: 0;
 }
+#cartForm .cart__items .cart__quantity-counter {
+	width: fit-content;
+	flex-direction: row;
+	align-items: center;
+	margin: 10px 0;
+	gap: 20px;
+}
 }
 /*END 767px 22*/
