@@ -207,6 +207,9 @@
 .header__mobile__right .header__mobile__button:nth-child(2) {
 	display: none !important;
 }
+.header__mobile__button .navlink--toplevel .icon.icon-search {
+	display: inherit;
+}
 
 }
 /*END 989px*/
