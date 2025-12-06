@@ -309,5 +309,8 @@
 .product__block {
 	margin-bottom: 12px;
 }
+.accordion__content {
+	padding: 20px 0;
+}
 }
 /*END 767px 22*/
