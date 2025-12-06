@@ -593,6 +593,9 @@ div.index-collections-list {
 .hero__content__wrapper.frame__item {
 	padding-bottom: 0;
 }
+.hero_text_below_true .hero__content {
+	margin: 10px 0 20px;
+}
 
 }
 /*END 767px 22*/
