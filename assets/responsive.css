@@ -211,6 +211,9 @@
 	display: inherit;
 	width: 12px;    
 }
+body{
+	padding: 0!important;
+}
 
 }
 /*END 989px*/
