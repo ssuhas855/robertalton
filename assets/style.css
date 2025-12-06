@@ -1475,3 +1475,6 @@ margin-top: 25px;
 .large--hide{
 	display: none!important;
 }
+.predictive-search__grid-item .product-item__info.body-medium {
+	flex-direction: column; 
+}  
