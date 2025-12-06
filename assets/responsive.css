@@ -319,5 +319,8 @@
 	margin-bottom: 10px;
 	margin-top: 10px;
 }
+.footer__block.footer__block--newsletter {
+	margin-bottom: 50px;
+}
 }
 /*END 767px 22*/
