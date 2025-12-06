@@ -438,5 +438,10 @@
 	margin: 0;
 	padding: 8px 15px;
 }
+.section-sidebar__content {
+	float: left;
+	width: 100%;
+	margin-top: 40px;
+}
 }
 /*END 767px 22*/
