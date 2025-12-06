@@ -204,6 +204,9 @@
 	display: inherit;
 	letter-spacing: normal;
 }
+.header__mobile__right .header__mobile__button:nth-child(2) {
+	display: none !important;
+}
 
 }
 /*END 989px*/
