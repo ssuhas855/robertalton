@@ -568,6 +568,9 @@ body {
 .header__mobile__hamburger.navlink.navlink--toplevel .navtext {
 	font-size: 9px;
 }
+.navlink--toplevel span, .parent .navlink--child span, .grandparent .navlink--grandchild span {
+	font-size: 9px;	
+}
 
 }
 /*END 767px 22*/
