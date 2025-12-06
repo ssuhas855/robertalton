@@ -186,6 +186,11 @@
 .navlink .icon.icon-search path {
 	stroke-width: 0.5px;
 }
+.header__mobile__hamburger.navlink.navlink--toplevel .navtext {
+	display: inherit;
+	font-size: 9px;
+	letter-spacing: 0.5px;
+}
 
 }
 /*END 989px*/
