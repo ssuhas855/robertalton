@@ -448,5 +448,8 @@
 	margin: 0;
 	padding: 0 8px;
 }
+body .shopify-policy__container {
+	padding: 40px 20px 100px;
+}
 }
 /*END 767px 22*/
