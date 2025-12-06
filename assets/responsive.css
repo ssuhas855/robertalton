@@ -272,6 +272,7 @@ body{
 .brick__block__text .hero__media {
 	width: 55% !important;
 	align-self: self-start;
+	margin-bottom: 58px;
 }
 .brick__section.brick__section--reversed.wrapper--full.image-height.image-height--mobile {
 	padding: 0 20px;
