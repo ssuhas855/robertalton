@@ -291,6 +291,10 @@
 .template-product [data-section-type="custom-content"] .brick__block__text {
 	padding: 0 20px;
 }
+.product__content {
+	padding-top: 80px;
+	padding-bottom: 40px;
+}
 
 }
 /*END 767px 22*/
