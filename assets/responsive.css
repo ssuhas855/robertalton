@@ -603,6 +603,9 @@ div.index-collections-list {
 #shopify-section-template--25793607106858__double .hero__content.hero__content--compact.hero__content--no-padding .hero__button{
 	display: inherit;
 }
+.shopify-section.section-overlay-header + .shopify-section{
+	display: none;
+}
 
 }
 /*END 767px 22*/
