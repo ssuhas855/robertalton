@@ -387,18 +387,6 @@
   display: block;
 }
 
-.faqdropdown-menu {
-  overflow: hidden;
-  height: 0;
-  transition: height 0.3s ease;
-}
-
-.faqdropdown-menu.is-open {
-  /* height is set dynamically by JS */
-}
-
-
-
 .faqdropdown-trigger {
 	float: left;
 	width: 100%;
