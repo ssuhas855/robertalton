@@ -200,6 +200,10 @@
 .header__mobile__button .navlink--toplevel .icon {
     display: none;
   }
+  .header__cart__status.navtext {
+	display: inherit;
+	letter-spacing: normal;
+}
 
 }
 /*END 989px*/
