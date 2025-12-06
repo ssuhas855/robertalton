@@ -496,5 +496,10 @@ body .shopify-policy__container {
 	margin: 10px 0;
 	gap: 20px;
 }
+.cart__widget__title .icon.icon-nav-arrow-down {
+	width: 10px;
+	height: auto;
+	right: 0;
+}
 }
 /*END 767px 22*/
