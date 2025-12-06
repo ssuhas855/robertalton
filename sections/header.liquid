@@ -347,7 +347,14 @@
         <header-search-popdown>
           <details>
             <summary class="navlink navlink--search{% if show_icons == false %} navlink--toplevel{% endif %}" aria-haspopup="dialog" title="{{ 'general.search.search' | t }}">
-              {%- render 'icon-search' -%}
+              
+
+<svg class="icon icon-search" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.64062 0.5C6.92727 0.5 8.78103 2.35375 8.78125 4.64062C8.78125 6.92769 6.92741 8.78223 4.64062 8.78223C2.35386 8.78221 0.5 6.92768 0.5 4.64062C0.500218 2.35375 2.35399 0.500014 4.64062 0.5Z" stroke="#131111"/>
+<path d="M7.45532 7.94812L9.50698 9.99994" stroke="#131111" stroke-linecap="round"/>
+</svg>
+
+              
               {%- render 'icon-cancel' -%}
               <span class="{% if show_icons == false %}navtext{% else %}visually-hidden{% endif %}">{{ 'layout.header.search' | t }}</span>
             </summary>
