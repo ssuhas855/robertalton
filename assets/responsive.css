@@ -483,5 +483,8 @@ body .shopify-policy__container {
 .account form {
 	padding: 10px 0;
 }
+.cart .cart__item__content__left {
+	flex-wrap: wrap;
+}
 }
 /*END 767px 22*/
