@@ -600,8 +600,9 @@ div.index-collections-list {
 	flex: 0 0 275px;
 	margin: 0 auto;
 }
-#shopify-section-template--25793607106858__double .hero__content.hero__content--compact.hero__content--no-padding .hero__button{
+#shopify-section-template--25793607106858__double .hero__content.hero__content--compact.hero__content--no-padding .hero__button {
 	display: inherit;
+	margin-bottom: 75px;
 }
 #shopify-section-template--25793607106858__section_rich_text_LXTWpT {
 	display: none;
