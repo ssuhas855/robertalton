@@ -99,8 +99,9 @@
             data-aos-anchor="{{ animation_anchor }}"
             data-aos-order="{{ animation_order }}"
           >
+
             <div class="section-sidebar__widget">
-              <ul class="widget__links widget__links--secondary">
+              <ul class="widget__links widget__links--secondary small--hide">
                {% comment %} {{ aside_html }} {% endcomment %}
                  {% for link in linklists.faq-page.links %}
       <li>
@@ -108,8 +109,25 @@
       </li>
     {% endfor %}
               </ul>
+
+<div class="faqmenu_mo large--hide">
+<button class="dropdown-trigger" type="button">FAQ Menu ▼</button>
+
+<ul class="widget__links widget__links--secondary dropdown-menu">
+  {% for link in linklists.faq-page.links %}
+    <li>
+      <a class="widget__link {% if link.active %} is-selected{% endif %}" href="{{ link.url }}">
+        {{ link.title }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+</div>
+
             </div>
           </div>
+
           {%- assign animation_order = animation_order | plus: 1 -%}
         {%- endif -%}
 
