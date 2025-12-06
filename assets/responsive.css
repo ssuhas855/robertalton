@@ -357,6 +357,9 @@
 .section-sidebar__text.rte h6 {
 	width: 100%;
 }
+.section-sidebar__text.rte p {
+	width: 100%;
+}
 
 }
 /*END 767px 22*/
