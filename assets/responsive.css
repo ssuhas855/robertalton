@@ -508,8 +508,12 @@ body .shopify-policy__container {
 	padding: 0 10px;
 }
 #about .brick__block--text .hero__content--compact {
-	padding: 0;
-	
+	padding: 0;	
+}
+.faqmenu_mo .widget__links.widget__links--secondary li {
+	margin: 0;
+	padding: 10px 15px 0;
+	border: none;
 }
 }
 /*END 767px 22*/
