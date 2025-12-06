@@ -306,5 +306,8 @@
 .product__block.product__description.rte.block-padding {
 	padding: 10px 0 20px;
 }
+.product__block {
+	margin-bottom: 12px;
+}
 }
 /*END 767px 22*/
