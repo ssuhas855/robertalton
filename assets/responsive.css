@@ -379,7 +379,13 @@
 .small--hide{
 	display: none!important;
 }
+.faqdropdown-menu {
+  display: none;
+}
 
+.faqdropdown-menu.is-open {
+  display: block;
+}
 
 .faqdropdown-menu {
   overflow: hidden;

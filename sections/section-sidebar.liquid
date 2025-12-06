@@ -136,54 +136,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   trigger.addEventListener("click", (e) => {
     e.stopPropagation();
-    toggleMenu(menu);
+    menu.classList.toggle("is-open");
   });
 
-  // Close when clicking outside
+  // Close if clicking outside
   document.addEventListener("click", (e) => {
     if (!menu.contains(e.target) && !trigger.contains(e.target)) {
-      closeMenu(menu);
+      menu.classList.remove("is-open");
     }
   });
 });
-
-function toggleMenu(menu) {
-  if (menu.classList.contains("is-open")) {
-    closeMenu(menu);
-  } else {
-    openMenu(menu);
-  }
-}
-
-function openMenu(menu) {
-  menu.classList.add("is-open");
-  menu.style.height = menu.scrollHeight + "px";
-
-  menu.addEventListener(
-    "transitionend",
-    () => {
-      menu.style.height = "auto";
-    },
-    { once: true }
-  );
-}
-
-function closeMenu(menu) {
-  menu.style.height = menu.scrollHeight + "px";
-
-  requestAnimationFrame(() => {
-    menu.style.height = "0px";
-  });
-
-  menu.addEventListener(
-    "transitionend",
-    () => {
-      menu.classList.remove("is-open");
-    },
-    { once: true }
-  );
-}
-
 
 </script>
 
