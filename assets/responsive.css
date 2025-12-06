@@ -611,6 +611,9 @@ div.index-collections-list {
 	margin: 0 auto;
 	text-align: right;
 }
+.brick__block__text {
+	padding: 0;
+}
 
 }
 /*END 767px 22*/
