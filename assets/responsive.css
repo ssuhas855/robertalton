@@ -518,5 +518,9 @@ body .shopify-policy__container {
 .faqmenu_mo .widget__link.is-selected {
 	margin-bottom: 4px;
 }
+.faqdropdown-menu {
+	display: flex;
+	flex-direction: column;
+}
 }
 /*END 767px 22*/
