@@ -322,5 +322,10 @@
 .footer__block.footer__block--newsletter {
 	margin-bottom: 50px;
 }
+.supporting-menu__item.supporting-menu__item--copyright {
+	flex-direction: column-reverse;
+}
+
+
 }
 /*END 767px 22*/
