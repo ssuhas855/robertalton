@@ -166,7 +166,7 @@
         "menu": {
           "type": "menu",
           "settings": {
-            "mobile_menu_linklist": "",
+            "mobile_menu_linklist": "mobile-menu",
             "text_font_size": "body-x-large",
             "highlight_item": "Sale",
             "highlight_item_color": "#d02e2e",
