@@ -473,5 +473,9 @@ body .shopify-policy__container {
 .account-sidebar a {
 	padding: 0;
 }
+.account-main .page__heading {
+	padding-bottom: 30px;
+	
+}
 }
 /*END 767px 22*/
