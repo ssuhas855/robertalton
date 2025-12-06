@@ -606,6 +606,11 @@ div.index-collections-list {
 #shopify-section-template--25793607106858__section_rich_text_LXTWpT {
 	display: none;
 }
+.brick__block--text {
+	max-width: 275px;
+	margin: 0 auto;
+	text-align: right;
+}
 
 }
 /*END 767px 22*/
