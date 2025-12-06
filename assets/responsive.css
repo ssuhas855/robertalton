@@ -214,7 +214,13 @@
 body{
 	padding: 0!important;
 }
-
+.header__cart__status.navtext {
+	display: inherit;
+	letter-spacing: normal;
+	background: transparent;
+	color: #000;
+	position: static;
+}
 }
 /*END 989px*/
 
