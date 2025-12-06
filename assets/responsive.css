@@ -451,5 +451,8 @@
 body .shopify-policy__container {
 	padding: 40px 20px 100px;
 }
+.shopify-policy__body p {
+	margin: 0 0 20px;
+}
 }
 /*END 767px 22*/
