@@ -470,5 +470,8 @@ body .shopify-policy__container {
 	padding: 0;
 	border: none;
 }
+.account-sidebar a {
+	padding: 0;
+}
 }
 /*END 767px 22*/
