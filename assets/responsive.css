@@ -326,6 +326,9 @@
 	flex-direction: column-reverse;
 	align-items: start;
 }
+.supporting-menu__copyright {
+	gap: 20px;
+}
 
 
 }
