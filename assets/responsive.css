@@ -525,5 +525,8 @@ body .shopify-policy__container {
 .predictive-search {
 	min-height: 80vh;
 }
+body {
+	padding: 0 !important;
+}
 }
 /*END 767px 22*/
