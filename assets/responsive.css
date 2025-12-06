@@ -571,6 +571,9 @@ body {
 .navlink--toplevel span, .parent .navlink--child span, .grandparent .navlink--grandchild span {
 	font-size: 9px;	
 }
+.btn, .shopify-payment-button .shopify-payment-button__button--unbranded, #challenge .shopify-challenge__button {
+	font-size: 9px;
+}
 
 }
 /*END 767px 22*/
