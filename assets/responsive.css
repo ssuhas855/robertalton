@@ -465,5 +465,10 @@ body .shopify-policy__container {
 	width: 10px;
 	height: auto;
 }
+.widget__links.widget__links--secondary li {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
 }
 /*END 767px 22*/
