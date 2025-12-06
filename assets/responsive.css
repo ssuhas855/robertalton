@@ -565,6 +565,9 @@ body {
 .vertical-progress {
 	left: 20px;
 }
+.header__mobile__hamburger.navlink.navlink--toplevel .navtext {
+	font-size: 9px;
+}
 
 }
 /*END 767px 22*/
