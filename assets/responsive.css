@@ -528,5 +528,8 @@ body .shopify-policy__container {
 body {
 	padding: 0 !important;
 }
+.vertical-progress {
+	left: 20px;
+}
 }
 /*END 767px 22*/
