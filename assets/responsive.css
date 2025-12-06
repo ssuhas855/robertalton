@@ -379,6 +379,14 @@
 .small--hide{
 	display: none!important;
 }
+.faqdropdown-menu {
+  display: none;
+}
+
+.faqdropdown-menu.is-open {
+  display: block;
+}
+
 
 }
 /*END 767px 22*/
