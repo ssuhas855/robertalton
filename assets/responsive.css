@@ -574,6 +574,10 @@ body {
 .btn, .shopify-payment-button .shopify-payment-button__button--unbranded, #challenge .shopify-challenge__button {
 	font-size: 9px;
 }
+.grid--mobile-slider .grid-item {
+	width: calc(100% - 210px);
+margin-right: 5px;
+}
 
 }
 /*END 767px 22*/
