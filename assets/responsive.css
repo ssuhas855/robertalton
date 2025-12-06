@@ -454,5 +454,8 @@ body .shopify-policy__container {
 .shopify-policy__body p {
 	margin: 0 0 20px;
 }
+.account {
+	margin: 40px 0 80px;
+}
 }
 /*END 767px 22*/
