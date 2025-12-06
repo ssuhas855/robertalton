@@ -293,7 +293,7 @@
 }
 .product__content {
 	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-bottom: 20px;
 }
 .template-product .brick__section.brick__section--reversed-mobile.brick--margin.wrapper--full {
 	flex-direction: column-reverse;
