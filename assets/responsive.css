@@ -429,5 +429,10 @@
 	width: 100%;
 	z-index: 12;
 }
+.section-sidebar__aside {
+	display: inherit;
+	position: relative;
+	z-index: 9;
+}
 }
 /*END 767px 22*/
