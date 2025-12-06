@@ -295,6 +295,9 @@
 	padding-top: 80px;
 	padding-bottom: 40px;
 }
+.template-product .brick__section.brick__section--reversed-mobile.brick--margin.wrapper--full {
+	flex-direction: column-reverse;
+}
 
 }
 /*END 767px 22*/
