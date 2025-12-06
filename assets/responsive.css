@@ -209,6 +209,7 @@
 }
 .header__mobile__button .navlink--toplevel .icon.icon-search {
 	display: inherit;
+	width: 10px;    
 }
 
 }
