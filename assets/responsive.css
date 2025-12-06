@@ -184,7 +184,7 @@
 	width: 33%;
 }
 .navlink .icon.icon-search path {
-	stroke-width: 0.5px;
+	stroke-width: 1px;
 }
 .header__mobile__hamburger.navlink.navlink--toplevel .navtext {
 	display: inherit;
