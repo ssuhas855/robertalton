@@ -339,7 +339,9 @@
 .rte.footer__newsletter__text p {
 	text-align: left;
 }
-
+#custom_about {
+	padding: 40px 20px;
+}
 
 }
 /*END 767px 22*/
