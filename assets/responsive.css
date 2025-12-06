@@ -194,6 +194,9 @@
 .header__mobile__hamburger.navlink.navlink--toplevel .icon.icon-menu {
 	display: none;
 }
+.header__mobile__button .navlink__cart__content > .navtext {
+	display: inherit;
+}
 
 }
 /*END 989px*/
