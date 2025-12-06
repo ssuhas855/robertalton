@@ -324,6 +324,7 @@
 }
 .supporting-menu__item.supporting-menu__item--copyright {
 	flex-direction: column-reverse;
+	align-items: start;
 }
 
 
