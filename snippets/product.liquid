@@ -178,7 +178,7 @@
     {%- if section.settings.enable_zoom -%}
       <zoom-images {{ product_slides_attributes }}>
     {%- else -%}
-      <div {{ product_slides_attributes }}  data-id="{{ media.preview_image.variant_ids | join: ',' }}">
+      <div {{ product_slides_attributes }}>
     {%- endif -%}
 
     {%- for media in product.media -%}
