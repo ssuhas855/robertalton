@@ -282,5 +282,8 @@
 .collection__nav--filter.collection__nav--sort {
 	margin-top: 20px;
 }
+.product-item__image-overlay {
+	background: red;
+}
 }
 /*END 767px 22*/
