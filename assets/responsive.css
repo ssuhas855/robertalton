@@ -590,6 +590,9 @@ margin-right: 5px;
 div.index-collections-list {
 	padding-bottom: 12px!important;
 }
+.hero__content__wrapper.frame__item {
+	padding-bottom: 0;
+}
 
 }
 /*END 767px 22*/
