@@ -426,5 +426,11 @@
 	float: left;
 	width: 100%;
 }
+.faqmenu_mo {
+	position: relative;
+	float: left;
+	width: 100%;
+	z-index: 12;
+}
 }
 /*END 767px 22*/
