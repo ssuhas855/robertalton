@@ -18,7 +18,7 @@
             "image": "shopify://shop_images/banner.webp",
             "link": "",
             "flex_align_desktop": "align--bottom-left-desktop",
-            "mobile_image": "shopify://shop_images/banner_mo.jpg",
+            "mobile_image": "shopify://shop_images/hero.jpg",
             "flex_align_mobile": "align--middle-center-mobile",
             "show_text_background": false,
             "bg_color": "",
@@ -297,7 +297,8 @@
         "height": "image-height",
         "flex_align_desktop": "align--middle-center-desktop",
         "content_width": 50,
-        "mobile_height": "screen-height-three-quarters--mobile",
+        "mobile_image": "shopify://shop_images/home2.jpg",
+        "mobile_height": "image-height--mobile",
         "flex_align_mobile": "align--middle-center-mobile",
         "text_below": true,
         "color_scheme": "scheme-1",
@@ -311,6 +312,18 @@
     "double": {
       "type": "section-double",
       "blocks": {
+        "buttons_zhdpda": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "SHOP the diamond band",
+            "button_url": "shopify://collections/shop-all",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        },
         "image_ycnEVH": {
           "type": "image",
           "settings": {
@@ -321,6 +334,7 @@
         }
       },
       "block_order": [
+        "buttons_zhdpda",
         "image_ycnEVH"
       ],
       "settings": {
@@ -395,7 +409,7 @@
         "height": "image-height",
         "flex_align_desktop": "align--bottom-center-desktop",
         "content_width": 50,
-        "mobile_image": "shopify://shop_images/Frame2147237175_mo.jpg",
+        "mobile_image": "shopify://shop_images/home3.jpg",
         "mobile_height": "image-height--mobile",
         "flex_align_mobile": "align--bottom-center-mobile",
         "text_below": false,

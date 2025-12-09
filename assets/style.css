@@ -324,7 +324,7 @@ body.grid-classic .grandparent .menu__blocks .menu__block {
 .product__content {
 	padding-left: 0;
 	padding-top: 186px;
-	padding-bottom: 186px;
+	padding-bottom: 18px;
 }
 .product__title__wrapper {
 	padding-right: 0;
@@ -558,8 +558,8 @@ p:empty {
 	width: auto;
 	height: auto;
 	font-size: 12px;
-	border-bottom: 1px solid;
-	padding: 0 0 3px;
+	border-bottom: 1px solid #696969;
+	padding: 0 0 1px;
 }
 .drawer__close:hover {
 	border-bottom: 1px solid transparent;
@@ -1443,4 +1443,69 @@ margin-top: 25px;
 	letter-spacing: 0.3px;
 	font-size: 12px;
 	border: 1px solid #696969;
+}
+.pswp[data-pswp-option-classes*="pswp-zoom-gallery"] .pswp__caption, .pswp-zoom-gallery div.pswp__caption {
+	font-family: var(--FONT-STACK-BODY);
+  font-style: var(--FONT-STYLE-BODY);
+  font-weight: var(--FONT-WEIGHT-BODY);
+  letter-spacing: 0.5px;
+  font-size: 11px;
+}
+.pswp[data-pswp-option-classes*="pswp-zoom-gallery"] .pswp__caption .pswp__caption-close .icon{
+	--icon-size: 22px;
+	top: 9px;
+	left: 19px;
+}
+.pswp__thumbs {
+	display: none !important;
+}
+.pswp__custom-close {
+	--icon-size: 24px;
+	width: 40px;
+	height: 40px;
+	padding: 8px;
+}
+.pswp[data-pswp-option-classes*="pswp-zoom-gallery"] .pswp__button--arrow--right, .pswp[data-pswp-option-classes*="pswp-zoom-gallery"] .pswp__button--arrow--left, .pswp-zoom-gallery .pswp__button--arrow--right, .pswp-zoom-gallery .pswp__button--arrow--left {
+	width: 40px;
+	height: 40px;
+}
+.footer__quicklinks li a::after {
+	bottom: -1px;
+}
+.large--hide{
+	display: none!important;
+}
+.predictive-search__grid-item .product-item__info.body-medium {
+	flex-direction: column; 
+}  
+#shopify-section-template--25793607106858__double .hero__content.hero__content--compact.hero__content--no-padding .hero__button{
+	display: none;
+}
+.template-collection #MainContent .section-overlay-header{
+	display: none;
+}
+.additional_info {
+	padding-top: 24px;
+}
+.product__images {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 60px;
+	width: 50%;
+	float: left;
+}
+.product__page {
+	display: block;
+	float: left;
+	width: 100%;
+	margin-bottom: 50px;
+}
+.product__content {	
+	padding-top: 186px;
+	padding-bottom: 186px;
+	width: 50%;
+	float: left;
+}
+#shopify-section-template--25800570634538__related {
+	clear: both;
 }

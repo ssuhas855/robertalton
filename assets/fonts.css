@@ -145,6 +145,10 @@ h6 {
 	letter-spacing: 0.5px;	
     font-size:11px;
     text-transform:uppercase;
+	border-color: #696969;
+}
+.select-popout--quantity .select-popout__toggle {
+	border-color: #696969;
 }
 h2.hero__title{
     font-family: var(--FONT-STACK-BODY);

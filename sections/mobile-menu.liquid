@@ -353,7 +353,7 @@
           aria-expanded="true"
           aria-controls="mobile-menu-{{ section.id }}"
         >
-          {%- render 'icon-cancel' -%}
+         Close
         </button>
 
         {%- if logo != blank -%}
@@ -374,6 +374,15 @@
         <div class="drawer__content" data-drawer-content>
           <div class="drawer__content__scroll" data-scroll-lock-scrollable>
             {{ dynamic_blocks }}
+
+  {%- if shop.customer_accounts_enabled -%}
+      <div class="mobile-menu__block mobile-menu__block--account block-padding mo_account">
+        <a href="{{ routes.account_url }}" class="navlink{% if show_icons == false %} navlink--toplevel{% endif %}">         
+          <span class="navtext">{{ 'layout.header.account' | t }}</span>
+        </a>
+      </div>
+    {%- endif -%}
+
           </div>
         </div>
       </div>

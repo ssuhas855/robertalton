@@ -155,6 +155,8 @@
   <{{ wrapper_tag }} class="product__wrapper {{ product_wrapper_modifier }}" data-product>
     <div class="{% if featured_product %}{{ section.settings.width }}{% else %}product__wrapper__inner{% endif %}">
       <div class="product__page">
+
+
        <product-images
   class="{{ product_images_classlist }}"
   data-active-media="{{ section.id }}-{{ featured_media.id }}"
@@ -448,6 +450,7 @@
                   {%- when 'accordion' -%}
                     {%- render 'product-description', product: product, block: block, block_style: block_style -%}
 
+                  
                   {%- when 'inventory_countdown' -%}
                     {%- render 'product-inventory', product: product, block: block, block_style: block_style -%}
 
@@ -857,6 +860,13 @@
                     </div>
                 {%- endcase -%}
               {%- endfor -%}
+
+{% if product.metafields.custom.additional_info != blank %}
+                    <div class="additional_info">
+                    {{ product.metafields.custom.additional_info | metafield_tag }}
+                    </div>
+                  {% endif %}
+
             </div>
           </div>
         </div>

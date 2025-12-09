@@ -104,6 +104,14 @@
       </div>
     </div>
 
+{%- if section.settings.link_text != blank -%}
+        <div class="product-item__image-content colhero_btn">
+        <a href="{{ section.settings.link }}" class="btn btn--text btn--primary aos-animate" data-aos="fade-up" data-aos-anchor="" data-aos-duration="" data-aos-delay="200">
+        <span>{{ section.settings.link_text }}</span>
+        </a>
+        </div>
+         {%- endif -%}
+
     {%- if banner_layout == 'inline' -%}
       <div class="collection__title-wrapper {{ section.settings.height }} {{ section.settings.mobile_height }}">
         {{ collection_content }}
@@ -250,6 +258,17 @@
         {"value": "two-fifty-height-hero--mobile", "label": "250px"}
       ]
     },
+    {
+          "type": "text",
+          "id": "link_text",
+          "label": "Text",
+          "default": "View products"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        },
     {
       "type": "header",
       "content": "Padding"

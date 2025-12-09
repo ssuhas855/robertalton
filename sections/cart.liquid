@@ -319,13 +319,13 @@
                             <button
                               type="submit"
                               name="checkout"
-                              class="btn btn--full btn--primary btn--solid cart__checkout"
+                              class="btn btn--full btn--primary btn--outline cart__checkout"
                             >
                               {%- if settings.show_lock_icon -%}
                                 {%- render 'animated-icon', filename: 'icon-lock' -%}
                               {%- endif -%}
 
-                              {{- 'cart.general.checkout' | t -}}
+                            checkout
                             </button>
 
                             {%- if block.settings.enable_additional_buttons and additional_checkout_buttons -%}

@@ -80,7 +80,109 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-  </script>
+
+/*
+document.addEventListener("DOMContentLoaded", () => {
+
+  const inputs = document.querySelectorAll('input[type="radio"][data-index="option1"]');
+  const slides = document.querySelectorAll(".product__slide");
+
+  inputs.forEach((input) => {
+    input.addEventListener("change", () => {
+
+      const value = input.value.trim();   // "Gray"
+
+      slides.forEach((slide) => {
+        const id = slide.getAttribute("data-id")?.trim();
+
+        slide.classList.remove("media--active");
+
+        if (id && id.toLowerCase() === value.toLowerCase()) {
+          slide.classList.add("media--active");
+
+          slide.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+        }
+      });
+
+    });
+  });
+
+});*/
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const inputs = document.querySelectorAll('input[type="radio"][data-index="option1"]');
+  const slides = document.querySelectorAll(".product__slide");
+
+  inputs.forEach((input) => {
+    input.addEventListener("change", () => {
+
+      const value = input.value.trim().toLowerCase();   // "gold"
+
+      slides.forEach((slide) => {
+        const id = slide.getAttribute("data-id")?.trim().toLowerCase();
+
+        // hide all slides first
+        slide.classList.remove("media--active");
+        slide.classList.add("media--hidden");
+
+        // show slides that match variant
+        if (id === value) {
+          slide.classList.add("media--active");
+          slide.classList.remove("media--hidden");
+        }
+      });
+
+      // Scroll to first active slide
+      const firstVisible = [...slides].find(s => s.classList.contains("media--active"));
+      if (firstVisible) {
+        firstVisible.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }
+
+    });
+  });
+
+});
+
+
+
+// mobile menu click add remove class body
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.addEventListener("click", (e) => {
+    if (e.target.closest(".header__mobile__hamburger")) {
+        document.body.classList.add("menu-open");
+    }
+    if (e.target.closest(".drawer__close")) {
+        document.body.classList.remove("menu-open");
+    }
+    if (e.target.closest(".drawer__underlay")) {
+        document.body.classList.remove("menu-open");
+    }
+});
+});
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+        document.body.classList.add("scrolled");
+    } else {
+        document.body.classList.remove("scrolled");
+    }
+});
+
+
+
+</script> 
+
+
+
 
   </body>
 </html>

@@ -361,6 +361,7 @@
                           class="swatches swatch__button swatch__button--{{ settings.swatch_style }} swatch__button swatch-{{ value | handle }}{% if is_white %} swatch__button--white{% endif %}"
                           {% if is_swatch_option %}style="--swatch: var(--{{ value | handle }});"{% endif %}
                           {% if is_native_swatch_option %}style="--swatch: {{ swatch_value }};"{% endif %}
+                          data-target=""
                         >
 
                           <input type="radio"

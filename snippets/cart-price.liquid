@@ -21,7 +21,7 @@
 
 {%- unless cart_total_hidden -%}
   <div class="cart__total">
-    <span class="cart__total__label">{{ 'cart.general.subtotal_items' | t }}</span>
+    <span class="cart__total__label">Total</span>
 
     <span class="cart__total__price">
       {%- if original_subtotal == 0 -%}
@@ -69,7 +69,7 @@
 {%- endunless -%}
 
 <div class="cart__total">
-  <span class="cart__total__label">{{- 'cart.general.subtotal' | t -}}</span>
+  <span class="cart__total__label">Total</span>
 
   <span class="cart__total__price cart__total__price--animated" data-cart-total="{{ subtotal }}">
     {%- if subtotal == 0 -%}

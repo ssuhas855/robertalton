@@ -14060,7 +14060,7 @@ dialog[closing] .product-modal__outer {
     display: none;
   }
   .product__images--mobile-slider .product__slides {
-    display: flex;
+   /* display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     gap: 0;
@@ -14073,9 +14073,8 @@ dialog[closing] .product-modal__outer {
     scroll-snap-type: x mandatory;
     scroll-padding: var(--gap);
     scrollbar-width: none;
-    -ms-overflow-style: none;
-    /* for Internet Explorer, Edge */
-    align-items: flex-start;
+    -ms-overflow-style: none;    
+    align-items: flex-start;*/
   }
   .product__images--mobile-slider .product__slides::-webkit-scrollbar {
     display: none;
