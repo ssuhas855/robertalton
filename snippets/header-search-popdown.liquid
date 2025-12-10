@@ -23,7 +23,7 @@
   assign empty_search_menu = settings.empty_search_menu
   assign empty_search_product_list = settings.empty_search_product_list
   assign empty_search_product_list_size = empty_search_product_list | map: 'handle' | join: ',' | split: ',' | uniq | size | at_most: 5 | at_least: 3
-  assign show_empty_search = false
+  assign show_empty_search = true
   assign show_empty_search_menu = false
   assign show_empty_search_product_list = false
 
@@ -118,6 +118,7 @@
       {%- endif -%}
 
       {%- if show_empty_search -%}
+      
         {%- liquid
           assign animation_delay = 100
           assign animation_duration = 800
@@ -127,6 +128,41 @@
             {%- if show_empty_search_menu and show_empty_search_product_list -%}
               <div class="predictive-search__layout">
             {%- endif -%}
+
+            <div class="search_collections">
+  <p class="predictive-search__heading">Suggestions</p>
+  <div class="search_collection_row">
+
+      {% if settings.empty_simg_1 != blank %}
+      <div class="search_collection_box">
+      <a href="{{ settings.empty_slink_1 }}">
+      <img src="{{ settings.empty_simg_1 | img_url: '300x' }}" alt="" width="" height="" />
+      <span>{{ settings.empty_stitle_1 }}</span> 
+      </a>
+      </div>
+      {% endif %}
+
+      {% if settings.empty_simg_2 != blank %}
+      <div class="search_collection_box">
+      <a href="{{ settings.empty_slink_2 }}">
+      <img src="{{ settings.empty_simg_2 | img_url: '300x' }}" alt="" width="" height="" />
+      <span>{{ settings.empty_stitle_2 }}</span>
+      </a>
+      </div>
+      {% endif %}
+
+      {% if settings.empty_simg_3 != blank %}
+      <div class="search_collection_box">
+      <a href="{{ settings.empty_slink_3 }}">
+      <img src="{{ settings.empty_simg_3 | img_url: '300x' }}" alt="" width="" height="" />
+      <span>{{ settings.empty_stitle_3 }}</span>
+      </a>
+      </div>
+      {% endif %}
+  </div>
+</div>
+
+
 
             {%- if show_empty_search_menu -%}
               {%- assign animation_delay = animation_delay | plus: 100 -%}
@@ -173,6 +209,11 @@
             {%- if show_empty_search_menu and show_empty_search_product_list -%}
               </div>
             {%- endif -%}
+
+
+
+
+
           </div>
         </div>
       {%- endif -%}

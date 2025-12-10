@@ -227,8 +227,8 @@
     assign count_string_one = 'collections.general.colors_with_count.one' | t
     assign count_string_other = 'collections.general.colors_with_count.other' | t
 
-    if count > 5 and settings.collection_swatch_style == 'limited'
-      assign siblingSwatchesLeft = count | minus: 5
+    if count > 3 and settings.collection_swatch_style == 'limited'
+      assign siblingSwatchesLeft = count | minus: 3
     endif
   -%}
 
@@ -773,8 +773,9 @@
 
         {%- if siblings_html != blank -%}
           {{ siblings_html }}
-        {%- elsif has_colors -%}
+        {%- elsif has_colors -%}         
           <div class="product-item__swatches__holder product-item__swatches__holder--{{ settings.swatch_style }} product-item__swatches__holder--{{ settings.collection_swatch_style }}">
+         
             {{ swatches }}
 
             <span class="product-item__swatches__count">

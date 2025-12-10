@@ -302,6 +302,10 @@ button.header__mobile__hamburger.navlink.navlink--toplevel {
 a.navlink.navlink--cart.navlink--cart--text.navlink--toplevel {
     top: 1px;
 }
+.predictive-search {
+	top: 75px;
+	padding: 20px 0px !important;
+}
 }
 /*END 989px*/
 
@@ -849,6 +853,19 @@ span.header__cart__status__holder {
 .product__content {
 	width: 100%;
 	float: left;
+}
+.product-item--featured-image {
+	grid-column: 1 / -1;
+}
+.product-item--featured-image img {
+	position: static;
+	height: auto;
+}
+.product-item--featured-image .product-item__image {
+	height: auto;
+}
+.predictive-search {
+	top: 49px;
 }
 }
 /*END 767px 22*/

@@ -707,6 +707,68 @@
         "type": "header",
         "content": "Empty search"
       },
+ {
+        "type": "header",
+        "content": "Empty suggestions collections"
+      },
+      {
+        "type": "header",
+        "content": "First collection"
+      },
+      {
+        "type": "image_picker",
+        "id": "empty_simg_1",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "empty_stitle_1",
+        "label": "Title"
+      },
+      {
+        "type": "url",
+        "id": "empty_slink_1",
+        "label": "Link"
+      },
+      {
+        "type": "header",
+        "content": "Second collection"
+      },
+      {
+        "type": "image_picker",
+        "id": "empty_simg_2",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "empty_stitle_2",
+        "label": "Title"
+      },
+      {
+        "type": "url",
+        "id": "empty_slink_2",
+        "label": "Link"
+      },
+      {
+        "type": "header",
+        "content": "Third collection"
+      },
+      {
+        "type": "image_picker",
+        "id": "empty_simg_3",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "empty_stitle_3",
+        "label": "Title"
+      },
+      {
+        "type": "url",
+        "id": "empty_slink_3",
+        "label": "Link"
+      },
+      
       {
         "type": "link_list",
         "id": "empty_search_menu",
