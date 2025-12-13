@@ -1547,7 +1547,7 @@ margin-top: 25px;
 }
 .product-item__swatches__holder{
 	opacity: 0;
-	transition: opacity 0.3s ease-in;
+	transition: opacity 0.2s ease-in;
 }
 .product-item:hover .product-item__swatches__holder{
 	opacity: 1;
