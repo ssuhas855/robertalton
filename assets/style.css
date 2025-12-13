@@ -1545,3 +1545,9 @@ margin-top: 25px;
 .header__menu .sup {
 	display: none !important;
 }
+.product-item__swatches__holder{
+	opacity: 0;
+}
+.product-item:hover .product-item__swatches__holder{
+	opacity: 1;
+}
