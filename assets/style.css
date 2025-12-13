@@ -1542,6 +1542,6 @@ margin-top: 25px;
 .search_collections {
 	padding-bottom: 60px;
 } 
-.sup {
+.header__menu .sup {
 	display: none !important;
 }
