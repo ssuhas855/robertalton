@@ -219,7 +219,7 @@ body.grid-classic .grandparent .menu__blocks .menu__block {
 .collection__nav--filter.collection__nav--sort {
 	justify-content: flex-end;
 	align-items: center;
-    gap: 20px;
+    gap: 30px;
     padding: 10px;
     margin-top: 80px;
 }
@@ -728,11 +728,14 @@ body#about .column__image {
 .search-popdown {
 	top: 60px;
 	box-shadow: none;
-	background: rgba(255, 255, 255, 0.8);
+	background: #fff;
+	margin-top: 0;
 }
-.search-popdown + .underlay{
-	top: 59px;
-	background: transparent;
+.search-popdown + .underlay {
+	top: 0;
+	/* background: transparent; */
+	background: #f2f2f1;
+	opacity: 0.1;
 }
 .search-popdown__main {
 	background: transparent;
@@ -782,8 +785,13 @@ body#about .column__image {
 	margin: 0 auto;
 }
 .predictive-search {
-	top: 51px;
+	top: 50px;
 	padding: 20px 20px !important;
+	background: #fff;
+}
+.predictive-search.predictive-search--empty {
+	top: 80px;	
+	background: #fff;
 }
 .search-popdown .predictive-search .wrapper {
 	max-width: 802px;
@@ -1107,7 +1115,7 @@ body .shopify-policy__container p a:hover::after{
 .account .forgot-password {
 	display: flex;
 	width: 100%;
-	padding: 20px 0;
+	padding: 0;
 	justify-content: space-between;
 	align-items: start;
 	flex-direction: column-reverse;
@@ -1124,7 +1132,7 @@ body .shopify-policy__container p a:hover::after{
 	width: 100%;
 }
 .account {
-	margin: 80px 0 150px;
+	margin: 100px 0 100px;
 	float: left;
   width: 100%;
 }
@@ -1225,7 +1233,11 @@ addresses-component .account-main p {
 	padding: 0 0 0px;
 }
 addresses-component .account-main hr {
-	margin: 20px 0;
+	margin: 25px 0 20px;
+}
+addresses-component .account-main hr:nth-last-child(3){
+	opacity: 0;
+	margin-bottom: 10px;
 }
 .btn.btn--outline.btn--primary.address-new-toggle {
 	max-width: 200px;
@@ -1310,6 +1322,7 @@ addresses-component h2{
 }
 addresses-component .account-main p.set_default {
 	margin-bottom: 36px;
+	margin-top: 5px;
 }
 .account-sidebar li.is-current a.widget__link::after {
 	opacity: 1;
@@ -1421,8 +1434,9 @@ margin-top: 25px;
 	right: 0;
 }
 .collection__sidebar__head h3 {
-	font-size: 11px;
-	letter-spacing: 0.5px;
+	font-size: 12px;
+	letter-spacing: 0.3px;
+	text-transform: none;
 }
 .filter-group__heading {
 	text-transform: uppercase;
@@ -1541,4 +1555,270 @@ margin-top: 25px;
 }
 .search_collections {
 	padding-bottom: 60px;
+} 
+.header__menu .sup {
+	display: none !important;
 }
+.product-item__swatches__holder{
+	opacity: 0;
+	transition: opacity 0.2s ease-in;
+}
+.product-item:hover .product-item__swatches__holder{
+	opacity: 1;
+}
+.popout--sort {
+	position: relative;
+}
+.popout--sort::after {
+	position: absolute;
+	width: 1px;
+	height: 10px;
+	background: currentColor;
+	content: '';
+	left: -15px;
+	top: 1px;
+	z-index: 1;
+}
+.collection__sidebar__slide-out.expanded {
+	transform: translate(0%);
+}
+.collection__sidebar__slide-out {
+	left:auto;
+	top: 0;
+	right: 0;
+	transform: translate(100%);
+	max-width: 400px;
+	padding: 0 20px;
+}
+.collection__sidebar__slide-out.expanded {
+	transform: translate(0%);
+} 
+.product-item--featured-image .image-wrapper img{
+	position: static;
+}
+.collection__sidebar {
+	padding: 40px 0;
+}
+.filter-group:not(.filter-group--hidden) ~ .collection__filters .filter-group, .filter-group:not(.filter-group--hidden) ~ .filter-group {
+	margin-top: 20px;
+}
+.sidebar__item a::after, .sidebar__item label::after {
+	width: 8px;
+	height: 8px;
+}
+.sidebar__item.link--remove a::after, .sidebar__item input:checked ~ label::after {	
+	box-shadow: none;
+}
+.sidebar__item.link--add label {
+	padding-left: 13px;
+}
+.sidebar__item {
+	margin: 5px 0 0;
+}
+.collection-nav {
+	padding: 5px 0 15px;
+}
+.collection-nav .shopify-swatch {
+	display: none;
+}
+.filter-group:nth-child(2) .collection-nav{
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 40px;
+	width: 59%;
+}
+.filter-group:nth-child(2) .sidebar__item.link--add {
+	width: 40%;
+}
+.collection__sidebar__head {
+	padding: 26px 0;
+	border-bottom: 1px solid #D0CFCD;
+}
+.collection__sidebar__close {
+	color: #000;
+	font-size: 12px;
+	border-bottom: 1px solid;
+	padding: 0;
+	right: 0;
+}
+.collection__sidebar__close:hover {
+	border-color: transparent;
+}
+.collection__sidebar__buttons {
+	display: flex;
+	width: 100%;
+	column-gap: 10px;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: flex-end;
+	padding: 0 0 30px;
+}
+.collection__sidebar__buttons .btn.btn--primary.btn--outline.btn--full {
+	width: 48%;
+	max-width: none;
+	min-width: auto;
+}
+.collection__sidebar__buttons .btn.btn--primary.btn--outline.btn--full[data-collection-sidebar-close]:first-child{
+	display: none;
+}
+.collection__sidebar__buttons .btn.btn--primary.btn--outline.btn--full[data-collection-sidebar-close]::after{
+	transform: translateZ(0)!important;
+}
+.collection__sidebar__buttons .btn.btn--primary.btn--outline.btn--full[data-collection-sidebar-close]:hover::after{
+	transform:translate3d(0,100%,0)!important;
+}
+.popout__toggle__text[data-sort-button-text] {
+	display: none !important;
+}
+.popout--sort .popout-list__item {
+	min-width: 123px;
+}
+.popout-list__option:hover {
+	background: transparent;
+}
+.popout-list__option:hover span {
+	border-bottom: 1px solid;
+}
+.popout-list__option span {
+	border-bottom: 1px solid transparent;
+}
+.popout__toggle .icon.icon-nav-arrow-down {
+	display: none;
+}
+.popout--sort::after {
+	height: 7px;
+}
+.product__block .radio__fieldset {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 15px;
+}
+.selector-wrapper--size .radio__legend__option-name.body-medium {
+	 display: inline-block; 
+	text-align: center;
+	width: 100%;
+	margin-top: 20px;
+}
+.account .page__heading {
+	text-align: left;
+	margin: 0;
+}
+.form-field:empty {
+	display: none;
+}
+.two_field {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 12px;
+	align-items: start;
+}
+.two_field .form-field {
+	max-width: none;
+	width: calc(50% - 6px);
+}
+.text-link.small[data-show-reset] {
+	font-size: 10px;
+	float: left;
+	padding: 0 0 3px;
+	color: #696969;
+	border-color: #696969;
+	letter-spacing: 0.3px;
+	
+}
+.text-link.small[data-show-reset]::after{
+	opacity: 0.3;
+}
+.account .btn.btn--primary.btn--outline {
+	width: 100%;
+	max-width: 200px;
+	float: left;
+}
+.account .forgot-password {
+	margin-top: -10px;
+}
+.form-field.action-bottom + p,
+#create_customer + p {
+	text-align: left;
+	font-size: 10px;
+	letter-spacing: 0.3px;
+	color: #696969;
+	margin: 0;
+}
+.form-field.action-bottom + p a.text-link,
+#create_customer + p .text-link a {
+	font-size: 10px;
+	letter-spacing: 0.5px;
+	color: #696969;
+	padding-bottom: 3px;
+}
+.form-field.action-bottom + p a.text-link::after,
+#create_customer + p .text-link a::after{
+	opacity: 0.3;
+}
+#create_customer .forgot-password {
+	margin-top: 0;
+}
+#Register {
+	margin: 120px 0;
+}
+#Register .page__heading + p {
+	text-align: left;
+	margin: 24px 0 5px;
+}
+form .errors, .form-errors {
+	padding: 0;
+	margin-bottom: 10px;
+	border: none;
+	border-radius: 0;
+	background-color: transparent;
+	color: currentColor;
+	font-size: 12px;
+}
+[data-recover-password] .form-message p {
+	text-align: left;
+	margin-top: 18px;
+	margin-bottom: 0;
+}
+#Login .form-field.action-bottom {
+	justify-content: start;
+	align-items: start;
+}
+[data-recover-password] .action-bottom .note {
+	display: none!important;
+}
+form .errors ul, .form-errors ul {
+	font-size: 12px;
+}
+.reset-password h2 + p {
+	text-align: left;
+	margin-top: 20px;
+}
+.reset-password .form-field.action-bottom.center .note {
+	display: none;
+}
+.reset-password .form-field.action-bottom.center {
+	column-gap: 10px;
+	display: flex;
+}
+addresses-component.grid.grid--account {
+	margin-bottom: 20px;
+}
+#address_form_new{
+	padding: 40px 0 20px;
+}
+.set_default label {
+	color: #696969;
+	cursor: pointer;
+	letter-spacing: 0.3px;
+}
+#AddressNewForm hr {
+	display: none;
+}
+.btn.btn--outline.btn--primary.address-new-toggle {
+	display: none;
+}
+#AddressNewForm.hidden + .btn.btn--outline.btn--primary.address-new-toggle {
+	display: inherit;
+}
+

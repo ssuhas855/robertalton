@@ -4,13 +4,14 @@
 <login-form id="Login" class="account account--login {% if shop.checkout.guest_login %}text-justify{% else %}text-center{% endif %}">
   <div class="wrapper wrapper--narrow">
     <div class="login fade-toggle{% if shop.checkout.guest_login %} align-left{% endif %}" data-login-form>
-      <h2 class="page__heading text-left">{{ 'customer.login.title' | t }}</h2>
+      <h2 class="page__heading text-left">Sign in</h2>
 
       
 
       {% form 'customer_login' %}
-        <div class="form-field">{{ form.errors | default_errors }}</div>
+        <div class="form-field">{{ form.errors | default_errors }}</div> 
 
+ <div class="two_field">
         <div class="form-field">
           <label for="customer_email">{{ 'customer.login.email' | t }}</label>
           <input type="email" value="" name="customer[email]" id="customer_email"
@@ -30,22 +31,25 @@
             <input type="password" value="" name="customer[password]" id="customer_password"
               class="{% if form.errors contains 'password' %}input-error{% endif %}"
               placeholder="{{ 'customer.login.password' | t }}">
-
-            <div class="forgot-password">
-              <div>
-                <button type="submit" class="btn btn--primary btn--outline">
-                  <span>{{ 'customer.login.sign_in' | t }}</span>
-                </button>
-              </div>
-
-              <div>
-                <button type="button" class="text-link small" data-show-reset>
-                  {{ 'customer.login.forgot_password' | t }}
-                </button>
-              </div>
-            </div>
+           
           </div>
         {% endif %}
+        
+</div>
+
+<div class="forgot-password">
+  <div>
+    <button type="submit" class="btn btn--primary btn--outline">
+      <span>{{ 'customer.login.sign_in' | t }}</span>
+    </button>
+  </div>
+
+  <div>
+    <button type="button" class="text-link small" data-show-reset>
+      {{ 'customer.login.forgot_password' | t }}
+    </button>
+  </div>
+</div>
 
         <div class="form-field action-bottom">
           <a href="{{ routes.root_url }}" class="text-link small hide">{{ 'customer.login.cancel' | t }}</a>

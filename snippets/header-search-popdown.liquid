@@ -69,7 +69,7 @@
             data-predictive-search-type="product"
             name="q"
             value="{{ search.terms | escape }}"
-            placeholder="{{ 'general.search.search' | t }}"
+            placeholder="Type to search for products, categories and inspiration"
             role="combobox"
             aria-label="{{ 'general.search.placeholder' | t }}"
             aria-owns="predictive-search-results"
@@ -131,6 +131,7 @@
 
             <div class="search_collections">
   <p class="predictive-search__heading">Suggestions</p>
+   <div class="search_collection_wrapper">
   <div class="search_collection_row">
 
       {% if settings.empty_simg_1 != blank %}
@@ -159,6 +160,7 @@
       </a>
       </div>
       {% endif %}
+  </div>
   </div>
 </div>
 

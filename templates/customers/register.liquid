@@ -3,13 +3,14 @@
 <section id="Register" class="center account">
   <div class="wrapper wrapper--narrow">
     <div class="customer-register">
-      <h2 class="page__heading">{{ 'customer.register.title' | t }}</h2>
+      <h2 class="page__heading">Create an account</h2>
 
-     
+     <p>If you have an account with us, sign in for a faster check out process.</p>
 
       {% form 'create_customer' %}
       	<div class="form-field">{{ form.errors | default_errors }}</div>
 
+<div class="two_field">
         <div class="form-field">
           <label for="first_name">{{ 'customer.register.first_name' | t }}</label>
           <input type="text" value="{{ form.first_name }}" name="customer[first_name]" id="first_name" class="large" size="30" placeholder="{{ 'customer.register.first_name' | t }}">
@@ -19,7 +20,9 @@
           <label for="last_name">{{ 'customer.register.last_name' | t }}</label>
           <input type="text" value="{{ form.last_name }}" name="customer[last_name]" id="last_name" class="large{% if form.errors contains 'last_name' %} error{% endif %}" placeholder="{{ 'customer.register.last_name' | t }}">
         </div>
+        </div>
 
+<div class="two_field">
         <div class="form-field">
           <label for="email">{{ 'customer.register.email' | t }}</label>
           <input type="email" value="{{ form.email }}" name="customer[email]" id="email" class="large{% if form.errors contains 'email' %} error{% endif %}" placeholder="{{ 'customer.register.email' | t }}">
@@ -29,12 +32,20 @@
           <label for="password">{{ 'customer.register.password' | t }}</label>
           <input type="password" value="" name="customer[password]" id="password" class="large password{% if form.errors contains 'password' %} error{% endif %}" placeholder="{{ 'customer.register.password' | t }}">
         </div>
+</div>
 
-        <div class="form-field action-bottom">
-          <button type="submit" class="btn btn--primary btn--outline">
+
+<div class="forgot-password">
+  <div>
+   <button type="submit" class="btn btn--primary btn--outline">
             <span>{{ 'customer.register.submit' | t }}</span>
           </button>
-        </div>
+  </div>
+
+</div>
+
+
+
 
         <div class="form__legal">
           {{ 'shopify.online_store.spam_detection.disclaimer_html' | t }}

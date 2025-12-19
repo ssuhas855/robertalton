@@ -1,1 +1,89 @@
-{"type":"footer","name":"Footer","sections":{"footer":{"type":"footer","blocks":{"footer-1":{"type":"linklist","settings":{"linklist":"footer","title":"","heading_font_size":"heading-x-small","column_width":72,"enable_accordion":false}},"footer-0":{"type":"newsletter","settings":{"title":"","heading_font_size":"heading-x-small","text":"<p>Join to receive exclusive offers.<br\/><br\/><\/p>","button_text":"Sign up","show_arrow":false,"terms":false,"show_name":false,"button_type":"btn--primary","button_size":"","button_style":"btn--text","show_social_links":false,"column_width":28}}},"block_order":["footer-1","footer-0"],"settings":{"logo_image_width":150,"color_scheme":"scheme-3","border_color":"#131111","padding_top":40,"padding_bottom":40}},"anchor_logo":{"type":"section-anchor-logo","disabled":true,"settings":{"color_scheme":"scheme-8","padding_top":30,"padding_bottom":30}},"supporting-menu":{"type":"section-supporting-menu","settings":{"linklist":"copyright","text_font_size":"body-x-small","footer_payment_enable":false,"enable_greyscale":false,"show_locale_selector":false,"show_globe_icon":false,"show_country_selector":false,"show_country_name":false,"show_country_flag":false,"color_scheme":"scheme-3","padding_top":40,"padding_bottom":40}}},"order":["footer","anchor_logo","supporting-menu"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "footer-1": {
+          "type": "linklist",
+          "settings": {
+            "linklist": "footer",
+            "title": "",
+            "heading_font_size": "heading-x-small",
+            "column_width": 72,
+            "enable_accordion": false
+          }
+        },
+        "footer-0": {
+          "type": "newsletter",
+          "settings": {
+            "title": "",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>Join to receive exclusive offers.<br/><br/></p>",
+            "button_text": "Sign up",
+            "show_arrow": false,
+            "terms": false,
+            "show_name": false,
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_social_links": false,
+            "column_width": 28
+          }
+        }
+      },
+      "block_order": [
+        "footer-1",
+        "footer-0"
+      ],
+      "settings": {
+        "logo_image_width": 150,
+        "color_scheme": "scheme-3",
+        "border_color": "#131111",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "anchor_logo": {
+      "type": "section-anchor-logo",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-8",
+        "padding_top": 30,
+        "padding_bottom": 30
+      }
+    },
+    "supporting-menu": {
+      "type": "section-supporting-menu",
+      "settings": {
+        "linklist": "copyright",
+        "text_font_size": "body-x-small",
+        "footer_payment_enable": false,
+        "enable_greyscale": false,
+        "show_locale_selector": false,
+        "show_globe_icon": false,
+        "show_country_selector": false,
+        "show_country_name": false,
+        "show_country_flag": false,
+        "color_scheme": "scheme-3",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    }
+  },
+  "order": [
+    "footer",
+    "anchor_logo",
+    "supporting-menu"
+  ]
+}

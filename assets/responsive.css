@@ -579,8 +579,10 @@ body .shopify-policy__container {
 	margin: 20px 0 60px;
 }
 .account-sidebar__title {
-	padding: 10px 15px;
-	border: 1px solid #696969;
+	padding: 7px 8px;
+	border: 1px solid #000;
+	background: #000;
+    color: #fff;
 }
 .account-sidebar__title .icon.icon-nav-arrow-down {
 	width: 10px;
@@ -867,5 +869,287 @@ span.header__cart__status__holder {
 .predictive-search {
 	top: 49px;
 }
+.product-item {
+	margin-bottom: 0;
 }
-/*END 767px 22*/
+.product-item__title {
+	font-size: 9px;
+}
+.product-item__price__holder {
+	font-size: 9px;
+padding-top: 2px;
+}
+.swatch__button--square .sibling__link, .swatch__button--square .swatch__link, .swatch__button--square input ~ label {
+	width: 8px;
+	height: 12px;
+}
+.swatch-limited {
+	font-size: 9px;
+}
+.radio__fieldset--pgi .swatch__button {
+	padding: 0;
+}
+.product-item__swatches__holder--limited .selector-wrapper__scrollbar .swatch-limited {
+	padding-left: 2px;
+}
+.product-item__info.body-medium {
+	flex-direction: row;
+}
+.product-item__swatches__holder {
+	align-items: start;
+	opacity: 1;
+}
+.collection__products .grid-outer {
+	padding: 0 10px 0px;
+}
+.pagination-custom {
+	padding: 10px 0 20px;
+}
+#custom_about {
+	padding: 40px 40px 20px;
+}
+#custom_about .brick__block--text {	
+	max-width: none;
+}
+#custom_about h6 {
+	max-width: 200px;
+	margin: 0 0 40px;
+	font-size: 9px;
+}
+#custom_about p {
+	letter-spacing: .3px;
+	line-height: 16px;
+	font-size: 10px;
+}
+body#about .column__image {
+	max-width: 100px;
+	margin-left: 80px;
+}
+.custom-section-row + .index-section .image-wrapper {
+	padding-top: 139px;
+}
+#about .image-banner-section {
+	margin-top: 24px;
+}
+#about .hero__content__wrapper.frame__item {
+	padding-bottom: 60px;
+}
+#about .image__hero__scale.image__fill.lazy-image.lazy-image--backfill {
+	min-height: inherit;
+	max-height: inherit;
+}
+#about .image-banner-section{
+	margin-top: 0;
+}
+.search-popdown .predictive-search .wrapper {
+	padding: 0;
+}
+.predictive-search {
+	padding: 0 !important;
+}
+.predictive-search__heading {
+    font-size: 9px;
+    margin: 0;
+    padding-bottom: 20px;
+    padding: 0 0px 20px;
+}
+.predictive-search__column {
+	margin-bottom: 20px;
+}
+.search-popdown .product-item__image {
+	padding-top: 137px;
+	width: 100px;
+}
+.predictive-search__grid-item .product-item__info.body-medium {
+	gap: 3px;
+}
+.predictive-search__layout {
+	padding-bottom: 0;
+}
+.predictive-search__column + .predictive-search__column {
+	margin-bottom: 0;
+}
+.predictive-search {
+	min-height: auto;
+	padding-bottom: 40px !important;
+}
+.theme__header .section-padding {
+	padding: 0;
+}
+.search-popdown {
+	top: 52px;
+}
+.predictive-search.predictive-search--empty{
+	overflow: hidden;
+}
+.predictive-search.predictive-search--empty .wrapper{
+	max-width: 100%!important;
+}
+
+.search_collection_wrapper {
+  float: left;
+  width: 100vw;
+  overflow-x: auto;
+  scroll-behavior: smooth;          /* smooth scroll */
+  -webkit-overflow-scrolling: touch; /* iOS smoothness */
+}
+
+
+.search_collection_row {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    width: 262vw;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.no-js .theme__header .search-popdown, .no-js .theme__header .predictive-search, .theme__header header-search-popdown.is-open .search-popdown, .theme__header header-search-popdown.is-open .predictive-search {
+    width: 100vw;
+    padding-right: 0;
+}
+.predictive-search.predictive-search--empty p.predictive-search__heading{
+	padding: 0 20px 20px;
+}
+.account .btn.btn--primary.btn--outline {
+	width: 100%;
+	max-width: none;
+	float: left;
+	padding: 9px 15px;
+}
+.account .forgot-password {
+	margin-top: -5px;
+}
+.main-content {
+	min-height: calc(100vh - 400px);
+}
+#Register {
+	margin: 16px 0 80px;
+}
+#Register .page__heading + p {
+	display: none;
+}
+.account-sidebar ul li, .account-sidebar__title.strong {
+	font-size: 9px;
+	margin: 0;
+}
+.account-sidebar .icon.icon-nav-arrow-down path{
+	stroke: #fff;;
+}
+.account-sidebar__title .icon.icon-nav-arrow-down {
+	width: 7px;
+	height: auto;
+}
+.account-sidebar {
+    margin: 0 0 30px;
+}
+.widget__link {
+	font-size: 9px;
+	line-height: normal;
+}
+.account-sidebar ul {
+	padding: 10px 0;
+}
+.widget__links.widget__links--secondary li {
+	padding: 0 0 10px;
+}
+section.account {
+	margin: 30px 0 80px;
+}
+.account-main .page__heading {
+	padding-bottom: 10px;
+	border: none;
+	font-size: 9px;
+}
+.account-main .page__heading + p {
+	margin-top: 0;
+}
+.account-header h2, #AddressNewForm h2, addresses-component h2, strong.h6 {
+	font-size: 9px;
+}
+.account-header h2 {
+	margin: 0 0 45px;
+	padding: 0 0 7px;
+}
+addresses-component .account-main p {
+	line-height: 16px;
+}
+strong.h6 {
+	margin: 0 0 10px;
+}
+.address-edit-toggle, .address-delete {
+	font-size: 9px;
+}
+addresses-component .account-main p {
+	margin: 0 0 15px;
+}
+addresses-component.grid.grid--account {
+	margin-bottom: 0;
+}
+addresses-component .account-main {
+	margin: 0;
+}
+#AddressNewForm .grid__item, 
+addresses-component .grid__item {
+	margin-bottom: 0;
+}
+addresses-component .account-main p.set_default {
+	margin-bottom: 26px;
+}
+.account .btn.btn--primary.btn--outline {
+	font-size: 9px;
+}
+.faqdropdown-trigger {
+	padding: 8px 8px;	
+	border: 1px solid #000;
+   font-size: 9px;
+	background: #000;
+	color: #fff;
+}
+.faqdropdown-trigger .icon.icon-nav-arrow-down path{
+stroke: #fff;
+}
+.faqdropdown-trigger .icon.icon-nav-arrow-down {
+	width: 7px;
+	height: auto;
+}
+.faqmenu_mo .widget__links.widget__links--secondary li {
+	padding: 10px 0px 0;
+}
+#faq_section-sidebar .accordion {
+	border-bottom: 0px solid var(--border);
+	margin-top: 0;
+	padding-top: 7px;
+	padding-bottom: 15px;
+}
+#faq_section-sidebar .accordion__title {
+	display: flex;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	font-size: 9px;
+	font-family: var(--FONT-STACK-BODY);
+	font-style: var(--FONT-STYLE-BODY);
+	font-weight: var(--FONT-WEIGHT-BODY);
+	letter-spacing: .5px;
+}
+#faq_section-sidebar [data-collapsible-trigger] .icon {
+	top: 35%;
+	right: 0;
+}
+
+#faq_section-sidebar .accordion__content {
+	padding: 5px 0 0;
+}
+#faq_section-sidebar .accordion__content p {
+	margin-top: 0;
+}
+#faq_section-sidebar h6.section-sidebar__title {
+	display: none;
+}
+.section-sidebar__content collapsible-elements {
+max-width: none;
+}
+
+
+}
+/*END 767px*/

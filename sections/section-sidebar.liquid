@@ -60,7 +60,16 @@
       {%- endif -%}
 
       {%- if block.type == 'accordion' and title != blank and content != blank -%}
-        <details class="accordion" data-collapsible {{ block.shopify_attributes }}>
+
+
+<div class="section-sidebar__text rte small--hide" {{ block.shopify_attributes }}>
+ <h6>{{ title }}</h6>
+         {{ content }}  
+</div>
+
+
+
+        <details class="accordion large--hide" data-collapsible {{ block.shopify_attributes }}>
           <summary class="accordion__title subheading" data-collapsible-trigger>
             <span>{{ title }}</span>
 
@@ -162,6 +171,7 @@ document.addEventListener("DOMContentLoaded", () => {
           data-aos="hero"
           data-aos-anchor="{{ animation_anchor }}"
           data-aos-order="{{ animation_order }}"
+          {% if page.handle == "faqs" or page.handle == 'shipping-returns' %}id="faq_section-sidebar"{% endif %}
         >
           <collapsible-elements single="true">
             {{ content_html }}
