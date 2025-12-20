@@ -139,6 +139,7 @@
     {% if onboarding_product %}
       onboarding
     {% endif %}
+    id="button_fix"
   >
     {%- capture product_form_code -%}
       {%- if gift_card_recipient_feature_active -%}
@@ -152,6 +153,7 @@
           data-animation-duration="{{ animation_duration }}"
           data-animation-delay="{{ animation_delay }}"
         {% endif %}
+        id="p-submit"
       >
         <div class="product__form__errors" data-cart-errors-container></div>
 

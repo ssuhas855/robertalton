@@ -112,14 +112,48 @@
             <div class="section-sidebar__widget">
               <ul class="widget__links widget__links--secondary small--hide">
                {% comment %} {{ aside_html }} {% endcomment %}
+
+
+               {% if page.handle == 'ring-size-guide' or page.handle == 'product-care' %}
+{% for link in linklists.static-pages-link.links %}
+      <li>
+        <a class="widget__link {% if link.active %} is-selected{% endif %}" href="{{ link.url }}">{{ link.title }}</a>
+      </li>
+      {% endfor %}
+                {% else %}
                  {% for link in linklists.faq-page.links %}
       <li>
         <a class="widget__link {% if link.active %} is-selected{% endif %}" href="{{ link.url }}">{{ link.title }}</a>
       </li>
+    
     {% endfor %}
+      {% endif %}
               </ul>
 
 <div class="faqmenu_mo large--hide">
+
+{% if page.handle == 'ring-size-guide' or page.handle == 'product-care' %}
+
+<button class="faqdropdown-trigger" type="button">
+{% if page.handle == 'ring-size-guide' %}Ring size guide{% endif %}
+{% if page.handle == 'product-care' %}Product care{% endif %}
+<svg class="icon icon-nav-arrow-down"  width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.353516 0.353516L3.35352 3.35352L6.35352 0.353516" stroke="#131111"/>
+</svg>
+</button>
+
+<ul class="widget__links widget__links--secondary faqdropdown-menu">
+  {% for link in linklists.static-pages-link.links %}
+    <li>
+      <a class="widget__link {% if link.active %} is-selected{% endif %}" href="{{ link.url }}">
+        {{ link.title }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+ {% else %} 
+
 <button class="faqdropdown-trigger" type="button">
 {% if page.handle == 'shipping-returns' %}Shipping Returns{% endif %}
 {% if page.handle == 'faqs' %}Faqs{% endif %}
@@ -137,6 +171,7 @@
     </li>
   {% endfor %}
 </ul>
+ {% endif %}
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
@@ -167,7 +202,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {%- endif -%}
 
         <div
-          class="section-sidebar__content"
+          class="section-sidebar__content  {% if page.handle == 'ring-size-guide' or page.handle == 'product-care' %}no_accordion{% endif %}"
           data-aos="hero"
           data-aos-anchor="{{ animation_anchor }}"
           data-aos-order="{{ animation_order }}"

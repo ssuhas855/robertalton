@@ -1149,7 +1149,221 @@ stroke: #fff;
 .section-sidebar__content collapsible-elements {
 max-width: none;
 }
+.vertical-scroll {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+	margin: 0;
+  }
 
+  .product__slide {
+    min-width: 100%;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+  }
 
+.vertical-progress {
+	width: calc(100% - 0px);
+	height: 1px;
+	left: 0px !important;
+	transform: none;
+	right: auto;
+	top: auto;
+        bottom: 0;	
 }
+
+  .vertical-progress-fill {
+    width: 0%;
+    height: 100%;
+  }
+
+.vertical-scroll {
+    height: 61vh;
+}
+.vertical-scroll .product__slide, .vertical-scroll [data-slide], .vertical-scroll .media, .vertical-scroll .product__photo {
+    height: 61vh!important;
+	margin:0;
+}
+.cart-bar {
+	background: #fff;
+	box-shadow: none;
+	opacity: 0;
+	min-height: inherit;
+}
+ .cart-bar__form__wrapper {
+	padding: 20px 20px 40px;
+}
+.product__block .product-form {
+	width: 100%;
+	min-height: 38px;
+	position: relative;
+}
+.product__submit {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	bottom: 0;
+}
+.product__submit.fixed{
+	position: fixed;
+	z-index: 999;
+	background-color: #fff;
+	padding: 20px 20px 40px;
+}
+#cart-bar {
+	display: none !important;
+}
+#product-recommendations .grid-item {
+	width: calc(100% - 50%);
+	margin-right: 0;
+	padding: 0 5px;
+}
+#product-recommendations .grid-outer {
+	padding: 0 5px;
+}
+#product-recommendations {
+	padding: 0 10px;
+	margin-bottom: 60px;
+}
+#product-recommendations .slider__button {
+	 display: blobk;
+	 opacity: 1;
+}
+#product-recommendations .slider__button--prev {
+	left: 0;
+}
+#product-recommendations .slider__button--next {
+	right: 0;
+}
+.template-product [data-section-type="custom-content"] .brick__block--text {
+	max-width: none;
+}
+.template-product [data-section-type="custom-content"] .brick__block__text {
+	padding: 20px 0 3px !important;
+}
+.template-product [data-section-type="custom-content"] .hero__content.hero__content--compact.text-left {
+	padding: 0 10px;
+}
+.product__content {
+	background: #fff;
+	padding: 20px 0 40px;
+}
+#product-recommendations h6.tab__title {
+	padding: 20px 0;
+	margin: 0 !important;
+}
+.product__page {
+margin-bottom: 0;
+}
+.product__submit__item.product__submit__item--inline {
+	background: #fff;
+}
+.product__block .swatch__button--square .sibling__link, 
+.product__block .swatch__button--square .swatch__link, 
+.product__block .swatch__button--square input ~ label {
+	width: 15px;
+	height: 20px;
+}
+.product__block.product__description.rte.block-padding {
+	margin: 0;
+}
+.product__block.product__block--buttons {
+	margin-bottom: 20px;
+}
+.additional_info {
+	padding-top: 28px;
+}
+#contact-us-page h6 {
+	display: none;
+}
+#contact .section-sidebar__content {
+	margin-top: 20px;
+}
+#contact .index-contact {
+	padding: 30px 0 20px;
+	float: left;
+	width: 100%;
+}
+#contact-us-page {
+	margin: 0;
+	padding: 0;
+}
+.wrapper--full-padded.policy_wrapper {
+	margin-top: 20px!important;
+	float: left;
+	width: 100%;
+}
+.policy_wrapper .widget__links {
+	display: flex;
+	gap: 10px;
+}
+.policy_wrapper .widget__links a{
+	color: #696969;
+}
+.policy_wrapper .widget__links a.is-selected{
+	color: #131111;
+}
+body .shopify-policy__container {
+	padding: 40px 0px 40px;
+}
+body .shopify-policy__container h1, body .shopify-policy__container h2, body .shopify-policy__container h3 {
+	font-size: 9px;
+}
+.shopify-policy__title h1 {
+	margin-bottom: 20px !important;
+}
+.shopify-policy__body p {
+	margin: 0 0 15px;
+}
+.header__mobile__hamburger {
+	margin-left: -5px;
+}
+#ring-size-guide .index-hero {
+	padding: 0px;
+}
+#product-care .index-hero {
+	padding: 0px;
+}
+#ring-size-guide .faqmenu_mo.large--hide,
+#product-care .faqmenu_mo.large--hide {
+	display: none !important;
+}
+#ring-size-guide .widget__links.widget__links--secondary.small--hide,
+#product-care .widget__links.widget__links--secondary.small--hide {
+	display: flex !important;
+    gap: 10px;
+}
+#ring-size-guide .widget__links.widget__links--secondary.small--hide a,
+#product-care .widget__links.widget__links--secondary.small--hide a {
+	color:#696969;
+}
+#ring-size-guide .widget__links.widget__links--secondary.small--hide a.is-selected,
+#product-care .widget__links.widget__links--secondary.small--hide a.is-selected {
+	color:#131111;
+}
+#ring-size-guide .section-sidebar,
+#product-care .section-sidebar {
+	padding: 20px 0;
+}
+#ring-size-guide .section-sidebar__content,
+#product-care .section-sidebar__content {
+	margin-top: 30px;
+}
+.section-sidebar__text.rte h5 {
+	font-size: 9px;
+	margin: 0 0 5px;
+}
+.section-sidebar__text.rte ul {
+	margin-bottom: 20px;
+}
+.section-sidebar__content.no_accordion .section-sidebar__text.rte p {
+	margin-bottom: 20px;
+}
+mobile-menu .drawer__inner{
+	top: 83px;
+}
+} 
 /*END 767px*/

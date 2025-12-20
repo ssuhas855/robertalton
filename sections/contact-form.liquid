@@ -21,7 +21,80 @@
   data-section-id="{{ section.id }}"
   data-section-type="contact"
 >
-  <div class="{{ section.settings.width }}">
+  <div class="wrapper--full-padded">
+
+ <div class="section-sidebar__body">
+
+
+      
+       
+          <div
+            class="section-sidebar__aside"
+            data-aos="hero"
+            data-aos-anchor="{{ animation_anchor }}"
+            data-aos-order="{{ animation_order }}"
+          >
+
+            <div class="section-sidebar__widget">
+              <ul class="widget__links widget__links--secondary small--hide">
+               {% comment %} {{ aside_html }} {% endcomment %}
+                 {% for link in linklists.faq-page.links %}
+      <li>
+        <a class="widget__link {% if link.active %} is-selected{% endif %}" href="{{ link.url }}">{{ link.title }}</a>
+      </li>
+    {% endfor %}
+              </ul>
+
+<div class="faqmenu_mo large--hide">
+<button class="faqdropdown-trigger" type="button">
+{% if page.handle == 'shipping-returns' %}Shipping Returns{% endif %}
+{% if page.handle == 'faqs' %}Faqs{% endif %}
+{% if page.handle == 'contact' %}CONTACT{% endif %}
+<svg class="icon icon-nav-arrow-down"  width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.353516 0.353516L3.35352 3.35352L6.35352 0.353516" stroke="#131111"/>
+</svg>
+</button>
+
+<ul class="widget__links widget__links--secondary faqdropdown-menu">
+  {% for link in linklists.faq-page.links %}
+    <li>
+      <a class="widget__link {% if link.active %} is-selected{% endif %}" href="{{ link.url }}">
+        {{ link.title }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const trigger = document.querySelector(".faqdropdown-trigger");
+  const menu = document.querySelector(".faqdropdown-menu");
+
+  trigger.addEventListener("click", (e) => {
+    e.stopPropagation();
+    menu.classList.toggle("is-open");
+  });
+
+  // Close if clicking outside
+  document.addEventListener("click", (e) => {
+    if (!menu.contains(e.target) && !trigger.contains(e.target)) {
+      menu.classList.remove("is-open");
+    }
+  });
+});
+
+</script>
+
+</div>
+
+            </div>
+          </div>
+
+
+  <div class="section-sidebar__content aos-animate" data-aos="hero" data-aos-anchor="#Sidebar--template--25793607467306__sidebar" data-aos-order="2">
+
+        
+
     {%- if section.settings.title != blank -%}
       {%- liquid
         assign heading_tag = 'h2'
@@ -451,7 +524,11 @@
         </div>
       {%- endif -%}
     {%- endform -%}
+
+</div>
+
   </div>
+    </div>
 </section>
 
 {% schema %}

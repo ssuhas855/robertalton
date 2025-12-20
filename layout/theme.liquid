@@ -26,7 +26,36 @@
 
       <!-- CONTENT -->
       <main role="main" id="MainContent" class="main-content">
+
+{% if request.path contains '/policies/' or page.handle == 'cookie-policy' %}
+
+<div class="wrapper--full-padded policy_wrapper">
+
+<div class="section-sidebar__body">
+<div class="policie_links">
+<ul class="widget__links widget__links--secondary"> 
+             
+{% for link in linklists.copyright.links %}
+    <li>
+      <a class="widget__link {% if link.active %} is-selected{% endif %}" href="{{ link.url }}">
+        {{ link.title }}
+      </a>
+    </li>
+  {% endfor %}
+   </ul>
+</div>
+<div class="shopify-policy__wrap">
+ {{ content_for_layout }}
+ </div>
+</div>
+</div>
+
+{% else %}
+
+
+
         {{ content_for_layout }}
+        {% endif %}
       </main>
     </div>
 
@@ -68,6 +97,88 @@
 document.addEventListener("DOMContentLoaded", () => {
   const slider = document.querySelector(".vertical-scroll");
   const bar = document.querySelector(".vertical-progress-fill");
+  const inputs = document.querySelectorAll(
+    'input[type="radio"][data-index="option1"]'
+  );
+  const slides = document.querySelectorAll(".product__slide");
+
+  if (!slider || !bar || !slides.length) return;
+
+  /* =========================
+     PROGRESS BAR (FIXED)
+  ========================= */
+  function updateProgress() {
+    if (window.innerWidth <= 768) {
+      // 📱 Mobile – horizontal
+      const max = slider.scrollWidth - slider.clientWidth;
+      const progress = max > 0 ? (slider.scrollLeft / max) * 100 : 0;
+      bar.style.width = progress + "%";
+      bar.style.height = "100%";
+    } else {
+      // 🖥 Desktop – vertical
+      const max = slider.scrollHeight - slider.clientHeight;
+      const progress = max > 0 ? (slider.scrollTop / max) * 100 : 0;
+      bar.style.height = progress + "%";
+      bar.style.width = "100%";
+    }
+  }
+
+  slider.addEventListener("scroll", updateProgress);
+  window.addEventListener("resize", updateProgress);
+  updateProgress(); // initial call
+
+  /* =========================
+     VARIANT → IMAGE CHANGE
+  ========================= */
+  inputs.forEach((input) => {
+    input.addEventListener("change", () => {
+      const value = input.value.trim().toLowerCase();
+      let targetSlide = null;
+
+      slides.forEach((slide) => {
+        const id =
+          slide.getAttribute("data-id") ||
+          slide.getAttribute("data-media-id") ||
+          "";
+
+        slide.classList.remove("media--active");
+        slide.classList.add("media--hidden");
+
+        if (id.toLowerCase().includes(value)) {
+          slide.classList.remove("media--hidden");
+          slide.classList.add("media--active");
+          targetSlide = slide;
+        }
+      });
+
+      if (!targetSlide) return;
+
+      if (window.innerWidth <= 768) {
+        // 📱 Mobile → horizontal scroll
+        slider.scrollTo({
+          left: targetSlide.offsetLeft,
+          behavior: "smooth"
+        });
+      } else {
+        // 🖥 Desktop → vertical scroll
+        slider.scrollTo({
+          top: targetSlide.offsetTop,
+          behavior: "smooth"
+        });
+      }
+    });
+  });
+});
+
+
+
+
+
+/*
+
+document.addEventListener("DOMContentLoaded", () => {
+  const slider = document.querySelector(".vertical-scroll");
+  const bar = document.querySelector(".vertical-progress-fill");
 
   if (!slider || !bar) return;
 
@@ -79,39 +190,6 @@ document.addEventListener("DOMContentLoaded", () => {
     bar.style.height = progress + "%";
   });
 });
-
-
-/*
-document.addEventListener("DOMContentLoaded", () => {
-
-  const inputs = document.querySelectorAll('input[type="radio"][data-index="option1"]');
-  const slides = document.querySelectorAll(".product__slide");
-
-  inputs.forEach((input) => {
-    input.addEventListener("change", () => {
-
-      const value = input.value.trim();   // "Gray"
-
-      slides.forEach((slide) => {
-        const id = slide.getAttribute("data-id")?.trim();
-
-        slide.classList.remove("media--active");
-
-        if (id && id.toLowerCase() === value.toLowerCase()) {
-          slide.classList.add("media--active");
-
-          slide.scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-          });
-        }
-      });
-
-    });
-  });
-
-});*/
-
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -150,6 +228,47 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+*/
+
+
+/*
+document.addEventListener("DOMContentLoaded", () => {
+
+  const inputs = document.querySelectorAll('input[type="radio"][data-index="option1"]');
+  const slides = document.querySelectorAll(".product__slide");
+
+  inputs.forEach((input) => {
+    input.addEventListener("change", () => {
+
+      const value = input.value.trim();   // "Gray"
+
+      slides.forEach((slide) => {
+        const id = slide.getAttribute("data-id")?.trim();
+
+        slide.classList.remove("media--active");
+
+        if (id && id.toLowerCase() === value.toLowerCase()) {
+          slide.classList.add("media--active");
+
+          slide.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+        }
+      });
+
+    });
+  });
+
+});*/
+
+
+
+
+
+
+
+
 
 
 

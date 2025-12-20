@@ -429,6 +429,7 @@
                     -%}
 
                   {%- when 'buttons' -%}
+                  
                     {%- render 'product-buttons',
                       product: product,
                       current_variant: current_variant,
@@ -440,6 +441,7 @@
                       preorder_type: preorder_type,
                       onboarding_product: onboarding_product
                     -%}
+
 
                   {%- when 'description' -%}
                     {%- render 'product-description', product: product, block: block, block_style: block_style -%}
@@ -914,6 +916,69 @@
     {%- render 'cart-bar', product: product -%}
   {%- endif -%}
 </product-component>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const wrapper = document.getElementById('button_fix');
+  const btnwrapper = document.getElementById('p-submit');
+
+  if (!wrapper) return;
+
+  const offsetTop = wrapper.offsetTop;
+
+  window.addEventListener('scroll', function () {
+    if (window.scrollY >= offsetTop) {
+      btnwrapper.classList.add('fixed');
+    } else {
+      btnwrapper.classList.remove('fixed');
+    }
+  });
+});
+</script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const slider = document.getElementById('product-recommendations');
+  const progressBar = document.getElementById('recommendationProgress');
+
+  if (!slider || !progressBar) return;
+
+  const slides = slider.querySelectorAll('.grid-item');
+  const totalSlides = slides.length;
+  const visibleSlides = 4;
+
+  function updateProgress() {
+    let currentIndex = 0;
+
+    // Shopify slider translateX detect
+    const transform = slider.style.transform || '';
+    const match = transform.match(/translateX\((-?\d+\.?\d*)px\)/);
+    if (match) {
+      const translateX = parseFloat(match[1]);
+      const slideEl = slides[0];
+      const slideStyle = getComputedStyle(slideEl);
+      const slideWidth = slideEl.offsetWidth + parseFloat(slideStyle.marginRight);
+      currentIndex = -translateX / slideWidth; // fractional index for smoothness
+    }
+
+    const progressPercent = ((currentIndex + 1) / visibleSlides) * 100;
+    progressBar.style.width = progressPercent > 100 ? '100%' : progressPercent + '%';
+  }
+
+  // Continuous smooth update every 50ms
+  setInterval(updateProgress, 50);
+
+  // Optional: observe slider transform changes (arrow click / auto-slide)
+  const observer = new MutationObserver(updateProgress);
+  observer.observe(slider, { attributes: true, attributeFilter: ['style'] });
+
+  // Initial fill
+  updateProgress();
+});
+</script>
+
 
 <script type="application/ld+json">
   {

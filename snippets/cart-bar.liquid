@@ -39,6 +39,7 @@
     class="cart-bar__form__wrapper form__wrapper{% if button_add and current_variant.available != true %} variant--soldout{% endif %}{% if settings.show_newsletter %} show-product-notification{% endif %}{% unless any_variant_available %} all-variants--soldout{% endunless %}"
     data-form-wrapper
   >
+  
     <div class="cart-bar__info">
       <h4 class="cart-bar__product__title">{{ product.title | strip_html }}</h4>
 
@@ -122,7 +123,7 @@
           <span class="btn__added">&nbsp;</span>
 
           {%- unless button_add or any_variant_available == false -%}
-            {%- render 'icon-nav-arrow-up' -%}
+         
           {%- endunless -%}
         </button>
 

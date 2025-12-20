@@ -1,0 +1,86 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "section_hero_i69yFW": {
+      "type": "section-hero",
+      "name": "Image banner",
+      "settings": {
+        "image_1": "shopify://shop_images/product-carejpg.jpg",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_image": "shopify://shop_images/product-carejpg_mo.jpg",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "text_below": false,
+        "color_scheme": "",
+        "show_text_background": false,
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "show_title": true,
+        "heading_font_size": "heading-medium",
+        "show_content": true,
+        "text_font_size": "body-small",
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_sidebar_FWjjWd": {
+      "type": "section-sidebar",
+      "blocks": {
+        "header_KdrxCk": {
+          "type": "header",
+          "settings": {
+            "title": "Shipping & Returns"
+          }
+        },
+        "text_8ckNPr": {
+          "type": "text",
+          "settings": {
+            "text": "{{ page.content }}"
+          }
+        }
+      },
+      "block_order": [
+        "header_KdrxCk",
+        "text_8ckNPr"
+      ],
+      "name": "Sidebar",
+      "settings": {
+        "heading_font_size": "heading-small",
+        "width": "wrapper--full-padded",
+        "color_scheme": "",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    }
+  },
+  "order": [
+    "section_hero_i69yFW",
+    "main",
+    "section_sidebar_FWjjWd"
+  ]
+}
