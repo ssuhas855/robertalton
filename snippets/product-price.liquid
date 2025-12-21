@@ -45,7 +45,7 @@
         <span class="visually-hidden" data-compare-text>{{ 'products.product.regular_price' | t }}</span>
         <s class="product__price--strike" data-compare-price>
           {%- if current_variant.compare_at_price > current_variant.price -%}
-            {{ current_variant.compare_at_price | money }}
+            {{ current_variant.compare_at_price | money }} asd
           {%- endif -%}
         </s>
       {%- endif -%}
