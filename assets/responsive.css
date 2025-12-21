@@ -1381,5 +1381,8 @@ mobile-menu .drawer__inner{
 .collection-list.grid--mobile-slider .grid-item {
 	width: calc(100% - 59%);	
 }
+.brick__block--three-quarters {
+	flex: 0 0 82%;
+}
 } 
 /*END 767px*/
