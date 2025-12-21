@@ -1929,3 +1929,6 @@ addresses-component.grid.grid--account {
 .cart__item{
 	border:none;
 }
+.account form {
+    padding: 25px 0 20px;
+}
