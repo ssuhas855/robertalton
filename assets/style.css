@@ -1932,3 +1932,9 @@ addresses-component.grid.grid--account {
 .account form {
     padding: 25px 0 20px;
 }
+#product-care .section-sidebar__text.rte h5 {
+	margin: 20px 0 20px;
+}
+#product-care .section-sidebar__text.rte h5:first-child {
+	margin-top: 0px;
+}
