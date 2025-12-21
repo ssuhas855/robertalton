@@ -1952,6 +1952,6 @@ a.btn.btn--text.btn--primary {
 .drawer .cart__foot__inner {
 	color: #131111;
 }
-drawer--cart .cart__quantity {
+.drawer--cart .cart__quantity {
     right: -11px;
 }
