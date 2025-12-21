@@ -1372,6 +1372,9 @@ mobile-menu .drawer__inner{
 	width: 8px;
 	height: auto;
 }
+.sliderule__chevron .icon.icon-nav-arrow-down path{
+	fill:transparent;
+}
 .drawer__main-menu .sup{
 	display:none!important;
 }
