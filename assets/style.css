@@ -653,6 +653,7 @@ cart-items.drawer__items p.cart__price {
 .cart__total__price {
 	font-size: 11px;	
 	letter-spacing: 0.5px;
+	color:#131111;
 }
 .drawer .cart__foot__inner {
 	padding: 10px 0;
