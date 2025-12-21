@@ -45,7 +45,7 @@
         <span class="visually-hidden" data-compare-text>{{ 'products.product.regular_price' | t }}</span>
         <s class="product__price--strike" data-compare-price>
           {%- if current_variant.compare_at_price > current_variant.price -%}
-            {{ current_variant.compare_at_price | money }} 
+            {{ current_variant.compare_at_price | money_with_currency }} 
           {%- endif -%}
         </s>
       {%- endif -%}
@@ -73,7 +73,7 @@
         <div class="product__price__meta">
           <span data-product-unit {{ show_units }} class="product__price--unit">
             <span class="visually-hidden visually-hidden--inline">{{ 'products.product.unit_price_label' | t }}</span>
-            <span data-product-unit-price id="unit-price-{{ unique }}">{{ current_variant.unit_price | money }}</span>
+            <span data-product-unit-price id="unit-price-{{ unique }}">{{ current_variant.unit_price | money_with_currency }}</span>
             {{ unit_price_separator }}
             <span data-product-base id="unit-price-base-{{ unique }}">{{ unit_price_base_unit }}</span>
           </span>
