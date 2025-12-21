@@ -1375,7 +1375,7 @@ mobile-menu .drawer__inner{
 .sliderule__chevron .icon.icon-nav-arrow-down path{
 	fill:transparent;
 }
-.drawer__main-menu .sup{
+.drawer__main-menu .sup{ 
 	display:none!important;
 }
 .collection-list.grid--mobile-slider .grid-item {
@@ -1384,5 +1384,9 @@ mobile-menu .drawer__inner{
 .brick__block--three-quarters {
 	flex: 0 0 82%;
 }
+.template-index .four-fifty-height-hero--mobile {
+	min-height: inherit;
+	padding-bottom: 125%;
+} 
 } 
 /*END 767px*/
