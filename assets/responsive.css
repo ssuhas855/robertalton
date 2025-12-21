@@ -1389,5 +1389,8 @@ mobile-menu .drawer__inner{
 	min-height: inherit;
 	padding-bottom: 125%;
 } 
+body.scrolled mobile-menu .drawer__inner {
+    top: 51px;
+}
 } 
 /*END 767px*/
