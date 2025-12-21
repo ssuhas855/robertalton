@@ -1395,9 +1395,7 @@ body.scrolled mobile-menu .drawer__inner {
 .collection__sidebar__head h3 {
 	font-size: 12px;
 }
-.filter-group:not(.filter-group--hidden) ~ .filter-group {
-	margin-top: 8px;
-}
+
 
 } 
 /*END 767px*/

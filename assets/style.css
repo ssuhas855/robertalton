@@ -1943,3 +1943,6 @@ addresses-component.grid.grid--account {
 a.btn.btn--text.btn--primary {
     line-height: normal;
 }
+.filter-group:not(.filter-group--hidden) ~ .filter-group {
+	margin-top: 8px;
+}
