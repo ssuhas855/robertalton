@@ -1955,3 +1955,6 @@ a.btn.btn--text.btn--primary {
 .drawer--cart .cart__quantity {
     right: -11px;
 }
+.drawer__inner {
+	border-left: 0px solid var(--border);
+}
