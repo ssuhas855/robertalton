@@ -1395,7 +1395,9 @@ body.scrolled mobile-menu .drawer__inner {
 .collection__sidebar__head h3 {
 	font-size: 12px;
 }
-
+.popout--sort::after {
+    top: 0px;
+}
 
 } 
 /*END 767px*/
