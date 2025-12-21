@@ -1925,3 +1925,6 @@ addresses-component.grid.grid--account {
 .header__logo__text span {
 	float: left;
 }
+.cart__item{
+	border:none;
+}
