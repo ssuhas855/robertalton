@@ -35,37 +35,41 @@
             "title": "Shipping & Returns"
           }
         },
-        "text_mVngk8": {
-          "type": "text",
+        "accordion_FTcYre": {
+          "type": "accordion",
           "settings": {
-            "text": "<h6>Where do you ship from?</h6><p>Lorem ipsum dolor sit amet. Id consectetur quia sed adipisci internos hic perspiciatis galisum ad minus minima et quia atque aut dolor sunt ab tempora eaque. Ut omnis eveniet est iste </p>"
+            "title": "Where do you ship from?",
+            "content": "<p>Lorem ipsum dolor sit amet. Id consectetur quia sed adipisci internos hic perspiciatis galisum ad minus minima et quia atque aut dolor sunt ab tempora eaque. Ut omnis eveniet est iste </p>"
           }
         },
-        "text_8w43JH": {
-          "type": "text",
+        "accordion_BAezrH": {
+          "type": "accordion",
           "settings": {
-            "text": "<h6>Where do you ship from?</h6><p>Lorem ipsum dolor sit amet. Id consectetur quia sed adipisci internos hic perspiciatis galisum ad minus minima et quia atque aut dolor sunt ab tempora eaque. Ut omnis eveniet est iste </p>"
+            "title": "Where do you ship from?",
+            "content": "<p>Lorem ipsum dolor sit amet. Id consectetur quia sed adipisci internos hic perspiciatis galisum ad minus minima et quia atque aut dolor sunt ab tempora eaque. Ut omnis eveniet est iste </p>"
           }
         },
-        "text_VJ4RTQ": {
-          "type": "text",
+        "accordion_XDzAgr": {
+          "type": "accordion",
           "settings": {
-            "text": "<h6>Where do you ship from?</h6><p>Lorem ipsum dolor sit amet. Id consectetur quia sed adipisci internos hic perspiciatis galisum ad minus minima et quia atque aut dolor sunt ab tempora eaque. Ut omnis eveniet est iste </p>"
+            "title": "Where do you ship from?",
+            "content": "<p>Lorem ipsum dolor sit amet. Id consectetur quia sed adipisci internos hic perspiciatis galisum ad minus minima et quia atque aut dolor sunt ab tempora eaque. Ut omnis eveniet est iste </p>"
           }
         },
-        "text_bxND6x": {
-          "type": "text",
+        "accordion_FB6WAm": {
+          "type": "accordion",
           "settings": {
-            "text": "<h6>Where do you ship from?</h6><p>Lorem ipsum dolor sit amet. Id consectetur quia sed adipisci internos hic perspiciatis galisum ad minus minima et quia atque aut dolor sunt ab tempora eaque. Ut omnis eveniet est iste </p>"
+            "title": "Where do you ship from?",
+            "content": "<p>Lorem ipsum dolor sit amet. Id consectetur quia sed adipisci internos hic perspiciatis galisum ad minus minima et quia atque aut dolor sunt ab tempora eaque. Ut omnis eveniet est iste </p>"
           }
         }
       },
       "block_order": [
         "header_jexMR4",
-        "text_mVngk8",
-        "text_8w43JH",
-        "text_VJ4RTQ",
-        "text_bxND6x"
+        "accordion_FTcYre",
+        "accordion_BAezrH",
+        "accordion_XDzAgr",
+        "accordion_FB6WAm"
       ],
       "settings": {
         "heading_font_size": "heading-x-small",
