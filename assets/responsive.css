@@ -1401,6 +1401,18 @@ body.scrolled mobile-menu .drawer__inner {
 .popout--group {    
     top: 0;
 }
+.selector-wrapper__scrollbar {
+	display: block;
+	position: relative;
+	margin: -5px 0 -5px -5px;
+	padding: 5px;
+	width: calc(100% + 3px);
+	white-space: nowrap;
+	overflow-y: hidden;
+	overflow-x: auto;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
 
 } 
 /*END 767px*/
