@@ -1365,5 +1365,8 @@ body .shopify-policy__container h1, body .shopify-policy__container h2, body .sh
 mobile-menu .drawer__inner{
 	top: 83px;
 }
+#product-care .section-sidebar__text.rte h5 {
+	margin: 0px 0 5px;
+}
 } 
 /*END 767px*/
