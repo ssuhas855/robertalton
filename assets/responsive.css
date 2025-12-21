@@ -1414,5 +1414,8 @@ body.scrolled mobile-menu .drawer__inner {
 	height: auto;
 	padding: 0;
 }
+.search_collection_wrapper {
+	padding-bottom: 20px;
+}
 } 
 /*END 767px*/
