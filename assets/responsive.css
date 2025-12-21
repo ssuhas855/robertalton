@@ -1417,8 +1417,7 @@ body.scrolled mobile-menu .drawer__inner {
 .search_collection_wrapper {
 	padding-bottom: 20px;
 }
-.contact-form .custom-form__block::nth-last-child(1),
-.contact-form .custom-form__block::nth-last-child(2){
+.custom-form__block.textarea_full + .custom-form__block{
 	width:100%;
 }
 } 
