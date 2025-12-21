@@ -1946,3 +1946,6 @@ a.btn.btn--text.btn--primary {
 .filter-group:not(.filter-group--hidden) ~ .filter-group {
 	margin-top: 8px;
 }
+.select-popout--quantity .select-popout__toggle {	
+	font-size: 11px;
+}
