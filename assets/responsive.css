@@ -1392,5 +1392,9 @@ mobile-menu .drawer__inner{
 body.scrolled mobile-menu .drawer__inner {
     top: 51px;
 }
+.collection__sidebar__head h3 {
+	font-size: 12px;
+}
+
 } 
 /*END 767px*/
