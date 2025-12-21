@@ -1368,7 +1368,7 @@ mobile-menu .drawer__inner{
 #product-care .section-sidebar__text.rte h5 {
 	margin: 0px 0 5px;
 }
-.sliderule__chevron .icon {
+.sliderule__chevron .icon.icon-nav-arrow-down {
 	width: 8px;
 	height: auto;
 }
