@@ -76,6 +76,7 @@
     "show_lock_icon": false,
     "empty_cart_menu": "",
     "show_recently_viewed_products": false,
+    "currency_code_enable": true,
     "checkout_logo_position": "left",
     "checkout_logo_size": "large",
     "checkout_body_background_color": "#fff",
@@ -1620,8 +1621,7 @@
             "links": "#ffffff"
           }
         }
-      } 
+      }
     }
   }
 }
-  
