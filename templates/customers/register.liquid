@@ -8,6 +8,7 @@
      <p>If you have an account with us, sign in for a faster check out process.</p>
 
       {% form 'create_customer' %}
+        <input type="hidden" name="return_to" value="/account">
       	<div class="form-field">{{ form.errors | default_errors }}</div>
 
 <div class="two_field">
