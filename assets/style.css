@@ -1949,3 +1949,6 @@ a.btn.btn--text.btn--primary {
 .select-popout--quantity .select-popout__toggle {	
 	font-size: 11px;
 }
+.drawer .cart__foot__inner {
+	color: #131111;
+}
