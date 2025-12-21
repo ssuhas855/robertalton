@@ -1407,6 +1407,8 @@ body.scrolled mobile-menu .drawer__inner {
 .product-item .product-item__swatches__holder .radio__fieldset--pgi {
 	background-color: transparent;
 }
-
+#cart-drawer .drawer__inner {
+    max-width: 100%;
+}
 } 
 /*END 767px*/
