@@ -1398,6 +1398,9 @@ body.scrolled mobile-menu .drawer__inner {
 .popout--sort::after {
     top: 0px;
 }
+.popout--group {    
+    top: 0;
+}
 
 } 
 /*END 767px*/
