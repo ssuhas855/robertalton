@@ -1013,6 +1013,7 @@ textarea.field {
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 	color: currentColor;
+	line-height:normal;
 }
 .widget__link:hover{
 	opacity: 1;
