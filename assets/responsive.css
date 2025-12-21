@@ -1402,7 +1402,7 @@ body.scrolled mobile-menu .drawer__inner {
     top: 0;
 }
 .product-item .product-item__swatches__holder {
-	margin: 0 -3px;
+	margin: 0 -5px;
 }
 .product-item .product-item__swatches__holder .radio__fieldset--pgi {
 	background-color: transparent;
