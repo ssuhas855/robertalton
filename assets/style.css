@@ -1961,3 +1961,6 @@ a.btn.btn--text.btn--primary {
 .cart__item__selected-options, .cart__item__property {
 	color: #696969;
 }
+.widget__links.widget__links--secondary a {
+	color: #131111;
+}
