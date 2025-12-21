@@ -1372,5 +1372,8 @@ mobile-menu .drawer__inner{
 	width: 8px;
 	height: auto;
 }
+.drawer__main-menu .sup{
+	display:none!important;
+}
 } 
 /*END 767px*/
