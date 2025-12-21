@@ -9,6 +9,8 @@
       
 
       {% form 'customer_login' %}
+
+        <input type="hidden" name="return_to" value="/account">
         <div class="form-field">{{ form.errors | default_errors }}</div> 
 
  <div class="two_field">
