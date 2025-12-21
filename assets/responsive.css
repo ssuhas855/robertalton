@@ -1378,5 +1378,8 @@ mobile-menu .drawer__inner{
 .drawer__main-menu .sup{
 	display:none!important;
 }
+.collection-list.grid--mobile-slider .grid-item {
+	width: calc(100% - 59%);	
+}
 } 
 /*END 767px*/
