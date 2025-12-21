@@ -1958,3 +1958,6 @@ a.btn.btn--text.btn--primary {
 .drawer__inner {
 	border-left: 0px solid var(--border);
 }
+.cart__item__selected-options, .cart__item__property {
+	color: #696969;
+}
