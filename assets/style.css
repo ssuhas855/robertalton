@@ -1595,6 +1595,7 @@ margin-top: 25px;
 	transform: translate(100%);
 	max-width: 400px;
 	padding: 0 20px;
+	border-left: 0px solid var(--border);
 }
 .collection__sidebar__slide-out.expanded {
 	transform: translate(0%);
