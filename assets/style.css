@@ -1939,3 +1939,6 @@ addresses-component.grid.grid--account {
 #product-care .section-sidebar__text.rte h5:first-child {
 	margin-top: 0px;
 }
+a.btn.btn--text.btn--primary {
+    line-height: normal;
+}
