@@ -333,6 +333,9 @@ a.navlink.navlink--cart.navlink--cart--text.navlink--toplevel {
 	top: 75px;
 	padding: 20px 0px !important;
 }
+.template-collection .seven-fifty-height-hero {
+	min-height: 350px;
+}
 }
 /*END 989px*/
 
