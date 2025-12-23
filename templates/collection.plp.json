@@ -94,6 +94,24 @@
         "padding_bottom": 40
       }
     },
+    "image_50_50_RgtdG3": {
+      "type": "image-50-50",
+      "name": "Image 50 / 50",
+      "settings": {
+        "image_left": "shopify://shop_images/img18.jpg",
+        "image_padding_l": false,
+        "link_text": "View products",
+        "link": "",
+        "button_type": "btn--primary",
+        "button_style": "btn--solid",
+        "image_right": "shopify://shop_images/img19.jpg",
+        "image_padding_r": false,
+        "link_text_r": "View products",
+        "link_r": "",
+        "button_type_r": "btn--primary",
+        "button_style_r": "btn--solid"
+      }
+    },
     "hero": {
       "type": "collection-image-with-title",
       "settings": {
@@ -172,6 +190,7 @@
     "section_hero_7DyRR4",
     "section_rich_text_3mMwQQ",
     "section_products_image_PxVAfA",
+    "image_50_50_RgtdG3",
     "hero",
     "main",
     "subcollections"
