@@ -98,18 +98,11 @@
       "type": "image-50-50",
       "name": "Image 50 / 50",
       "settings": {
+        "width": "wrapper--full-padded",
         "image_left": "shopify://shop_images/img18.jpg",
-        "image_padding_l": true,
-        "link_text": "View products",
         "link": "",
-        "button_type": "btn--primary",
-        "button_style": "btn--solid",
         "image_right": "shopify://shop_images/img19.jpg",
-        "image_padding_r": true,
-        "link_text_r": "View products",
-        "link_r": "",
-        "button_type_r": "btn--primary",
-        "button_style_r": "btn--solid"
+        "link_r": ""
       }
     },
     "hero": {

@@ -1991,3 +1991,6 @@ a.btn.btn--text.btn--primary {
 .image-50-50-section{
 	padding:50px 0 120px;
 }
+.img_row_50_50.wrapper--full {
+	max-width: none;
+}
