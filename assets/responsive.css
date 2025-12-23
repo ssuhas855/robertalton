@@ -1487,6 +1487,10 @@ body.scrolled mobile-menu .drawer__inner {
 .collection-new-collection .grid-outer.featured_width_wrapper--full-padded .product-item--featured-image {
 	padding-left: 40px;
 }
+.collection-new-collection .grid-outer.featured_width_wrapper--full-padded .product-item--featured-image {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
 
 } 
 /*END 767px*/
