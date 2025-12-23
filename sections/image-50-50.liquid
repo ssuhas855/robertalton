@@ -1,7 +1,21 @@
 {%- liquid
   assign image_left = section.settings.image_left
   assign image_right = section.settings.image_right  
-
+ capture sizes
+    if section.settings.width == 'wrapper--full'
+      if image_left and image_right
+        echo '(min-width: 750px) 50vw, 100vw'
+      else
+        echo '100vw'
+      endif
+    else
+      if image_left and image_right
+        echo '(min-width: 990px) calc((100vw - 100px) / 2), (min-width: 750px) calc((100vw - 60px) / 2), calc(100vw - 32px)'
+      else
+        echo '(min-width: 990px) calc(100vw - 100px), (min-width: 750px) calc(100vw - 60px), calc(100vw - 32px)'
+      endif
+    endif
+  endcapture
 -%}
 
 
