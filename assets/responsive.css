@@ -1498,6 +1498,9 @@ body.scrolled mobile-menu .drawer__inner {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
+.collection-alt-collection .product-item--featured-image {
+    grid-column: span 1;
+}
 
 } 
 /*END 767px*/
