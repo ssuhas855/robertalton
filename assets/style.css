@@ -1996,3 +1996,6 @@ a.btn.btn--text.btn--primary {
 	padding-left:10px;
 	padding-right:10px;
 }
+.template-collection .index-hero {
+	padding-top: 0;
+}
