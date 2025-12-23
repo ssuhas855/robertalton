@@ -337,7 +337,13 @@ a.navlink.navlink--cart.navlink--cart--text.navlink--toplevel {
 	min-height: 350px;
 }
 .template-collection .index-rte .hero__content__wrapper {	
-	max-width: 560px;
+	max-width: 450px;
+}
+.collection-new-collection .grid-outer.featured_width_wrapper--full-padded .product-item--featured-image {
+	padding-left: 50px;
+}
+.collection-new-collection .grid-outer.featured_width_wrapper--full-padded .product-item--featured-image + .product-item--featured-image {
+	padding-right: 50px;
 }
 }
 /*END 989px*/
