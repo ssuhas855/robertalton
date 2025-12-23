@@ -1971,6 +1971,12 @@ a.btn.btn--text.btn--primary {
 	padding-right: 160px;
 	padding-top: 80px;
 }
+.template-collection .hero__wrapper.frame.wrapper--full {
+	max-width: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 0px;
+}
 .template-collection .index-hero{
 	padding-top:80px;
 }
