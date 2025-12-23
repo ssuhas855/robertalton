@@ -9,6 +9,121 @@
  */
 {
   "sections": {
+    "section_hero_7DyRR4": {
+      "type": "section-hero",
+      "name": "Image banner",
+      "settings": {
+        "image_1": "shopify://shop_images/plp_hero.jpg",
+        "link": "",
+        "width": "wrapper--full-padded",
+        "height": "seven-fifty-height-hero",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_image": "shopify://shop_images/plp_heromo.jpg",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "text_below": false,
+        "color_scheme": "",
+        "show_text_background": false,
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_rich_text_3mMwQQ": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_Gt7Mqx": {
+          "type": "heading",
+          "settings": {
+            "title": "introducing  the Nordhaven Collection",
+            "heading_font_size": "heading-large",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_acqFwM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>nspired by the stillness of northern harbors, the Nordhaven Collection combines smooth surfaces with sculpted curves, creating a sense of  calm strength. Each piece feels intimate and refined, designed to sit naturally against the skin. Minimalism with warmth, elegance with an edge  — this is Scandinavian luxury at its most modern.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_Gt7Mqx",
+        "text_acqFwM"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "align_text": "text-center",
+        "width": "wrapper--narrow",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 120,
+        "padding_bottom": 120
+      }
+    },
+    "section_products_image_PxVAfA": {
+      "type": "section-products-image",
+      "blocks": {
+        "products_tW8Qhe": {
+          "type": "products",
+          "settings": {
+            "product_list": [
+              "product-eight",
+              "product-five",
+              "product-four",
+              "product-nine"
+            ],
+            "layout_mobile": "slider"
+          }
+        }
+      },
+      "block_order": [
+        "products_tW8Qhe"
+      ],
+      "name": "Products with image",
+      "settings": {
+        "width": "wrapper--full",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 40
+      }
+    },
+    "image_50_50_RgtdG3": {
+      "type": "image-50-50",
+      "name": "Image 50 / 50",
+      "settings": {
+        "width": "wrapper--full-padded",
+        "image_left": "shopify://shop_images/img18.jpg",
+        "link": "",
+        "image_right": "shopify://shop_images/img19.jpg",
+        "link_r": ""
+      }
+    },
+    "hero": {
+      "type": "collection-image-with-title",
+      "settings": {
+        "show_title": false,
+        "show_description": false,
+        "flex_align": "align--middle-left",
+        "color_scheme": "",
+        "show_text_background": false,
+        "overlay_type": "disabled",
+        "show_image": true,
+        "banner_layout": "overlay",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "link_text": "Discover ALL collection",
+        "link": "shopify://collections/shop-all",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "main": {
       "type": "collection",
       "blocks": {
@@ -36,8 +151,8 @@
         "featured_image_kJ4Cyq"
       ],
       "settings": {
-        "enable_sort": true,
-        "enable_filters": true,
+        "enable_sort": false,
+        "enable_filters": false,
         "filter_layout": "slide-out",
         "default_open": false,
         "collection_linklist": "",
@@ -46,27 +161,7 @@
         "products_per_page": 14,
         "color_scheme": "scheme-1",
         "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "hero": {
-      "type": "collection-image-with-title",
-      "disabled": true,
-      "settings": {
-        "show_title": false,
-        "show_description": false,
-        "flex_align": "align--middle-left",
-        "color_scheme": "",
-        "show_text_background": false,
-        "overlay_type": "disabled",
-        "show_image": true,
-        "banner_layout": "overlay",
-        "height": "image-height",
-        "mobile_height": "image-height--mobile",
-        "link_text": "Discover ALL collection",
-        "link": "shopify://collections/shop-all",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 100
       }
     },
     "subcollections": {
@@ -85,8 +180,12 @@
     }
   },
   "order": [
-    "main",
+    "section_hero_7DyRR4",
+    "section_rich_text_3mMwQQ",
+    "section_products_image_PxVAfA",
+    "image_50_50_RgtdG3",
     "hero",
+    "main",
     "subcollections"
   ]
 }
