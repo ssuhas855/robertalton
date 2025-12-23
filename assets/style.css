@@ -2031,3 +2031,9 @@ padding-top:50px;
 .collection-alt-collection .product-item--featured-image + .product-item--featured-image{
 	margin-left: -5px;
 }
+.collection-new-collection .product-item--featured-image .product-item__image {
+	height: calc(100% - 0px);
+}
+.collection-alt-collection .product-item--featured-image .product-item__image {
+	height: calc(100% - 0px);
+}
