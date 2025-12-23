@@ -19,7 +19,7 @@
         "height": "seven-fifty-height-hero",
         "flex_align_desktop": "align--middle-center-desktop",
         "content_width": 50,
-        "mobile_image": "shopify://shop_images/plp_heromo.jpg",
+        "mobile_image": "shopify://shop_images/alt_plp_heromo.jpg",
         "mobile_height": "image-height--mobile",
         "flex_align_mobile": "align--middle-center-mobile",
         "text_below": false,
@@ -46,7 +46,7 @@
         "text_acqFwM": {
           "type": "text",
           "settings": {
-            "text": "<p>nspired by the stillness of northern harbors, the Nordhaven Collection combines smooth surfaces with sculpted curves, creating a sense of  calm strength. Each piece feels intimate and refined, designed to sit naturally against the skin. Minimalism with warmth, elegance with an edge  </p><p>— this is Scandinavian luxury at its most modern.</p>",
+            "text": "<p>nspired by the stillness of northern harbors, the Nordhaven Collection combines smooth surfaces with sculpted curves, creating a sense of  calm strength. Each piece feels intimate and refined, designed to sit naturally against the skin. Minimalism with warmth, elegance with an edge</p><p>— this is Scandinavian luxury at its most modern.</p>",
             "text_font_size": "body-medium",
             "padding_bottom": 16
           }
