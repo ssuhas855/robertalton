@@ -1478,5 +1478,8 @@ body.scrolled mobile-menu .drawer__inner {
 .template-collection .index-rte.section-padding{
 	padding:40px 0;
 }
+.template-collection h2.hero__title {
+	font-size: 9px;
+}
 } 
 /*END 767px*/
