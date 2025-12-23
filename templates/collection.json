@@ -148,7 +148,7 @@
           "type": "featured_image",
           "settings": {
             "featured_image": "{{ collection.metafields.custom.lifestyle_image.value }}",
-            "position": 9,
+            "position": 11,
             "featured_heading": "",
             "heading_font_size": "heading-large",
             "featured_text": "",
@@ -175,7 +175,7 @@
         "collection_linklist": "",
         "grid": 4,
         "grid_mobile": "2",
-        "products_per_page": 12,
+        "products_per_page": 14,
         "color_scheme": "scheme-1",
         "padding_top": 0,
         "padding_bottom": 0
