@@ -22,6 +22,7 @@
 .collection-new-collection .grid-outer.featured_width_wrapper--full-padded .product-item--featured-image {
 	padding-left: 120px;
 }
+
 }
 /*END 1299px*/
 
@@ -30,6 +31,17 @@
 .product__content .form__width {
 	max-width: 380px;
 }
+.collection-new-collection .grid-outer.featured_width_wrapper--full-padded .product-item--featured-image + .product-item--featured-image {
+	padding-right: 100px;
+}
+.collection-new-collection .grid-outer.featured_width_wrapper--full-padded .product-item--featured-image {
+	padding-left: 100px;
+}
+.collection-new-collection .grid-outer.featured_width_wrapper--full-padded .product-item--featured-image {
+	padding-left: 100px;
+	margin-bottom: 100px;
+}
+
 }
 /*END 1199px*/
 
