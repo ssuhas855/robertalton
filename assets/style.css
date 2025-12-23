@@ -2017,7 +2017,15 @@ padding-top:50px;
 }
 .collection-new-collection .product-item--featured-image {
 	grid-column: span 2;
+	margin-right: -5px;
+}
+.collection-new-collection .product-item--featured-image + .product-item--featured-image{
+	margin-left: -5px;
 }
 .collection-alt-collection .product-item--featured-image {
 	grid-column: span 2;
+	margin-right: -5px;
+}
+.collection-alt-collection .product-item--featured-image + .product-item--featured-image{
+	margin-left: -5px;
 }
