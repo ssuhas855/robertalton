@@ -1982,3 +1982,8 @@ a.btn.btn--text.btn--primary {
 	max-width: 1120px;
 	position: relative;
 }
+.img_50 {
+	padding: 0;
+	float: left;
+	width: 50%;
+}
