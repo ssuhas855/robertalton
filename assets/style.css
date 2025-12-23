@@ -2010,3 +2010,9 @@ a.btn.btn--text.btn--primary {
 .template-collection .index-hero {
 	padding-top: 0;
 }
+.collection-new-collection .product-item--featured-image {
+	grid-column: span 2;
+}
+.collection-alt-collection .product-item--featured-image {
+	grid-column: span 2;
+}
