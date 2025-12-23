@@ -1462,5 +1462,8 @@ body.scrolled mobile-menu .drawer__inner {
 .product__block.product__block--buttons {
 	background: transparent;
 }
+.template-collection .seven-fifty-height-hero {
+	min-height: 200px;
+}
 } 
 /*END 767px*/
