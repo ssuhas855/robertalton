@@ -1420,5 +1420,8 @@ body.scrolled mobile-menu .drawer__inner {
 .custom-form__block.textarea_full + .custom-form__block{
 	width:100%;
 }
+.product__block.product__block--buttons {
+	background: transparent;
+}
 } 
 /*END 767px*/
