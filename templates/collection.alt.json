@@ -70,7 +70,7 @@
       "type": "image-50-50",
       "name": "Image 50 / 50",
       "settings": {
-        "width": "wrapper--full-padded",
+        "width": "wrapper--full",
         "image_left": "shopify://shop_images/img1.jpg",
         "link": "",
         "image_right": "shopify://shop_images/img2.jpg",
