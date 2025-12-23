@@ -96,6 +96,7 @@
     },
     "image_50_50_RgtdG3": {
       "type": "image-50-50",
+      "disabled": true,
       "name": "Image 50 / 50",
       "settings": {
         "width": "wrapper--full-padded",
@@ -130,8 +131,8 @@
         "featured_image_kJ4Cyq": {
           "type": "featured_image",
           "settings": {
-            "featured_image": "{{ collection.metafields.custom.lifestyle_image.value }}",
-            "position": 11,
+            "featured_image": "shopify://shop_images/img18.jpg",
+            "position": 5,
             "featured_heading": "",
             "heading_font_size": "heading-large",
             "featured_text": "",
