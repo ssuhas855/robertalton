@@ -2018,6 +2018,7 @@ padding-top:50px;
 .collection-new-collection .product-item--featured-image {
 	grid-column: span 2;
 	margin-right: -5px;
+	margin-bottom: 0;
 }
 .collection-new-collection .product-item--featured-image + .product-item--featured-image{
 	margin-left: -5px;
@@ -2025,6 +2026,7 @@ padding-top:50px;
 .collection-alt-collection .product-item--featured-image {
 	grid-column: span 2;
 	margin-right: -5px;
+	margin-bottom: 0;
 }
 .collection-alt-collection .product-item--featured-image + .product-item--featured-image{
 	margin-left: -5px;
