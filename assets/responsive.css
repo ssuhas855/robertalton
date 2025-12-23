@@ -1471,5 +1471,9 @@ body.scrolled mobile-menu .drawer__inner {
 	padding-top: 0;
 	padding-bottom: 0;
 }
+.template-collection .index-rte .hero__content__wrapper {
+	max-width: none;
+	padding: 0 20px;
+}
 } 
 /*END 767px*/
