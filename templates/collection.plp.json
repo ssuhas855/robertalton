@@ -16,7 +16,7 @@
         "image_1": "shopify://shop_images/plp_hero.jpg",
         "link": "",
         "width": "wrapper--full-padded",
-        "height": "image-height",
+        "height": "seven-fifty-height-hero",
         "flex_align_desktop": "align--middle-center-desktop",
         "content_width": 50,
         "mobile_image": "shopify://shop_images/plp_heromo.jpg",
