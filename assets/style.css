@@ -1973,3 +1973,6 @@ a.btn.btn--text.btn--primary {
 .template-collection .index-hero{
 	padding-top:80px;
 }
+.template-collection .brick__block--products .grid {
+	--columns: var(--COLUMNS-WIDESCREEN, 4);
+}
