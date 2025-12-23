@@ -85,6 +85,7 @@
       "block_order": [
         "products_tW8Qhe"
       ],
+      "disabled": true,
       "name": "Products with image",
       "settings": {
         "width": "wrapper--full",
@@ -128,6 +129,25 @@
     "main": {
       "type": "collection",
       "blocks": {
+        "featured_image_rJkdjN": {
+          "type": "featured_image",
+          "settings": {
+            "featured_image": "shopify://shop_images/img19.jpg",
+            "position": 6,
+            "featured_heading": "",
+            "heading_font_size": "heading-large",
+            "featured_text": "",
+            "featured_button_text": "",
+            "featured_button_link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false,
+            "featured_color_text": "#ffffff",
+            "overlay_type": "disabled",
+            "heading_tag": "automatic"
+          }
+        },
         "featured_image_kJ4Cyq": {
           "type": "featured_image",
           "settings": {
@@ -136,8 +156,8 @@
             "featured_heading": "",
             "heading_font_size": "heading-large",
             "featured_text": "",
-            "featured_button_text": "{{ collection.metafields.custom.lifestyle_title.value }}",
-            "featured_button_link": "{{ collection.metafields.custom.lifestyle_link.value }}",
+            "featured_button_text": "",
+            "featured_button_link": "",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--text",
@@ -149,6 +169,7 @@
         }
       },
       "block_order": [
+        "featured_image_rJkdjN",
         "featured_image_kJ4Cyq"
       ],
       "settings": {
