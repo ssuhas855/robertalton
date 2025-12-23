@@ -1965,3 +1965,8 @@ a.btn.btn--text.btn--primary {
 .announcement__wrapper--borders{
 	border-color: #696969;
 }
+.template-collection .hero__wrapper.frame.wrapper--full-padded {
+	max-width: none;
+	padding-left: 160px;
+	padding-right: 160px;
+}
