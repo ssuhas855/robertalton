@@ -1976,3 +1976,9 @@ a.btn.btn--text.btn--primary {
 .template-collection .brick__block--products .grid {
 	--columns: var(--COLUMNS-WIDESCREEN, 4);
 }
+.img_row_50_50.padding_true {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1120px;
+	position: relative;
+}
