@@ -1964,3 +1964,6 @@ a.btn.btn--text.btn--primary {
 .widget__links.widget__links--secondary a {
 	color: #131111;
 }
+.announcement__wrapper--borders{
+	border-color: #696969;
+}
