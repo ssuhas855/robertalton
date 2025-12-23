@@ -1,6 +1,20 @@
+{%- liquid
+  assign image_left = section.settings.image_left
+  assign image_right = section.settings.image_right  
+
+-%}
+
+
 <div class="img_row_50_50">
 <div class="img_50">
-<img src="{{  }}" alt="hero left image" width="" height="" />
+{%- render 'image-hero',
+    image_desktop: image_left,            
+    sizes: sizes,
+    desktop_height: 'auto',
+    mobile_height: 'auto'
+-%}
+
+
 
 </div>  
 </div>
