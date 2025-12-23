@@ -2046,6 +2046,7 @@ padding-top:50px;
 	padding-right:200px;
 	margin-top:200px;
 	margin-bottom:200px;
+	padding-left:0px;
 }
 .collection-alt-collection .grid-outer.featured_width_wrapper--full-padded .product-item--featured-image {
 	padding-left:200px;
@@ -2056,4 +2057,5 @@ padding-top:50px;
 	padding-right:200px;
 	margin-top:200px;
 	margin-bottom:200px;
+	padding-left:0px;
 }
