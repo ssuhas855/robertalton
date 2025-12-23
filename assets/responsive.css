@@ -1485,14 +1485,14 @@ body.scrolled mobile-menu .drawer__inner {
 	grid-column: span 1;
 }
 .collection-new-collection .grid-outer.featured_width_wrapper--full-padded .product-item--featured-image {
-	padding-left: 40px;
+	padding-left: 30px;
 }
 .collection-new-collection .grid-outer.featured_width_wrapper--full-padded .product-item--featured-image {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
 .collection-new-collection .grid-outer.featured_width_wrapper--full-padded .product-item--featured-image + .product-item--featured-image {
-	padding-right: 40px;
+	padding-right: 30px;
 }
 .collection-new-collection .grid-outer.featured_width_wrapper--full-padded .product-item--featured-image + .product-item--featured-image {
 	margin-top: 20px;
