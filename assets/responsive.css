@@ -1481,6 +1481,12 @@ body.scrolled mobile-menu .drawer__inner {
 .template-collection h2.hero__title {
 	font-size: 9px;
 }
+.collection-new-collection .product-item--featured-image {
+	grid-column: span 1;
+}
+.collection-new-collection .grid-outer.featured_width_wrapper--full-padded .product-item--featured-image {
+	padding-left: 40px;
+}
 
 } 
 /*END 767px*/
