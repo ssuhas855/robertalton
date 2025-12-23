@@ -1465,5 +1465,11 @@ body.scrolled mobile-menu .drawer__inner {
 .template-collection .seven-fifty-height-hero {
 	min-height: 200px;
 }
+.template-collection .hero__wrapper.frame.wrapper--full-padded {
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 0;
+	padding-bottom: 0;
+}
 } 
 /*END 767px*/
