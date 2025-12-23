@@ -5,7 +5,7 @@
 -%}
 
 
-<div class="img_row_50_50">
+<div class="img_row_50_50 padding_{{ section.settings.image_padding_l }}">
 <div class="img_50">
 {%- render 'image-hero',
     image_desktop: image_left,            
@@ -13,10 +13,17 @@
     desktop_height: 'auto',
     mobile_height: 'auto'
 -%}
+</div> 
 
+<div class="img_50">
+{%- render 'image-hero',
+    image_desktop: image_left,            
+    sizes: sizes,
+    desktop_height: 'auto',
+    mobile_height: 'auto'
+-%}
+</div> 
 
-
-</div>  
 </div>
 
 {% schema %}
