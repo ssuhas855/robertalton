@@ -2022,6 +2022,7 @@ padding-top:50px;
 }
 .collection-new-collection .product-item--featured-image + .product-item--featured-image{
 	margin-left: -5px;
+	margin-right: 0px;
 }
 .collection-alt-collection .product-item--featured-image {
 	grid-column: span 2;
@@ -2030,6 +2031,7 @@ padding-top:50px;
 }
 .collection-alt-collection .product-item--featured-image + .product-item--featured-image{
 	margin-left: -5px;
+	margin-right: 0px;
 }
 .collection-new-collection .product-item--featured-image .product-item__image {
 	height: calc(100% - 0px);
