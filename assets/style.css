@@ -2000,12 +2000,14 @@ a.btn.btn--text.btn--primary {
 	width: 50%;
 }
 .image-50-50-section{
-	padding:50px 0 120px;
+	padding:0;
 }
 .img_row_50_50.wrapper--full {
 	max-width: none;
 	padding-left:10px;
 	padding-right:10px;
+	padding-top:50px;
+	padding-bottom:120px;
 }
 .template-collection .index-hero {
 	padding-top: 0;
