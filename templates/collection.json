@@ -9,138 +9,6 @@
  */
 {
   "sections": {
-    "divider": {
-      "type": "section-divider",
-      "disabled": true,
-      "settings": {
-        "show_line": true,
-        "width": "wrapper--full",
-        "color_scheme": "scheme-6",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "hero": {
-      "type": "collection-image-with-title",
-      "settings": {
-        "show_title": false,
-        "show_description": false,
-        "flex_align": "align--middle-left",
-        "color_scheme": "",
-        "show_text_background": false,
-        "overlay_type": "disabled",
-        "show_image": true,
-        "banner_layout": "overlay",
-        "height": "image-height",
-        "mobile_height": "image-height--mobile",
-        "link_text": "Discover ALL collection",
-        "link": "shopify://collections/shop-all",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "highlights": {
-      "type": "section-highlights",
-      "blocks": {
-        "highlight_nhkf7G": {
-          "type": "highlight",
-          "settings": {
-            "heading": "New Arrivals",
-            "url": "shopify://collections/all",
-            "color": "#212121",
-            "bg_color": "#f5f2ec",
-            "border_color": "#f5f2ec"
-          }
-        },
-        "highlight_WREypK": {
-          "type": "highlight",
-          "settings": {
-            "heading": "Best Sellers",
-            "url": "shopify://collections/all",
-            "color": "#212121",
-            "bg_color": "#f5f2ec",
-            "border_color": "#f5f2ec"
-          }
-        },
-        "highlight_LKpYtB": {
-          "type": "highlight",
-          "settings": {
-            "heading": "Sale",
-            "url": "shopify://collections/all",
-            "color": "#212121",
-            "bg_color": "#f5f2ec",
-            "border_color": "#f5f2ec"
-          }
-        },
-        "highlight_Cr3qqN": {
-          "type": "highlight",
-          "settings": {
-            "heading": "Rings",
-            "url": "shopify://collections/all",
-            "color": "#212121",
-            "bg_color": "#f5f2ec",
-            "border_color": "#f5f2ec"
-          }
-        },
-        "highlight_BfUMW8": {
-          "type": "highlight",
-          "settings": {
-            "heading": "Earrings",
-            "url": "shopify://collections/all",
-            "color": "#212121",
-            "bg_color": "#f5f2ec",
-            "border_color": "#f5f2ec"
-          }
-        },
-        "highlight_J6Ue7q": {
-          "type": "highlight",
-          "settings": {
-            "heading": "Necklaces",
-            "url": "shopify://collections/all",
-            "color": "#212121",
-            "bg_color": "#f5f2ec",
-            "border_color": "#f5f2ec"
-          }
-        }
-      },
-      "block_order": [
-        "highlight_nhkf7G",
-        "highlight_WREypK",
-        "highlight_LKpYtB",
-        "highlight_Cr3qqN",
-        "highlight_BfUMW8",
-        "highlight_J6Ue7q"
-      ],
-      "disabled": true,
-      "settings": {
-        "style": "button",
-        "grid": 6,
-        "heading": "",
-        "heading_position": "text-left",
-        "heading_font_size": "heading-large",
-        "text_font_size": "body-small",
-        "width": "wrapper--full-padded",
-        "layout_mobile": "2",
-        "color_scheme": "scheme-1",
-        "padding_top": 0,
-        "padding_bottom": 40,
-        "heading_tag": "automatic"
-      }
-    },
-    "subcollections": {
-      "type": "subcollections",
-      "disabled": true,
-      "settings": {
-        "subcollection_layout": "grid",
-        "subcollection_description": false,
-        "select_image": "collection",
-        "color_scheme": "",
-        "color": "#ffffff",
-        "bg_color": "",
-        "padding_top": 20,
-        "padding_bottom": 20
-      }
-    },
     "main": {
       "type": "collection",
       "blocks": {
@@ -180,13 +48,45 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "hero": {
+      "type": "collection-image-with-title",
+      "disabled": true,
+      "settings": {
+        "show_title": false,
+        "show_description": false,
+        "flex_align": "align--middle-left",
+        "color_scheme": "",
+        "show_text_background": false,
+        "overlay_type": "disabled",
+        "show_image": true,
+        "banner_layout": "overlay",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "link_text": "Discover ALL collection",
+        "link": "shopify://collections/shop-all",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "subcollections": {
+      "type": "subcollections",
+      "disabled": true,
+      "settings": {
+        "subcollection_layout": "grid",
+        "subcollection_description": false,
+        "select_image": "collection",
+        "color_scheme": "",
+        "color": "#ffffff",
+        "bg_color": "",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
     }
   },
   "order": [
-    "divider",
+    "main",
     "hero",
-    "highlights",
-    "subcollections",
-    "main"
+    "subcollections"
   ]
 }
