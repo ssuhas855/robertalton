@@ -1481,8 +1481,6 @@ body.scrolled mobile-menu .drawer__inner {
 .template-collection h2.hero__title {
 	font-size: 9px;
 }
-.template-collection .index-rte .hero__rte p{
-	margin:0;
-}
+
 } 
 /*END 767px*/
