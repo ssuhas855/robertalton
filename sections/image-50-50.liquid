@@ -19,12 +19,12 @@
 -%}
 
 
-<div class="img_row_50_50 padding_{{ section.settings.image_padding_l }}">
-<div class="img_50">
+<div class="img_row_50_50">
+<div class="img_50 padding_{{ section.settings.image_padding_l }}">
 <img src="{{ image_left | image_url: width: 700, height: auto }}" alt="" width="" height="" />
 </div> 
 
-<div class="img_50">
+<div class="img_50 padding_{{ section.settings.image_padding_2 }}">
 {%- render 'image-hero',
     image_desktop: image_right,            
     sizes: sizes,
