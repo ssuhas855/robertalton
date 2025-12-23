@@ -1993,4 +1993,6 @@ a.btn.btn--text.btn--primary {
 }
 .img_row_50_50.wrapper--full {
 	max-width: none;
+	padding-left:10px;
+	padding-right:10px;
 }
