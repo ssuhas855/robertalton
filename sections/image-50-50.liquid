@@ -19,13 +19,13 @@
 -%}
 
 
-<div class="img_row_50_50">
-<div class="img_50 padding_{{ section.settings.image_padding_l }}">
+<div class="img_row_50_50 {{ section.settings.width }}">
+<div class="img_50">
  {%- render 'image' image: image_left, sizes: sizes, width: width, widths: widths, show_backfill: false -%}
 
 </div> 
 
-<div class="img_50 padding_{{ section.settings.image_padding_2 }}">
+<div class="img_50">
 {%- render 'image-hero',
     image_desktop: image_right,            
     sizes: sizes,
@@ -42,6 +42,16 @@
   "class": "image-50-50-section",
   "settings": [
     {
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "default": "wrapper--full",
+      "options": [
+        {"value": "wrapper--full", "label": "Full width"},
+        {"value": "wrapper--full-padded", "label": "Full width padded"}
+      ]
+    },
+    {
       "type": "header",
       "content": "Left image"
     },
@@ -50,12 +60,6 @@
       "id": "image_left",
       "label": "Primary image"
     },
-    {
-          "type": "checkbox",
-          "id": "image_padding_l",
-          "label": "Image paading",
-          "default": false
-        },
         {
           "type": "url",
           "id": "link",
@@ -70,12 +74,6 @@
       "id": "image_right",
       "label": "Primary image"
     },
-    {
-          "type": "checkbox",
-          "id": "image_padding_r",
-          "label": "Image paading",
-          "default": false
-        },
         {
           "type": "url",
           "id": "link_r",
