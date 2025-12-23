@@ -37,9 +37,10 @@
 .collection-new-collection .grid-outer.featured_width_wrapper--full-padded .product-item--featured-image {
 	padding-left: 100px;
 }
-.collection-new-collection .grid-outer.featured_width_wrapper--full-padded .product-item--featured-image {
+.template-collection .hero__wrapper.frame.wrapper--full-padded {
 	padding-left: 100px;
-	margin-bottom: 100px;
+	padding-right: 100px;
+	padding-top: 50px;
 }
 
 }
