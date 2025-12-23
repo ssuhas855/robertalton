@@ -15,7 +15,7 @@
       "settings": {
         "image_1": "shopify://shop_images/plp_hero.jpg",
         "link": "",
-        "width": "wrapper--full-padded",
+        "width": "wrapper--full",
         "height": "seven-fifty-height-hero",
         "flex_align_desktop": "align--middle-center-desktop",
         "content_width": 50,
