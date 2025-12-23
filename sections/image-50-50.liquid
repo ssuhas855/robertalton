@@ -21,7 +21,13 @@
 
 <div class="img_row_50_50">
 <div class="img_50 padding_{{ section.settings.image_padding_l }}">
-<img src="{{ image_left | image_url: width: 700, height: auto }}" alt="" width="" height="" />
+
+{%- render 'image-hero',
+    image_desktop: image_left,            
+    sizes: sizes,
+    desktop_height: 'auto',
+    mobile_height: 'auto'
+-%}
 </div> 
 
 <div class="img_50 padding_{{ section.settings.image_padding_2 }}">
