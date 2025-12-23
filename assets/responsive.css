@@ -1475,5 +1475,8 @@ body.scrolled mobile-menu .drawer__inner {
 	max-width: none;
 	padding: 0 20px;
 }
+.template-collection .index-rte.section-padding{
+	padding:40px 0;
+}
 } 
 /*END 767px*/
