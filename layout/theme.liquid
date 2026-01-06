@@ -100,32 +100,54 @@ document.addEventListener("DOMContentLoaded", () => {
   const inputs = document.querySelectorAll(
     'input[type="radio"][data-index="option1"]'
   );
-  const slides = document.querySelectorAll(".product__slide");
+  const slides = Array.from(document.querySelectorAll(".product__slide"));
 
   if (!slider || !bar || !slides.length) return;
 
+  const totalSlides = slides.length;
+
   /* =========================
-     PROGRESS BAR (FIXED)
+     PROGRESS (IMAGE BASED)
   ========================= */
-  function updateProgress() {
+  function setProgressBySlide(slide) {
+    const index = slides.indexOf(slide);
+    if (index === -1) return;
+
+    const progress = ((index + 1) / totalSlides) * 100;
+
     if (window.innerWidth <= 768) {
-      // 📱 Mobile – horizontal
-      const max = slider.scrollWidth - slider.clientWidth;
-      const progress = max > 0 ? (slider.scrollLeft / max) * 100 : 0;
       bar.style.width = progress + "%";
       bar.style.height = "100%";
     } else {
-      // 🖥 Desktop – vertical
-      const max = slider.scrollHeight - slider.clientHeight;
-      const progress = max > 0 ? (slider.scrollTop / max) * 100 : 0;
       bar.style.height = progress + "%";
       bar.style.width = "100%";
     }
   }
 
-  slider.addEventListener("scroll", updateProgress);
-  window.addEventListener("resize", updateProgress);
-  updateProgress(); // initial call
+  // ✅ Initial – first slide = 11.11%
+  setProgressBySlide(slides[0]);
+
+  /* =========================
+     SCROLL → ACTIVE SLIDE
+  ========================= */
+  slider.addEventListener("scroll", () => {
+    let activeSlide = slides[0];
+    let minDistance = Infinity;
+
+    slides.forEach((slide) => {
+      const distance =
+        window.innerWidth <= 768
+          ? Math.abs(slide.offsetLeft - slider.scrollLeft)
+          : Math.abs(slide.offsetTop - slider.scrollTop);
+
+      if (distance < minDistance) {
+        minDistance = distance;
+        activeSlide = slide;
+      }
+    });
+
+    setProgressBySlide(activeSlide);
+  });
 
   /* =========================
      VARIANT → IMAGE CHANGE
@@ -154,21 +176,23 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!targetSlide) return;
 
       if (window.innerWidth <= 768) {
-        // 📱 Mobile → horizontal scroll
         slider.scrollTo({
           left: targetSlide.offsetLeft,
           behavior: "smooth"
         });
       } else {
-        // 🖥 Desktop → vertical scroll
         slider.scrollTo({
           top: targetSlide.offsetTop,
           behavior: "smooth"
         });
       }
+
+      // ✅ Update progress immediately
+      setProgressBySlide(targetSlide);
     });
   });
 });
+
 
 
 
@@ -301,6 +325,15 @@ window.addEventListener("scroll", () => {
 </script> 
 
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.location.search.includes("customer_posted=true")) {
+    
+    const cleanUrl = window.location.origin + window.location.pathname;
+    window.history.replaceState({}, document.title, cleanUrl);
+  }
+});
+</script>
 
 
   </body>

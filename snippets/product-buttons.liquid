@@ -159,7 +159,9 @@
 
         <div class="product__submit__buttons{% if buybutton_setting and show_quantity == false %} product__submit__buttons--inline{% endif %}">
           <div class="product__submit__item{% if show_quantity %} product__submit__item--inline{% endif %}">
+         {% if collection.handle contains 'ring' %}
             {{ quantity_selector }}
+            {% endif %}
 
             {%- liquid
               assign button_size = block.settings.button_size | default: 'btn--medium'

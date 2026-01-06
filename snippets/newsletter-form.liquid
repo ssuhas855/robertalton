@@ -11,6 +11,7 @@
   {% render 'newsletter-form', block: block, show_discount_message: show_discount_message success_text: success_text, small_newsletter: small_newsletter %}
 {% endcomment %}
 
+
 <script src="{{ 'newsletter.js' | asset_url }}" defer="defer"></script>
 
 {%- liquid
@@ -96,7 +97,7 @@
     type="email"
     id="{{ field_id }}"
     class="{% if input_group %}input-group__field{% else %}field{% endif %}"
-    placeholder="{{ placeholder_field }}"
+    placeholder="your email address"
     aria-label="{{ placeholder_field }}"
     autocorrect="off"
     autocapitalize="off"
@@ -125,7 +126,7 @@
 <newsletter-component>
   {%- form 'customer', class: form_class, id: form_id, data-newsletter-form: '', style: style -%}
     {%- liquid
-      assign success_message = 'general.newsletter_form.thank_you' | t
+      assign success_message = 'Thank you for signing up.'
       assign success_message_discount = 'general.newsletter_form.thank_you_with_code_html' | t
 
       if success_text != blank
@@ -180,3 +181,16 @@
     {%- endif -%}
   {%- endform -%}
 </newsletter-component>
+
+
+
+
+
+
+
+
+
+
+
+
+ 

@@ -1,6 +1,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
 {%- liquid
   assign selected_color_scheme = settings.color_scheme | strip
@@ -784,6 +785,33 @@
   to
   <script src="{{ 'theme.dev.js' | asset_url }}" defer="defer"></script>
 {%- endcomment -%}
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  if (window.innerWidth > 767) return;
+
+  const el = document.querySelector('.search_collection_wrapper');
+  if (!el) return;
+
+  let startX = 0;
+  let scrollLeft = 0;
+
+  el.addEventListener('touchstart', function (e) {
+    startX = e.touches[0].pageX;
+    scrollLeft = el.scrollLeft;
+  }, { passive: true });
+
+  el.addEventListener('touchmove', function (e) {
+    e.preventDefault(); // IMPORTANT
+    const x = e.touches[0].pageX;
+    const walk = startX - x;
+    el.scrollLeft = scrollLeft + walk;
+  }, { passive: false });
+
+});
+</script>
+
 
 <!-- Shopify app scripts =========================================================== -->
 {{ 'fonts.css' | asset_url | stylesheet_tag }}
