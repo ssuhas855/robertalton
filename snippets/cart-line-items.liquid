@@ -256,7 +256,7 @@
             {%- if line_item.final_price == 0 -%}
               {{ 'general.money.free' | t }}
             {%- else -%}
-              {{- line_item.final_price | times: quantity | money -}}
+              {{- line_item.final_price | times: quantity | money_with_currency -}}
             {%- endif -%}
           </div>
         </div>

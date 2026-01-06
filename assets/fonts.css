@@ -165,6 +165,7 @@ h2.hero__title{
 	width: 100%;
     left:0;
     transition: left .3s cubic-bezier(.39,.575,.565,1);
+	    height: 0.6px;
 }
 .btn--text:hover span::after {
 	  left:101%;
@@ -205,7 +206,7 @@ width: 100%;
 	margin-bottom: 30px;
 }
 .badge-box {
-	border: 1px solid;
+	border: 1px solid #696969;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
     padding: 6.5px 15px;

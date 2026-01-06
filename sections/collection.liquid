@@ -229,7 +229,7 @@
         </collection-filters-form>
       {%- endif -%}
 
-      <div class="grid-outer" data-products-grid>
+      <div class="grid-outer featured_width_{{ section.settings.featured_width }}" data-products-grid>
         <{{ items_container_tag }}
           class="grid"
           {% if enable_infinity_scroll %}
@@ -421,6 +421,22 @@
       "label": "Products per page",
       "default": 24
     },
+
+  {
+      "type": "header",
+      "content": "Featured image section"
+    },
+    {
+      "type": "select",
+      "id": "featured_width",
+      "label": "Width",
+      "default": "wrapper--full",
+      "options": [
+        {"value": "wrapper--full", "label": "Full width"},
+        {"value": "wrapper--full-padded", "label": "Full width padded"}
+      ]
+    },
+
     {
       "type": "header",
       "content": "Colors"

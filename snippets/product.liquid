@@ -925,7 +925,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (!wrapper) return;
 
-  const offsetTop = wrapper.offsetTop;
+  const offsetTop = wrapper.offsetTop + 500;
 
   window.addEventListener('scroll', function () {
     if (window.scrollY >= offsetTop) {
