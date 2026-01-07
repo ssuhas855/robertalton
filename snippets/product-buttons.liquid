@@ -59,6 +59,25 @@
   endif
 -%}
 
+
+{%- assign option_name_lower = '' -%}
+{%- for option in product.options_with_values -%}
+  {%- assign option_name_lower = option.name | downcase -%}
+  {%- if option_name_lower contains 'size' -%}
+    {%- assign add_size_class = true -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{% if add_size_class %} 
+<div id="size_box_in">
+
+
+</div>
+{% endif %}
+
+
+
 {%- capture quantity_selector -%}
   {%- if show_quantity -%}
     <script src="{{ 'quantity-counter.js' | asset_url }}" defer="defer"></script>

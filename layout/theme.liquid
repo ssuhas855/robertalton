@@ -94,104 +94,99 @@
 
 
 <script>
+
 document.addEventListener("DOMContentLoaded", () => {
   const slider = document.querySelector(".vertical-scroll");
-  const bar = document.querySelector(".vertical-progress-fill");
-  const inputs = document.querySelectorAll(
-    'input[type="radio"][data-index="option1"]'
-  );
+  const track = document.querySelector(".progress-track");
+  const indicator = document.querySelector(".progress-indicator");
   const slides = Array.from(document.querySelectorAll(".product__slide"));
 
-  if (!slider || !bar || !slides.length) return;
+  if (!slider || !track || !indicator || slides.length < 2) return;
 
-  const totalSlides = slides.length;
+  let stepSize = 0;
+  let ticking = false;
 
   /* =========================
-     PROGRESS (IMAGE BASED)
+     SETUP (responsive)
   ========================= */
-  function setProgressBySlide(slide) {
-    const index = slides.indexOf(slide);
-    if (index === -1) return;
+  function setup() {
+    const total = slides.length;
 
-    const progress = ((index + 1) / totalSlides) * 100;
-
-    if (window.innerWidth <= 768) {
-      bar.style.width = progress + "%";
-      bar.style.height = "100%";
+    if (window.innerWidth <= 767) {
+      // 📱 Mobile – horizontal
+      stepSize = track.offsetWidth / total;
+      indicator.style.width = stepSize + "px";
+      indicator.style.height = "1px";
     } else {
-      bar.style.height = progress + "%";
-      bar.style.width = "100%";
+      // 🖥 Desktop – vertical
+      stepSize = track.offsetHeight / total;
+      indicator.style.height = stepSize + "px";
+      indicator.style.width = "1px";
     }
   }
 
-  // ✅ Initial – first slide = 11.11%
-  setProgressBySlide(slides[0]);
-
   /* =========================
-     SCROLL → ACTIVE SLIDE
+     ACTIVE SLIDE DETECTION
   ========================= */
-  slider.addEventListener("scroll", () => {
-    let activeSlide = slides[0];
+  function getActiveSlide() {
+    let active = slides[0];
     let minDistance = Infinity;
 
-    slides.forEach((slide) => {
+    slides.forEach(slide => {
       const distance =
-        window.innerWidth <= 768
+        window.innerWidth <= 767
           ? Math.abs(slide.offsetLeft - slider.scrollLeft)
           : Math.abs(slide.offsetTop - slider.scrollTop);
 
       if (distance < minDistance) {
         minDistance = distance;
-        activeSlide = slide;
+        active = slide;
       }
     });
 
-    setProgressBySlide(activeSlide);
-  });
+    return active;
+  }
 
   /* =========================
-     VARIANT → IMAGE CHANGE
+     MOVE INDICATOR
   ========================= */
-  inputs.forEach((input) => {
-    input.addEventListener("change", () => {
-      const value = input.value.trim().toLowerCase();
-      let targetSlide = null;
+  function moveIndicator(slide) {
+    const index = slides.indexOf(slide);
+    if (index === -1) return;
 
-      slides.forEach((slide) => {
-        const id =
-          slide.getAttribute("data-id") ||
-          slide.getAttribute("data-media-id") ||
-          "";
+    indicator.style.transform =
+      window.innerWidth <= 767
+        ? `translateX(${index * stepSize}px)`
+        : `translateY(${index * stepSize}px)`;
+  }
 
-        slide.classList.remove("media--active");
-        slide.classList.add("media--hidden");
-
-        if (id.toLowerCase().includes(value)) {
-          slide.classList.remove("media--hidden");
-          slide.classList.add("media--active");
-          targetSlide = slide;
-        }
+  /* =========================
+     SCROLL HANDLER (optimized)
+  ========================= */
+  function onScroll() {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        moveIndicator(getActiveSlide());
+        ticking = false;
       });
+      ticking = true;
+    }
+  }
 
-      if (!targetSlide) return;
+  /* =========================
+     INIT
+  ========================= */
+  setup();
+  moveIndicator(slides[0]); // first image
 
-      if (window.innerWidth <= 768) {
-        slider.scrollTo({
-          left: targetSlide.offsetLeft,
-          behavior: "smooth"
-        });
-      } else {
-        slider.scrollTo({
-          top: targetSlide.offsetTop,
-          behavior: "smooth"
-        });
-      }
+  slider.addEventListener("scroll", onScroll, { passive: true });
 
-      // ✅ Update progress immediately
-      setProgressBySlide(targetSlide);
-    });
+  window.addEventListener("resize", () => {
+    setup();
+    moveIndicator(getActiveSlide());
   });
 });
+
 
 
 

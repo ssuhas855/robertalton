@@ -1927,9 +1927,7 @@ addresses-component.grid.grid--account {
 .header__logo__text span {
 	float: left;
 }
-.cart__item{
-	border:none;
-}
+
 .account form {
     padding: 25px 0 20px;
 }
@@ -2213,4 +2211,195 @@ html {
 .text-link.small::after{
 	background: #696969;
 	opacity: 0.3;
+}
+.link--remove a, .link--remove label, .link--add a, .link--add label, .link--disable a, .link--disable label {	
+	padding-left: 13px;
+}
+
+
+/* Progress bar */
+.progress-track {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 224px;
+  background: rgba(0,0,0,0.15);
+}
+
+.progress-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  background: #000;
+  transition: transform 0.25s ease;
+}
+.product-details__media-inner {
+	scrollbar-width: inherit!important;
+	scroll-snap-type: inherit !important;
+}
+.vertical-scroll {
+    scroll-snap-type: inherit;
+    scroll-behavior: inherit;
+}
+.dropdown-menu {
+	display: none;
+	position: absolute;
+	z-index: 10;
+	background: #fff;
+	border: 1px solid #696969;
+	width: 100%;
+	list-style: none;
+	padding: 0;
+	overflow-y: auto;
+	margin: 0;
+	left: 0;
+	width: calc(100% + 0px);
+	border-top: 0;
+}
+.product__block .size_fieldset .radio__fieldset .radio__buttons {
+  width: 22%;
+  overflow: hidden;
+  gap: 0px;
+  padding-bottom: 0;
+}
+.custom-dropdown {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+.product-size-selector::after {
+	content: "\25bc";
+	position: absolute;
+	right: 12px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 0;
+	pointer-events: none;
+	object-fit: contain;
+	width: 13px;
+	height: 9px;
+}
+.dropdown-toggle .dropdown-icon {
+	float: right;
+	font-size: 10px;
+	position: relative;
+  top: 1px;
+}
+.custom-dropdown.open .dropdown-menu {
+	display: block;
+}
+.dropdown-toggle {
+	width: 100%;
+	background: #fff;
+	border: 1px solid #696969;
+	padding: 0px 10px 0 18px;
+	text-align: left;
+	cursor: pointer;
+	font-size: 11px;
+	letter-spacing: .3px;
+	min-height: 40px;
+	background: transparent;
+	display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product__block .Size_fieldset .radio__fieldset .radio__buttons, .product__block .size_fieldset .radio__fieldset .radio__buttons {
+	width: 22%;
+	overflow: hidden;
+	gap: 0px;
+	padding-bottom: 0;
+}
+.product__block .radio__fieldset .radio__buttons {
+	overflow: inherit !important;
+	margin: 0;
+  display: flex;
+}
+.selector-wrapper--size .radio__legend {
+	display: none !important;
+}
+.dropdown-menu_list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 11px;
+	letter-spacing: .3px;
+}
+.dropdown-item {
+	padding: 10px 16px;
+	cursor: pointer;
+	margin: 0;
+}
+.dropdown-item.active,
+.dropdown-item:hover{
+	background: #000;
+	color: #fff;
+} 
+#size_box_in .radio__legend {
+	width:100%;
+	display: none;
+}
+.show-product-notification.variant--soldout .product-soldout-notification {	
+	width: 100%;
+}
+#size_box_in {
+	width: 105px;
+	margin-top: 0px;
+}
+#size_box_in + .product__block.product__block--buttons {
+	width: calc(100% - 110px);
+	float: right; 
+	margin-top: -40px;
+}
+#size_box_in .radio__fieldset{
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	align-items: start;
+	flex-wrap: wrap;
+	gap: 5px;
+}
+.radio__legend__value.body-x-small.Size_hide {
+	display: none !important;
+}
+#size_box_in .radio__legend__option-name.body-medium{
+	display: block;
+}
+#size_box_in  .radio__fieldset .radio__buttons {
+	margin: 0;
+}
+#size_box_in .radio__fieldset .radio__buttons {
+	margin: 0;
+	width: 100%;
+}
+.product__block quantity-counter {
+     display: none!important;
+}
+.product__submit__buttons .btn {
+    padding: 11px 10px;
+    min-height: 40px;
+}
+h2.product__notification__title.h3 {
+    font-size: 11px;
+    font-weight: normal;
+    font-family: var(--FONT-STACK-BODY);
+    font-style: var(--FONT-STYLE-BODY);
+    font-weight: var(--FONT-WEIGHT-BODY);
+    letter-spacing: .5px;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+.product-modal__content {
+    background: #fff;
+}
+.product-quick-add__content, .product-modal__notification {
+    background: #fff;
+}
+p.product__notification__variant.subheading {
+    font-size: 10px;
+}
+.pswp[data-pswp-option-classes*="pswp-zoom-gallery"] .pswp__scroll-wrap, .pswp-zoom-gallery .pswp__scroll-wrap {
+	bottom: 0;
 }

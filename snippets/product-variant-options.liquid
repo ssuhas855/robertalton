@@ -248,6 +248,7 @@
 
           <div class="selector-wrapper{% if settings.variant_lines and is_size_option %} selector-wrapper--size{% elsif settings.variant_lines or is_swatch_option %} selector-wrapper--fullwidth{% endif %}"
             data-option-position="{{ option.position }}">
+           
             {%- if settings.variant_lines or is_swatch_option or is_native_swatch_option -%}
               {%- liquid
                 assign current_value = current_variant.options[forloop.index0]
@@ -270,180 +271,256 @@
                 endcapture
               -%}
 
-              <fieldset>
-                <div class="{{ radio_fieldset_class }}">
-                  <legend class="radio__legend{% if is_size_option and size_chart_link and show_size_link_separated == false %} radio__legend--size{% endif %}">
-                    <span class="radio__legend__label{% if size_style == 'text' %} radio__legend__label--text{% endif %}">
-                      <span class="radio__legend__option-name {{ option_font_size }}">{{ option.name }}</span>
+              <fieldset class="{{ option.name }}_fieldset">
+  <div class="{{ radio_fieldset_class }}">
+    <legend class="radio__legend{% if is_size_option and size_chart_link and show_size_link_separated == false %} radio__legend--size{% endif %}">
+      <span class="radio__legend__label{% if size_style == 'text' %} radio__legend__label--text{% endif %}">
+        <span class="radio__legend__option-name {{ option_font_size }}">{{ option.name }}</span>
 
-                      {%- if is_size_option -%}
-                        {{- size_chart_link -}}
-                      {%- endif -%}
+        {%- if is_size_option -%}
+          {{- size_chart_link -}}
+        {%- endif -%}
 
-                      {%- liquid
-                        assign color_description = ''
-                        assign form_style = settings.form_style
+        {%- liquid
+          assign color_description = ''
+          assign form_style = settings.form_style
 
-                        if is_color_option
-                          assign has_color_description = false
-                          for variant in product.variants
-                            if variant.metafields.theme.color_description.value != blank
-                              assign has_color_description = true
-                              break
-                            endif
-                          endfor
-                        endif
+          if is_color_option
+            assign has_color_description = false
+            for variant in product.variants
+              if variant.metafields.theme.color_description.value != blank
+                assign has_color_description = true
+                break
+              endif
+            endfor
+          endif
 
-                        if has_color_description
-                          capture color_description_metafields
-                            assign metafields_data = '['
-                            assign last_index = product.variants.size | minus: 1
-                            for variant in product.variants
-                              assign metafield_value = variant.metafields.theme.color_description.value | default: '' | replace: '"', '\"'
-                              assign metafields_data = metafields_data | append: '{"variant_id":"' | append: variant.id | append: '","metafield_value":"' | append: metafield_value | append: '"}'
-                              unless forloop.last
-                                assign metafields_data = metafields_data | append: ','
-                              endunless
-                            endfor
-                            echo metafields_data | append: ']'
-                          endcapture
-                        endif
-                      -%}
+          if has_color_description
+            capture color_description_metafields
+              assign metafields_data = '['
+              assign last_index = product.variants.size | minus: 1
+              for variant in product.variants
+                assign metafield_value = variant.metafields.theme.color_description.value | default: '' | replace: '"', '\"'
+                assign metafields_data = metafields_data | append: '{"variant_id":"' | append: variant.id | append: '","metafield_value":"' | append: metafield_value | append: '"}'
+                unless forloop.last
+                  assign metafields_data = metafields_data | append: ','
+                endunless
+              endfor
+              echo metafields_data | append: ']'
+            endcapture
+          endif
+        -%}
 
-                      {%- if settings.show_labels -%}
-                        {%- capture label -%}
-                          <small class="radio__legend__value {{ value_font_size }}" data-option-value>{{ current_value }}</small>
-                        {%- endcapture -%}
-                      {%- endif -%}
+        {%- if settings.show_labels -%}
+          {%- capture label -%}
+            <small class="radio__legend__value {{ value_font_size }} {{ option.name }}_hide" data-option-value>{{ current_value }}</small>
+          {%- endcapture -%}
+        {%- endif -%}
 
-                      {%- if is_color_option and has_color_description -%}
-                        {%- capture color_description -%}
-                          <span data-color-description-metafield style="display:none;">{{ color_description_metafields }}</span>
-                          <small class="radio__legend__value radio__legend__color__description {{ value_font_size }}" data-color-description></small>
-                        {%- endcapture -%}
-                      {%- endif -%}
+        {%- if is_color_option and has_color_description -%}
+          {%- capture color_description -%}
+            <span data-color-description-metafield style="display:none;">{{ color_description_metafields }}</span>
+            <small class="radio__legend__value radio__legend__color__description {{ value_font_size }}" data-color-description></small>
+          {%- endcapture -%}
+        {%- endif -%}
 
-                      {%- if form_style == 'classic' -%}
-                        <div class="radio__legend__values">
-                      {%- endif -%}
-                        {{ label }}{{ color_description }}
-                      {%- if form_style == 'classic' -%}
-                      </div>
-                      {%- endif -%}
+        {%- if form_style == 'classic' -%}
+          <div class="radio__legend__values">
+        {%- endif -%}
+          {{ label }}{{ color_description }}
+        {%- if form_style == 'classic' -%}
+          </div>
+        {%- endif -%}
+      </span>
+    </legend>
 
-                    </span>
-                  </legend>
+    <!-- =========================== -->
+    <!-- OPTIONS RENDER SECTION -->
+    <!-- =========================== -->
+    <div class="radio__buttons" data-variant-buttons>
+      {%- for value in option.values -%}
+        {%- assign option_name_lower = option.name | downcase -%}
+      {%- endfor -%}
 
-                  <div class="radio__buttons" data-variant-buttons>
-                    {%- for value in option.values -%}
-                      {%- capture input_id -%}{{ uniq_id }}-{{ option.name | handle }}-{{ value | strip_html | escape | handle }}-{{ forloop.index }}{%- endcapture -%}
-                      {%- if is_swatch_option or is_native_swatch_option -%}
-                        {%- liquid
-                          if is_native_swatch_option
-                            if value.swatch.image
-                              assign image_url = value.swatch.image | image_url: width: 96
-                              assign swatch_value = 'url(' | append: image_url | append: ')'
-                            elsif value.swatch.color
-                              assign swatch_value = 'rgb(' | append: value.swatch.color.rgb | append: ')'
-                            else
-                              assign swatch_value = nil
-                            endif
-                          endif
+      {%- if option_name_lower contains 'size' or option.name contains 'Size' -%}
 
-                          assign is_white = false
-                          if swatch_value == 'rgb(255 255 255)' and value.swatch.image == blank
-                            assign is_white = true
-                          endif
-                        -%}
+<!-- SIZE DROPDOWN (UL version with working sold-out handling) -->
+<div 
+  class="product-size-selector dotted-box custom-dropdown" 
+  data-single-option-selector 
+  data-index="option{{ option.position }}"
+>
+  <button type="button" class="dropdown-toggle" aria-expanded="false">
+    <span class="selected-value">
+      {{ current_value | default: option.values.first }}
+    </span>
+    <span class="dropdown-icon">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 10.5L12 13.5L15 10.5" stroke="#151515"/>
+</svg>
+    </span>
+  </button>
 
-                        <tooltip-component
-                          data-tooltip="{{ value | escape | capitalize }}"
-                          class="swatches swatch__button swatch__button--{{ settings.swatch_style }} swatch__button swatch-{{ value | handle }}{% if is_white %} swatch__button--white{% endif %}"
-                          {% if is_swatch_option %}style="--swatch: var(--{{ value | handle }});"{% endif %}
-                          {% if is_native_swatch_option %}style="--swatch: {{ swatch_value }};"{% endif %}
-                          data-target=""
-                        >
+  <div class="dropdown-menu dotted-box">
+    <ul class="dropdown-menu_list" role="listbox">
+      {% for value in option.values %}
+        {% assign is_sold_out = false %}
+        {% assign opt_index = option.position | minus: 1 %}
 
-                          <input type="radio"
-                              form="{{ product_form_id }}"
-                              data-single-option-selector
-                              data-index="option{{ option.position }}"
-                              name="options[{{ option.name | escape }}]-{{ uniq_id }}"
-                              value="{{ value | escape }}"
-                              id="{{ input_id }}"
-                              {% if value == current_value %}checked{% endif %}>
-                          <label for="{{ input_id }}" data-swatch="{{ value | escape }}">
-                            <span class="visually-hidden">{{ value }}</span>
-                          </label>
-                        </tooltip-component>
+        {% for variant in product.variants %}
+          {% if variant.options[opt_index] == value %}
+            {% unless variant.available %}
+              {% assign is_sold_out = true %}
+            {% endunless %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
 
-                      {%- else -%}
-                        {% comment %} radio button {% endcomment %}
-                        <span class="radio__button"{% if has_variant_option_image %} data-variant-option-image{% endif %}>
-                          <input
-                            type="radio"
-                            form="{{ product_form_id }}"
-                            data-single-option-selector
-                            data-index="option{{ option.position }}"
-                            name="options[{{ option.name | escape }}]-{{ uniq_id }}"
-                            value="{{ value | escape }}" id="{{ input_id }}"
-                            {% if value == current_value %}checked{% endif %}>
+        <li 
+          class="dropdown-item
+          {% if value == current_value or forloop.first and current_value == blank %} active{% endif %}
+          {% if is_sold_out %} sold-out{% endif %}" 
+          role="option"
+          data-value="{{ value | escape }}"          
+        >
+          {{ value }}
+        </li>
+      {% endfor %}
+    </ul>
 
-                          <label for="{{ input_id }}">
-                            {%- if has_variant_option_image -%}
-                              {% liquid
-                                if settings.btn_border_style == 'pill'
-                                  capture option_image_border_radius
-                                    echo ' style="--radius: 10px;"'
-                                  endcapture
-                                endif
-                              %}
+    <input 
+      type="hidden" 
+      name="options[{{ option.name | escape }}]" 
+      form="{{ product_form_id }}" 
+      value="{{ current_value | default: option.values.first }}"
+    >
+  
+    <i class="side right" aria-hidden="true"></i>
+    <i class="side left" aria-hidden="true"></i>
+    <i class="side bottom" aria-hidden="true"></i>
+    <i class="side top" aria-hidden="true"></i>
+  </div>
+</div>
 
-                              <div class="option-image"{{ option_image_border_radius }}>
-                                {%- assign variant_option_image_translation = 'products.product.variant_option_image' | t -%}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const dropdowns = document.querySelectorAll('.custom-dropdown');
 
-                                {%- if option.name == variant_option_image_translation -%}
-                                  {%- assign option_image_found = false -%}
+  dropdowns.forEach(dropdown => {
+    const button = dropdown.querySelector('.dropdown-toggle');
+    const menu = dropdown.querySelector('.dropdown-menu');
+    const hiddenInput = dropdown.querySelector('input[type="hidden"]');
+    const selectedValue = dropdown.querySelector('.selected-value');
+    const items = menu.querySelectorAll('.dropdown-item');
 
-                                  {%- for variant in product.variants -%}
-                                    {%- for option in variant.options -%}
-                                      {%- if option == value -%}
-                                        {%- assign variant_option_image = variant.featured_media.preview_image -%}
+    // ✅ Select first available variant if none preselected
+    const firstAvailable = Array.from(items).find(item => !item.dataset.soldout);
+    if (!hiddenInput.value && firstAvailable) {
+      firstAvailable.classList.add('active');
+      hiddenInput.value = firstAvailable.dataset.value;
+      selectedValue.textContent = firstAvailable.dataset.value;
+    }
 
-                                        {% if variant_option_image  %}
-                                          {%- capture srcset -%}
-                                            {%- render 'image-srcset', image: variant_option_image, widths: '60, 90, 120, 150, 180' -%}
-                                          {%- endcapture -%}
+    // Toggle dropdown open/close
+    button.addEventListener('click', () => {
+      dropdown.classList.toggle('open');
+    });
 
-                                          {{ variant_option_image | image_url: height: 60 | image_tag: sizes: '60px', srcset: srcset }}
-                                        {%- else -%}
-                                          {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
-                                        {% endif %}
+    // Handle value selection
+    items.forEach(item => {
+      item.addEventListener('click', () => {
+        if (item.dataset.soldout === 'true') return; // Prevent selecting sold-out
+        const value = item.dataset.value;
 
-                                        {%- assign option_image_found = true -%}
-                                      {%- endif -%}
+        hiddenInput.value = value;
+        selectedValue.textContent = value;
 
-                                      {%- if option_image_found -%}
-                                        {%- break -%}
-                                      {%- endif -%}
-                                    {%- endfor -%}
+        items.forEach(i => i.classList.remove('active'));
+        item.classList.add('active');
+        dropdown.classList.remove('open');
 
-                                    {%- if option_image_found -%}
-                                      {%- break -%}
-                                    {%- endif -%}
-                                  {%- endfor -%}
-                                {%- endif -%}
-                              </div>
-                            {%- endif -%}
+        // Fire Shopify change event
+        hiddenInput.dispatchEvent(new Event('change', { bubbles: true }));
+      });
+    });
 
-                            <span class="option-title">{{ value }}</span>
-                          </label>
-                        </span>
-                      {%- endif -%}
-                    {%- endfor -%}
-                  </div>
-                </div>
-              </fieldset>
+    // Close dropdown when clicking outside
+    document.addEventListener('click', e => {
+      if (!dropdown.contains(e.target)) dropdown.classList.remove('open');
+    });
+  });
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const sizeBox = document.getElementById('size_box_in');
+  const sizeFieldset = document.querySelector('.Size_fieldset');
+
+  if (sizeBox && sizeFieldset) {
+    // Move the original element into #size_box_in
+    sizeBox.appendChild(sizeFieldset);
+  }
+});
+</script>
+
+
+
+
+
+
+      {%- else -%}
+        <!-- COLOR OR OTHER OPTIONS -->
+        {%- for value in option.values -%}
+          {%- capture input_id -%}{{ uniq_id }}-{{ option.name | handle }}-{{ value | strip_html | escape | handle }}-{{ forloop.index }}{%- endcapture -%}
+          {%- if is_swatch_option or is_native_swatch_option -%}
+            {%- liquid
+              if is_native_swatch_option
+                if value.swatch.image
+                  assign image_url = value.swatch.image | image_url: width: 96
+                  assign swatch_value = 'url(' | append: image_url | append: ')'
+                elsif value.swatch.color
+                  assign swatch_value = 'rgb(' | append: value.swatch.color.rgb | append: ')'
+                else
+                  assign swatch_value = nil
+                endif
+              endif
+
+              assign is_white = false
+              if swatch_value == 'rgb(255 255 255)' and value.swatch.image == blank
+                assign is_white = true
+              endif
+            -%}
+
+            <tooltip-component
+              data-tooltip="{{ value | escape | capitalize }}"
+              class="swatches swatch__button swatch__button--{{ settings.swatch_style }} swatch__button swatch-{{ value | handle }}{% if is_white %} swatch__button--white{% endif %}"
+              {% if is_swatch_option %}style="--swatch: var(--{{ value | handle }});"{% endif %}
+              {% if is_native_swatch_option %}style="--swatch: {{ swatch_value }};"{% endif %}
+            >
+              <input type="radio"
+                form="{{ product_form_id }}"
+                data-single-option-selector
+                data-index="option{{ option.position }}"
+                name="options[{{ option.name | escape }}]-{{ uniq_id }}"
+                value="{{ value | escape }}"
+                id="{{ input_id }}"
+                {% if value == current_value %}checked{% endif %}>
+              <label for="{{ input_id }}" data-swatch="{{ value | escape }}">
+                <span class="visually-hidden">{{ value }}</span>
+              </label>
+            </tooltip-component>
+
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+    </div>
+  </div>
+</fieldset>
+
+
+
+
             {%- else -%}
               {%- assign selects_counter = selects_counter | plus: 1 -%}
               <fieldset>
@@ -458,7 +535,7 @@
                       {%- endif -%}
 
                       {%- if settings.show_labels -%}
-                        <small class="radio__legend__value {{ value_font_size }}" data-option-value>{{ current_value }}</small>
+                        <small class="radio__legend__value {{ value_font_size }} {{ option.name }}_small-hide" data-option-value>{{ current_value }}</small>
                       {%- endif -%}
                     </span>
                   </legend>
