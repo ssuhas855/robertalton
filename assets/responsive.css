@@ -1707,6 +1707,12 @@ font-size: 11px;
 .body-x-small {
 	font-size: 12px;
 }
+.sw_name {
+	font-size: 12px;
+}
+.sw_name.center {
+	margin-top: -12px;
+}
 
 
 
