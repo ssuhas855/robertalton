@@ -1643,7 +1643,9 @@ body, p, .search-popdown input[type="search"] {
 body, p, .search-popdown input[type="search"], .header__mobile__hamburger.navlink.navlink--toplevel .navtext, .navlink--toplevel span, .parent .navlink--child span, .grandparent .navlink--grandchild span, .btn, .shopify-payment-button .shopify-payment-button__button--unbranded, #challenge .shopify-challenge__button {
 	font-size: 11px;
 }
-
+.collection-item__info span {
+	font-size: 11px;
+}
 
 
 } 
