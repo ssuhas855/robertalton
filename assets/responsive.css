@@ -1698,6 +1698,9 @@ p, body{
 .search-popdown input[type="search"]{
 	font-size: 12px;
 }
+.predictive-search__heading {
+	font-size: 11px;
+}
 
 
 
