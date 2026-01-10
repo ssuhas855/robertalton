@@ -1661,6 +1661,8 @@ body, p, .search-popdown input[type="search"], .header__mobile__hamburger.navlin
 .navlink--cart--text .header__cart__status {
 	font-size: 11px;
 }
-
+.popout--group .popout__toggle, .popout--sort .popout__toggle, .collection_title, .body-medium {
+	font-size: 11px;
+}
 } 
 /*END 767px*/
