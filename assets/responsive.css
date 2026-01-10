@@ -994,9 +994,9 @@ padding-top: 2px;
 	max-width: none;
 }
 #custom_about h6 {
-	max-width: 200px;
+	max-width: 230px;
 	margin: 0 0 40px;
-	font-size: 9px;
+	font-size: 11px;
 }
 #custom_about p {
 	letter-spacing: .3px;
@@ -1654,6 +1654,9 @@ body, p, .search-popdown input[type="search"], .header__mobile__hamburger.navlin
 }
 .footer__quicklinks li a {
 	font-size: 11px;
+}
+.supporting-menu__copyright a, .copyright_text {
+	font-size: 12px;
 }
 
 
