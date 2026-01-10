@@ -1716,6 +1716,9 @@ font-size: 11px;
 .predictive-search__item {
 	font-size: 12px;
 }
+.popout-list__item a {
+	font-size: 11px;
+}
 
 
 } 
