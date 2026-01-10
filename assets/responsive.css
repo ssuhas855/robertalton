@@ -1634,5 +1634,10 @@ theme__header header-search-popdown.is-open .predictive-search {
 .grid--mobile-slider .grid-item:last-child {
 	margin-right: 10px;
 }
+body, p, .search-popdown input[type="search"] {
+	font-size: 11px;
+}
+
+
 } 
 /*END 767px*/
