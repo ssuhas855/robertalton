@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", () => {
           data-aos="hero"
           data-aos-anchor="{{ animation_anchor }}"
           data-aos-order="{{ animation_order }}"
-          {% if page.handle == "faqs" or page.handle == 'shipping-returns' %}id="faq_section-sidebar"{% endif %}
+          {% if page.handle == "faq" or page.handle == 'shipping-returns' %}id="faq_section-sidebar"{% endif %}
         >
           <collapsible-elements single="true">
             {{ content_html }}
