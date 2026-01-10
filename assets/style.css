@@ -2413,7 +2413,7 @@ p.product__notification__variant.subheading {
 
 .sw_name {
 	font-size: 13px;
-	margin-top: 6px;
+	margin-top: 0px;
 	min-height: 16px;
 	color: #131111;
 	opacity: 1;
