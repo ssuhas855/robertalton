@@ -1664,5 +1664,8 @@ body, p, .search-popdown input[type="search"], .header__mobile__hamburger.navlin
 .popout--group .popout__toggle, .popout--sort .popout__toggle, .collection_title, .body-medium {
 	font-size: 11px;
 }
+.collection__sidebar__head h3 {
+	font-size: 12px;
+}
 } 
 /*END 767px*/
