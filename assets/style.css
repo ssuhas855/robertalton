@@ -2416,7 +2416,7 @@ p.product__notification__variant.subheading {
   margin-top: 6px;
   min-height: 16px;
   color: red;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.2s ease;
 }
 
