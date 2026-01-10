@@ -2420,4 +2420,7 @@ p.product__notification__variant.subheading {
 	transition: opacity 0.2s ease;
 	text-transform: none;
 }
+.sw_name.center {
+	margin-top: -15px;
+}
 
