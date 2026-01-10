@@ -1713,7 +1713,9 @@ font-size: 11px;
 .sw_name.center {
 	margin-top: -12px;
 }
-
+.predictive-search__item {
+	font-size: 12px;
+}
 
 
 } 
