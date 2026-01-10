@@ -47,3 +47,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+
+  document.querySelectorAll(".product-item").forEach(productItem => {
+    const nameHolder = productItem.querySelector(".sw_name");
+    if (!nameHolder) return;
+
+    /* sibling swatch OR normal swatch */
+    const firstSwatch = productItem.querySelector(
+      ".swatch__button[data-tooltip], [data-tooltip]"
+    );
+
+    if (!firstSwatch) return;
+
+    const name = firstSwatch.getAttribute("data-tooltip");
+    if (!name) return;
+
+    nameHolder.textContent = name;
+    nameHolder.classList.add("active");
+  });
+
+});
+
