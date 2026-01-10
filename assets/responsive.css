@@ -1646,6 +1646,9 @@ body, p, .search-popdown input[type="search"], .header__mobile__hamburger.navlin
 .collection-item__info span {
 	font-size: 11px;
 }
+.rte.footer__newsletter__text p {
+	font-size: 12px;
+}
 
 
 } 
