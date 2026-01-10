@@ -433,6 +433,9 @@
                       enable_size_chart: true
                     -%}
 
+  {% if product.metafields.custom.metal_type != blank %}
+            <div class="sw_name">{{ product.metafields.custom.metal_type }}</div>
+            {% endif %}
                   {%- when 'buttons' -%}
                   
                     {%- render 'product-buttons',
