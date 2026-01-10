@@ -1692,5 +1692,8 @@ p, body{
 .widget__link {
 	font-size: 11px;
 }
+.predictive-search__actions span {
+	font-size: 12px;
+}
 } 
 /*END 767px*/
