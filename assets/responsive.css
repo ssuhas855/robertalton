@@ -1652,6 +1652,9 @@ body, p, .search-popdown input[type="search"], .header__mobile__hamburger.navlin
 .filter-group__heading, .collection__sidebar__head h3, .btn.btn--outline.btn--primary, .newsletter-form #subscribe-button-footer-0 {
 	font-size: 11px;
 }
+.footer__quicklinks li a {
+	font-size: 11px;
+}
 
 
 } 
