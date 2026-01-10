@@ -2404,6 +2404,8 @@ p.product__notification__variant.subheading {
 .pswp[data-pswp-option-classes*="pswp-zoom-gallery"] .pswp__scroll-wrap, .pswp-zoom-gallery .pswp__scroll-wrap {
 	bottom: 0;
 }
-
+.product__description__content.rte p, .product__description__content.rte {
+	font-size: 13px;
+}
 
  
