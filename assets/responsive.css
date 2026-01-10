@@ -1695,5 +1695,11 @@ p, body{
 .predictive-search__actions span {
 	font-size: 12px;
 }
+.search-popdown input[type="search"]{
+	font-size: 12px;
+}
+
+
+
 } 
 /*END 767px*/
