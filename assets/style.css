@@ -995,6 +995,7 @@ textarea.field {
 .section-sidebar__text.rte h6 {
 	margin: 0;
 	width: 37%;
+	line-height: 19px;
 }
 .section-sidebar__text.rte p {
 	margin: 0 0 20px;

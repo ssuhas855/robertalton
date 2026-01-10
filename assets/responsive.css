@@ -230,6 +230,11 @@
 	display: inherit;
 	font-size: 11px;
 	letter-spacing: 0.5px;
+	position: relative;
+    top: 0px;
+}
+.navlink__cart__content {
+	top: 0px;
 }
 .header__mobile__hamburger.navlink.navlink--toplevel .icon.icon-menu {
 	display: none;
@@ -403,7 +408,7 @@ a.navlink.navlink--cart.navlink--cart--text.navlink--toplevel {
 }
 .header__logo__text svg {
 	height: auto;
-	width: 100px;
+	width: 125px;
 }
 .header__logo__text {
 	padding: 4px 0 0;
@@ -1398,7 +1403,7 @@ body .shopify-policy__container h1, body .shopify-policy__container h2, body .sh
 .shopify-policy__body p {
 	margin: 0 0 15px;
 }
-.header__mobile__hamburger {
+.header__mobile__hamburger { 
 	margin-left: -8px;
 }
 #ring-size-guide .index-hero {
@@ -1622,6 +1627,12 @@ theme__header header-search-popdown.is-open .predictive-search {
 #product-recommendations{
 	margin-left: -15px;
     margin-right: -15px;
+}
+.template-index .grid-container.wrapper--full-padded .grid__items-holder {
+  margin-left: -20px;
+}
+.grid--mobile-slider .grid-item:last-child {
+	margin-right: 10px;
 }
 } 
 /*END 767px*/
