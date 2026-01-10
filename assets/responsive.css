@@ -1667,5 +1667,8 @@ body, p, .search-popdown input[type="search"], .header__mobile__hamburger.navlin
 .collection__sidebar__head h3 {
 	font-size: 12px;
 }
+.product-item__title {
+	font-size: 11px;
+}
 } 
 /*END 767px*/
