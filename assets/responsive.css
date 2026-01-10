@@ -1683,5 +1683,8 @@ p, body{
 .cart__item__price {
 	font-size: 11px;
 }
+#faq_section-sidebar .accordion__title {
+	font-size: 11px;
+}
 } 
 /*END 767px*/
