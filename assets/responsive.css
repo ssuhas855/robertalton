@@ -1670,5 +1670,8 @@ body, p, .search-popdown input[type="search"], .header__mobile__hamburger.navlin
 .product-item__title {
 	font-size: 11px;
 }
+.product-item__price__holder {
+	font-size: 11px;
+}
 } 
 /*END 767px*/
