@@ -1689,5 +1689,8 @@ p, body{
 .faqdropdown-trigger {
 	font-size: 11px;
 }
+.widget__link {
+	font-size: 11px;
+}
 } 
 /*END 767px*/
