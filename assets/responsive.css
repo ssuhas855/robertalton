@@ -1686,5 +1686,8 @@ p, body{
 #faq_section-sidebar .accordion__title {
 	font-size: 11px;
 }
+.faqdropdown-trigger {
+	font-size: 11px;
+}
 } 
 /*END 767px*/
