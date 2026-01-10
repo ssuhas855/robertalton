@@ -1658,7 +1658,9 @@ body, p, .search-popdown input[type="search"], .header__mobile__hamburger.navlin
 .supporting-menu__copyright a, .copyright_text {
 	font-size: 12px;
 }
-
+.navlink--cart--text .header__cart__status {
+	font-size: 11px;
+}
 
 } 
 /*END 767px*/
