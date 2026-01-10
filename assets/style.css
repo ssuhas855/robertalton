@@ -2411,4 +2411,15 @@ p.product__notification__variant.subheading {
 	font-size: 13px;
 }
 
- 
+ .sw_name {
+  font-size: 12px;
+  margin-top: 6px;
+  min-height: 16px;
+  color: red;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.sw_name.active {
+  opacity: 1;
+}
