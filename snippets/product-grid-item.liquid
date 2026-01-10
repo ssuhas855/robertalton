@@ -769,6 +769,11 @@
               {%- render 'product-grid-price', product: product, current_variant: current_variant -%}
             </div>
             
+
+            {% if product.metafields.custom.swatch_name != blank %}
+            <div class="sw_name">{{ product.metafields.custom.swatch_name.value }}</div>
+            {% endif %}
+
             <div class="sw_name"> </div>
 
 
