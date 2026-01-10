@@ -1637,7 +1637,9 @@ theme__header header-search-popdown.is-open .predictive-search {
 body, p, .search-popdown input[type="search"] {
 	font-size: 11px;
 }
-
+.header__mobile__hamburger.navlink.navlink--toplevel .navtext, .navlink--toplevel span, .parent .navlink--child span, .grandparent .navlink--grandchild span, .btn, .shopify-payment-button .shopify-payment-button__button--unbranded, #challenge .shopify-challenge__button {
+	font-size: 11px;
+}
 
 } 
 /*END 767px*/
