@@ -13,7 +13,7 @@
 	font-size: 12px;
 }
 .navlink--toplevel span, .parent .navlink--child span, .grandparent .navlink--grandchild span {
-	font-size: 11px;
+	font-size: 12px;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 }
@@ -2404,3 +2404,5 @@ p.product__notification__variant.subheading {
 .pswp[data-pswp-option-classes*="pswp-zoom-gallery"] .pswp__scroll-wrap, .pswp-zoom-gallery .pswp__scroll-wrap {
 	bottom: 0;
 }
+
+
