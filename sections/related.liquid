@@ -42,16 +42,12 @@
     {%- assign has_related_products = true -%}
 
     {%- capture related -%}
-     <div
-  data-related-section
-  data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ limit }}"
-  data-limit="{{ limit }}"
-  data-layout="{{ layout_desktop }}"
-  data-product-id="{{ product.id }}"
-  style="--column-count: {{ column_count }};"
-  {{ block.shopify_attributes }}>
-</div>
-
+      <div data-related-section
+        data-limit="{{ limit }}"
+        data-layout="{{ layout_desktop }}"
+        data-product-id="{{ product.id }}"
+        style="--column-count: {{ column_count }}; --COLUMNS: {{ columns_desktop }}; --COLUMNS-MEDIUM: {{ columns_medium }}; --COLUMNS-SMALL: {{ columns_small }}; --COLUMNS-MOBILE: {{ columns_mobile }};"
+        {{ block.shopify_attributes }}></div>
     {%- endcapture -%}
 
     {%- capture related_title -%}
