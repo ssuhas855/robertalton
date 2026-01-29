@@ -287,9 +287,8 @@
             "product_recommendations_heading": "Complete the look"
           }
         },
-        "recent": {
+        "recent_3mFKrF": {
           "type": "recent",
-          "disabled": true,
           "settings": {
             "product_recently_heading": "Recently viewed"
           }
@@ -297,7 +296,7 @@
       },
       "block_order": [
         "related",
-        "recent"
+        "recent_3mFKrF"
       ],
       "settings": {
         "enable_tabs": false,
