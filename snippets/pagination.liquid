@@ -40,9 +40,11 @@
               {{ formatted_title }}
             </span>
           {%- else -%}
+            {% comment %}              
             <span class="pagination-custom__sep">
               {{ formatted_title }}
             </span>
+            {% endcomment %}
           {%- endif -%}
 
         {%- endif -%}
