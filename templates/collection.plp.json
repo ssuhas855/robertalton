@@ -121,7 +121,7 @@
         "grid": 4,
         "grid_mobile": "2",
         "products_per_page": 14,
-        "featured_width": "wrapper--full-padded",
+        "featured_width": "wrapper--full",
         "color_scheme": "scheme-1",
         "padding_top": 0,
         "padding_bottom": 100
