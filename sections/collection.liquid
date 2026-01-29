@@ -109,11 +109,8 @@
   {%- endif -%}
 
   <collection-component
-    class="collection collection-products 
-    {% if template == 'collection.plp' %} collection-new-collection 22{% elsif template == 'collection.alt' %} collection-alt-collection
-     {% else %}
-    collection-{{ collection.handle }} 
-    {% endif %}
+    class="collection collection-products {% if template == 'collection.plp' %}collection-new-collection{% elsif template == 'collection.alt' %} collection-alt-collection     {% else %}
+    collection-{{ collection.handle }} {% endif %}
     section-padding {{ color_scheme }}"
     id="Collection--{{ section.id }}"
     data-section-id="{{ section.id }}"
