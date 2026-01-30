@@ -2436,3 +2436,6 @@ p.product__notification__variant.subheading {
     transform: rotate(-36deg) translate(-50%,-50%);
     height: 24px;
 }
+.product__page {
+    background: #fff;
+}
