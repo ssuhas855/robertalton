@@ -2359,8 +2359,7 @@ html {
 	margin-top: 0px;
 }
 #size_box_in + .product__block.product__block--buttons {
-	/*width: calc(100% - 110px);*/
-	width:100%;
+	width: calc(100% - 110px);
 	float: right; 
 	margin-top: -40px;
 }
