@@ -2432,4 +2432,7 @@ p.product__notification__variant.subheading {
 .sw_name.center {
 	margin-top: -15px;
 }
-
+.swatch__button--square .sibling__link--sold-out:before, .swatch__button--square input.sold-out~label:before, .swatch__button--square input.unavailable~label:before, .swatch__button--square input:disabled+label:before {
+    transform: rotate(-40deg) translate(-50%,-50%);
+    height: 18px;
+}
