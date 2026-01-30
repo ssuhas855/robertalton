@@ -350,6 +350,9 @@ body.grid-classic .grandparent .menu__blocks .menu__block {
 .radio__legend__value {
 	text-align: center;
 }
+fieldset.Ring .radio__legend__value{
+	display:none;
+}
 .radio__fieldset--swatches .radio__buttons {
 	margin: 0 -2px;
 	width: 100%;
