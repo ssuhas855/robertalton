@@ -378,6 +378,7 @@ body.grid-classic .grandparent .menu__blocks .menu__block {
 }
 .product__block{
 	margin-bottom: 16px;
+	clear:both;
 }
 .product__description__content.rte p,
 .product__description__content.rte {
