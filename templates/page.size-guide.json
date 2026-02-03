@@ -13,7 +13,7 @@
       "type": "section-hero",
       "name": "Image banner",
       "settings": {
-        "image_1": "shopify://shop_images/size_guide.jpg",
+        "image_1": "shopify://shop_images/Size_Guide.png",
         "link": "",
         "width": "wrapper--full",
         "height": "image-height",
