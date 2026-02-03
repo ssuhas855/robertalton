@@ -13,13 +13,13 @@
       "type": "section-hero",
       "name": "Image banner",
       "settings": {
-        "image_1": "shopify://shop_images/plp_hero.jpg",
+        "image_1": "shopify://shop_images/PGA_Collection_Banner.png",
         "link": "",
         "width": "wrapper--full-padded",
         "height": "image-height",
         "flex_align_desktop": "align--middle-center-desktop",
         "content_width": 50,
-        "mobile_image": "shopify://shop_images/alt_plp_heromo.jpg",
+        "mobile_image": "shopify://shop_images/PGA_Collection_Banner.png",
         "mobile_height": "image-height--mobile",
         "flex_align_mobile": "align--middle-center-mobile",
         "text_below": false,
@@ -37,7 +37,7 @@
         "heading_Gt7Mqx": {
           "type": "heading",
           "settings": {
-            "title": "introducing  the Nordhaven Collection",
+            "title": "PGA",
             "heading_font_size": "heading-large",
             "padding_bottom": 16,
             "heading_tag": "automatic"
