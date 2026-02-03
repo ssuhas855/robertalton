@@ -18,7 +18,7 @@
             "image": "shopify://shop_images/Hero1.png",
             "link": "",
             "flex_align_desktop": "align--bottom-left-desktop",
-            "mobile_image": "shopify://shop_images/hero.jpg",
+            "mobile_image": "shopify://shop_images/Hero1.png",
             "flex_align_mobile": "align--middle-center-mobile",
             "show_text_background": false,
             "bg_color": "",
