@@ -52,7 +52,7 @@
           "type": "image",
           "settings": {
             "position": "2",
-            "image": "shopify://shop_images/navdrop1.webp",
+            "image": "shopify://shop_images/Dropdown_1.png",
             "aspect_ratio": 1.3,
             "wide_image": false,
             "overlay_type": "text",
@@ -68,7 +68,7 @@
           "type": "image",
           "settings": {
             "position": "2",
-            "image": "shopify://shop_images/navdrop2.webp",
+            "image": "shopify://shop_images/Dropdown_2.png",
             "aspect_ratio": 1.3,
             "wide_image": false,
             "overlay_type": "text",
