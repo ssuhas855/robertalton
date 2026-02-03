@@ -155,7 +155,7 @@
         "image_YUgJ48": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/M1.png",
+            "image": "shopify://shop_images/Dropdown_1.png",
             "image_url": "",
             "image_alignment": "left",
             "image_width": 100,
@@ -166,7 +166,7 @@
         "image_bWBG8j": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/m2.png",
+            "image": "shopify://shop_images/Dropdown_2.png",
             "image_url": "",
             "image_alignment": "left",
             "image_width": 100,
