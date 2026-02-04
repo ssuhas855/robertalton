@@ -2445,3 +2445,8 @@ p.product__notification__variant.subheading {
 .parent .header__dropdown__inner a span{
 	text-transform:none;
 }
+.related-products h6 {
+    text-align: center;
+    padding: 0 20px;
+    margin: 0 0 40px;
+}
