@@ -62,7 +62,7 @@
 
 {%  if template == "product" %}
 {% assign current_collection = collection | default: product.collections.first %}
-{% assign current_col = current_collection.url  %}
+{% assign current_col = current_collection.url | remove:'/collections/'  %}
 {{ current_col }}
 {% if collection.handle == 'bestsellers' %}{% section 'collection-bestsellers-info' %}{% endif %}
 {% if collection.handle == 'shop-all' %}{% section 'collection-shop-all-info' %}{% endif %}
