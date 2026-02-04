@@ -1754,7 +1754,9 @@ font-size: 11px;
 }
 .related-products{
     padding-left:10px;
+	 padding-right:10px;
 }
+
 /* progress track */
 .related-progress {
     width: calc(100% - 80px);
