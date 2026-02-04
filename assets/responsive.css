@@ -1790,5 +1790,8 @@ font-size: 11px;
 .related-mobile-slider {
     gap: 5px;
 }
+.grid.related-mobile-slider {
+    padding: 0;
+}
 } 
 /*END 767px*/
