@@ -2442,3 +2442,6 @@ p.product__notification__variant.subheading {
 .grandparent .dropdown__family:first-child .navlink--grandchild span{
 	text-transform:none;
 }
+.parent .header__dropdown__inner a span{
+	text-transform:none;
+}
