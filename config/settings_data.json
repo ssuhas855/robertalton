@@ -196,6 +196,56 @@
       },
       "collection-bracelets-info": {
         "type": "collection-bracelets-info",
+        "blocks": {
+          "text_JrBPBB": {
+            "type": "text",
+            "settings": {
+              "subheading": "Title",
+              "title": "Sub Title",
+              "heading_font_size": "heading-large",
+              "text": "<p>Info</p>",
+              "text_font_size": "body-medium",
+              "button_text": "Learn more",
+              "button_url": "",
+              "button_type": "btn--primary",
+              "button_size": "",
+              "button_style": "btn--solid",
+              "show_arrow": false,
+              "show_social_links": false,
+              "text_columns": 1,
+              "align_text": "text-left",
+              "bg_color": "",
+              "color": "",
+              "heading_tag": "automatic"
+            }
+          },
+          "image_YtMwR8": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/rob_18.jpg",
+              "title": "",
+              "heading_font_size": "heading-large",
+              "text": "",
+              "text_font_size": "body-medium",
+              "flex_align": "align--middle-center",
+              "show_text_background": false,
+              "bg_color": "",
+              "color": "",
+              "overlay_type": "disabled",
+              "link_text": "",
+              "link": "",
+              "button_type": "btn--primary",
+              "button_size": "",
+              "button_style": "btn--text",
+              "show_arrow": false,
+              "heading_tag": "automatic"
+            }
+          }
+        },
+        "block_order": [
+          "text_JrBPBB",
+          "image_YtMwR8"
+        ],
         "settings": {
           "borders": false,
           "gutters": false,
