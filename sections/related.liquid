@@ -1,36 +1,38 @@
-<!-- /sections/related.liquid -->
 {% if template == "product" %}
 
-{%- liquid
-assign current_collection = collection
+{% assign current_collection = collection %}
 
-if current_collection == nil or current_collection.handle == 'shop-all'
-  for col in product.collections
-    unless col.handle == 'shop-all'
-      assign current_collection = col
-      break
-    endunless
-  endfor
-endif
--%}
+{% if current_collection == nil or current_collection.handle == 'shop-all' %}
+  {% for col in product.collections %}
+    {% unless col.handle == 'shop-all' %}
+      {% assign current_collection = col %}
+      {% break %}
+    {% endunless %}
+  {% endfor %}
+{% endif %}
 
 {% if current_collection %}
 
-<div 
-  class="related-products"
-  data-related-section
-  data-product-id="{{ product.id }}"
-  data-collection-handle="{{ current_collection.handle }}"
+<related-products
+  class="related__wrapper"
+  data-section-id="{{ section.id }}"
 >
 
-  <h3>Related Products</h3>
+  <div
+    data-related-section
+    data-product-id="{{ product.id }}"
+    data-limit="8"
+    data-layout="grid"
+    data-collection="{{ current_collection.handle }}"
+  ></div>
 
-  <div class="related-grid" id="related-grid"></div>
+</related-products>
 
-</div>
+<script src="{{ 'related-products.js' | asset_url }}" defer></script>
 
 {% endif %}
 {% endif %}
+
 
 
 
