@@ -1788,6 +1788,8 @@ font-size: 11px;
     flex:0 0 auto;
     scroll-snap-align:start;
 }
-
+.related-mobile-slider {
+    gap: 5px;
+}
 } 
 /*END 767px*/
