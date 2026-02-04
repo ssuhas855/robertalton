@@ -75,14 +75,10 @@
 
 
 {% if template == "product" %}
-
   {% assign current_collection = collection | default: product.collections.first %}
-  {% if current_collection %}
-    {{ current_collection }}
-    
+    {{ current_collection }}    
   {% endif %}
 
-{% endif %}
 
 
 
