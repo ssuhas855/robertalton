@@ -2477,6 +2477,10 @@ p.product__notification__variant.subheading {
     flex:0 0 auto;
     scroll-snap-align:start;
 }
+.related-products{
+    overflow:hidden;
+	padding-left:10px;
+}
 
 }
 
