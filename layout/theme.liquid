@@ -76,8 +76,13 @@
 
 {% if template == "product" %}
   {% assign current_collection = collection | default: product.collections.first %}
-    {{ current_collection }}    
-  {% endif %}
+
+  {{ current_collection.title }}
+  {{ current_collection.handle }}
+  {{ current_collection.url }}
+
+{% endif %}
+
 
 
 
