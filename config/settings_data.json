@@ -155,6 +155,56 @@
       },
       "collection-earrings-info": {
         "type": "collection-earrings-info",
+        "blocks": {
+          "text_PgqMEd": {
+            "type": "text",
+            "settings": {
+              "subheading": "",
+              "title": "",
+              "heading_font_size": "heading-large",
+              "text": "<p>Use this section to create unique side-by-side layouts with various content blocks. Pair text with images, newsletter blocks, products, videos, testimonials and more.</p>",
+              "text_font_size": "body-medium",
+              "button_text": "SHOP ALL EARRINGS",
+              "button_url": "",
+              "button_type": "btn--primary",
+              "button_size": "",
+              "button_style": "btn--text",
+              "show_arrow": false,
+              "show_social_links": false,
+              "text_columns": 1,
+              "align_text": "text-left",
+              "bg_color": "",
+              "color": "",
+              "heading_tag": "automatic"
+            }
+          },
+          "image_CXtrak": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/ShopEarrings.png",
+              "title": "",
+              "heading_font_size": "heading-large",
+              "text": "",
+              "text_font_size": "body-medium",
+              "flex_align": "align--middle-center",
+              "show_text_background": false,
+              "bg_color": "",
+              "color": "",
+              "overlay_type": "disabled",
+              "link_text": "",
+              "link": "",
+              "button_type": "btn--primary",
+              "button_size": "",
+              "button_style": "btn--text",
+              "show_arrow": false,
+              "heading_tag": "automatic"
+            }
+          }
+        },
+        "block_order": [
+          "text_PgqMEd",
+          "image_CXtrak"
+        ],
         "settings": {
           "borders": false,
           "gutters": false,
