@@ -72,7 +72,7 @@
         "featured_image_kJ4Cyq": {
           "type": "featured_image",
           "settings": {
-            "featured_image": "shopify://shop_images/img18.jpg",
+            "featured_image": "shopify://shop_images/rob_18.jpg",
             "position": 9,
             "featured_heading": "",
             "heading_font_size": "heading-large",
@@ -91,7 +91,7 @@
         "featured_image_jDRx3K": {
           "type": "featured_image",
           "settings": {
-            "featured_image": "shopify://shop_images/img1.jpg",
+            "featured_image": "shopify://shop_images/img19.jpg",
             "position": 10,
             "featured_heading": "",
             "heading_font_size": "heading-large",
@@ -121,7 +121,7 @@
         "grid": 4,
         "grid_mobile": "2",
         "products_per_page": 14,
-        "featured_width": "wrapper--full",
+        "featured_width": "wrapper--full-padded",
         "color_scheme": "scheme-1",
         "padding_top": 0,
         "padding_bottom": 100
