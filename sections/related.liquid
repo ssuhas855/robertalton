@@ -24,11 +24,7 @@
           
           {% if related.id != product.id %}
 
-            <a href="{{ related.url | within: current_collection }}" class="product-card">
-              <img src="{{ related.featured_image | image_url: width: 400 }}">
-              <p>{{ related.title }}</p>
-              <span>{{ related.price | money }}</span>
-            </a>
+             {% render 'product-grid-item', product: product, index: forloop.index, sizes: image_sizes %}
 
             {% assign count = count | plus: 1 %}
             {% if count == 4 %}
