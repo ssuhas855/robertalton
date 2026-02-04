@@ -230,6 +230,69 @@
           "padding_top": 0,
           "padding_bottom": 0
         }
+      },
+      "collection-bands-info": {
+        "type": "collection-bands-info",
+        "blocks": {
+          "text_NHdyL4": {
+            "type": "text",
+            "settings": {
+              "subheading": "",
+              "title": "",
+              "heading_font_size": "heading-large",
+              "text": "<p>Use this section to create unique side-by-side layouts with various content blocks. Pair text with images, newsletter blocks, products, videos, testimonials and more.</p>",
+              "text_font_size": "body-medium",
+              "button_text": "Shop Ring",
+              "button_url": "shopify://collections/ring",
+              "button_type": "btn--primary",
+              "button_size": "",
+              "button_style": "btn--text",
+              "show_arrow": false,
+              "show_social_links": false,
+              "text_columns": 1,
+              "align_text": "text-left",
+              "bg_color": "",
+              "color": "",
+              "heading_tag": "automatic"
+            }
+          },
+          "image_8M7BFg": {
+            "type": "image",
+            "settings": {
+              "title": "",
+              "heading_font_size": "heading-large",
+              "text": "",
+              "text_font_size": "body-medium",
+              "flex_align": "align--middle-center",
+              "show_text_background": false,
+              "bg_color": "",
+              "color": "",
+              "overlay_type": "disabled",
+              "link_text": "",
+              "link": "",
+              "button_type": "btn--primary",
+              "button_size": "",
+              "button_style": "btn--text",
+              "show_arrow": false,
+              "heading_tag": "automatic"
+            }
+          }
+        },
+        "block_order": [
+          "text_NHdyL4",
+          "image_8M7BFg"
+        ],
+        "settings": {
+          "borders": false,
+          "gutters": false,
+          "width": "wrapper--full-padded",
+          "height": "screen-height-one-half",
+          "mobile_height": "screen-height-one-half--mobile",
+          "reverse_blocks": false,
+          "color_scheme": "",
+          "padding_top": 0,
+          "padding_bottom": 0
+        }
       }
     },
     "content_for_index": [],
