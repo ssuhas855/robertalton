@@ -242,7 +242,7 @@
               "heading_font_size": "heading-large",
               "text": "<p>Use this section to create unique side-by-side layouts with various content blocks. Pair text with images, newsletter blocks, products, videos, testimonials and more.</p>",
               "text_font_size": "body-medium",
-              "button_text": "Shop Ring",
+              "button_text": "SHOP ALL BANDS",
               "button_url": "shopify://collections/ring",
               "button_type": "btn--primary",
               "button_size": "",
@@ -259,6 +259,7 @@
           "image_8M7BFg": {
             "type": "image",
             "settings": {
+              "image": "shopify://shop_images/Rings.png",
               "title": "",
               "heading_font_size": "heading-large",
               "text": "",
