@@ -2474,5 +2474,9 @@ p.product__notification__variant.subheading {
 
     scroll-snap-align:start;
 }
+.related-products{
+    padding-left:16px;
+}
+
 
 }
