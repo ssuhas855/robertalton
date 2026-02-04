@@ -2439,3 +2439,6 @@ p.product__notification__variant.subheading {
 .product__page {
     background: #fff;
 }
+.grandparent .dropdown__family:first-child .navlink--grandchild span{
+	text-transform:none;
+}
