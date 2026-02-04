@@ -96,12 +96,12 @@
             "type": "text",
             "settings": {
               "subheading": "",
-              "title": "Custom section",
+              "title": "",
               "heading_font_size": "heading-large",
               "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
               "text_font_size": "body-medium",
-              "button_text": "Learn more",
-              "button_url": "",
+              "button_text": "Explore Necklace",
+              "button_url": "shopify://collections/necklace",
               "button_type": "btn--primary",
               "button_size": "",
               "button_style": "btn--text",
@@ -117,7 +117,7 @@
           "image_F37dKn": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/M1.png",
+              "image": "shopify://shop_images/Necklace.png",
               "title": "",
               "heading_font_size": "heading-large",
               "text": "",
