@@ -51,6 +51,27 @@
   {%- endif -%}
 {%- endfor -%}
 
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+
+ const slider = document.querySelector(".related-mobile-slider");
+ const progress = document.querySelector(".related-progress-bar");
+
+ if(!slider || !progress) return;
+
+ slider.addEventListener("scroll", () => {
+
+   const maxScroll = slider.scrollWidth - slider.clientWidth;
+   const percent = (slider.scrollLeft / maxScroll) * 100;
+
+   progress.style.width = percent + "%";
+ });
+
+});
+
+</script>
+
+
 
   {%comment %}
     
