@@ -196,56 +196,6 @@
       },
       "collection-bracelets-info": {
         "type": "collection-bracelets-info",
-        "blocks": {
-          "text_4CbW7r": {
-            "type": "text",
-            "settings": {
-              "subheading": "Introducing RA Bracelet",
-              "title": "Robert Alton Bracelet",
-              "heading_font_size": "heading-large",
-              "text": "<p>Use this section to create unique side-by-side layouts with various content blocks. Pair text with images, newsletter blocks, products, videos, testimonials and more.</p>",
-              "text_font_size": "body-medium",
-              "button_text": "Learn more",
-              "button_url": "",
-              "button_type": "btn--primary",
-              "button_size": "",
-              "button_style": "btn--solid",
-              "show_arrow": false,
-              "show_social_links": false,
-              "text_columns": 1,
-              "align_text": "text-left",
-              "bg_color": "",
-              "color": "",
-              "heading_tag": "automatic"
-            }
-          },
-          "image_tVdLEL": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/TS20601-3.jpg",
-              "title": "",
-              "heading_font_size": "heading-large",
-              "text": "",
-              "text_font_size": "body-medium",
-              "flex_align": "align--middle-center",
-              "show_text_background": false,
-              "bg_color": "",
-              "color": "",
-              "overlay_type": "disabled",
-              "link_text": "",
-              "link": "",
-              "button_type": "btn--primary",
-              "button_size": "",
-              "button_style": "btn--text",
-              "show_arrow": false,
-              "heading_tag": "automatic"
-            }
-          }
-        },
-        "block_order": [
-          "text_4CbW7r",
-          "image_tVdLEL"
-        ],
         "settings": {
           "borders": false,
           "gutters": false,
