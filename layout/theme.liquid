@@ -60,20 +60,43 @@
 
         
 
-{%  if template == "product" %}
-{% assign current_collection = collection | default: product.collections.first %}
-{% assign current_col = current_collection.url | remove:'/collections/'  %}
+{% if template == "product" %}
+  {% assign current_collection = collection | default: product.collections.first %}
+  {% if current_collection %}
+    {% case current_collection.handle %}
 
-{% if collection.handle == current_col %}{% section 'collection-bestsellers-info' %}{% endif %}
-{% if collection.handle == current_col %}{% section 'collection-shop-all-info' %}{% endif %}
-{% if collection.handle == current_col %}{% section 'collection-earrings-info' %}{% endif %}
-{% if collection.handle == current_col %}{% section 'collection-bands-info' %}{% endif %}
-{% if collection.handle == current_col %}{% section 'collection-bracelets-info' %}{% endif %}
-{% if collection.handle == current_col %}{% section 'collection-necklaces-info' %}{% endif %}
-{% if collection.handle == current_col %}{% section 'collection-pendants-info' %}{% endif %}
-{% if collection.handle == current_col %}{% section 'collection-drake-collection-info' %}{% endif %}
-{% if collection.handle == current_col %}{% section 'collection-pga-info' %}{% endif %}
- {% endif %}
+      {% when 'bestsellers' %}
+        {% section 'collection-bestsellers-info' %}
+
+      {% when 'earrings' %}
+        {% section 'collection-earrings-info' %}
+        
+        {% when 'ring' %}
+        {% section 'collection-bands-info' %}
+
+         {% when 'bands' %}
+        {% section 'collection-bands-info' %}
+
+      {% when 'bracelet' %}
+        {% section 'collection-bracelets-info' %}
+
+        {% when 'necklace' %}
+        {% section 'collection-necklace-info' %}
+
+      {% when 'pendants' %}
+        {% section 'collection-pendants-info' %}
+        
+        {% when 'drake-collection' %}
+        {% section 'collection-drake-collection-info' %}
+
+      {% when 'pga-collection' %}
+        {% section 'pga-collection' %}
+
+    {% endcase %}
+
+  {% endif %}
+
+{% endif %}
 
 
 
