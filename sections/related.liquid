@@ -1,50 +1,37 @@
 <!-- /sections/related.liquid -->
+{% if template == "product" %}
 
-{%- for block in section.blocks -%}
-  {%- if block.type == 'related' and product.collections.size > 0 -%}
-{% assign current_collection = collection %}
+{%- liquid
+assign current_collection = collection
 
-  {% if current_collection == nil or current_collection.handle == 'shop-all' %}
-    {% for col in product.collections %}
-      {% unless col.handle == 'shop-all' %}
-        {% assign current_collection = col %}
-        {% break %}
-      {% endunless %}
-    {% endfor %}
-  {% endif %}
+if current_collection == nil or current_collection.handle == 'shop-all'
+  for col in product.collections
+    unless col.handle == 'shop-all'
+      assign current_collection = col
+      break
+    endunless
+  endfor
+endif
+-%}
 
-  {% if current_collection %}
+{% if current_collection %}
 
-    <div class="related-products">
-     {%- if block.settings.product_recommendations_heading != blank -%}
-        <h6>{{ block.settings.product_recommendations_heading }}</h6>
-      {%- endif -%}
-      <div class="grid">
+<div 
+  class="related-products"
+  data-related-section
+  data-product-id="{{ product.id }}"
+  data-collection-handle="{{ current_collection.handle }}"
+>
 
-        {% assign count = 0 %}
+  <h3>Related Products</h3>
 
-        {% for related in current_collection.products %}
-          
-          {% if related.id != product.id %}
+  <div class="related-grid" id="related-grid"></div>
 
-             {% render 'product-grid-item', product: product, index: forloop.index, sizes: image_sizes %}
+</div>
 
-            {% assign count = count | plus: 1 %}
-            {% if count == 4 %}
-              {% break %}
-            {% endif %}
+{% endif %}
+{% endif %}
 
-          {% endif %}
-
-        {% endfor %}
-
-      </div>
-    </div>
-
-  {% endif %}
-
-  {%- endif -%}
-{%- endfor -%}
 
 
   {%comment %}
