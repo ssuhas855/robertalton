@@ -16,8 +16,9 @@
   {% if current_collection %}
 
     <div class="related-products">
-      <h3>Related Products</h3>
-
+     {%- if block.settings.product_recommendations_heading != blank -%}
+        <h3>{{ block.settings.product_recommendations_heading }}</h3>
+      {%- endif -%}
       <div class="grid">
 
         {% assign count = 0 %}
