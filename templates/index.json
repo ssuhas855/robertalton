@@ -228,9 +228,9 @@
         "button_NRBRYw": {
           "type": "button",
           "settings": {
-            "link_text": "Drake Collecion",
+            "link_text": "The Drake Collection",
             "link": "shopify://collections/drake-collection",
-            "button_type": "btn--primary",
+            "button_type": "btn--white",
             "button_size": "",
             "button_style": "btn--text",
             "show_arrow": false,
