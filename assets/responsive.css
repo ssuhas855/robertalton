@@ -1724,7 +1724,9 @@ font-size: 11px;
 .popout-list__item a {
 	font-size: 11px;
 }
-
+.related-products {
+    padding-top: 20px;
+}
 
 } 
 /*END 767px*/
