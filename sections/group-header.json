@@ -85,12 +85,13 @@
           "disabled": true,
           "settings": {
             "position": "4",
+            "image": "shopify://shop_images/Dropdown_1.png",
             "aspect_ratio": 1,
             "wide_image": false,
             "overlay_type": "text",
             "title": "Shop Gemstone Collection",
             "heading_font_size": "heading-mini",
-            "link_text": "",
+            "link_text": "test",
             "text_font_size": "body-medium",
             "link": "",
             "text_color": "#fcfbf9"
