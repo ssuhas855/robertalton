@@ -164,7 +164,7 @@
           "type": "button",
           "settings": {
             "link_text": "SHOP New Collcetion",
-            "link": "shopify://collections/shop-all",
+            "link": "shopify://collections/drake-collection",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--text",
