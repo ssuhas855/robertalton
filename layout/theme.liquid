@@ -57,6 +57,9 @@
 
         {% endif %}
 
+
+        
+
 {%  if template == "product" %}
 {% if collection.handle == 'bestsellers' %}{% section 'collection-bestsellers-info' %}{% endif %}
 {% if collection.handle == 'shop-all' %}{% section 'collection-shop-all-info' %}{% endif %}
@@ -71,6 +74,15 @@
 
 
 
+{% if template == "product" %}
+
+  {% assign current_collection = collection | default: product.collections.first %}
+  {% if current_collection %}
+    {{ collection.handle }}
+    
+  {% endif %}
+
+{% endif %}
 
 
 
