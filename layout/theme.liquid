@@ -78,7 +78,7 @@
 
   {% assign current_collection = collection | default: product.collections.first %}
   {% if current_collection %}
-    {{ collection.handle }}
+    {{ current_collection }}
     
   {% endif %}
 
