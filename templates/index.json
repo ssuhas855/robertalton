@@ -276,8 +276,8 @@
         "buttons_wLn99a": {
           "type": "buttons",
           "settings": {
-            "button_text": "Lorem Ipsum",
-            "button_url": "#",
+            "button_text": "Shop Necklace",
+            "button_url": "shopify://collections/necklace",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--text",
