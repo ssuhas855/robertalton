@@ -420,6 +420,7 @@
         "text_DeEqPd",
         "image_XG6xwK"
       ],
+      "disabled": true,
       "settings": {
         "borders": false,
         "gutters": true,
