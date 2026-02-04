@@ -1758,7 +1758,7 @@ font-size: 11px;
 /* progress track */
 .related-progress {
     width: calc(100% - 80px);
-    height: 2px;
+    height: 1px;
     background: #BBBBBB;
     border-radius: 0;
     overflow: hidden;
