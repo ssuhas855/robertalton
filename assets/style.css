@@ -2486,17 +2486,18 @@ p.product__notification__variant.subheading {
 .related-progress{
     width:100%;
     height:3px;
-    background:#e5e5e5;
+    background:##BBBBBB;
     margin-top:14px;
     border-radius:10px;
     overflow:hidden;
+	padding:0 38px;
 }
 
 /* moving bar */
 .related-progress-bar{
     height:100%;
     width:0%;
-    background:#111;
+    background:#000;
     border-radius:10px;
     transition:width .15s linear;
 }
