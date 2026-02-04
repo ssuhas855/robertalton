@@ -620,8 +620,6 @@
     class="grid-item product-item {{ swatches_class }} {{ alignment_class }} {{ overlay_text_class }} {{ quickview_class }} {{ product_card_class }}{% if modifier_class != blank %} {{ modifier_class }}{% endif %}"
     id="{{ item_unique }}"
     data-grid-item
-data-product-id="{{ product.id }}"
-data-product-collections="{{ product.collections | map: 'handle' | join: ',' }}"
     {{ attributes }}
   >
     <div class="product-item__image{% if double_img %} double__image{% endif %}" data-product-image>
