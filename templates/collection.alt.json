@@ -15,7 +15,7 @@
       "settings": {
         "image_1": "shopify://shop_images/PGA_Collection_Banner.png",
         "link": "",
-        "width": "wrapper--full-padded",
+        "width": "wrapper--full",
         "height": "image-height",
         "flex_align_desktop": "align--middle-center-desktop",
         "content_width": 50,
