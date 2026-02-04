@@ -132,22 +132,23 @@
       <h3>Related Products</h3>
 
       <div class="grid">
-        {% assign shown = 0 %}
 
-        {% for product in current_collection.products %}
-          {% if product.id != product.id %}
-          {% endif %}
-        {% endfor %}
+        {% assign count = 0 %}
 
-        {% for related in current_collection.products limit: 4 %}
+        {% for related in current_collection.products %}
           
           {% if related.id != product.id %}
-            
+
             <a href="{{ related.url | within: current_collection }}" class="product-card">
               <img src="{{ related.featured_image | image_url: width: 400 }}">
               <p>{{ related.title }}</p>
               <span>{{ related.price | money }}</span>
             </a>
+
+            {% assign count = count | plus: 1 %}
+            {% if count == 4 %}
+              {% break %}
+            {% endif %}
 
           {% endif %}
 
@@ -159,6 +160,7 @@
   {% endif %}
 
 {% endif %}
+
 
 
 
