@@ -52,20 +52,35 @@
 {%- endfor -%}
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
+ document.addEventListener("DOMContentLoaded", () => {
 
  const slider = document.querySelector(".related-mobile-slider");
  const progress = document.querySelector(".related-progress-bar");
 
  if(!slider || !progress) return;
 
- slider.addEventListener("scroll", () => {
+ const updateProgress = () => {
 
    const maxScroll = slider.scrollWidth - slider.clientWidth;
-   const percent = (slider.scrollLeft / maxScroll) * 100;
+
+   // 🔥 Important — if no scroll
+   if(maxScroll <= 0){
+     progress.style.width = "100%";
+     return;
+   }
+
+   const percent = ((slider.scrollLeft + slider.clientWidth) / slider.scrollWidth) * 100;
 
    progress.style.width = percent + "%";
- });
+ };
+
+ // ✅ SET on load
+ updateProgress();
+
+ slider.addEventListener("scroll", updateProgress);
+
+ // ✅ also fix after images load
+ window.addEventListener("load", updateProgress);
 
 });
 
