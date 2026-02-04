@@ -1727,6 +1727,9 @@ font-size: 11px;
 .related-products {
     padding-top: 20px;
 }
+.related-products h6 {
+    margin: 0 0 20px;
+}
 
 } 
 /*END 767px*/
