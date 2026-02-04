@@ -61,7 +61,21 @@
         
 
 {% if template == "product" %}
-  {% assign current_collection = collection | default: product.collections.first %}
+
+{% assign current_collection = collection %}
+
+  {% if current_collection == nil or current_collection.handle == 'shop-all' %}
+
+    {% for col in product.collections %}
+      {% unless col.handle == 'shop-all' %}
+        {% assign current_collection = col %}
+        {% break %}
+      {% endunless %}
+    {% endfor %}
+
+  {% endif %}
+
+
   {% if current_collection %}
     {% case current_collection.handle %}
 
