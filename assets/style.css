@@ -2450,7 +2450,9 @@ p.product__notification__variant.subheading {
     padding: 0 20px;
     margin: 0 0 40px;
 }
-
+.grid.related-mobile-slider {
+    padding: 0 10px;
+}
 
 
 
