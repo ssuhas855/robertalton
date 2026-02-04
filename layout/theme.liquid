@@ -62,6 +62,8 @@
 
 {%  if template == "product" %}
 {% assign current_collection = collection | default: product.collections.first %}
+{% assign current_col = current_collection.url  %}
+
 {% if collection.handle == 'bestsellers' %}{% section 'collection-bestsellers-info' %}{% endif %}
 {% if collection.handle == 'shop-all' %}{% section 'collection-shop-all-info' %}{% endif %}
 {% if collection.handle == 'earrings' %}{% section 'collection-earrings-info' %}{% endif %}
