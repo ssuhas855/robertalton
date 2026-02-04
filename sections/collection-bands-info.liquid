@@ -271,7 +271,13 @@
       {%- endfor -%}
     </div>
   {%- else -%}
-    {%- render 'no-blocks' -%}
+    
+<style>
+#{{ section.id }}{
+    display:none!important;
+}
+</style>
+
   {%- endif -%}
 </section>
 
