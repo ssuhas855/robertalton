@@ -2483,14 +2483,14 @@ p.product__notification__variant.subheading {
 }
 
 /* progress track */
-.related-progress{
-    width:calc(100% - 80px)%;
-    height:2px;
-    background:#BBBBBB;
-    border-radius:0;
-    overflow:hidden;
-	padding:0;
-	margin:0 auto;
+.related-progress {
+    width: calc(100% - 80px);
+    height: 2px;
+    background: #BBBBBB;
+    border-radius: 0;
+    overflow: hidden;
+    padding: 0;
+    margin: 20px auto 0;
 }
 
 /* moving bar */
