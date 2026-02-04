@@ -84,7 +84,7 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "position": "3",
+            "position": "4",
             "aspect_ratio": 1,
             "wide_image": false,
             "overlay_type": "text",
