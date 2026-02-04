@@ -2450,72 +2450,7 @@ p.product__notification__variant.subheading {
     padding: 0 20px;
     margin: 0 0 40px;
 }
-/* MOBILE SLIDER ONLY */
-@media screen and (max-width: 767px){
-
-.related-mobile-slider{
-    display:flex;
-    overflow-x:auto;
-    gap:12px;
-    padding-bottom:10px;
-
-    scroll-snap-type:x mandatory;
-    -webkit-overflow-scrolling:touch;
-}
-
-/* hide scrollbar */
-.related-mobile-slider::-webkit-scrollbar{
-    display:none;
-}
-
-.related-mobile-slider > *{
-    min-width:75%;
-    flex:0 0 auto;
-
-    scroll-snap-align:start;
-}
-.related-products{
-    padding-left:10px;
-}
 
 
 
-}
 
-/* progress track */
-.related-progress {
-    width: calc(100% - 80px);
-    height: 2px;
-    background: #BBBBBB;
-    border-radius: 0;
-    overflow: hidden;
-    padding: 0;
-    margin: 20px auto 0;
-}
-
-/* moving bar */
-.related-progress-bar{
-    height:100%;
-    width:0%;
-    background:#000;
-    border-radius:10px;
-    transition:width .15s linear;
-}
-
-/* mobile only slider */
-@media(max-width:767px){
-
-.related-mobile-slider{
-    display:flex;
-    overflow-x:auto;
-    gap:12px;
-    scroll-snap-type:x mandatory;
-}
-
-.related-mobile-slider > *{
-    min-width:82%;
-    flex:0 0 auto;
-    scroll-snap-align:start;
-}
-
-}
