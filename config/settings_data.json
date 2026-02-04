@@ -177,10 +177,33 @@
               "color": "",
               "heading_tag": "automatic"
             }
+          },
+          "image_6kgp6Q": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/TS17906.jpg",
+              "title": "",
+              "heading_font_size": "heading-large",
+              "text": "",
+              "text_font_size": "body-medium",
+              "flex_align": "align--middle-center",
+              "show_text_background": false,
+              "bg_color": "",
+              "color": "",
+              "overlay_type": "disabled",
+              "link_text": "",
+              "link": "",
+              "button_type": "btn--primary",
+              "button_size": "",
+              "button_style": "btn--text",
+              "show_arrow": false,
+              "heading_tag": "automatic"
+            }
           }
         },
         "block_order": [
-          "text_9CRd7k"
+          "text_9CRd7k",
+          "image_6kgp6Q"
         ],
         "settings": {
           "borders": false,
