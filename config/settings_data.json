@@ -95,7 +95,7 @@
           "text_qjFmTL": {
             "type": "text",
             "settings": {
-              "subheading": "Introducing",
+              "subheading": "",
               "title": "Custom section",
               "heading_font_size": "heading-large",
               "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
@@ -104,7 +104,7 @@
               "button_url": "",
               "button_type": "btn--primary",
               "button_size": "",
-              "button_style": "btn--solid",
+              "button_style": "btn--text",
               "show_arrow": false,
               "show_social_links": false,
               "text_columns": 1,
@@ -145,8 +145,8 @@
           "borders": false,
           "gutters": false,
           "width": "wrapper--full-padded",
-          "height": "screen-height-one-half",
-          "mobile_height": "screen-height-one-half--mobile",
+          "height": "image-height",
+          "mobile_height": "image-height--mobile",
           "reverse_blocks": false,
           "color_scheme": "",
           "padding_top": 0,
