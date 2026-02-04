@@ -63,16 +63,16 @@
 {%  if template == "product" %}
 {% assign current_collection = collection | default: product.collections.first %}
 {% assign current_col = current_collection.url | remove:'/collections/'  %}
-{{ current_col }}
-{% if collection.handle == 'bestsellers' %}{% section 'collection-bestsellers-info' %}{% endif %}
-{% if collection.handle == 'shop-all' %}{% section 'collection-shop-all-info' %}{% endif %}
-{% if collection.handle == 'earrings' %}{% section 'collection-earrings-info' %}{% endif %}
-{% if collection.handle == 'ring' or collection.handle == 'rings' or collection.handle == 'bands' %}{% section 'collection-bands-info' %}{% endif %}
-{% if collection.handle == 'bracelet' %}{% section 'collection-bracelets-info' %}{% endif %}
-{% if collection.handle == 'necklace' %}{% section 'collection-necklaces-info' %}{% endif %}
-{% if collection.handle == 'pendants' %}{% section 'collection-pendants-info' %}{% endif %}
-{% if collection.handle == 'drake-collection' %}{% section 'collection-drake-collection-info' %}{% endif %}
-{% if collection.handle == 'pga-collection' %}{% section 'collection-pga-info' %}{% endif %}
+
+{% if collection.handle == current_col %}{% section 'collection-bestsellers-info' %}{% endif %}
+{% if collection.handle == current_col %}{% section 'collection-shop-all-info' %}{% endif %}
+{% if collection.handle == current_col %}{% section 'collection-earrings-info' %}{% endif %}
+{% if collection.handle == current_col %}{% section 'collection-bands-info' %}{% endif %}
+{% if collection.handle == current_col %}{% section 'collection-bracelets-info' %}{% endif %}
+{% if collection.handle == current_col %}{% section 'collection-necklaces-info' %}{% endif %}
+{% if collection.handle == current_col %}{% section 'collection-pendants-info' %}{% endif %}
+{% if collection.handle == current_col %}{% section 'collection-drake-collection-info' %}{% endif %}
+{% if collection.handle == current_col %}{% section 'collection-pga-info' %}{% endif %}
  {% endif %}
 
 
