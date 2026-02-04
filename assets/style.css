@@ -2484,13 +2484,13 @@ p.product__notification__variant.subheading {
 
 /* progress track */
 .related-progress{
-    width:100%;
+    width:calc(100% - 80px)%;
     height:2px;
     background:#BBBBBB;
-    margin-top:14px;
-    border-radius:10px;
+    border-radius:0;
     overflow:hidden;
-	padding:0 38px;
+	padding:0;
+	margin:0 auto;
 }
 
 /* moving bar */
