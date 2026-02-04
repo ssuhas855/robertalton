@@ -228,8 +228,8 @@
         "button_NRBRYw": {
           "type": "button",
           "settings": {
-            "link_text": "Discover 24K Jewelry Collection",
-            "link": "#",
+            "link_text": "Drake Collecion",
+            "link": "shopify://collections/drake-collection",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--text",
