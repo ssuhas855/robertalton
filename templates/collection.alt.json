@@ -71,9 +71,9 @@
       "name": "Image 50 / 50",
       "settings": {
         "width": "wrapper--full",
-        "image_left": "shopify://shop_images/img1.jpg",
+        "image_left": "shopify://shop_images/PGA01.png",
         "link": "",
-        "image_right": "shopify://shop_images/img2.jpg",
+        "image_right": "shopify://shop_images/PGA02.png",
         "link_r": ""
       }
     },
@@ -103,7 +103,7 @@
         "featured_image_rJkdjN": {
           "type": "featured_image",
           "settings": {
-            "featured_image": "shopify://shop_images/img19.jpg",
+            "featured_image": "shopify://shop_images/PGA04.png",
             "position": 6,
             "featured_heading": "",
             "heading_font_size": "heading-large",
@@ -122,7 +122,7 @@
         "featured_image_kJ4Cyq": {
           "type": "featured_image",
           "settings": {
-            "featured_image": "shopify://shop_images/img18.jpg",
+            "featured_image": "shopify://shop_images/PGA03.png",
             "position": 5,
             "featured_heading": "",
             "heading_font_size": "heading-large",
