@@ -275,17 +275,7 @@
   {%- endif -%}
 </section>
 
-{% if template == 'product' %}
 
-  {% assign pinfo = product.metafields.custom.product_info.value %}
-    {% unless pinfo != blank and pinfo.image != blank %}
-<style>
-.template-product .custom-section-row{
-  display:none!important;
-}
-</style>
-{% endunless %}
-  {% endif %}
 
 {% schema %}
 {
