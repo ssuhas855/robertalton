@@ -1,39 +1,50 @@
-{% if template == "product" %}
+<!-- /sections/related.liquid -->
 
+{%- for block in section.blocks -%}
+  {%- if block.type == 'related' and product.collections.size > 0 -%}
 {% assign current_collection = collection %}
 
-{% if current_collection == nil or current_collection.handle == 'shop-all' %}
-  {% for col in product.collections %}
-    {% unless col.handle == 'shop-all' %}
-      {% assign current_collection = col %}
-      {% break %}
-    {% endunless %}
-  {% endfor %}
-{% endif %}
+  {% if current_collection == nil or current_collection.handle == 'shop-all' %}
+    {% for col in product.collections %}
+      {% unless col.handle == 'shop-all' %}
+        {% assign current_collection = col %}
+        {% break %}
+      {% endunless %}
+    {% endfor %}
+  {% endif %}
 
-{% if current_collection %}
+  {% if current_collection %}
 
-<related-products
-  class="related__wrapper"
-  data-section-id="{{ section.id }}"
->
+    <div class="related-products">
+     {%- if block.settings.product_recommendations_heading != blank -%}
+        <h6>{{ block.settings.product_recommendations_heading }}</h6>
+      {%- endif -%}
+      <div class="grid">
 
-  <div
-    data-related-section
-    data-product-id="{{ product.id }}"
-    data-limit="8"
-    data-layout="grid"
-    data-collection="{{ current_collection.handle }}"
-  ></div>
+        {% assign count = 0 %}
 
-</related-products>
+        {% for related in current_collection.products %}
+          
+          {% if related.id != product.id %}
 
-<script src="{{ 'related-products.js' | asset_url }}" defer></script>
+             {% render 'product-grid-item', product: product, index: forloop.index, sizes: image_sizes %}
 
-{% endif %}
-{% endif %}
+            {% assign count = count | plus: 1 %}
+            {% if count == 4 %}
+              {% break %}
+            {% endif %}
 
+          {% endif %}
 
+        {% endfor %}
+
+      </div>
+    </div>
+
+  {% endif %}
+
+  {%- endif -%}
+{%- endfor -%}
 
 
   {%comment %}
