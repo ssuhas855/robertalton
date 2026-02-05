@@ -155,8 +155,9 @@
       "blocks": {
         "buttons_zhdpda": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
-            "button_text": "SHOP the diamond band 2",
+            "button_text": "SHOP the diamond band",
             "button_url": "shopify://collections/shop-all",
             "button_type": "btn--primary",
             "button_size": "",
@@ -181,6 +182,9 @@
       "settings": {
         "image_1": "shopify://shop_images/Reference_074e3de4-a8b4-4a26-8f98-2b72ad130314.jpg",
         "image_width": "three-quarters",
+        "button_show": false,
+        "button_text": "SHOP the diamond band",
+        "button_url": "shopify://collections/ring",
         "text_alignment": "text-center",
         "layout": "",
         "width": "wrapper--full-padded",
@@ -212,6 +216,7 @@
       "block_order": [
         "buttons_NX3Ff8"
       ],
+      "disabled": true,
       "name": "Rich text",
       "settings": {
         "align_text": "text-center",
@@ -294,6 +299,9 @@
       "settings": {
         "image_1": "shopify://shop_images/6.png",
         "image_width": "three-quarters",
+        "button_show": false,
+        "button_text": "Learn more",
+        "button_url": "",
         "text_alignment": "text-left",
         "layout": "is-reversed",
         "width": "wrapper--full",
