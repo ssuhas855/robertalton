@@ -2458,7 +2458,7 @@ p.product__notification__variant.subheading {
     grid-row: span 2;
 }
 #terms-of-service .shopify-policy__body ol,
-#privacy-policy. shopify-policy__body ol{
+#privacy-policy .shopify-policy__body ol{
 	list-style:none;
 }
 .shopify-policy__body h5 {
