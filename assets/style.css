@@ -2474,3 +2474,15 @@ p.product__notification__variant.subheading {
 .shopify-policy__body ol a:hover{
 	border-color:transparent;
 }
+body .shopify-policy__container h5 {
+    font-family: var(--FONT-STACK-BODY);
+    font-style: var(--FONT-STYLE-BODY);
+    font-weight: var(--FONT-WEIGHT-BODY);
+    letter-spacing: 0.5px;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 10px 0 25px;
+    text-align: left;
+    float: left;
+    width: 100%;
+}
