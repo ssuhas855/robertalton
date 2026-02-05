@@ -398,6 +398,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.querySelectorAll('#terms-of-service ol li a').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
+    alert(1);
     e.preventDefault();
 
     const target = document.querySelector(this.getAttribute('href'));
