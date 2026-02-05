@@ -2457,3 +2457,6 @@ p.product__notification__variant.subheading {
     grid-column: span 2;
     grid-row: span 2;
 }
+#terms-of-service .shopify-policy__body ol{
+	list-style:none;
+}
