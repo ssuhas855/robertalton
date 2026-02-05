@@ -2457,5 +2457,8 @@ p.product__notification__variant.subheading {
 .brick__block--images {    
     flex-direction: column;
 }
-
+.brick__block__image.bottom-btn_show {
+    flex-direction: column;
+    /* align-items: flex-end; */
+}
 
