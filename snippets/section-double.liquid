@@ -848,12 +848,15 @@
 {%- if section.settings.button_show != blank -%}         
 <div class="hero__button bottom_btn">
   <div class="wrapper--full-padded">  
+    <div class="brick__block  brick__block--three-quarters brick__block--images"> 
+    
 <a
 href="{{ section.settings.button_url | default: '#!' }}"
 class="btn btn--text  btn--primary"
 >
 <span>{{ section.settings.button_text }}</span>
 </a>
+</div>
 </div>
 </div>
 {%- endif -%}
