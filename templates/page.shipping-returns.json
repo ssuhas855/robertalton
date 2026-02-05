@@ -38,50 +38,57 @@
         "accordion_FTcYre": {
           "type": "accordion",
           "settings": {
-            "title": "Where do you ship from?",
-            "content": "<p>Lorem ipsum dolor sit amet. Id consectetur quia sed adipisci internos hic perspiciatis galisum ad minus minima et quia atque aut dolor sunt ab tempora eaque. Ut omnis eveniet est iste </p>"
+            "title": "What shipping options do you offer?",
+            "content": "<p>All orders ship via FedEx 2-Day delivery at no cost. An option to upgrade to priority shipping is available at checkout for an additional fee.</p>"
           }
         },
         "accordion_BAezrH": {
           "type": "accordion",
           "settings": {
-            "title": "Where do you ship from?",
-            "content": "<p>Lorem ipsum dolor sit amet. Id consectetur quia sed adipisci internos hic perspiciatis galisum ad minus minima et quia atque aut dolor sunt ab tempora eaque. Ut omnis eveniet est iste </p>"
+            "title": "When will my order ship?",
+            "content": "<p>Orders are processed and shipped within 1-2 business days. Once your order has shipped, you will receive a confirmation email with tracking information.</p>"
           }
         },
         "accordion_XDzAgr": {
           "type": "accordion",
           "settings": {
-            "title": "Where do you ship from?",
-            "content": "<p>Lorem ipsum dolor sit amet. Id consectetur quia sed adipisci internos hic perspiciatis galisum ad minus minima et quia atque aut dolor sunt ab tempora eaque. Ut omnis eveniet est iste </p>"
+            "title": "Do you ship internationally?",
+            "content": "<p>At this time, Robert Alton ships within the United States only.</p>"
           }
         },
         "accordion_FB6WAm": {
           "type": "accordion",
           "settings": {
-            "title": "Where do you ship from?",
-            "content": "<p>Lorem ipsum dolor sit amet. Id consectetur quia sed adipisci internos hic perspiciatis galisum ad minus minima et quia atque aut dolor sunt ab tempora eaque. Ut omnis eveniet est iste </p>"
+            "title": "How is my jewelry packaged?",
+            "content": "<p>Every Robert Alton piece arrives <strong>gift-ready</strong> in our signature jewelry box.</p>"
           }
         },
         "accordion_GW7jqK": {
           "type": "accordion",
           "settings": {
-            "title": "Where do you ship from?",
-            "content": "<p>Lorem ipsum dolor sit amet. Id consectetur quia sed adipisci internos hic perspiciatis galisum ad minus minima et quia atque aut dolor sunt ab tempora eaque. Ut omnis eveniet est iste </p>"
+            "title": "Will pricing be visible on the packaging?",
+            "content": "<p>No. Pricing is not displayed on the packaging.</p>"
           }
         },
         "accordion_ReDw8c": {
           "type": "accordion",
           "settings": {
-            "title": "Where do you ship from?",
-            "content": "<p>Lorem ipsum dolor sit amet. Id consectetur quia sed adipisci internos hic perspiciatis galisum ad minus minima et quia atque aut dolor sunt ab tempora eaque. Ut omnis eveniet est iste </p>"
+            "title": "Do you accept returns or exchanges?",
+            "content": "<p>Yes. Returns and exchanges may be requested within <strong>30 days of delivery</strong>, provided items are unworn, unused, and returned in original condition with all packaging.</p>"
           }
         },
         "accordion_wQhLJT": {
           "type": "accordion",
           "settings": {
-            "title": "Where do you ship from?",
-            "content": "<p>Lorem ipsum dolor sit amet. Id consectetur quia sed adipisci internos hic perspiciatis galisum ad minus minima et quia atque aut dolor sunt ab tempora eaque. Ut omnis eveniet est iste </p>"
+            "title": "Are all items eligible for return or exchange?",
+            "content": "<p>Items showing signs of wear or damage are not eligible for return or exchange.</p>"
+          }
+        },
+        "accordion_9mRMe8": {
+          "type": "accordion",
+          "settings": {
+            "title": "What if I purchased through a retailer?",
+            "content": "<p>Returns and exchanges for items purchased through authorized retailers are subject to the retailer’s individual policies. Please contact the retailer directly for assistance.</p>"
           }
         }
       },
@@ -93,7 +100,8 @@
         "accordion_FB6WAm",
         "accordion_GW7jqK",
         "accordion_ReDw8c",
-        "accordion_wQhLJT"
+        "accordion_wQhLJT",
+        "accordion_9mRMe8"
       ],
       "settings": {
         "heading_font_size": "heading-x-small",
