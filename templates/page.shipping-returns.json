@@ -62,6 +62,27 @@
             "title": "Where do you ship from?",
             "content": "<p>Lorem ipsum dolor sit amet. Id consectetur quia sed adipisci internos hic perspiciatis galisum ad minus minima et quia atque aut dolor sunt ab tempora eaque. Ut omnis eveniet est iste </p>"
           }
+        },
+        "accordion_GW7jqK": {
+          "type": "accordion",
+          "settings": {
+            "title": "Where do you ship from?",
+            "content": "<p>Lorem ipsum dolor sit amet. Id consectetur quia sed adipisci internos hic perspiciatis galisum ad minus minima et quia atque aut dolor sunt ab tempora eaque. Ut omnis eveniet est iste </p>"
+          }
+        },
+        "accordion_ReDw8c": {
+          "type": "accordion",
+          "settings": {
+            "title": "Where do you ship from?",
+            "content": "<p>Lorem ipsum dolor sit amet. Id consectetur quia sed adipisci internos hic perspiciatis galisum ad minus minima et quia atque aut dolor sunt ab tempora eaque. Ut omnis eveniet est iste </p>"
+          }
+        },
+        "accordion_wQhLJT": {
+          "type": "accordion",
+          "settings": {
+            "title": "Where do you ship from?",
+            "content": "<p>Lorem ipsum dolor sit amet. Id consectetur quia sed adipisci internos hic perspiciatis galisum ad minus minima et quia atque aut dolor sunt ab tempora eaque. Ut omnis eveniet est iste </p>"
+          }
         }
       },
       "block_order": [
@@ -69,7 +90,10 @@
         "accordion_FTcYre",
         "accordion_BAezrH",
         "accordion_XDzAgr",
-        "accordion_FB6WAm"
+        "accordion_FB6WAm",
+        "accordion_GW7jqK",
+        "accordion_ReDw8c",
+        "accordion_wQhLJT"
       ],
       "settings": {
         "heading_font_size": "heading-x-small",

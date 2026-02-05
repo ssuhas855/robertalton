@@ -38,29 +38,36 @@
         "accordion_Jtjjen": {
           "type": "accordion",
           "settings": {
-            "title": "Where do you ship from?",
-            "content": "<p>Lorem ipsum dolor sit amet. Id consectetur quia sed adipisci internos hic perspiciatis galisum ad minus minima et quia atque aut dolor sunt ab tempora eaque. Ut omnis eveniet est iste </p>"
+            "title": "What materials are used in Robert Alton jewelry?",
+            "content": "<p>Robert Alton jewelry is crafted from surgical-grade steel, ensuring consistency, durability, and performance across every style. Select designs feature natural diamonds and gemstones, and many of our bands are crafted in tungsten for added strength and longevity.</p>"
           }
         },
         "accordion_KGdMAW": {
           "type": "accordion",
           "settings": {
-            "title": "Where do you ship from?",
-            "content": "<p>Lorem ipsum dolor sit amet. Id consectetur quia sed adipisci internos hic perspiciatis galisum ad minus minima et quia atque aut dolor sunt ab tempora eaque. Ut omnis eveniet est iste </p>"
+            "title": "How is quality ensured?",
+            "content": "<p>Each design is engineered prior to production to identify and eliminate potential weaknesses. Materials, stone settings, and finishes are carefully calibrated to ensure strength, precision, and consistency.</p>"
           }
         },
         "accordion_Ai8UBB": {
           "type": "accordion",
           "settings": {
-            "title": "Where do you ship from?",
-            "content": "<p>Lorem ipsum dolor sit amet. Id consectetur quia sed adipisci internos hic perspiciatis galisum ad minus minima et quia atque aut dolor sunt ab tempora eaque. Ut omnis eveniet est iste </p>"
+            "title": "Is Robert Alton jewelry suitable for everyday wear?",
+            "content": "<p>Yes. Robert Alton pieces are designed for regular wear and built to maintain their form and finish under normal use.</p>"
           }
         },
         "accordion_dFmmym": {
           "type": "accordion",
           "settings": {
-            "title": "Where do you ship from?",
-            "content": "<p>Lorem ipsum dolor sit amet. Id consectetur quia sed adipisci internos hic perspiciatis galisum ad minus minima et quia atque aut dolor sunt ab tempora eaque. Ut omnis eveniet est iste </p>"
+            "title": "Will my jewelry tarnish or discolor?",
+            "content": "<p>Under normal wear, Robert Alton jewelry is designed to maintain its appearance. Exposure to harsh chemicals, impacts, or improper storage may affect the finish over time.</p>"
+          }
+        },
+        "accordion_apFxVi": {
+          "type": "accordion",
+          "settings": {
+            "title": "Can I wear my jewelry in water?",
+            "content": "<p>Under normal wear, Robert Alton jewelry is designed to maintain its appearance. Exposure to harsh chemicals, impacts, or improper storage may affect the finish over time.</p>"
           }
         }
       },
@@ -69,7 +76,8 @@
         "accordion_Jtjjen",
         "accordion_KGdMAW",
         "accordion_Ai8UBB",
-        "accordion_dFmmym"
+        "accordion_dFmmym",
+        "accordion_apFxVi"
       ],
       "settings": {
         "heading_font_size": "heading-x-small",
