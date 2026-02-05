@@ -847,12 +847,14 @@
 
 {%- if section.settings.button_show != blank -%}         
 <div class="hero__button bottom_btn">
+  <div class="wrapper--full-padded">  
 <a
 href="{{ section.settings.button_url | default: '#!' }}"
 class="btn btn--text  btn--primary"
 >
 <span>{{ section.settings.button_text }}</span>
 </a>
+</div>
 </div>
 {%- endif -%}
 
