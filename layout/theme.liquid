@@ -408,7 +408,7 @@ document.querySelectorAll('#terms-of-service ol li a').forEach(anchor => {
       const target = document.querySelector(targetId);
 
       if(target){
-        const yOffset = -100;
+        const yOffset = -10;
         const y = target.getBoundingClientRect().top + window.scrollY + yOffset;
 
         window.scrollTo({
