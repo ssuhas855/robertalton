@@ -2498,3 +2498,7 @@ body .shopify-policy__container h6 {
     float: left;
     width: 100%;
 }
+.shopify-policy__container table tr > th, 
+.shopify-policy__container table tr > td {
+    border: 1px solid var(--border);
+}
