@@ -2464,3 +2464,7 @@ p.product__notification__variant.subheading {
     justify-content: flex-end;
 	    margin: 20px 0 80px;
 }
+
+.hero__button.bottom_btn .brick__block--images {
+    align-items:flex-end;
+}
