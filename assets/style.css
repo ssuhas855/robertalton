@@ -2505,3 +2505,10 @@ body .shopify-policy__container h6 {
 .horizontal-progress{
 	display:none!important;
 }
+.scroll-wrapper{
+	-ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
