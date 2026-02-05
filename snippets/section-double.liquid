@@ -110,7 +110,6 @@
         data-slide="1"
       {% endunless %}
     >
-      {%- render 'image-hero' image: image_1, sizes: sizes, desktop_height: desktop_height, mobile_height: mobile_height -%}
 
 {%- if section.settings.button_show != blank -%}         
                     <div class="hero__button bottom_btn">
@@ -122,6 +121,10 @@
              </a>
                     </div>
                   {%- endif -%}
+
+      {%- render 'image-hero' image: image_1, sizes: sizes, desktop_height: desktop_height, mobile_height: mobile_height -%}
+
+
 
 
     </div>
