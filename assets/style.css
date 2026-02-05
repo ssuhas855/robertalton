@@ -2453,3 +2453,7 @@ p.product__notification__variant.subheading {
 .grid.related-mobile-slider {
     padding: 0 10px;
 }
+.product-item--featured-image {
+    grid-column: span 2;
+    grid-row: span 2;
+}
