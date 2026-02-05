@@ -94,7 +94,7 @@
         "description": "",
         "text_font_size": "body-medium",
         "button_text": "Discover ALL collection",
-        "button_url": "shopify://collections",
+        "button_url": "shopify://collections/shop-all",
         "button_type": "btn--primary",
         "button_size": "",
         "button_style": "btn--text",
