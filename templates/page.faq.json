@@ -69,6 +69,41 @@
             "title": "Can I wear my jewelry in water?",
             "content": "<p>Under normal wear, Robert Alton jewelry is designed to maintain its appearance. Exposure to harsh chemicals, impacts, or improper storage may affect the finish over time.</p>"
           }
+        },
+        "accordion_4KEw8k": {
+          "type": "accordion",
+          "settings": {
+            "title": "What does the Robert Alton warranty cover?",
+            "content": "<p>Robert Alton jewelry is covered by a <strong>lifetime warranty against manufacturing defects</strong> in materials and workmanship.</p>"
+          }
+        },
+        "accordion_8pQkcD": {
+          "type": "accordion",
+          "settings": {
+            "title": "What is not covered under warranty?",
+            "content": "<p>Normal wear and tear, accidental damage, misuse, loss, and items that have been altered, engraved, or repaired by third parties are not covered.</p>"
+          }
+        },
+        "accordion_wQ4RhU": {
+          "type": "accordion",
+          "settings": {
+            "title": "How do I request warranty service?",
+            "content": "<p>Warranty service requires prior authorization. Please contact <strong>info@robertalton.com</strong> before sending any item.</p>"
+          }
+        },
+        "accordion_p4eE9G": {
+          "type": "accordion",
+          "settings": {
+            "title": "Where can I purchase Robert Alton jewelry?",
+            "content": "<p>Robert Alton jewelry is available online at robertalton.com and through select authorized retailers.</p>"
+          }
+        },
+        "accordion_Cp6kyi": {
+          "type": "accordion",
+          "settings": {
+            "title": "How do I contact Customer Care?",
+            "content": "<p>For all inquiries, please email <strong>info@robertalton.com</strong>.</p>"
+          }
         }
       },
       "block_order": [
@@ -77,7 +112,12 @@
         "accordion_KGdMAW",
         "accordion_Ai8UBB",
         "accordion_dFmmym",
-        "accordion_apFxVi"
+        "accordion_apFxVi",
+        "accordion_4KEw8k",
+        "accordion_8pQkcD",
+        "accordion_wQ4RhU",
+        "accordion_p4eE9G",
+        "accordion_Cp6kyi"
       ],
       "settings": {
         "heading_font_size": "heading-x-small",
