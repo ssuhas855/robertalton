@@ -2454,5 +2454,8 @@ p.product__notification__variant.subheading {
     padding: 0 10px;
 }
 
+.brick__block--images {    
+    flex-direction: column;
+}
 
 
