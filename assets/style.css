@@ -2502,3 +2502,6 @@ body .shopify-policy__container h6 {
 .shopify-policy__container table tr > td {
     border: 1px solid var(--border);
 }
+.horizontal-progress{
+	display:none!important;
+}
