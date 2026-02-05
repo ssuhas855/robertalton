@@ -395,7 +395,33 @@ document.addEventListener("DOMContentLoaded", function () {
     window.history.replaceState({}, document.title, cleanUrl);
   }
 });
+
+document.querySelectorAll('ol li a').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    const target = document.querySelector(this.getAttribute('href'));
+
+    if(target){
+      const offset = 100;
+
+      const targetPosition =
+        target.getBoundingClientRect().top +
+        window.pageYOffset -
+        offset;
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth"
+      });
+    }
+  });
+});
+
 </script>
+
+
+
 
 
   </body>
