@@ -111,8 +111,8 @@
       {% endunless %}
     >
       {%- render 'image-hero' image: image_1, sizes: sizes, desktop_height: desktop_height, mobile_height: mobile_height -%}
-    </div>
-    {%- if section.settings.button_show != blank -%}         
+
+{%- if section.settings.button_show != blank -%}         
                     <div class="hero__button bottom_btn">
                       <a
                         href="{{ section.settings.button_url | default: '#!' }}"
@@ -122,6 +122,10 @@
              </a>
                     </div>
                   {%- endif -%}
+
+
+    </div>
+    
   {%- endif -%}
 
   {%- if image_2 != blank -%}
