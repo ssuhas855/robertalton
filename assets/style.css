@@ -2461,4 +2461,6 @@ p.product__notification__variant.subheading {
     flex-direction: column;
     /* align-items: flex-end; */
 }
-
+.hero__button.bottom_btn {    
+    justify-content: flex-end;
+}
