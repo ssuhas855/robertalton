@@ -114,7 +114,22 @@
       {%- render 'image-hero' image: image_1, sizes: sizes, desktop_height: desktop_height, mobile_height: mobile_height -%}
 
 
-
+{%- if section.settings.button_show != blank -%}         
+<div class="hero__button bottom_btn large--hide">
+  <div class="brick__section wrapper--full-padded">  
+    <div class="brick__block  brick__block--three-quarters brick__block--images"> 
+    
+<a
+href="{{ section.settings.button_url | default: '#!' }}"
+class="btn btn--text  btn--primary"
+>
+<span>{{ section.settings.button_text }}</span>
+</a>
+</div>
+<div class="brick__block brick__block--text" style="--PT: 0px;--PB: 0px;"> </div>
+</div>
+</div>
+{%- endif -%}
 
     </div>
     
