@@ -2457,7 +2457,7 @@ p.product__notification__variant.subheading {
     flex-direction: column;
 }
 .brick__block__image.bottom-btn_show {
-    flex-direction: column;
+    flex-direction: column-reverse;
     /* align-items: flex-end; */
 }
 .hero__button.bottom_btn {    
