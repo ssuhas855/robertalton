@@ -183,7 +183,7 @@
         "image_1": "shopify://shop_images/Reference_074e3de4-a8b4-4a26-8f98-2b72ad130314.jpg",
         "image_width": "three-quarters",
         "button_show": true,
-        "button_text": "SHOP the diamond band",
+        "button_text": "",
         "button_url": "shopify://collections/ring",
         "text_alignment": "text-center",
         "layout": "",
