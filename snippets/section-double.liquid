@@ -105,7 +105,7 @@
 
 {%- capture section_images -%}
   {%- if image_1 != blank -%}
-    <div class="brick__block__image"
+    <div class="brick__block__image {% if section.settings.button_show != blank %} bottom-btn_show {% endif %}"
       {% unless enable_slider %}
         data-slide="1"
       {% endunless %}
