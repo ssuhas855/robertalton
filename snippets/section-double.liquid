@@ -112,6 +112,16 @@
     >
       {%- render 'image-hero' image: image_1, sizes: sizes, desktop_height: desktop_height, mobile_height: mobile_height -%}
     </div>
+    {%- if section.settings.button_show != blank -%}         
+                    <div class="hero__button">
+                      <a
+                        href="{{ section.settings.button_url | default: '#!' }}"
+                        class="btn btn--text btn--primary"
+                      >
+                        <span>{{ section.settings.button_text }}</span>
+             </a>
+                    </div>
+                  {%- endif -%}
   {%- endif -%}
 
   {%- if image_2 != blank -%}
