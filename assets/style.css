@@ -2469,6 +2469,7 @@ p.product__notification__variant.subheading {
 }
 .shopify-policy__body ol a{
 	border-bottom: 1px solid;
+	margin-bottom: 5px;
 }
 .shopify-policy__body ol a:hover{
 	border-color:transparent;
