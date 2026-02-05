@@ -2460,6 +2460,7 @@ p.product__notification__variant.subheading {
 #terms-of-service .shopify-policy__body ol{
 	list-style:none;
 }
-.shopify-policy__body h5{
-	margin-top:80px;
+.shopify-policy__body h5 {
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
