@@ -1540,6 +1540,7 @@ margin-top: 25px;
 	height: calc(100% - 50px);
 	width: 100%;
 	margin: 0;
+	height: 88%;
 }
 .product-item--featured-image .product-item__image-overlay {
 	display: none;
@@ -2502,3 +2503,4 @@ body .shopify-policy__container h6 {
 .shopify-policy__container table tr > td {
     border: 1px solid var(--border);
 }
+
