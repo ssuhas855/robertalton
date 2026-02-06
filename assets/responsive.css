@@ -1560,7 +1560,7 @@ body.scrolled mobile-menu .drawer__inner {
 	border:none;
 }
 .template-product .custom-section-row .brick__block__image {	
-	padding: 0 10px;
+	padding: 15px 0 0;
 }
 .image-banner-section + .section-overlay-header .index-image-text .brick__section.image-height{
 	padding-bottom: 0px;
