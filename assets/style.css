@@ -1544,6 +1544,9 @@ margin-top: 25px;
 .product-item {
     margin-bottom: 10px;
 }
+.product-information {
+    min-height: 91px;
+}
 .product-item--featured-image .product-item__image-overlay {
 	display: none;
 }
