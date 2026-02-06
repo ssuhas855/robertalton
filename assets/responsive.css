@@ -1799,5 +1799,8 @@ font-size: 11px;
 .product-information {
     min-height: inherit;
 }
+.product-item {
+    margin-bottom: 10px;
+}
 } 
 /*END 767px*/
