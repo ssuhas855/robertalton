@@ -1562,6 +1562,9 @@ body.scrolled mobile-menu .drawer__inner {
 .template-product .custom-section-row .brick__block__image {	
 	padding: 15px 0 0;
 }
+.template-product [data-section-type=custom-content] .hero__content.hero__content--compact.text-left {
+    padding: 0;
+}
 .image-banner-section + .section-overlay-header .index-image-text .brick__section.image-height{
 	padding-bottom: 0px;
 }
