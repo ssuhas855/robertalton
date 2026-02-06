@@ -16,7 +16,7 @@
           "type": "featured_image",
           "settings": {
             "featured_image": "shopify://shop_images/Featured_Image.png",
-            "position": 5,
+            "position": 7,
             "featured_heading": "",
             "heading_font_size": "heading-large",
             "featured_text": "",
