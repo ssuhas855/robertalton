@@ -1539,8 +1539,10 @@ margin-top: 25px;
 .product-item--featured-image .product-item__image {
 	height: calc(100% - 50px);
 	width: 100%;
-	margin: 0;
-	height: 88%;
+	margin: 0;	
+}
+.product-item {
+    margin-bottom: 10px;
 }
 .product-item--featured-image .product-item__image-overlay {
 	display: none;
