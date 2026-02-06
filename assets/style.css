@@ -2455,7 +2455,7 @@ p.product__notification__variant.subheading {
 }
 .product-item--featured-image {
     grid-column: span 2;
-    grid-row: span 2;
+    grid-row: span 1;
 }
 #terms-of-service .shopify-policy__body ol{
 	list-style:none;
