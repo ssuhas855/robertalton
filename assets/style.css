@@ -1540,6 +1540,7 @@ margin-top: 25px;
 	height: calc(100% - 50px);
 	width: 100%;
 	margin: 0;	
+	    height: calc(100% - 91px);
 }
 .product-item {
     margin-bottom: 10px;
