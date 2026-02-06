@@ -1796,5 +1796,8 @@ font-size: 11px;
 .grid.related-mobile-slider {
     padding: 0;
 }
+.product-information {
+    min-height: inherit;
+}
 } 
 /*END 767px*/
