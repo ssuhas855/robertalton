@@ -163,7 +163,7 @@
         "button_pDyCMn": {
           "type": "button",
           "settings": {
-            "link_text": "SHOP New Collcetion",
+            "link_text": "the drake collection",
             "link": "shopify://collections/drake-collection",
             "button_type": "btn--primary",
             "button_size": "",
