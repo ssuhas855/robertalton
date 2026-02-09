@@ -37,7 +37,7 @@
         "heading_Gt7Mqx": {
           "type": "heading",
           "settings": {
-            "title": "PGA",
+            "title": "Made for motion. Finished for daily wear.",
             "heading_font_size": "heading-large",
             "padding_bottom": 16,
             "heading_tag": "automatic"
@@ -46,7 +46,7 @@
         "text_acqFwM": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p></p><p>– Lorem ipsum</p>",
+            "text": "<p>Engineered for performance, with a presence that carries beyond the course.</p>",
             "text_font_size": "body-medium",
             "padding_bottom": 16
           }
