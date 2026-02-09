@@ -157,7 +157,7 @@
           "type": "buttons",
           "settings": {
             "button_text": "SHOP the diamond band",
-            "button_url": "shopify://collections/shop-all",
+            "button_url": "shopify://products/linear-diamond-band",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--text",
