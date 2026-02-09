@@ -93,7 +93,7 @@
         "heading_font_size": "heading-x-small",
         "description": "",
         "text_font_size": "body-medium",
-        "button_text": "Discover ALL collection",
+        "button_text": "DISCOVER THE COLLECTION",
         "button_url": "shopify://collections/shop-all",
         "button_type": "btn--primary",
         "button_size": "",
@@ -116,7 +116,7 @@
         "button_X6kmVK": {
           "type": "button",
           "settings": {
-            "link_text": "SHOP BRACELET",
+            "link_text": "SHOP BRACELETS",
             "link": "shopify://collections/bracelet",
             "button_type": "btn--black",
             "button_size": "",
@@ -199,7 +199,7 @@
         "buttons_NX3Ff8": {
           "type": "buttons",
           "settings": {
-            "button_text": "SHOP the diamond band",
+            "button_text": "SHOP WEDDING BANDS",
             "button_url": "shopify://collections/ring",
             "button_type": "btn--primary",
             "button_size": "",
