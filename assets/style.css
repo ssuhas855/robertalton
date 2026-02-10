@@ -471,7 +471,7 @@ p:empty {
 .vertical-scroll .product__photo {
   height: 100vh !important;
   scroll-snap-align: start;
-  display: flex !important;
+ /* display: flex !important;*/
   align-items: center;
   justify-content: center;
   padding: 0;
