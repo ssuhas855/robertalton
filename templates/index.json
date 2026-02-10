@@ -116,8 +116,8 @@
         "button_X6kmVK": {
           "type": "button",
           "settings": {
-            "link_text": "SHOP BRACELETS",
-            "link": "shopify://collections/bracelet",
+            "link_text": "SHOP RESERVE",
+            "link": "shopify://collections/reserve",
             "button_type": "btn--black",
             "button_size": "",
             "button_style": "btn--text",
