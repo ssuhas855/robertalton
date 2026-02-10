@@ -2510,8 +2510,16 @@ body .shopify-policy__container h6 {
     border: 1px solid var(--border);
 }
 
-
-.progress-track {
+@media (min-width: 768px) {
+  .progress-track {
     height: 100%;
+    min-height: 100%;
     position: relative;
   }
+
+  .progress-track::before {
+    content: '';
+    display: block;
+    height: 100%;
+  }
+}
