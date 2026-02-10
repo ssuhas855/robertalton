@@ -2544,7 +2544,7 @@ body .shopify-policy__container h6 {
 	right: auto;
 }
 
-.progress-indicator{
+div.progress-indicator{
   height:2px;
   width:30px; /* FIXED */
 }
