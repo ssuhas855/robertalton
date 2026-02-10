@@ -162,97 +162,6 @@
 
 <script>
 
-document.addEventListener("DOMContentLoaded", () => {
-  const slider = document.querySelector(".vertical-scroll");
-  const track = document.querySelector(".progress-track");
-  const indicator = document.querySelector(".progress-indicator");
-  const slides = Array.from(document.querySelectorAll(".product__slide"));
-
-  if (!slider || !track || !indicator || slides.length < 2) return;
-
-  let stepSize = 0;
-  let ticking = false;
-
-  /* =========================
-     SETUP (responsive)
-  ========================= */
-  function setup() {
-    const total = slides.length;
-
-    if (window.innerWidth <= 767) {
-      // 📱 Mobile – horizontal
-      stepSize = track.offsetWidth / total;
-      indicator.style.width = stepSize + "px";
-      indicator.style.height = "1px";
-    } else {
-      // 🖥 Desktop – vertical
-      stepSize = track.offsetHeight / total;
-      indicator.style.height = stepSize + "px";
-      indicator.style.width = "1px";
-    }
-  }
-
-  /* =========================
-     ACTIVE SLIDE DETECTION
-  ========================= */
-  function getActiveSlide() {
-    let active = slides[0];
-    let minDistance = Infinity;
-
-    slides.forEach(slide => {
-      const distance =
-        window.innerWidth <= 767
-          ? Math.abs(slide.offsetLeft - slider.scrollLeft)
-          : Math.abs(slide.offsetTop - slider.scrollTop);
-
-      if (distance < minDistance) {
-        minDistance = distance;
-        active = slide;
-      }
-    });
-
-    return active;
-  }
-
-  /* =========================
-     MOVE INDICATOR
-  ========================= */
-  function moveIndicator(slide) {
-    const index = slides.indexOf(slide);
-    if (index === -1) return;
-
-    indicator.style.transform =
-      window.innerWidth <= 767
-        ? `translateX(${index * stepSize}px)`
-        : `translateY(${index * stepSize}px)`;
-  }
-
-  /* =========================
-     SCROLL HANDLER (optimized)
-  ========================= */
-  function onScroll() {
-    if (!ticking) {
-      window.requestAnimationFrame(() => {
-        moveIndicator(getActiveSlide());
-        ticking = false;
-      });
-      ticking = true;
-    }
-  }
-
-  /* =========================
-     INIT
-  ========================= */
-  setup();
-  moveIndicator(slides[0]); // first image
-
-  slider.addEventListener("scroll", onScroll, { passive: true });
-
-  window.addEventListener("resize", () => {
-    setup();
-    moveIndicator(getActiveSlide());
-  });
-});
 
 
 
@@ -260,7 +169,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-/*
 
 document.addEventListener("DOMContentLoaded", () => {
   const slider = document.querySelector(".vertical-scroll");
@@ -314,10 +222,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
-*/
 
-
-/*
 document.addEventListener("DOMContentLoaded", () => {
 
   const inputs = document.querySelectorAll('input[type="radio"][data-index="option1"]');
@@ -346,7 +251,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-});*/
+});
 
 
 
