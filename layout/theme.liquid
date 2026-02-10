@@ -243,15 +243,21 @@ document.addEventListener("DOMContentLoaded", () => {
   /* =========================
      INIT
   ========================= */
+// recalc progress
 setup();
 
-requestAnimationFrame(() => {
+if (slides[0]) {
+
+  if (window.innerWidth <= 767) {
+    slider.scrollTo({ left: slides[0].offsetLeft });
+  } else {
+    slider.scrollTo({ top: slides[0].offsetTop });
+  }
+
   requestAnimationFrame(() => {
-
-    moveIndicator(getActiveSlide());
-
+    slider.dispatchEvent(new Event("scroll"));
   });
-});
+}
 
 
   slider.addEventListener("scroll", onScroll, { passive: true });
