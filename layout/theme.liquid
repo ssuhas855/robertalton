@@ -256,25 +256,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-document.addEventListener("change", function (e) {
-  if (!e.target.matches('.product-form__input input[type="radio"]')) return;
-
+document.addEventListener("variant:change", function (event) {
   // Desktop only
   if (window.innerWidth <= 767) return;
 
-  const slider = document.querySelector(".vertical-scroll");
-  const slides = Array.from(document.querySelectorAll(".product__slide"));
-  if (!slider || !slides.length) return;
+  const variant = event.detail.variant;
+  if (!variant || !variant.featured_media) return;
 
-  // Shopify sets featured image via aria-current or is-active
-  const activeSlide =
-    slides.find(slide =>
-      slide.classList.contains("is-active") ||
-      slide.getAttribute("aria-current") === "true"
-    ) || slides[0];
+  const mediaId = variant.featured_media.id;
+
+  const slider = document.querySelector(".vertical-scroll");
+  if (!slider) return;
+
+  // Shopify images usually have data-media-id
+  const targetSlide = slider.querySelector(
+    `[data-media-id="${mediaId}"]`
+  );
+
+  if (!targetSlide) return;
 
   slider.scrollTo({
-    top: activeSlide.offsetTop,
+    top: targetSlide.offsetTop,
     behavior: "smooth"
   });
 });
