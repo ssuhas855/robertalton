@@ -256,7 +256,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+document.addEventListener("change", function (e) {
+  if (!e.target.matches('.product-form__input input[type="radio"]')) return;
 
+  // Desktop only
+  if (window.innerWidth <= 767) return;
+
+  const slider = document.querySelector(".vertical-scroll");
+  const slides = Array.from(document.querySelectorAll(".product__slide"));
+  if (!slider || !slides.length) return;
+
+  // Shopify sets featured image via aria-current or is-active
+  const activeSlide =
+    slides.find(slide =>
+      slide.classList.contains("is-active") ||
+      slide.getAttribute("aria-current") === "true"
+    ) || slides[0];
+
+  slider.scrollTo({
+    top: activeSlide.offsetTop,
+    behavior: "smooth"
+  });
+});
 
 
 
