@@ -2511,3 +2511,22 @@ body .shopify-policy__container h6 {
 }
 
 
+.progress-track{
+  position:absolute;
+  right:10px;
+  top:50%;
+  transform:translateY(-50%);
+  height:140px;
+  width:2px;
+  background:#e5e5e5;
+}
+
+.progress-indicator{
+  width:2px;
+  height:40px; /* FIXED */
+  background:#000;
+  position:absolute;
+  top:0;
+  left:0;
+  transition:transform .25s ease;
+}
