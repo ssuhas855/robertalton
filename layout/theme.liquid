@@ -164,37 +164,40 @@
 
 
 document.addEventListener("DOMContentLoaded", () => {
+
   const slider = document.querySelector(".vertical-scroll");
   const track = document.querySelector(".progress-track");
   const indicator = document.querySelector(".progress-indicator");
-  const slides = Array.from(document.querySelectorAll(".product__slide"));
+  const allSlides = Array.from(document.querySelectorAll(".product__slide"));
+  const inputs = document.querySelectorAll('input[type="radio"][data-index="option1"]');
 
-  if (!slider || !track || !indicator || slides.length < 2) return;
+  if (!slider || !track || !indicator || allSlides.length < 2) return;
 
+  let slides = [...allSlides]; // visible slides
   let stepSize = 0;
   let ticking = false;
 
   /* =========================
-     SETUP (responsive)
+     SETUP
   ========================= */
   function setup() {
-    const total = slides.length;
+    const total = slides.length || 1;
 
     if (window.innerWidth <= 767) {
-      // 📱 Mobile – horizontal
       stepSize = track.offsetWidth / total;
       indicator.style.width = stepSize + "px";
       indicator.style.height = "1px";
     } else {
-      // 🖥 Desktop – vertical
       stepSize = track.offsetHeight / total;
       indicator.style.height = stepSize + "px";
       indicator.style.width = "1px";
     }
+
+    indicator.style.transition = "transform 0.3s ease";
   }
 
   /* =========================
-     ACTIVE SLIDE DETECTION
+     ACTIVE SLIDE
   ========================= */
   function getActiveSlide() {
     let active = slides[0];
@@ -229,7 +232,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* =========================
-     SCROLL HANDLER (optimized)
+     SCROLL
   ========================= */
   function onScroll() {
     if (!ticking) {
@@ -242,10 +245,48 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* =========================
+     VARIANT CHANGE
+  ========================= */
+  inputs.forEach(input => {
+    input.addEventListener("change", () => {
+
+      const value = input.value.trim().toLowerCase();
+
+      slides = [];
+
+      allSlides.forEach(slide => {
+        const id = slide.getAttribute("data-id")?.trim().toLowerCase();
+
+        if (id === value) {
+          slide.classList.add("media--active");
+          slide.classList.remove("media--hidden");
+          slides.push(slide);
+        } else {
+          slide.classList.remove("media--active");
+          slide.classList.add("media--hidden");
+        }
+      });
+
+      // scroll to first visible
+      if (slides[0]) {
+        slides[0].scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "start"
+        });
+      }
+
+      // recalc progress
+      setup();
+      moveIndicator(slides[0]);
+    });
+  });
+
+  /* =========================
      INIT
   ========================= */
   setup();
-  moveIndicator(slides[0]); // first image
+  moveIndicator(slides[0]);
 
   slider.addEventListener("scroll", onScroll, { passive: true });
 
@@ -253,7 +294,9 @@ document.addEventListener("DOMContentLoaded", () => {
     setup();
     moveIndicator(getActiveSlide());
   });
+
 });
+
 
 
 
