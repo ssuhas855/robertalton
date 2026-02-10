@@ -1613,7 +1613,7 @@ theme__header header-search-popdown.is-open .predictive-search {
     height: 1px;
     width: 0;
     top: 0px;
-	transition:none!important;
+	transition:transform .25s linear;
   }
 
 .vertical-scroll {
