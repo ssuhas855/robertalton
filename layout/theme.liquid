@@ -256,30 +256,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-document.addEventListener("variant:change", function (event) {
-  // Desktop only
-  if (window.innerWidth <= 767) return;
 
-  const variant = event.detail.variant;
-  if (!variant || !variant.featured_media) return;
-
-  const mediaId = variant.featured_media.id;
-
-  const slider = document.querySelector(".vertical-scroll");
-  if (!slider) return;
-
-  // Shopify images usually have data-media-id
-  const targetSlide = slider.querySelector(
-    `[data-media-id="${mediaId}"]`
-  );
-
-  if (!targetSlide) return;
-
-  slider.scrollTo({
-    top: targetSlide.offsetTop,
-    behavior: "smooth"
-  });
-});
 
 
 
