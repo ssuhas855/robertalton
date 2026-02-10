@@ -138,7 +138,7 @@
         "height": "image-height",
         "flex_align_desktop": "align--middle-center-desktop",
         "content_width": 50,
-        "mobile_image": "shopify://shop_images/home2.jpg",
+        "mobile_image": "shopify://shop_images/Hero_2.png",
         "mobile_height": "image-height--mobile",
         "flex_align_mobile": "align--middle-center-mobile",
         "text_below": true,
@@ -156,7 +156,7 @@
         "buttons_zhdpda": {
           "type": "buttons",
           "settings": {
-            "button_text": "SHOP the diamond band",
+            "button_text": "SHOP the linear diamond band",
             "button_url": "shopify://products/linear-diamond-band",
             "button_type": "btn--primary",
             "button_size": "",
