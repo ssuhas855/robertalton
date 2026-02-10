@@ -274,18 +274,22 @@ function getActiveSlide() {
       });
 
       // scroll to first visible
-      if (slides[0]) {
-        slides[0].scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-          inline: "start"
-        });
-      }
+     if (slides[0]) {
 
-      // recalc progress
-      setup();
-      moveIndicator(slides[0]);
-    });
+  slides[0].scrollIntoView({
+    behavior: "instant", // 🔥 mobile fix
+    block: "nearest",
+    inline: "start"
+  });
+
+  // force scroll sync
+  requestAnimationFrame(() => {
+    moveIndicator(slides[0]);
+  });
+}
+
+  setup();
+
   });
 
   /* =========================
