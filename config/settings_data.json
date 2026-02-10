@@ -226,7 +226,7 @@
               "subheading": "",
               "title": "",
               "heading_font_size": "heading-large",
-              "text": "<p>Structured links designed to move with the body. Balanced, tactile, and built for daily wear.</p>",
+              "text": "<p>Structured links designed to move with the body. <br/>Balanced, tactile, and built for daily wear.</p>",
               "text_font_size": "body-medium",
               "button_text": "SHOP ALL BRACELETS",
               "button_url": "shopify://collections/bracelet",
