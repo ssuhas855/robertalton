@@ -2528,7 +2528,7 @@ body .shopify-policy__container h6 {
   position:absolute;
   top:0;
   left:0;
-  transition:transform .25s ease;
+  transition:transform .25s linear;
 }
 @media(max-width:767px){
 
