@@ -2522,4 +2522,8 @@ body .shopify-policy__container h6 {
     display: block;
     height: 100%;
   }
+   .gallery-wrapper {
+    height: 100%;
+    display: flex;
+  }
 }
