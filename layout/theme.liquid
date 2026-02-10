@@ -172,61 +172,86 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!slider || !track || !indicator || allSlides.length < 2) return;
 
-  let slides = [...allSlides]; // visible slides
+  let slides = [...allSlides];
   let stepSize = 0;
   let ticking = false;
+  let indicatorSized = false; // 🔥 prevents resize on variant
 
   /* =========================
-     SETUP
+     SET INDICATOR SIZE (ONLY INIT + RESIZE)
   ========================= */
-  function setup() {
+  function setIndicatorSize() {
+
+    const total = slides.length || 1;
+
+    if (window.innerWidth <= 767) {
+
+      stepSize = track.offsetWidth / total;
+
+      indicator.style.width = stepSize + "px";
+      indicator.style.height = "2px";
+
+    } else {
+
+      stepSize = track.offsetHeight / total;
+
+      indicator.style.height = stepSize + "px";
+      indicator.style.width = "2px";
+    }
+
+    indicator.style.transition = "transform .25s ease";
+    indicator.style.willChange = "transform";
+
+    indicatorSized = true;
+  }
+
+  /* =========================
+     RECALC STEP (NO RESIZE)
+  ========================= */
+  function recalcStep() {
+
     const total = slides.length || 1;
 
     if (window.innerWidth <= 767) {
       stepSize = track.offsetWidth / total;
-      indicator.style.width = stepSize + "px";
-      indicator.style.height = "1px";
     } else {
       stepSize = track.offsetHeight / total;
-      indicator.style.height = stepSize + "px";
-      indicator.style.width = "1px";
     }
-
-    indicator.style.transition = "transform 0.3s ease";
   }
 
   /* =========================
      ACTIVE SLIDE
   ========================= */
-function getActiveSlide() {
+  function getActiveSlide() {
 
-  const sliderRect = slider.getBoundingClientRect();
-  let active = slides[0];
-  let minDistance = Infinity;
+    const sliderRect = slider.getBoundingClientRect();
 
-  slides.forEach(slide => {
+    let active = slides[0];
+    let minDistance = Infinity;
 
-    const rect = slide.getBoundingClientRect();
+    slides.forEach(slide => {
 
-    const distance =
-      window.innerWidth <= 767
-        ? Math.abs(rect.left - sliderRect.left) // mobile fix
-        : Math.abs(rect.top - sliderRect.top);
+      const rect = slide.getBoundingClientRect();
 
-    if (distance < minDistance) {
-      minDistance = distance;
-      active = slide;
-    }
-  });
+      const distance =
+        window.innerWidth <= 767
+          ? Math.abs(rect.left - sliderRect.left)
+          : Math.abs(rect.top - sliderRect.top);
 
-  return active;
-}
+      if (distance < minDistance) {
+        minDistance = distance;
+        active = slide;
+      }
+    });
 
+    return active;
+  }
 
   /* =========================
      MOVE INDICATOR
   ========================= */
   function moveIndicator(slide) {
+
     const index = slides.indexOf(slide);
     if (index === -1) return;
 
@@ -240,19 +265,25 @@ function getActiveSlide() {
      SCROLL
   ========================= */
   function onScroll() {
+
     if (!ticking) {
-      window.requestAnimationFrame(() => {
+
+      requestAnimationFrame(() => {
         moveIndicator(getActiveSlide());
         ticking = false;
       });
+
       ticking = true;
     }
   }
+
+  slider.addEventListener("scroll", onScroll, { passive: true });
 
   /* =========================
      VARIANT CHANGE
   ========================= */
   inputs.forEach(input => {
+
     input.addEventListener("change", () => {
 
       const value = input.value.trim().toLowerCase();
@@ -260,43 +291,49 @@ function getActiveSlide() {
       slides = [];
 
       allSlides.forEach(slide => {
-        const id = slide.getAttribute("data-id")?.trim().toLowerCase();
+
+        const id = slide.dataset.id?.trim().toLowerCase();
 
         if (id === value) {
-          slide.classList.add("media--active");
           slide.classList.remove("media--hidden");
           slides.push(slide);
         } else {
-          slide.classList.remove("media--active");
           slide.classList.add("media--hidden");
         }
+
       });
 
-      // scroll to first visible
-      if (slides[0]) {
-        slides[0].scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-          inline: "start"
-        });
+      recalcStep(); // 🔥 NO SIZE CHANGE
+
+      if (!slides[0]) return;
+
+      // NEVER use scrollIntoView in sliders
+      if (window.innerWidth <= 767) {
+        slider.scrollLeft = slides[0].offsetLeft;
+      } else {
+        slider.scrollTop = slides[0].offsetTop;
       }
 
-      // recalc progress
-      setup();
-      moveIndicator(slides[0]);
+      moveIndicator(slides[0]); // just move
     });
+
   });
 
   /* =========================
      INIT
   ========================= */
-  setup();
+  setIndicatorSize();
   moveIndicator(slides[0]);
 
-  slider.addEventListener("scroll", onScroll, { passive: true });
-
+  /* =========================
+     RESIZE
+  ========================= */
   window.addEventListener("resize", () => {
-    setup();
+
+    indicatorSized = false;
+    setIndicatorSize();
+    recalcStep();
+
     moveIndicator(getActiveSlide());
   });
 
