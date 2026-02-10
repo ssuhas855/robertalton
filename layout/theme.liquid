@@ -176,26 +176,21 @@ document.addEventListener("DOMContentLoaded", () => {
   /* =========================
      SETUP (responsive)
   ========================= */
-function setup() {
-  const total = slides.length;
+  function setup() {
+    const total = slides.length;
 
-  if (window.innerWidth <= 767) {
-    stepSize = track.offsetWidth / total;
-    indicator.style.width = stepSize + "px";
-    indicator.style.height = "1px";
-  } else {
-    const trackHeight =
-      track.offsetHeight || track.parentElement.offsetHeight;
-
-    if (!trackHeight) return;
-
-    stepSize = trackHeight / total;
-    indicator.style.height = stepSize + "px";
-    indicator.style.width = "1px";
+    if (window.innerWidth <= 767) {
+      // 📱 Mobile – horizontal
+      stepSize = track.offsetWidth / total;
+      indicator.style.width = stepSize + "px";
+      indicator.style.height = "1px";
+    } else {
+      // 🖥 Desktop – vertical
+      stepSize = track.offsetHeight / total;
+      indicator.style.height = stepSize + "px";
+      indicator.style.width = "1px";
+    }
   }
-}
-
-  console.log(track.offsetHeight, track.scrollHeight);
 
   /* =========================
      ACTIVE SLIDE DETECTION
