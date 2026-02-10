@@ -15,7 +15,7 @@
         "featured_image_kJ4Cyq": {
           "type": "featured_image",
           "settings": {
-            "featured_image": "shopify://shop_images/Featured_Image.png",
+            "featured_image": "{{ collection.metafields.custom.lifestyle_image.value }}",
             "position": 7,
             "featured_heading": "",
             "heading_font_size": "heading-large",
