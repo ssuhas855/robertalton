@@ -186,9 +186,10 @@ document.addEventListener("DOMContentLoaded", () => {
       indicator.style.height = "1px";
     } else {
       // 🖥 Desktop – vertical
-      stepSize = track.offsetHeight / total;
-      indicator.style.height = stepSize + "px";
-      indicator.style.width = "1px";
+      stepSize = track.scrollHeight / total;
+  indicator.style.height = stepSize + "px";
+  indicator.style.width = "1px";
+      
     }
   }
 
