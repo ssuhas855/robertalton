@@ -2530,3 +2530,20 @@ body .shopify-policy__container h6 {
   left:0;
   transition:transform .25s ease;
 }
+@media(max-width:767px){
+
+.progress-track{
+  width:120px;
+  height:2px;
+  bottom:10px;
+  top:auto;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+.progress-indicator{
+  height:2px;
+  width:30px; /* FIXED */
+}
+
+}
