@@ -164,76 +164,143 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  const slider = document.querySelector(".product-slider"); // scroll container
-  const progressBar = document.querySelector(".progress-bar-fill");
+  const slider = document.querySelector(".vertical-scroll");
+  const track = document.querySelector(".progress-track");
+  const indicator = document.querySelector(".progress-indicator");
+  const allSlides = Array.from(document.querySelectorAll(".product__slide"));
+  const inputs = document.querySelectorAll('input[type="radio"][data-index="option1"]');
 
-  if (!slider || !progressBar) return;
+  if (!slider || !track || !indicator || allSlides.length < 2) return;
 
-  /* -----------------------------
-     PROGRESS BAR UPDATE
-  ----------------------------- */
+  let slides = [...allSlides]; // visible slides
+  let stepSize = 0;
+  let ticking = false;
 
-  function updateProgress() {
+  /* =========================
+     SETUP
+  ========================= */
+  function setup() {
+    const total = slides.length || 1;
 
-    const maxScroll = slider.scrollWidth - slider.clientWidth;
-    const percent = (slider.scrollLeft / maxScroll) * 100;
+    if (window.innerWidth <= 767) {
+      stepSize = track.offsetWidth / total;
+      indicator.style.width = stepSize + "px";
+      indicator.style.height = "1px";
+    } else {
+      stepSize = track.offsetHeight / total;
+      indicator.style.height = stepSize + "px";
+      indicator.style.width = "1px";
+    }
 
-    progressBar.style.width = percent + "%";
+    indicator.style.transition = "transform 0.3s ease";
   }
 
-  /* -----------------------------
-     DESKTOP → Vertical scroll = Horizontal slider
-  ----------------------------- */
+  /* =========================
+     ACTIVE SLIDE
+  ========================= */
+function getActiveSlide() {
 
-  if (window.innerWidth > 768) {
+  const sliderRect = slider.getBoundingClientRect();
+  let active = slides[0];
+  let minDistance = Infinity;
 
-    window.addEventListener("wheel", (e) => {
+  slides.forEach(slide => {
 
-      // horizontal feel
-      slider.scrollLeft += e.deltaY * 1.2;
+    const rect = slide.getBoundingClientRect();
 
-      updateProgress();
+    const distance =
+      window.innerWidth <= 767
+        ? Math.abs(rect.left - sliderRect.left) // mobile fix
+        : Math.abs(rect.top - sliderRect.top);
 
-    }, { passive: true });
+    if (distance < minDistance) {
+      minDistance = distance;
+      active = slide;
+    }
+  });
 
+  return active;
+}
+
+
+  /* =========================
+     MOVE INDICATOR
+  ========================= */
+  function moveIndicator(slide) {
+    const index = slides.indexOf(slide);
+    if (index === -1) return;
+
+    indicator.style.transform =
+      window.innerWidth <= 767
+        ? `translateX(${index * stepSize}px)`
+        : `translateY(${index * stepSize}px)`;
   }
 
-  /* -----------------------------
-     MOBILE → Native horizontal scroll
-  ----------------------------- */
+  /* =========================
+     SCROLL
+  ========================= */
+  function onScroll() {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        moveIndicator(getActiveSlide());
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }
 
-  slider.addEventListener("scroll", updateProgress);
+  /* =========================
+     VARIANT CHANGE
+  ========================= */
+  inputs.forEach(input => {
+    input.addEventListener("change", () => {
 
+      const value = input.value.trim().toLowerCase();
 
-  /* -----------------------------
-     VARIANT CLICK → Smooth scroll + progress
-  ----------------------------- */
+      slides = [];
 
-  const variantBtns = document.querySelectorAll("[data-variant-index]");
+      allSlides.forEach(slide => {
+        const id = slide.getAttribute("data-id")?.trim().toLowerCase();
 
-  variantBtns.forEach(btn => {
-
-    btn.addEventListener("click", () => {
-
-      const index = btn.dataset.variantIndex;
-      const slide = document.querySelector(`.product-slide[data-index="${index}"]`);
-
-      if (!slide) return;
-
-      slider.scrollTo({
-        left: slide.offsetLeft,
-        behavior: "smooth"
+        if (id === value) {
+          slide.classList.add("media--active");
+          slide.classList.remove("media--hidden");
+          slides.push(slide);
+        } else {
+          slide.classList.remove("media--active");
+          slide.classList.add("media--hidden");
+        }
       });
 
-      // smooth scroll delay fix
-      setTimeout(updateProgress, 400);
+      // scroll to first visible
+      if (slides[0]) {
+        slides[0].scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "start"
+        });
+      }
 
+      // recalc progress
+      setup();
+      moveIndicator(slides[0]);
     });
+  });
 
+  /* =========================
+     INIT
+  ========================= */
+  setup();
+  moveIndicator(slides[0]);
+
+  slider.addEventListener("scroll", onScroll, { passive: true });
+
+  window.addEventListener("resize", () => {
+    setup();
+    moveIndicator(getActiveSlide());
   });
 
 });
-
 
 
 
