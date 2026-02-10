@@ -164,52 +164,78 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   const slider = document.querySelector(".vertical-scroll");
+  const track = document.querySelector(".progress-track");
   const indicator = document.querySelector(".progress-indicator");
   const allSlides = Array.from(document.querySelectorAll(".product__slide"));
   const inputs = document.querySelectorAll('input[type="radio"][data-index="option1"]');
 
-  if (!slider || !indicator || allSlides.length < 2) return;
+  if (!slider || !track || !indicator || allSlides.length < 2) return;
 
   let slides = [...allSlides];
   let ticking = false;
 
   /* =========================
-     MOVE PROGRESS (SCROLL %)
+     INDICATOR SIZE (DYNAMIC %)
   ========================= */
-  function moveIndicatorByScroll() {
+  function setIndicatorSize() {
 
-    let scrollSize, maxScroll, percent;
+    const total = slides.length || 1;
+    const percent = 100 / total;
 
-    if (window.innerWidth <= 767) {
-      // MOBILE (horizontal)
-      scrollSize = slider.scrollLeft;
-      maxScroll = slider.scrollWidth - slider.clientWidth;
-    } else {
-      // DESKTOP (vertical)
-      scrollSize = slider.scrollTop;
-      maxScroll = slider.scrollHeight - slider.clientHeight;
-    }
-
-    percent = maxScroll > 0 ? scrollSize / maxScroll : 0;
+    // IMPORTANT → reset first
+    indicator.style.width = "";
+    indicator.style.height = "";
 
     if (window.innerWidth <= 767) {
-      const move = (slider.clientWidth - indicator.offsetWidth) * percent;
-      indicator.style.transform = `translateX(${move}px)`;
+      // 📱 Mobile → horizontal
+      indicator.style.width = percent + "%";
+      indicator.style.height = "100%";
     } else {
-      const move = (slider.clientHeight - indicator.offsetHeight) * percent;
-      indicator.style.transform = `translateY(${move}px)`;
+      // 🖥 Desktop → vertical
+      indicator.style.height = percent + "%";
+      indicator.style.width = "100%";
     }
   }
 
   /* =========================
-     SCROLL RAF (BUTTERY)
+     MOVE INDICATOR BY SCROLL %
+  ========================= */
+  function moveIndicatorByScroll() {
+
+    const maxScroll =
+      window.innerWidth <= 767
+        ? slider.scrollWidth - slider.clientWidth
+        : slider.scrollHeight - slider.clientHeight;
+
+    const currentScroll =
+      window.innerWidth <= 767
+        ? slider.scrollLeft
+        : slider.scrollTop;
+
+    const scrollPercent = maxScroll > 0 ? currentScroll / maxScroll : 0;
+
+    const indicatorMove =
+      window.innerWidth <= 767
+        ? (track.clientWidth - indicator.clientWidth) * scrollPercent
+        : (track.clientHeight - indicator.clientHeight) * scrollPercent;
+
+    indicator.style.transform =
+      window.innerWidth <= 767
+        ? `translateX(${indicatorMove}px)`
+        : `translateY(${indicatorMove}px)`;
+  }
+
+  /* =========================
+     SCROLL (RAF SMOOTH)
   ========================= */
   function onScroll() {
+
     if (!ticking) {
       window.requestAnimationFrame(() => {
         moveIndicatorByScroll();
         ticking = false;
       });
+
       ticking = true;
     }
   }
@@ -222,7 +248,6 @@ document.addEventListener("DOMContentLoaded", () => {
     input.addEventListener("change", () => {
 
       const value = input.value.trim().toLowerCase();
-
       slides = [];
 
       allSlides.forEach(slide => {
@@ -239,26 +264,27 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
-      if (!slides[0]) return;
+      // 🔥 resize indicator ONLY once
+      setIndicatorSize();
 
-      /* 🔥 SMOOTH SCROLL (NO scrollIntoView BUG) */
-      if (window.innerWidth <= 767) {
+      // smooth scroll to first image
+      if (slides[0]) {
 
-        slider.scrollTo({
-          left: slides[0].offsetLeft,
-          behavior: "smooth"
-        });
+        if (window.innerWidth <= 767) {
+          slider.scrollTo({
+            left: slides[0].offsetLeft,
+            behavior: "smooth"
+          });
+        } else {
+          slider.scrollTo({
+            top: slides[0].offsetTop,
+            behavior: "smooth"
+          });
+        }
 
-      } else {
-
-        slider.scrollTo({
-          top: slides[0].offsetTop,
-          behavior: "smooth"
-        });
+        // progress sync after scroll starts
+        setTimeout(moveIndicatorByScroll, 200);
       }
-
-      // wait scroll then update progress
-      setTimeout(moveIndicatorByScroll, 400);
     });
 
   });
@@ -266,13 +292,18 @@ document.addEventListener("DOMContentLoaded", () => {
   /* =========================
      INIT
   ========================= */
-  slider.addEventListener("scroll", onScroll, { passive: true });
-
-  window.addEventListener("resize", moveIndicatorByScroll);
-
+  setIndicatorSize();
   moveIndicatorByScroll();
 
+  slider.addEventListener("scroll", onScroll, { passive: true });
+
+  window.addEventListener("resize", () => {
+    setIndicatorSize();
+    moveIndicatorByScroll();
+  });
+
 });
+
 
 
 
