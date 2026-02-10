@@ -162,67 +162,57 @@
 
 <script>
 
-
 document.addEventListener("DOMContentLoaded", () => {
-
   const slider = document.querySelector(".vertical-scroll");
   const track = document.querySelector(".progress-track");
   const indicator = document.querySelector(".progress-indicator");
-  const allSlides = Array.from(document.querySelectorAll(".product__slide"));
-  const inputs = document.querySelectorAll('input[type="radio"][data-index="option1"]');
+  const slides = Array.from(document.querySelectorAll(".product__slide"));
 
-  if (!slider || !track || !indicator || allSlides.length < 2) return;
+  if (!slider || !track || !indicator || slides.length < 2) return;
 
-  let slides = [...allSlides]; // visible slides
   let stepSize = 0;
   let ticking = false;
 
   /* =========================
-     SETUP
+     SETUP (responsive)
   ========================= */
   function setup() {
-    const total = slides.length || 1;
+    const total = slides.length;
 
     if (window.innerWidth <= 767) {
+      // 📱 Mobile – horizontal
       stepSize = track.offsetWidth / total;
       indicator.style.width = stepSize + "px";
       indicator.style.height = "1px";
     } else {
+      // 🖥 Desktop – vertical
       stepSize = track.offsetHeight / total;
       indicator.style.height = stepSize + "px";
       indicator.style.width = "1px";
     }
-
-    indicator.style.transition = "transform 0.3s ease";
   }
 
   /* =========================
-     ACTIVE SLIDE
+     ACTIVE SLIDE DETECTION
   ========================= */
-function getActiveSlide() {
+  function getActiveSlide() {
+    let active = slides[0];
+    let minDistance = Infinity;
 
-  const sliderRect = slider.getBoundingClientRect();
-  let active = slides[0];
-  let minDistance = Infinity;
+    slides.forEach(slide => {
+      const distance =
+        window.innerWidth <= 767
+          ? Math.abs(slide.offsetLeft - slider.scrollLeft)
+          : Math.abs(slide.offsetTop - slider.scrollTop);
 
-  slides.forEach(slide => {
+      if (distance < minDistance) {
+        minDistance = distance;
+        active = slide;
+      }
+    });
 
-    const rect = slide.getBoundingClientRect();
-
-    const distance =
-      window.innerWidth <= 767
-        ? Math.abs(rect.left - sliderRect.left) // mobile fix
-        : Math.abs(rect.top - sliderRect.top);
-
-    if (distance < minDistance) {
-      minDistance = distance;
-      active = slide;
-    }
-  });
-
-  return active;
-}
-
+    return active;
+  }
 
   /* =========================
      MOVE INDICATOR
@@ -238,7 +228,7 @@ function getActiveSlide() {
   }
 
   /* =========================
-     SCROLL
+     SCROLL HANDLER (optimized)
   ========================= */
   function onScroll() {
     if (!ticking) {
@@ -251,48 +241,10 @@ function getActiveSlide() {
   }
 
   /* =========================
-     VARIANT CHANGE
-  ========================= */
-  inputs.forEach(input => {
-    input.addEventListener("change", () => {
-
-      const value = input.value.trim().toLowerCase();
-
-      slides = [];
-
-      allSlides.forEach(slide => {
-        const id = slide.getAttribute("data-id")?.trim().toLowerCase();
-
-        if (id === value) {
-          slide.classList.add("media--active");
-          slide.classList.remove("media--hidden");
-          slides.push(slide);
-        } else {
-          slide.classList.remove("media--active");
-          slide.classList.add("media--hidden");
-        }
-      });
-
-      // scroll to first visible
-      if (slides[0]) {
-        slides[0].scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-          inline: "start"
-        });
-      }
-
-      // recalc progress
-      setup();
-      moveIndicator(slides[0]);
-    });
-  });
-
-  /* =========================
      INIT
   ========================= */
   setup();
-  moveIndicator(slides[0]);
+  moveIndicator(slides[0]); // first image
 
   slider.addEventListener("scroll", onScroll, { passive: true });
 
@@ -300,9 +252,7 @@ function getActiveSlide() {
     setup();
     moveIndicator(getActiveSlide());
   });
-
 });
-
 
 
 
@@ -364,7 +314,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+*/
 
+
+/*
 document.addEventListener("DOMContentLoaded", () => {
 
   const inputs = document.querySelectorAll('input[type="radio"][data-index="option1"]');
@@ -393,10 +346,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-});
+});*/
 
 
-*/
+
 
 
 
