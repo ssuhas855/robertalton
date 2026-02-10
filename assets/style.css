@@ -2532,13 +2532,16 @@ body .shopify-policy__container h6 {
 }
 @media(max-width:767px){
 
-.progress-track{
-  width:120px;
-  height:2px;
-  bottom:10px;
-  top:auto;
-  left:50%;
-  transform:translateX(-50%);
+.progress-track.horizontal {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	left: 0;
+	transform: none;
+	bottom: 11px;
+	top: auto;
+	height: 2px;
+	right: auto;
 }
 
 .progress-indicator{
