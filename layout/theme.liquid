@@ -175,30 +175,27 @@ document.addEventListener("DOMContentLoaded", () => {
   let ticking = false;
 
   /* =========================
-     INDICATOR SIZE (DYNAMIC %)
+     INDICATOR SIZE (ONLY ON LOAD)
   ========================= */
   function setIndicatorSize() {
 
-    const total = slides.length || 1;
+    const total = allSlides.length; // 🔥 ALWAYS ORIGINAL COUNT
     const percent = 100 / total;
 
-    // IMPORTANT → reset first
     indicator.style.width = "";
     indicator.style.height = "";
 
     if (window.innerWidth <= 767) {
-      // 📱 Mobile → horizontal
       indicator.style.width = percent + "%";
       indicator.style.height = "100%";
     } else {
-      // 🖥 Desktop → vertical
       indicator.style.height = percent + "%";
       indicator.style.width = "100%";
     }
   }
 
   /* =========================
-     MOVE INDICATOR BY SCROLL %
+     MOVE BY SCROLL %
   ========================= */
   function moveIndicatorByScroll() {
 
@@ -212,22 +209,19 @@ document.addEventListener("DOMContentLoaded", () => {
         ? slider.scrollLeft
         : slider.scrollTop;
 
-    const scrollPercent = maxScroll > 0 ? currentScroll / maxScroll : 0;
+    const percent = maxScroll > 0 ? currentScroll / maxScroll : 0;
 
-    const indicatorMove =
+    const move =
       window.innerWidth <= 767
-        ? (track.clientWidth - indicator.clientWidth) * scrollPercent
-        : (track.clientHeight - indicator.clientHeight) * scrollPercent;
+        ? (track.clientWidth - indicator.clientWidth) * percent
+        : (track.clientHeight - indicator.clientHeight) * percent;
 
     indicator.style.transform =
       window.innerWidth <= 767
-        ? `translateX(${indicatorMove}px)`
-        : `translateY(${indicatorMove}px)`;
+        ? `translateX(${move}px)`
+        : `translateY(${move}px)`;
   }
 
-  /* =========================
-     SCROLL (RAF SMOOTH)
-  ========================= */
   function onScroll() {
 
     if (!ticking) {
@@ -264,10 +258,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
-      // 🔥 resize indicator ONLY once
-      setIndicatorSize();
+      // 🔥 ONLY SCROLL (NO RESIZE)
 
-      // smooth scroll to first image
       if (slides[0]) {
 
         if (window.innerWidth <= 767) {
@@ -282,27 +274,25 @@ document.addEventListener("DOMContentLoaded", () => {
           });
         }
 
-        // progress sync after scroll starts
         setTimeout(moveIndicatorByScroll, 200);
       }
     });
 
   });
 
-  /* =========================
-     INIT
-  ========================= */
-  setIndicatorSize();
+  /* INIT */
+  setIndicatorSize(); // only once
   moveIndicatorByScroll();
 
   slider.addEventListener("scroll", onScroll, { passive: true });
 
   window.addEventListener("resize", () => {
-    setIndicatorSize();
+    setIndicatorSize(); // resize la allowed
     moveIndicatorByScroll();
   });
 
 });
+
 
 
 
