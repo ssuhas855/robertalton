@@ -243,8 +243,16 @@ document.addEventListener("DOMContentLoaded", () => {
   /* =========================
      INIT
   ========================= */
-  setup();
-  moveIndicator(slides[0]); // first image
+setup();
+
+requestAnimationFrame(() => {
+  requestAnimationFrame(() => {
+
+    moveIndicator(getActiveSlide());
+
+  });
+});
+
 
   slider.addEventListener("scroll", onScroll, { passive: true });
 
