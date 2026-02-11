@@ -380,6 +380,10 @@ a.navlink.navlink--cart.navlink--cart--text.navlink--toplevel {
   .mobile-menu__block--menu {	
 	margin-bottom: 0;
 }
+.sliderule__chevron.sliderule__chevron--right {
+	transform: rotate(-90deg);
+	align-items: flex-end;
+}
 }
 /*END 989px*/
 
