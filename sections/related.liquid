@@ -2,54 +2,64 @@
 
 {%- for block in section.blocks -%}
   {%- if block.type == 'related' and product.collections.size > 0 -%}
-{% assign current_collection = collection %}
 
-  {% if current_collection == nil or current_collection.handle == 'shop-all' %}
-    {% for col in product.collections %}
-      {% unless col.handle == 'shop-all' %}
-        {% assign current_collection = col %}
-        {% break %}
-      {% endunless %}
-    {% endfor %}
-  {% endif %}
+    {% assign current_collection = collection %}
 
-  {% if current_collection %}
+    {% if current_collection == nil or current_collection.handle == 'shop-all' %}
+      {% for col in product.collections %}
+        {% unless col.handle == 'shop-all' %}
+          {% assign current_collection = col %}
+          {% break %}
+        {% endunless %}
+      {% endfor %}
+    {% endif %}
 
-    <div class="related-products">
-     {%- if block.settings.product_recommendations_heading != blank -%}
-        <h6>{{ block.settings.product_recommendations_heading }}</h6>
-      {%- endif -%}
-      <div class="grid related-mobile-slider">
+    {% if current_collection %}
 
-        {% assign count = 0 %}
+      <div class="related-products">
 
-        {% for related in current_collection.products %}
-          
-          {% if related.id != product.id %}
+        {%- if block.settings.product_recommendations_heading != blank -%}
+          <h6>{{ block.settings.product_recommendations_heading }}</h6>
+        {%- endif -%}
 
-             {% render 'product-grid-item', product: product, index: forloop.index, sizes: image_sizes %}
+        <!-- SLIDER -->
+        <div class="grid related-mobile-slider">
 
-            {% assign count = count | plus: 1 %}
-            {% if count == 4 %}
-              {% break %}
+          {% assign shown = 0 %}
+
+          {% for related in current_collection.products %}
+
+            {% if related.id != product.id %}
+
+              {% render 'product-grid-item',
+                product: related,
+                index: forloop.index,
+                sizes: image_sizes
+              %}
+
+              {% assign shown = shown | plus: 1 %}
+
+              {% if shown == 4 %}
+                {% break %}
+              {% endif %}
+
             {% endif %}
 
-          {% endif %}
+          {% endfor %}
 
-        {% endfor %}
-
+        </div>
       </div>
-    </div>
 
-    <div class="related-progress">
-   <div class="related-progress-bar"></div>
-</div>
+      <!-- PROGRESS BAR -->
+      <div class="related-progress">
+        <div class="related-progress-bar"></div>
+      </div>
 
-
-  {% endif %}
+    {% endif %}
 
   {%- endif -%}
 {%- endfor -%}
+
 
 <script>
  document.addEventListener("DOMContentLoaded", () => {
