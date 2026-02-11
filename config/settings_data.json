@@ -56,7 +56,7 @@
     "final_sale": true,
     "quantity_style": "dropdown",
     "atc_show_product_price": true,
-    "swatches_type": "native",
+    "swatches_type": "disabled",
     "variant_on_sale": false,
     "swatch_style": "square",
     "sibling_style": "swatch",
