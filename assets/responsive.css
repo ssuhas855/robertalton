@@ -383,7 +383,7 @@ a.navlink.navlink--cart.navlink--cart--text.navlink--toplevel {
 .sliderule__chevron.sliderule__chevron--right svg {
 	transform: rotate(-90deg);
 	align-items: flex-end;
-	width: 8px;
+	width: 10px;
 }
 
 }
