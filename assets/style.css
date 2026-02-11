@@ -2550,3 +2550,6 @@ div.progress-indicator{
 }
 
 }
+.related-product-section:last-child{
+margin-bottom:30px;
+}
