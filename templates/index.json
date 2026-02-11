@@ -48,27 +48,11 @@
     "section_collections_list_pW6J9e": {
       "type": "section-collections-list",
       "blocks": {
-        "collection_RBeDQm": {
-          "type": "collection",
-          "settings": {
-            "collection": "necklace",
-            "collection_image": "shopify://shop_images/TS2038_8bb58e4e-a5eb-4e1d-8293-8dc79b6f6250.jpg",
-            "title": ""
-          }
-        },
         "collection_mtPyUE": {
           "type": "collection",
           "settings": {
             "collection": "ring",
             "collection_image": "shopify://shop_images/TG18885.webp",
-            "title": ""
-          }
-        },
-        "collection_mFNCVF": {
-          "type": "collection",
-          "settings": {
-            "collection": "earrings",
-            "collection_image": "shopify://shop_images/c3.jpg",
             "title": ""
           }
         },
@@ -79,13 +63,29 @@
             "collection_image": "shopify://shop_images/c4.jpg",
             "title": ""
           }
+        },
+        "collection_RBeDQm": {
+          "type": "collection",
+          "settings": {
+            "collection": "necklace",
+            "collection_image": "shopify://shop_images/TS2038_8bb58e4e-a5eb-4e1d-8293-8dc79b6f6250.jpg",
+            "title": ""
+          }
+        },
+        "collection_mFNCVF": {
+          "type": "collection",
+          "settings": {
+            "collection": "earrings",
+            "collection_image": "shopify://shop_images/c3.jpg",
+            "title": ""
+          }
         }
       },
       "block_order": [
-        "collection_RBeDQm",
         "collection_mtPyUE",
-        "collection_mFNCVF",
-        "collection_CG8WXN"
+        "collection_CG8WXN",
+        "collection_RBeDQm",
+        "collection_mFNCVF"
       ],
       "name": "Collection list",
       "settings": {
