@@ -1327,7 +1327,7 @@ max-width: none;
 	max-width: none;
 }
 .template-product [data-section-type="custom-content"] .brick__block__text {
-	padding: 20px 0 3px !important;
+	padding: 30px 0 5px !important; 
 }
 .template-product [data-section-type="custom-content"] .hero__content.hero__content--compact.text-left {
 	padding: 0 10px;
