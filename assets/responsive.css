@@ -1604,9 +1604,9 @@ theme__header header-search-popdown.is-open .predictive-search {
     width: 100%;
     left: 0;
     transform: none;
-    bottom: 1px;
+    bottom: 0px;
             top: auto;
-        height: 2px;
+        height: 1px;
 }
 
   .progress-indicator {
