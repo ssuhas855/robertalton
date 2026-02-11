@@ -214,6 +214,8 @@ width: 100%;
 .badge-box-container {
 	padding: 10px;
 }
+
+/*
 .product__block .swatch__button--square input~label[data-swatch="Black/Rose"],
 .product-item .radio__fieldset--swatches .swatch__button a[data-swatch="Black/Rose"]{
 	background: #eda78e;
@@ -244,7 +246,7 @@ background: linear-gradient(90deg, rgba(224, 191, 72, 1) 0%, rgba(224, 191, 72, 
 .product-item .radio__fieldset--swatches .swatch__button a[data-swatch="Black/White Diamond"]{
 	background: #fff;
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
-}
+}*/
 .tooltip-default{
     display:none!important;
 }
