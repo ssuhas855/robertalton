@@ -384,10 +384,7 @@ a.navlink.navlink--cart.navlink--cart--text.navlink--toplevel {
 	transform: rotate(-90deg);
 	align-items: flex-end;
 }
-.sliderule__chevron .icon {
-	width: 8px;
-	height: auto;
-}
+
 }
 /*END 989px*/
 
