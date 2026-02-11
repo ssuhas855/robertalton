@@ -380,7 +380,7 @@ a.navlink.navlink--cart.navlink--cart--text.navlink--toplevel {
   .mobile-menu__block--menu {	
 	margin-bottom: 0;
 }
-.sliderule__chevron.sliderule__chevron--right {
+.sliderule__chevron.sliderule__chevron--right svg {
 	transform: rotate(-90deg);
 	align-items: flex-end;
 }
