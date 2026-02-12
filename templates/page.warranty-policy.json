@@ -1,0 +1,119 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "show_title": true,
+        "heading_font_size": "heading-large",
+        "show_content": true,
+        "text_font_size": "body-medium",
+        "align_text": "text-center",
+        "width": "wrapper",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "sidebar": {
+      "type": "section-sidebar",
+      "blocks": {
+        "header_jexMR4": {
+          "type": "header",
+          "settings": {
+            "title": "Shipping & Returns"
+          }
+        },
+        "accordion_FTcYre": {
+          "type": "accordion",
+          "settings": {
+            "title": "What shipping options do you offer?",
+            "content": "<p>All orders ship via FedEx 2-Day delivery at no cost. An option to upgrade to priority shipping is available at checkout for an additional fee.</p>"
+          }
+        },
+        "accordion_BAezrH": {
+          "type": "accordion",
+          "settings": {
+            "title": "When will my order ship?",
+            "content": "<p>Orders are processed and shipped within 1-2 business days. Once your order has shipped, you will receive a confirmation email with tracking information.</p>"
+          }
+        },
+        "accordion_XDzAgr": {
+          "type": "accordion",
+          "settings": {
+            "title": "Do you ship internationally?",
+            "content": "<p>At this time, Robert Alton ships within the United States only.</p>"
+          }
+        },
+        "accordion_FB6WAm": {
+          "type": "accordion",
+          "settings": {
+            "title": "How is my jewelry packaged?",
+            "content": "<p>Every Robert Alton piece arrives <strong>gift-ready</strong> in our signature jewelry box.</p>"
+          }
+        },
+        "accordion_GW7jqK": {
+          "type": "accordion",
+          "settings": {
+            "title": "Will pricing be visible on the packaging?",
+            "content": "<p>No. Pricing is not displayed on the packaging.</p>"
+          }
+        },
+        "accordion_ReDw8c": {
+          "type": "accordion",
+          "settings": {
+            "title": "Do you accept returns or exchanges?",
+            "content": "<p>Yes. Returns and exchanges may be requested within <strong>30 days of delivery</strong>, provided items are unworn, unused, and returned in original condition with all packaging.</p>"
+          }
+        },
+        "accordion_wQhLJT": {
+          "type": "accordion",
+          "settings": {
+            "title": "Are all items eligible for return or exchange?",
+            "content": "<p>Items showing signs of wear or damage are not eligible for return or exchange.</p>"
+          }
+        },
+        "accordion_9mRMe8": {
+          "type": "accordion",
+          "settings": {
+            "title": "What if I purchased through a retailer?",
+            "content": "<p>Returns and exchanges for items purchased through authorized retailers are subject to the retailer’s individual policies. Please contact the retailer directly for assistance.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "header_jexMR4",
+        "accordion_FTcYre",
+        "accordion_BAezrH",
+        "accordion_XDzAgr",
+        "accordion_FB6WAm",
+        "accordion_GW7jqK",
+        "accordion_ReDw8c",
+        "accordion_wQhLJT",
+        "accordion_9mRMe8"
+      ],
+      "settings": {
+        "heading_font_size": "heading-x-small",
+        "width": "wrapper--full-padded",
+        "color_scheme": "",
+        "padding_top": 80,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sidebar"
+  ]
+}
