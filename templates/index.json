@@ -285,7 +285,7 @@
         "buttons_wLn99a": {
           "type": "buttons",
           "settings": {
-            "button_text": "",
+            "button_text": "Lorem ipsum",
             "button_url": "shopify://collections/necklace",
             "button_type": "btn--primary",
             "button_size": "",
