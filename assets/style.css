@@ -2558,3 +2558,8 @@ div.progress-indicator{
 .related-product-section:last-child{
 	margin-bottom:30px;
 }
+#Rte--template--25793607106858__section_rich_text_LXTWpT .btn.btn--text.btn--primary {
+	position: relative;
+	left: 10%;
+	transform: translateX(-50%);
+}
