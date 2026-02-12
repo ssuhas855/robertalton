@@ -178,13 +178,13 @@
                             disabled
                           {%- endif %}
                         >
-                        <label for="filter-{{ filter.label }}-{{ forloop.index }}">
+                        <label for="filter-{{ filter.label }}-{{ forloop.index }}">2626
                           {%- if is_swatch_option and filter.presentation != 'swatch' -%}
                             <span
                               class="swatches swatch__button {{ swatch_button_style }} swatch-{{ filter_value.label | handle }}"
                               data-swatch="{{ filter_value.label | escape_once }}"
                               style="--swatch: var(--{{ filter_value.label | handle }});"
-                            >222</span>
+                            ></span>
 
                           {%- elsif filter.presentation == 'swatch' -%}
                             {%- liquid
