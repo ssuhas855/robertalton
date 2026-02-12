@@ -1814,5 +1814,10 @@ font-size: 11px;
 	margin: 20px 0 0;
 	padding: 0 5px;
 }
+.pdp-icon_row {
+	gap: 0;
+	width: 100%;
+	margin: 0 auto;
+}
 } 
 /*END 767px*/
