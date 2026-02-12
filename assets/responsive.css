@@ -1809,5 +1809,10 @@ font-size: 11px;
 .product-item {
     margin-bottom: 10px;
 }
+#shopify-section-template--25793607106858__section_double_tYnKWg .hero__button {
+	position: static;
+	margin: 20px 0 0;
+	padding: 0 5px;
+}
 } 
 /*END 767px*/
