@@ -242,7 +242,7 @@
                             -%}
                           {%- endif -%}
 
-                          <span>{{ filter_value.label | replace: 'Rings', 'Bands' }}</span>
+                          <span>{{ filter_value.label | replace: 'Rings', 'Bands' | replace: 'Charms & Pendants', 'Pendants' }}</span>
                         </label>
                       </li>
                     {%- endfor -%}
