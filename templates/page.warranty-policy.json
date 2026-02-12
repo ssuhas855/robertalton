@@ -32,76 +32,44 @@
         "header_jexMR4": {
           "type": "header",
           "settings": {
-            "title": "Shipping & Returns"
+            "title": "Warranty Policy"
           }
         },
         "accordion_FTcYre": {
           "type": "accordion",
           "settings": {
-            "title": "What shipping options do you offer?",
-            "content": "<p>All orders ship via FedEx 2-Day delivery at no cost. An option to upgrade to priority shipping is available at checkout for an additional fee.</p>"
+            "title": "Warranty Policy",
+            "content": "<p>Designed with intention. Crafted to endure.</p><p>Every Robert Alton piece is designed and produced to exacting standards of quality, materials, and workmanship. We stand behind the integrity of our craftsmanship.</p><p>Robert Alton jewelry is warranted against manufacturing defects in materials and workmanship under normal wear.</p>"
           }
         },
-        "accordion_BAezrH": {
+        "accordion_kxTAqe": {
           "type": "accordion",
           "settings": {
-            "title": "When will my order ship?",
-            "content": "<p>Orders are processed and shipped within 1-2 business days. Once your order has shipped, you will receive a confirmation email with tracking information.</p>"
+            "title": "Warranty Coverage",
+            "content": "<p>All Robert Alton jewelry is covered by a lifetime warranty for manufacturing defects.</p><p>If a piece is found to have a qualifying manufacturing defect, it will be repaired or replaced at our discretion.</p>"
           }
         },
-        "accordion_XDzAgr": {
+        "accordion_YXRjzE": {
           "type": "accordion",
           "settings": {
-            "title": "Do you ship internationally?",
-            "content": "<p>At this time, Robert Alton ships within the United States only.</p>"
+            "title": "Warranty Conditions",
+            "content": "<p>To initiate a warranty request, the item must be sent to Robert Alton after first contacting our Customer Care team at info@robertalton.com with your order number for authorization. Any repair, resizing, alteration, or service performed by a party other than Robert Alton voids this warranty.</p><p>If your Robert Alton piece was purchased through an authorized retailer, you may also contact the retailer directly for assistance.</p><p>This warranty does not cover normal wear and tear, accidental damage, loss, misuse, or pieces that have been personalized or engraved.</p>"
           }
         },
-        "accordion_FB6WAm": {
+        "accordion_AcMixa": {
           "type": "accordion",
           "settings": {
-            "title": "How is my jewelry packaged?",
-            "content": "<p>Every Robert Alton piece arrives <strong>gift-ready</strong> in our signature jewelry box.</p>"
-          }
-        },
-        "accordion_GW7jqK": {
-          "type": "accordion",
-          "settings": {
-            "title": "Will pricing be visible on the packaging?",
-            "content": "<p>No. Pricing is not displayed on the packaging.</p>"
-          }
-        },
-        "accordion_ReDw8c": {
-          "type": "accordion",
-          "settings": {
-            "title": "Do you accept returns or exchanges?",
-            "content": "<p>Yes. Returns and exchanges may be requested within <strong>30 days of delivery</strong>, provided items are unworn, unused, and returned in original condition with all packaging.</p>"
-          }
-        },
-        "accordion_wQhLJT": {
-          "type": "accordion",
-          "settings": {
-            "title": "Are all items eligible for return or exchange?",
-            "content": "<p>Items showing signs of wear or damage are not eligible for return or exchange.</p>"
-          }
-        },
-        "accordion_9mRMe8": {
-          "type": "accordion",
-          "settings": {
-            "title": "What if I purchased through a retailer?",
-            "content": "<p>Returns and exchanges for items purchased through authorized retailers are subject to the retailer’s individual policies. Please contact the retailer directly for assistance.</p>"
+            "title": " SIZE EXCHANGES",
+            "content": "<p>If you purchased a Robert Alton band through an authorized retailer, you may be eligible for a one-time size exchange, subject to style availability.</p><p>If the original style is no longer available, our Customer Care team will assist in selecting a comparable style of equal value.</p><p>*Size exchanges apply to bands only.</p>"
           }
         }
       },
       "block_order": [
         "header_jexMR4",
         "accordion_FTcYre",
-        "accordion_BAezrH",
-        "accordion_XDzAgr",
-        "accordion_FB6WAm",
-        "accordion_GW7jqK",
-        "accordion_ReDw8c",
-        "accordion_wQhLJT",
-        "accordion_9mRMe8"
+        "accordion_kxTAqe",
+        "accordion_YXRjzE",
+        "accordion_AcMixa"
       ],
       "settings": {
         "heading_font_size": "heading-x-small",
