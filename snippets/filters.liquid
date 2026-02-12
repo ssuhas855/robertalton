@@ -61,7 +61,7 @@
                         data-link-hidden
                       {% endif %}
                     >
-                      <a href="{{ link.url }}">{{ link.title }} 222</a>
+                      <a href="{{ link.url }}">{{ link.title }}</a>
                     </li>
                   {%- endif -%}
                 {%- endfor -%}
@@ -184,7 +184,7 @@
                               class="swatches swatch__button {{ swatch_button_style }} swatch-{{ filter_value.label | handle }}"
                               data-swatch="{{ filter_value.label | escape_once }}"
                               style="--swatch: var(--{{ filter_value.label | handle }});"
-                            ></span>
+                            >222</span>
 
                           {%- elsif filter.presentation == 'swatch' -%}
                             {%- liquid
