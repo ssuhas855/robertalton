@@ -168,7 +168,7 @@
               "text": "<p>Refined, essential forms that deliver subtle, effortless confidence.</p>",
               "text_font_size": "body-medium",
               "button_text": "SHOP ALL EARRINGS",
-              "button_url": "",
+              "button_url": "shopify://collections/earrings",
               "button_type": "btn--primary",
               "button_size": "",
               "button_style": "btn--text",
