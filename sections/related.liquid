@@ -74,24 +74,25 @@
    const maxScroll = slider.scrollWidth - slider.clientWidth;
 
    if(maxScroll <= 0){
-     progress.style.transform = "translateX(0)";
+     progress.style.transform = "translateX(0px)";
      return;
    }
 
-   // 0 → 1
    const scrollPercent = slider.scrollLeft / maxScroll;
 
-   // progress can move only 75% (because width is 25%)
-   const movePercent = scrollPercent * 75;
+   // 🔥 REAL movement distance
+   const maxMove = slider.clientWidth - progress.clientWidth;
 
-   progress.style.transform = `translateX(${movePercent}%)`;
+   const move = scrollPercent * maxMove;
+
+   progress.style.transform = `translateX(${move}px)`;
  };
 
  updateProgress();
 
  slider.addEventListener("scroll", updateProgress);
  window.addEventListener("load", updateProgress);
-
+ window.addEventListener("resize", updateProgress); // VERY IMPORTANT
 });
 
 
