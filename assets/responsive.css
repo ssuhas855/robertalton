@@ -1814,6 +1814,9 @@ font-size: 11px;
 	margin: 20px 0 0;
 	padding: 0 5px;
 }
+.pagination-custom__sep {
+	margin: 0;
+}
 
 } 
 /*END 767px*/
