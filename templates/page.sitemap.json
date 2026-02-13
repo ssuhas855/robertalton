@@ -69,7 +69,7 @@
           "settings": {
             "default_open": true,
             "title": "Information",
-            "content": "<h5></h5><p>      •    <a href=\"/pages/about\" title=\"About\">ABOUT US</a></p><p>      •    <a href=\"https://robertalton.com/pages/faq\">Faq</a></p><p>      •    <a href=\"https://robertalton.com/pages/shipping-returns\">Shipping & Returns</a></p><p>      •     <a href=\"https://robertalton.com/pages/contact\">Contact Us</a></p><p>      •     <a href=\"https://robertalton.com/pages/warranty-policy\">Warranty Policy</a></p><p>      •     <a href=\"https://robertalton.com/pages/ring-size-guide\">Size Guide</a></p><p>      •     <a href=\"https://robertalton.com/pages/product-care\">Product Care</a></p><p>      •    <a href=\"/collections/pga-collection\" title=\"The PGA Collection\">THE PGA COLLECTION</a></p><p>      •     <a href=\"https://instagram.com/shopify\">INSTAGRAM</a></p><p></p>",
+            "content": "<p>      •    <a href=\"/pages/about\" title=\"About\">ABOUT US</a></p><p>      •    <a href=\"https://robertalton.com/pages/faq\">Faq</a></p><p>      •    <a href=\"https://robertalton.com/pages/shipping-returns\">Shipping & Returns</a></p><p>      •     <a href=\"https://robertalton.com/pages/contact\">Contact Us</a></p><p>      •     <a href=\"https://robertalton.com/pages/warranty-policy\">Warranty Policy</a></p><p>      •     <a href=\"https://robertalton.com/pages/ring-size-guide\">Size Guide</a></p><p>      •     <a href=\"https://robertalton.com/pages/product-care\">Product Care</a></p><p>      •     <a href=\"https://instagram.com/shopify\">INSTAGRAM</a></p><p></p>",
             "show_icon": true,
             "icon_name": "icon-award",
             "icon_size": 20,
