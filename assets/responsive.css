@@ -1819,7 +1819,7 @@ font-size: 11px;
 }
 .related-progress {
 	width: 100%;
-	height: 5px;
+	height: 1px;
 	background: #BBBBBB;
 	overflow: hidden;
 	position: relative;
