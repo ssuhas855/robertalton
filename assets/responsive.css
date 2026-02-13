@@ -1840,6 +1840,9 @@ font-size: 11px;
 	padding:0 0px;
 	margin:0 auto;
 }
+.related-mobile-slider>* {
+    flex: inherit;
+}
 
 } 
 /*END 767px*/
