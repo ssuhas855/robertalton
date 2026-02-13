@@ -80,10 +80,10 @@
 
    const scrollPercent = slider.scrollLeft / maxScroll;
 
-   // 🔥 REAL movement distance
    const maxMove = slider.clientWidth - progress.clientWidth;
 
-   const move = scrollPercent * maxMove;
+   // 🔥 clamp so it NEVER goes outside
+   const move = Math.min(scrollPercent * maxMove, maxMove);
 
    progress.style.transform = `translateX(${move}px)`;
  };
@@ -92,7 +92,10 @@
 
  slider.addEventListener("scroll", updateProgress);
  window.addEventListener("load", updateProgress);
- window.addEventListener("resize", updateProgress); // VERY IMPORTANT
+ window.addEventListener("resize", updateProgress);
+
+ // Shopify image load fix
+ setTimeout(updateProgress, 300);
 });
 
 
