@@ -19,6 +19,69 @@
         "padding_bottom": 0
       }
     },
+    "section_accordion_group_9PVFYX": {
+      "type": "section-accordion-group",
+      "blocks": {
+        "heading_UbUYqn": {
+          "type": "heading",
+          "settings": {
+            "title": "Sitemap"
+          }
+        },
+        "question_Vd3Ric": {
+          "type": "question",
+          "settings": {
+            "default_open": true,
+            "title": "Shop",
+            "content": "<p><a href=\"shopify://collections/all\">All Products</a></p><p><a href=\"shopify://collections/foundations\">Foundations</a></p><p><a href=\"shopify://collections/bestsellers\">Best Sellers</a></p><p><a href=\"shopify://collections/drake-collection\">Drake Collection</a></p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_RhbYxF": {
+          "type": "question",
+          "settings": {
+            "default_open": true,
+            "title": "Customer Service",
+            "content": "<p><a href=\"shopify://pages/about\">About Us</a></p><p><a href=\"shopify://policies/terms-of-service\">Terms of Service</a></p><p><a href=\"shopify://policies/privacy-policy\">Privacy Policy</a></p><p><a href=\"shopify://policies/refund-policy\">Refund Policy</a></p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_jbTMC3": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Blog & Resources",
+            "content": "<p><a href=\"shopify://blogs\">All Blog Posts</a></p><p><a href=\"shopify://blogs/news\">News</a></p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_UbUYqn",
+        "question_Vd3Ric",
+        "question_RhbYxF",
+        "question_jbTMC3"
+      ],
+      "name": "Accordion group",
+      "settings": {
+        "heading_font_size": "heading-large",
+        "question_font_size": "heading-small",
+        "width": "wrapper",
+        "columns": "2",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -38,6 +101,7 @@
   },
   "order": [
     "divider",
-    "main"
+    "main",
+    "section_accordion_group_9PVFYX"
   ]
 }
