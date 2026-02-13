@@ -67,29 +67,36 @@
  document.addEventListener("DOMContentLoaded", () => {
 
  const slider = document.querySelector(".related-mobile-slider");
- const progress = document.querySelector(".related-progress-bar");
+ const track = document.querySelector(".related-progress");
+ const bar = document.querySelector(".related-progress-bar");
 
- if(!slider || !progress) return;
+ if(!slider || !track || !bar) return;
 
  const updateProgress = () => {
 
-   const totalWidth = slider.scrollWidth;
-   const visibleWidth = slider.clientWidth;
-   const scrollLeft = slider.scrollLeft;
+   const maxScroll = slider.scrollWidth - slider.clientWidth;
 
-   const progressPercent = ((scrollLeft + visibleWidth) / totalWidth) * 100;
+   if(maxScroll <= 0){
+     bar.style.transform = "translateX(0)";
+     return;
+   }
 
-   progress.style.width = progressPercent + "%";
+   // REAL track movement
+   const maxMove = track.clientWidth - bar.clientWidth;
+
+   const move = (slider.scrollLeft / maxScroll) * maxMove;
+
+   bar.style.transform = `translateX(${move}px)`;
  };
 
  updateProgress();
 
  slider.addEventListener("scroll", updateProgress);
- window.addEventListener("load", updateProgress);
  window.addEventListener("resize", updateProgress);
+ window.addEventListener("load", updateProgress);
 
- // Shopify image load fix
- setTimeout(updateProgress, 300);
+ // Shopify images fix
+ setTimeout(updateProgress, 400);
 });
 
 
