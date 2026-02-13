@@ -1817,6 +1817,23 @@ font-size: 11px;
 .pagination-custom__sep {
 	margin: 0;
 }
+.related-progress{
+  width:100%;
+  height:4px;
+  background:#eee;
+  overflow:hidden;
+  position:relative;
+}
+
+.related-progress-bar{
+  width:25%; /* FIXED */
+  height:100%;
+  background:#000;
+  position:absolute;
+  left:0;
+  top:0;
+  transition:transform .1s linear;
+}
 
 } 
 /*END 767px*/
