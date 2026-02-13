@@ -73,21 +73,13 @@
 
  const updateProgress = () => {
 
-   const maxScroll = slider.scrollWidth - slider.clientWidth;
+   const totalWidth = slider.scrollWidth;
+   const visibleWidth = slider.clientWidth;
+   const scrollLeft = slider.scrollLeft;
 
-   if(maxScroll <= 0){
-     progress.style.transform = "translateX(0px)";
-     return;
-   }
+   const progressPercent = ((scrollLeft + visibleWidth) / totalWidth) * 100;
 
-   const scrollPercent = slider.scrollLeft / maxScroll;
-
-   const maxMove = slider.clientWidth - progress.clientWidth;
-
-   // 🔥 clamp so it NEVER goes outside
-   const move = Math.min(scrollPercent * maxMove, maxMove);
-
-   progress.style.transform = `translateX(${move}px)`;
+   progress.style.width = progressPercent + "%";
  };
 
  updateProgress();
