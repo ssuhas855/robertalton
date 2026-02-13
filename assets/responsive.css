@@ -1844,7 +1844,6 @@ font-size: 11px;
     flex: inherit;
 }
 .selector-wrapper__scrollbar {
-    width: calc(100% + 0px);
 	row-gap: 3px;
 }
 } 
