@@ -1836,7 +1836,7 @@ font-size: 11px;
 }
 .related-progress_mo{
 	display:inherit;
-	width:calc(100% - 74px);
+	width:calc(100% - 40px);
 	padding:0 0px;
 	margin:0 auto;
 }
