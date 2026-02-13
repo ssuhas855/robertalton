@@ -19,46 +19,46 @@
         "padding_bottom": 0
       }
     },
-    "section_accordion_group_9PVFYX": {
+    "section_accordion_group_KzVM6Q": {
       "type": "section-accordion-group",
       "blocks": {
-        "heading_UbUYqn": {
+        "heading_8AmhEb": {
           "type": "heading",
           "settings": {
-            "title": "Sitemap"
+            "title": "Site Map"
           }
         },
-        "question_Vd3Ric": {
+        "question_Mzp9iU": {
           "type": "question",
           "settings": {
             "default_open": true,
             "title": "Shop",
-            "content": "<p><a href=\"shopify://collections/all\">All Products</a></p><p><a href=\"shopify://collections/foundations\">Foundations</a></p><p><a href=\"shopify://collections/bestsellers\">Best Sellers</a></p><p><a href=\"shopify://collections/drake-collection\">Drake Collection</a></p>",
-            "show_icon": false,
-            "icon_name": "icon-award",
+            "content": "<p><strong>Collections</strong></p><p>• <a href=\"shopify://collections\">All Products</a></p><p>• <a href=\"shopify://collections/all\">Featured Collections</a></p><p>• <a href=\"shopify://collections\">New Arrivals</a></p><p><strong>Products</strong></p><p>• <a href=\"shopify://collections/all\">Browse All Products</a></p><p>• <a href=\"shopify://collections/all\">Sale Items</a></p>",
+            "show_icon": true,
+            "icon_name": "icon-box",
             "icon_size": 20,
             "icon_color": ""
           }
         },
-        "question_RhbYxF": {
+        "question_myDJbh": {
           "type": "question",
           "settings": {
             "default_open": true,
             "title": "Customer Service",
-            "content": "<p><a href=\"shopify://pages/about\">About Us</a></p><p><a href=\"shopify://policies/terms-of-service\">Terms of Service</a></p><p><a href=\"shopify://policies/privacy-policy\">Privacy Policy</a></p><p><a href=\"shopify://policies/refund-policy\">Refund Policy</a></p>",
-            "show_icon": false,
-            "icon_name": "icon-award",
+            "content": "<p><strong>Help & Support</strong></p><p>• <a href=\"shopify://pages/contact\">Contact Us</a></p><p>• <a href=\"shopify://policies/refund-policy\">Returns & Refunds</a></p><p>• <a href=\"shopify://policies/terms-of-service\">Shipping Information</a></p><p><strong>Policies</strong></p><p>• <a href=\"shopify://policies/privacy-policy\">Privacy Policy</a></p><p>• <a href=\"shopify://policies/terms-of-service\">Terms of Service</a></p>",
+            "show_icon": true,
+            "icon_name": "icon-chat",
             "icon_size": 20,
             "icon_color": ""
           }
         },
-        "question_jbTMC3": {
+        "question_LCt7bU": {
           "type": "question",
           "settings": {
-            "default_open": false,
-            "title": "Blog & Resources",
-            "content": "<p><a href=\"shopify://blogs\">All Blog Posts</a></p><p><a href=\"shopify://blogs/news\">News</a></p>",
-            "show_icon": false,
+            "default_open": true,
+            "title": "Company",
+            "content": "<p><strong>About</strong></p><p>• <a href=\"shopify://pages/about\">About Us</a></p><p>• <a href=\"shopify://blogs\">Blog</a></p><p>• <a href=\"shopify://pages/contact\">Careers</a></p><p><strong>Connect</strong></p><p>• <a href=\"https://instagram.com/shopify\">Instagram</a></p><p>• <a href=\"https://facebook.com/shopify\">Facebook</a></p>",
+            "show_icon": true,
             "icon_name": "icon-award",
             "icon_size": 20,
             "icon_color": ""
@@ -66,17 +66,17 @@
         }
       },
       "block_order": [
-        "heading_UbUYqn",
-        "question_Vd3Ric",
-        "question_RhbYxF",
-        "question_jbTMC3"
+        "heading_8AmhEb",
+        "question_Mzp9iU",
+        "question_myDJbh",
+        "question_LCt7bU"
       ],
       "name": "Accordion group",
       "settings": {
         "heading_font_size": "heading-large",
         "question_font_size": "heading-small",
         "width": "wrapper",
-        "columns": "2",
+        "columns": "1",
         "color_scheme": "",
         "padding_top": 50,
         "padding_bottom": 50
@@ -89,7 +89,7 @@
         "show_title": true,
         "heading_font_size": "heading-medium",
         "show_content": true,
-        "text_font_size": "body-small",
+        "text_font_size": "body-medium",
         "align_text": "text-left",
         "width": "wrapper",
         "color_scheme": "",
@@ -101,7 +101,7 @@
   },
   "order": [
     "divider",
-    "main",
-    "section_accordion_group_9PVFYX"
+    "section_accordion_group_KzVM6Q",
+    "main"
   ]
 }
