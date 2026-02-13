@@ -1851,7 +1851,7 @@ font-size: 11px;
 }
 .product-item .product-item__swatches__holder {
     margin: 0 0px;
-    width: 83px;
+    width: fit-content;
     display: flex;
     justify-content: flex-end;
 }
