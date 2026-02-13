@@ -44,8 +44,8 @@
           "type": "question",
           "settings": {
             "default_open": true,
-            "title": "Customer Service",
-            "content": "<p><strong>Help & Support</strong></p><p>• <a href=\"shopify://pages/contact\">Contact Us</a></p><p>• <a href=\"shopify://policies/refund-policy\">Returns & Refunds</a></p><p>• <a href=\"shopify://policies/terms-of-service\">Shipping Information</a></p><p><strong>Policies</strong></p><p>• <a href=\"shopify://policies/privacy-policy\">Privacy Policy</a></p><p>• <a href=\"shopify://policies/terms-of-service\">Terms of Service</a></p>",
+            "title": "Best Sellers",
+            "content": "<h5>Best Sellers<br/><br/></h5><p>      •    <a href=\"/collections/bestsellers\" title=\"Best Sellers\">BEST SELLERS</a></p><p></p>",
             "show_icon": true,
             "icon_name": "icon-chat",
             "icon_size": 20,
