@@ -58,7 +58,7 @@
             "default_open": true,
             "title": "Collections",
             "content": "<h5>Collections</h5><p>      •    <a href=\"/collections/drake-collection\" title=\"The Drake Collection\">THE DRAKE COLLECTION</a></p><p>      •    <a href=\"/collections/pga-collection\" title=\"The PGA Collection\">THE PGA COLLECTION</a></p><p></p>",
-            "show_icon": true,
+            "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
             "icon_color": ""
