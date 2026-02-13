@@ -33,7 +33,7 @@
           "settings": {
             "default_open": true,
             "title": "Shop",
-            "content": "<p>• <a href=\"shopify://collections\">All Products</a></p><p>• <a href=\"shopify://collections/all\">Featured Collections</a></p><p>• <a href=\"shopify://collections\">New Arrivals</a></p><p><strong>Products</strong></p><p>• <a href=\"shopify://collections/all\">Browse All Products</a></p><p>• <a href=\"shopify://collections/all\">Sale Items</a></p>",
+            "content": "<p>• <a href=\"https://vc7y13do2xf2jfnx-96936558890.shopifypreview.com/collections/shop-all\">ALL</a></p><p>• <a href=\"shopify://collections/all\">Featured Collections</a></p><p>• <a href=\"shopify://collections\">New Arrivals</a></p><p><strong>Products</strong></p><p>• <a href=\"shopify://collections/all\">Browse All Products</a></p><p>• <a href=\"shopify://collections/all\">Sale Items</a></p>",
             "show_icon": false,
             "icon_name": "icon-box",
             "icon_size": 20,
