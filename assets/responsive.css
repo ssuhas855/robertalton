@@ -1843,6 +1843,9 @@ font-size: 11px;
 .related-mobile-slider>* {
     flex: inherit;
 }
-
+.selector-wrapper__scrollbar {
+    width: calc(100% + 0px);
+	row-gap: 3px;
+}
 } 
 /*END 767px*/
