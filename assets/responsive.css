@@ -1846,5 +1846,8 @@ font-size: 11px;
 .selector-wrapper__scrollbar {
 	row-gap: 3px;
 }
+.product-item .product-item__swatches__holder {
+    margin: 0 0px;
+}
 } 
 /*END 767px*/
