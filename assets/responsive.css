@@ -1849,5 +1849,11 @@ font-size: 11px;
 .product-item .product-item__swatches__holder {
     margin: 0 0px;
 }
+.product-item .product-item__swatches__holder {
+    margin: 0 0px;
+    width: 83px;
+    display: flex;
+    justify-content: flex-end;
+}
 } 
 /*END 767px*/
