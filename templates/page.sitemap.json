@@ -46,7 +46,7 @@
             "default_open": true,
             "title": "Best Sellers",
             "content": "<h5>Best Sellers<br/><br/></h5><p>      •    <a href=\"/collections/bestsellers\" title=\"Best Sellers\">BEST SELLERS</a></p><p></p>",
-            "show_icon": true,
+            "show_icon": false,
             "icon_name": "icon-chat",
             "icon_size": 20,
             "icon_color": ""
