@@ -73,26 +73,27 @@
 
    const maxScroll = slider.scrollWidth - slider.clientWidth;
 
-   // 🔥 Important — if no scroll
    if(maxScroll <= 0){
-     progress.style.width = "100%";
+     progress.style.transform = "translateX(0)";
      return;
    }
 
-   const percent = ((slider.scrollLeft + slider.clientWidth) / slider.scrollWidth) * 100;
+   // 0 → 1
+   const scrollPercent = slider.scrollLeft / maxScroll;
 
-   progress.style.width = percent + "%";
+   // progress can move only 75% (because width is 25%)
+   const movePercent = scrollPercent * 75;
+
+   progress.style.transform = `translateX(${movePercent}%)`;
  };
 
- // ✅ SET on load
  updateProgress();
 
  slider.addEventListener("scroll", updateProgress);
-
- // ✅ also fix after images load
  window.addEventListener("load", updateProgress);
 
 });
+
 
 </script>
 
