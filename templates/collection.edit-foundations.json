@@ -56,6 +56,7 @@
         "heading_Gt7Mqx",
         "text_acqFwM"
       ],
+      "disabled": true,
       "name": "Rich text",
       "settings": {
         "align_text": "text-center",
