@@ -9,35 +9,13 @@
  */
 {
   "sections": {
-    "section_hero_7DyRR4": {
-      "type": "section-hero",
-      "name": "Image banner",
-      "settings": {
-        "image_1": "shopify://shop_images/Drake_Collection_Hero.png",
-        "link": "",
-        "width": "wrapper--full-padded",
-        "height": "image-height",
-        "flex_align_desktop": "align--middle-center-desktop",
-        "content_width": 50,
-        "mobile_image": "shopify://shop_images/Drake_Collection_Hero.png",
-        "mobile_height": "image-height--mobile",
-        "flex_align_mobile": "align--middle-center-mobile",
-        "text_below": false,
-        "color_scheme": "",
-        "show_text_background": false,
-        "overlay_type": "disabled",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "show_placeholder": true
-      }
-    },
     "section_rich_text_3mMwQQ": {
       "type": "section-rich-text",
       "blocks": {
         "heading_Gt7Mqx": {
           "type": "heading",
           "settings": {
-            "title": "The Drake Collection",
+            "title": "Foundations",
             "heading_font_size": "heading-large",
             "padding_bottom": 16,
             "heading_tag": "automatic"
@@ -46,7 +24,7 @@
         "text_acqFwM": {
           "type": "text",
           "settings": {
-            "text": "<p>Rooted in craftsmanship and inspired by iconic unbuttoned destinations, Robert Alton blends contemporary design with the timeless spirit of The Drake — a world where elegance is rediscovered and individuality is celebrated.</p>",
+            "text": "<p>Our core silhouettes, crafted in timeless proportion — the anchor of a refined wardrobe.</p>",
             "text_font_size": "body-medium",
             "padding_bottom": 16
           }
@@ -56,15 +34,14 @@
         "heading_Gt7Mqx",
         "text_acqFwM"
       ],
-      "disabled": true,
       "name": "Rich text",
       "settings": {
         "align_text": "text-center",
         "width": "wrapper--narrow",
         "color_scheme": "",
         "overlay_type": "disabled",
-        "padding_top": 120,
-        "padding_bottom": 120
+        "padding_top": 80,
+        "padding_bottom": 40
       }
     },
     "main": {
@@ -176,7 +153,6 @@
     }
   },
   "order": [
-    "section_hero_7DyRR4",
     "section_rich_text_3mMwQQ",
     "main",
     "image_50_50_RgtdG3",
