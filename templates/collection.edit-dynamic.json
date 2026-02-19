@@ -40,7 +40,7 @@
         "width": "wrapper--narrow",
         "color_scheme": "",
         "overlay_type": "disabled",
-        "padding_top": 80,
+        "padding_top": 60,
         "padding_bottom": 40
       }
     },
@@ -51,7 +51,7 @@
           "type": "featured_image",
           "settings": {
             "featured_image": "shopify://shop_images/Dynamic.png",
-            "position": 5,
+            "position": 7,
             "featured_heading": "",
             "heading_font_size": "heading-large",
             "featured_text": "",
