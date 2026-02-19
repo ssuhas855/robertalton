@@ -65,30 +65,10 @@
             "overlay_type": "disabled",
             "heading_tag": "automatic"
           }
-        },
-        "featured_image_jDRx3K": {
-          "type": "featured_image",
-          "settings": {
-            "featured_image": "shopify://shop_images/DrakeR.png",
-            "position": 10,
-            "featured_heading": "",
-            "heading_font_size": "heading-large",
-            "featured_text": "",
-            "featured_button_text": "",
-            "featured_button_link": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--outline",
-            "show_arrow": false,
-            "featured_color_text": "#ffffff",
-            "overlay_type": "disabled",
-            "heading_tag": "automatic"
-          }
         }
       },
       "block_order": [
-        "featured_image_kJ4Cyq",
-        "featured_image_jDRx3K"
+        "featured_image_kJ4Cyq"
       ],
       "settings": {
         "enable_sort": false,
