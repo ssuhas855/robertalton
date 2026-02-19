@@ -9,6 +9,39 @@
  */
 {
   "sections": {
+    "section_rich_text_TtFtg7": {
+      "type": "section-rich-text",
+      "blocks": {
+        "subheading_VUDm6P": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Foundations",
+            "padding_bottom": 16
+          }
+        },
+        "text_G7nBp4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our core silhouettes, crafted in timeless proportion — the anchor of a refined wardrobe.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_VUDm6P",
+        "text_G7nBp4"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "align_text": "text-center",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
     "main": {
       "type": "collection",
       "blocks": {
@@ -86,6 +119,7 @@
     }
   },
   "order": [
+    "section_rich_text_TtFtg7",
     "main",
     "hero",
     "subcollections"
