@@ -254,17 +254,17 @@
   {%- assign first_two = collection.products | slice: 14, 2 -%}
 
   {% for product in first_two %}
-    {{ product.title }}
+    {{ forloop.index }}. {{ product.title }}
   {% endfor %}
 
   {% for product in collection.products limit: 14 %}
-    {{ product.title }}
+     {{ forloop.index }}. {{ product.title }}
   {% endfor %}
 
 {% else %}
 
   {% for product in collection.products %}
-    {{ product.title }}
+     {{ forloop.index }}. {{ product.title }}
   {% endfor %}
 
 {% endif %}
