@@ -263,7 +263,9 @@
 
 {% else %}
 
-
+  {% for product in collection.products limit: 16 %}
+     {{ forloop.index }}. {{ product.title }}
+  {% endfor %}
 
 {% endif %}
 
