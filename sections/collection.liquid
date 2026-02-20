@@ -244,20 +244,20 @@
 
 {% if paginate.current_page == 1 %}
 
-  {% for product in collection.products limit: 14 %}
+  {% for product in collection.products limit: 16 %}
     <!-- product card -->
     {{ forloop.index }}.{{ product.title }}<br>
   {% endfor %}
 
 {% elsif paginate.current_page == 2 %}
 
-  {%- assign first_two = collection.products | slice: 14, 2 -%}
+  {%- assign first_two = collection.products | slice: 16, 2 -%}
 
   {% for product in first_two %}
     {{ forloop.index }}. {{ product.title }}
   {% endfor %}
 
-  {% for product in collection.products limit: 14 %}
+  {% for product in collection.products limit: 16 %}
      {{ forloop.index }}. {{ product.title }}<br>
   {% endfor %}
 
