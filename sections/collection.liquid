@@ -246,6 +246,7 @@
 
 
 
+
           {%- if collection.products_count > 0 -%}
             {%- if featured_images_array.size > 0 -%}
               {%- liquid
@@ -253,7 +254,7 @@
                 assign counter_delay = 0
                 assign added_images_index = ''
                 assign items_on_row_remaining = columns_desktop
-
+assign page = paginate.current_page
                 if page == 1
 
                for product in collection.products limit: 14
