@@ -246,7 +246,7 @@
   {% if paginate.current_page == 1 %}
 
     {% for product in collection.products %}
-      {{ forloop.index }}. {{ product.title }} 
+      {{ forloop.index }}. {{ product.title }} <br>
     {% endfor %}
 
   {% else %}
@@ -257,11 +257,11 @@
         | slice: extra_offset, 2 -%}
 
     {% for product in extra_products %}
-     {{ forloop.index }}. {{ product.title }} 
+     {{ forloop.index }}. {{ product.title }} <br>
     {% endfor %}
 
     {% for product in collection.products %}
-     {{ forloop.index }}. {{ product.title }} 
+     {{ forloop.index }}. {{ product.title }} <br>
     {% endfor %}
 
   {% endif %}
