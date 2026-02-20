@@ -71,10 +71,10 @@
         "featured_image_kJ4Cyq"
       ],
       "settings": {
-        "enable_sort": false,
-        "enable_filters": false,
+        "enable_sort": true,
+        "enable_filters": true,
         "filter_layout": "slide-out",
-        "default_open": false,
+        "default_open": true,
         "collection_linklist": "",
         "grid": 4,
         "grid_mobile": "2",
