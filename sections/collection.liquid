@@ -239,7 +239,11 @@
             id="AjaxinateLoop" data-ajaxinate-id="{{ section.id }}"
           {% endif %}
         >
-          sdafdsf
+
+   
+
+
+
           {%- if collection.products_count > 0 -%}
             {%- if featured_images_array.size > 0 -%}
               {%- liquid
@@ -249,6 +253,12 @@
                 assign items_on_row_remaining = columns_desktop
 
                 for product in collection.products
+
+                   if paginate.current_page == 1 and forloop.index > 14 
+                         continue
+                       endif
+
+
                   for featured_image in featured_images_array
                     if featured_image == ''
                       continue
