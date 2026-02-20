@@ -40,8 +40,8 @@
         "width": "wrapper--narrow",
         "color_scheme": "",
         "overlay_type": "disabled",
-        "padding_top": 94,
-        "padding_bottom": 94
+        "padding_top": 96,
+        "padding_bottom": 20
       }
     },
     "main": {
