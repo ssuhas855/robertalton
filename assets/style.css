@@ -2574,3 +2574,7 @@ div.progress-indicator{
 .template-collection .index-rte .hero__rte p{
 	letter-spacing:0.3px;
 }
+.popout--sort .popout__toggle {
+	position: relative;
+	top: -1px;
+}
