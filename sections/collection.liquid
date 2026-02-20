@@ -244,15 +244,15 @@
 
 {% assign page = paginate.current_page %}
 
-{% if page == 1 %}
+  {% if page == 1 %}
   1
   {% assign custom_limit = 14 %}
   {% assign custom_offset = 0 %}
-{% else %}
+  {% else %}
   2
   {% assign custom_limit = 16 %}
   {% assign custom_offset = 14 | plus: page | minus: 2 | times: 16 %}
-{% endif %}
+  {% endif %}
 
 
 
