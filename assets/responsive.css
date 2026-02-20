@@ -1855,5 +1855,8 @@ font-size: 11px;
     display: flex;
     justify-content: flex-end;
 }
+.template-collection .index-rte.section-padding {
+	padding: 33px 0 33px;
+}
 } 
 /*END 767px*/
