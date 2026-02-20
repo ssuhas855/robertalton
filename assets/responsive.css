@@ -1858,5 +1858,9 @@ font-size: 11px;
 .template-collection .index-rte.section-padding {
 	padding: 33px 0 33px;
 }
+.template-collection h2.hero__title {
+	font-size: 12px;
+	margin: 0 0 10px;
+}
 } 
 /*END 767px*/
