@@ -32,6 +32,7 @@
         "subheading_VUDm6P",
         "text_G7nBp4"
       ],
+      "disabled": true,
       "name": "Rich text",
       "settings": {
         "align_text": "text-center",
