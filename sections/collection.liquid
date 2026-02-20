@@ -75,17 +75,7 @@
   {%- endif -%}
 {%- endcapture -%}
 
-{%- assign page = paginate.current_page -%}
-
-{%- if page == 1 -%}
-  {%- assign limit = 14 -%}
-  {%- assign offset = 0 -%}
-{%- else -%}
-  {%- assign limit = 16 -%}
-  {%- assign offset = 14 | plus: page | minus: 2 | times: 16 -%}
-{%- endif -%}
-
-{%- paginate collection.products by 1000 -%}
+{%- paginate collection.products by product_limit -%}
   
   {%- assign featured_images_array = '' -%}
 
@@ -262,8 +252,7 @@
                 assign added_images_index = ''
                 assign items_on_row_remaining = columns_desktop
 
-                for product in collection.products limit: limit offset: offset
-
+                for product in collection.products
 
 
 
