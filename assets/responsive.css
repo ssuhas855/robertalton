@@ -1856,7 +1856,7 @@ font-size: 11px;
     justify-content: flex-end;
 }
 .template-collection .index-rte.section-padding {
-	padding: 33px 0 33px;
+	padding: 33px 0 10px;
 }
 .template-collection h2.hero__title {
 	font-size: 12px;
