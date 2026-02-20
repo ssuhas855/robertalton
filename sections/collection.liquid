@@ -246,18 +246,18 @@
 
   {% for product in collection.products limit: 14 %}
     <!-- product card -->
-    {{ forloop.index }}.{{ product.title }}
+    {{ forloop.index }}.{{ product.title }}<br>
   {% endfor %}
 
 {% elsif paginate.current_page == 2 %}
   {% for product in collection.products limit: 16 %}
-     {{ forloop.index }}. {{ product.title }}
+     {{ forloop.index }}. {{ product.title }}<br>
   {% endfor %}
 
 {% else %}
 
   {% for product in collection.products limit: 16 %}
-     {{ forloop.index }}. {{ product.title }}
+     {{ forloop.index }}. {{ product.title }}<br>
   {% endfor %}
 
 {% endif %}
