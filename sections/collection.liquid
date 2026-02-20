@@ -245,13 +245,17 @@
 {% if paginate.current_page == 1 %}
 
   {% for product in collection.products limit: 14 %}
-
-
+    <!-- product card -->
+    {{ forloop.index }}.{{ product.title }}
   {% endfor %}
 
 {% elsif paginate.current_page == 2 %}
 
   {%- assign first_two = collection.products | slice: 14, 2 -%}
+
+  {% for product in first_two %}
+    {{ forloop.index }}. {{ product.title }}
+  {% endfor %}
 
   {% for product in collection.products limit: 16 %}
      {{ forloop.index }}. {{ product.title }}
