@@ -2566,7 +2566,8 @@ div.progress-indicator{
 .related-progress_mo{
 	display:none;
 }
-.template-collection .hero__subheading {
+.template-collection .hero__subheading,
+.template-collection h2.hero__title {
 	letter-spacing: 0.5px;
 	margin-bottom: 20px;
 }
