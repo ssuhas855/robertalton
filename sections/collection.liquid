@@ -241,30 +241,7 @@
         >
 
    
-{%- paginate collection.products by 14 -%}
 
-  {% if paginate.current_page == 1 %}
-
-    {% for product in collection.products %}
-      {{ forloop.index }}. {{ product.title }} <br>
-    {% endfor %}
-
-  {% else %}
-
-    {%- assign extra_offset = 14 | plus: paginate.current_page | minus: 2 | times: 2 -%}
-
-    {%- assign extra_products = collection.products 
-        | slice: extra_offset, 2 -%}
-
-
-
-    {% for product in collection.products %}
-     {{ forloop.index }}. {{ product.title }} <br>
-    {% endfor %}
-
-  {% endif %}
-
-{%- endpaginate -%}
 
 
 
