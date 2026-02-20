@@ -75,7 +75,19 @@
   {%- endif -%}
 {%- endcapture -%}
 
-{%- paginate collection.products by product_limit -%}
+
+
+  {% assign current_page = paginate.current_page %}
+
+{% if current_page == 1 %}
+  {% assign plimit = 14 %}
+{% else %}
+   {% assign plimit = 16 %}
+{% endif %}
+
+{%- paginate collection.products by plimit -%}
+
+
   {%- assign featured_images_array = '' -%}
 
   {%- if paginate.current_page == 1 -%}
