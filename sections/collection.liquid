@@ -246,7 +246,7 @@
 
   {% for product in collection.products limit: 14 %}
     <!-- product card -->
-    {{ product.title }}
+    {{ forloop.index }}.{{ product.title }}
   {% endfor %}
 
 {% elsif paginate.current_page == 2 %}
