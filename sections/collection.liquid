@@ -239,6 +239,7 @@
             id="AjaxinateLoop" data-ajaxinate-id="{{ section.id }}"
           {% endif %}
         >
+          sdafdsf
           {%- if collection.products_count > 0 -%}
             {%- if featured_images_array.size > 0 -%}
               {%- liquid
@@ -279,7 +280,6 @@
               -%}
 
             {%- else -%}
-              sdfsfd
               {%- for product in collection.products -%}
                 {%- assign grid_int = section.settings.grid | times: 1 -%}
                 {%- assign animation_delay = forloop.index0 | modulo: grid_int | times: 1 -%}
