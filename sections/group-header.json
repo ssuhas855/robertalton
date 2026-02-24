@@ -17,7 +17,7 @@
         "text_discount": {
           "type": "text",
           "settings": {
-            "text": "<p>Complimentary U.S. FedEx 2-Day Shipping.</p>",
+            "text": "<p>Shop the <a href=\"https://robertalton.com/collections/pga-collection\" title=\"https://robertalton.com/collections/pga-collection\">PGA Collection</a> | Complimentary U.S. Shipping</p>",
             "target_url_enabled": false,
             "target_url": "",
             "target_referrer_enabled": false,
