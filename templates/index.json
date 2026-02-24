@@ -52,7 +52,7 @@
           "type": "collection",
           "settings": {
             "collection": "ring",
-            "collection_image": "shopify://shop_images/home_col1.jpg",
+            "collection_image": "shopify://shop_images/TG16738_bba56dd7-d4d2-4bc5-afe9-40c7987b438b.jpg",
             "title": ""
           }
         },
@@ -60,7 +60,7 @@
           "type": "collection",
           "settings": {
             "collection": "bracelet",
-            "collection_image": "shopify://shop_images/home_col2.jpg",
+            "collection_image": "shopify://shop_images/TS19800_40079c02-bd8c-4764-9f30-0cb5ed1b9f28.jpg",
             "title": ""
           }
         },
@@ -68,7 +68,7 @@
           "type": "collection",
           "settings": {
             "collection": "necklace",
-            "collection_image": "shopify://shop_images/home_col3.jpg",
+            "collection_image": "shopify://shop_images/TS16734_a2a2761c-578d-430e-b810-d4ce9724ccdc.jpg",
             "title": "Necklaces"
           }
         },
@@ -84,7 +84,7 @@
           "type": "collection",
           "settings": {
             "collection": "earrings",
-            "collection_image": "shopify://shop_images/home_col5.jpg",
+            "collection_image": "shopify://shop_images/TS13431_66cf9289-b49a-46f3-a1df-eba2988ade7a.jpg",
             "title": ""
           }
         }
