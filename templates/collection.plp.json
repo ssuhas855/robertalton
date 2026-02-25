@@ -119,7 +119,7 @@
         "default_open": false,
         "collection_linklist": "",
         "grid": 4,
-        "grid_mobile": "2",
+        "grid_mobile": "1",
         "products_per_page": 16,
         "featured_width": "wrapper--full-padded",
         "color_scheme": "scheme-1",
