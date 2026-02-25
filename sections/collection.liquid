@@ -252,9 +252,19 @@
 
                 for product in collection.products
 
+if collection.handle == 'drake-collection' or collection.handle == 'pga-collection'
+
 if paginate.current_page == 1 and forloop.index > 16
-    continue
+continue
   endif
+
+else
+if paginate.current_page == 1 and forloop.index > 14
+continue
+  endif
+endif
+
+    
 
                   for featured_image in featured_images_array
                     if featured_image == ''
