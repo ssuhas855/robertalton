@@ -242,7 +242,6 @@
             id="AjaxinateLoop" data-ajaxinate-id="{{ section.id }}"
           {% endif %}
         >
-          asdasd
           {%- if collection.products_count > 0 -%}
             {%- if featured_images_array.size > 0 -%}
               {%- liquid
@@ -254,7 +253,7 @@
                 for product in collection.products
 
 if collection.handle == 'drake-collection' 
-if paginate.current_page == 1 and forloop.index > 16
+if paginate.current_page == 1 and forloop.index > 18
 continue
   endif
 
