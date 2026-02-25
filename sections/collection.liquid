@@ -14,7 +14,16 @@
     The product limit decrement will be removed once we add more block types
   endcomment
 
-  assign product_limit = section.settings.products_per_page
+  
+
+ if collection.handle == 'drake-collection' or collection.handle == 'pga-collection' 
+assign product_limit = 100
+ else 
+
+assign product_limit = section.settings.products_per_page
+ endif 
+
+
   assign blocks_featured_image = section.blocks | where: 'type', 'featured_image'
 
   assign columns_desktop = section.settings.grid | plus: 0
