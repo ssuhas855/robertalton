@@ -238,7 +238,7 @@
           "type": "button",
           "settings": {
             "link_text": "The Drake Collection",
-            "link": "shopify://collections/drake-collection",
+            "link": "shopify://collections/drake-luxury-collection",
             "button_type": "btn--black",
             "button_size": "",
             "button_style": "btn--text",
