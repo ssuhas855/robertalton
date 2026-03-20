@@ -1893,5 +1893,9 @@ font-size: 11px;
 #ring-size-guide .section-sidebar .rte table {
 	width: 200vw;
 }
+#ring-size-guide .section-sidebar .rte__table-wrapper {
+	overflow: hidden;
+	overflow-x: scroll;
+}
 } 
 /*END 767px*/
