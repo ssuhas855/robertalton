@@ -1890,5 +1890,8 @@ font-size: 11px;
 	letter-spacing: 0.3px;
 	font-size: 13px;
 }
+#ring-size-guide .section-sidebar .rte table {
+	width: 200vw;
+}
 } 
 /*END 767px*/
