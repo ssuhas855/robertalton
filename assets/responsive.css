@@ -403,6 +403,9 @@ a.navlink.navlink--cart.navlink--cart--text.navlink--toplevel {
 	align-items: flex-end;
 	width: 10px;
 }
+#ring-size-guide .section-sidebar .rte table {
+	width: 510px;
+}
 
 }
 /*END 989px*/
