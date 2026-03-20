@@ -70,7 +70,10 @@
 #size_box_in + .product__block.product__block--buttons {
 	width: calc(100% - 90px);	
 }
-
+#ring-size-guide .section-sidebar .rte table td:first-child {
+	width: 80px;
+	font-size: 10px;
+}
 }
 /*END 1199px*/
 
