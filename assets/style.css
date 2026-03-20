@@ -2594,7 +2594,8 @@ div.progress-indicator{
   letter-spacing: 0.5px;
 }
 #ring-size-guide .section-sidebar  .rte__table-wrapper {	
-	overflow: inherit;	
+	overflow: inherit;
+	padding-bottom: 20px;	
 }
 #ring-size-guide .section-sidebar .rte table td:first-child {
 	width: 100px;
