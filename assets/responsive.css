@@ -74,6 +74,9 @@
 	width: 80px;
 	font-size: 10px;
 }
+#ring-size-guide .section-sidebar .rte table {
+	width: 680px;
+}
 }
 /*END 1199px*/
 
