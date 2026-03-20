@@ -1,3 +1,10 @@
+@media(max-width:1399px){
+	#ring-size-guide .section-sidebar .rte table {
+	width: 850px;
+}
+}
+/*END 1399px*/
+
 @media(max-width:1299px){
 .template-index .brick__block.brick__block--images:first-child {
 	padding-left: 100px;
@@ -26,7 +33,9 @@
 	padding-left: 140px;
 	padding-right: 140px;
 }
-
+#ring-size-guide .section-sidebar .rte table {
+	width: 800px;
+}
 }
 /*END 1299px*/
 
