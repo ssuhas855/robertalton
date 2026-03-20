@@ -2579,7 +2579,9 @@ div.progress-indicator{
 	top: -1px;
 }
 #ring-size-guide .section-sidebar .rte table {
-	border: 1px solid #131111;	
+	border: 1px solid #131111;
+	width: 900px;
+  text-align: center;	
 }
 #ring-size-guide .section-sidebar .rte table td,
 #ring-size-guide .section-sidebar .rte table th {
