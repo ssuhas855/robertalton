@@ -28,8 +28,8 @@
           "type": "newsletter",
           "settings": {
             "title": "",
-            "heading_font_size": "heading-x-small",
-            "text": "<p>Join to receive exclusive offers.<br/><br/></p>",
+            "heading_font_size": "heading-medium",
+            "text": "<p>Join to receive 10% off your first order.</p>",
             "button_text": "Sign up",
             "show_arrow": false,
             "terms": false,
