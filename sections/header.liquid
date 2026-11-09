@@ -378,7 +378,7 @@
 
     {%- if shop.customer_accounts_enabled -%}
       <div class="header__mobile__button">
-        <a href="{{ routes.account_url }}" class="navlink{% if show_icons == false %} navlink--toplevel{% endif %}">
+        <a href="{% if link.url == routes.root_url %} aria-label="Home"{% endif %} class="navlink{% if show_icons == false %} navlink--toplevel{% endif %}">
           {%- render 'icon-profile-circled' -%}
           <span class="{% if show_icons == false %}navtext{% else %}visually-hidden{% endif %}">{{ 'layout.header.account' | t }}</span>
         </a>
@@ -447,7 +447,7 @@
     {%- endif -%}
      {%- if shop.customer_accounts_enabled -%}
       <div class="header__desktop__button">
-        <a href="{{ routes.account_url }}" class="navlink{% if show_icons == false %} navlink--toplevel{% endif %}" title="{{ 'customer.account.title' | t }}">
+        <a href={% if link.url == routes.root_url %} aria-label="Home"{% endif %} class="navlink{% if show_icons == false %} navlink--toplevel{% endif %}" title="{{ 'customer.account.title' | t }}">
           {%- render 'icon-profile-circled' -%}
           <span class="{% if show_icons == false %}navtext{% else %}visually-hidden{% endif %}">{{ 'layout.header.account' | t }}</span>
         </a>
