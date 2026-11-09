@@ -70,6 +70,7 @@
   <a
     href="{{ link.url }}"
     data-top-link
+    {% if link.url == routes.root_url %} aria-label="Home"{% endif %}
     class="navlink navlink--toplevel{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %} top_link_{{  link.title | handle }}"
   >
     <span class="navtext">{{ link.title | strip_html | escape }}</span>
