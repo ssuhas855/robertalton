@@ -378,7 +378,7 @@
 
   {%- if shop.customer_accounts_enabled -%}
       <div class="mobile-menu__block mobile-menu__block--account block-padding mo_account">
-        <a href="{{ routes.account_url }}" class="navlink{% if show_icons == false %} navlink--toplevel{% endif %}">         
+        <a href={% if link.url == routes.root_url %} aria-label="Home"{% endif %} class="navlink{% if show_icons == false %} navlink--toplevel{% endif %}">         
           <span class="navtext">{{ 'layout.header.account' | t }}</span>
         </a>
       </div>
