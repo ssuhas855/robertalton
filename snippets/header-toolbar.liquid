@@ -70,7 +70,7 @@
 {%- capture toolbar_menu -%}
   {%- if show_toolbar_menu -%}
     {%- for link in menu_links -%}
-      <a href="{{ link.url }}" class="navlink navlink--toplevel">{{ link.title }}</a>
+      <a href={% if link.url == routes.root_url %} aria-label="Home"{% endif %} class="navlink navlink--toplevel">{{ link.title }}</a>
     {%- endfor -%}
   {%- endif -%}
 {%- endcapture -%}
