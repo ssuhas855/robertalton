@@ -17,7 +17,7 @@
         "text_discount": {
           "type": "text",
           "settings": {
-            "text": "<p>Complimentary U.S. FedEx 2-Day Shipping.</p>",
+            "text": "<p>Shop <a href=\"https://robertalton.com/collections/fairway-essentials?srsltid=AYCX9vJmF2G0sXaKm60_8eGI3y_DPI_COPajWrxsVA1qT_Yudr5UCYLf\" target=\"_blank\" title=\"https://robertalton.com/collections/fairway-essentials?srsltid=AYCX9vJmF2G0sXaKm60_8eGI3y_DPI_COPajWrxsVA1qT_Yudr5UCYLf\">Fairway Essentials</a> | Complimentary</p><p>U.S. Shipping|</p>",
             "target_url_enabled": false,
             "target_url": "",
             "target_referrer_enabled": false,
@@ -93,10 +93,10 @@
         "separator_opacity": 100,
         "show_icons": false,
         "icon_as_circle": false,
-        "cart_icon_family": "bag",
+        "cart_icon_family": "cart",
         "logo_max_limit": 140,
         "logo_max_limit_mobile": 120,
-        "main_menu_linklist": "",
+        "main_menu_linklist": "main-menu",
         "mobile_menu_linklist": "",
         "enable_search": true,
         "show_social_icons": false,
