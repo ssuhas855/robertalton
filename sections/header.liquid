@@ -382,7 +382,8 @@
       <span class="navtext">{{ 'layout.header.account' | t | upcase }}</span>
     </a>
   </div>
-{%- endif -%}      <a href="{{ routes.cart_url }}" class="navlink {{ navlink_cart_classes }}" data-cart-toggle>
+{%- endif -%}      
+<a href="{{ routes.cart_url }}" class="navlink {{ navlink_cart_classes }}" data-cart-toggle>
         {{ cart_status }}
       </a>
     </div>
