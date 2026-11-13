@@ -382,8 +382,7 @@
       <span class="navtext">{{ 'layout.header.account' | t | upcase }}</span>
     </a>
   </div>
-{%- endif -%}      
-<a href="{{ routes.cart_url }}" class="navlink {{ navlink_cart_classes }}" data-cart-toggle>
+{%- endif -%}      <a href="{{ routes.cart_url }}" class="navlink {{ navlink_cart_classes }}" data-cart-toggle>
         {{ cart_status }}
       </a>
     </div>
@@ -444,13 +443,17 @@
       </div>
     {%- endif -%}
      {%- if shop.customer_accounts_enabled -%}
-      <div class="header__desktop__button">
-        <a href="{{ routes.cart_url }}" aria-label="Home" class="navlink{% if show_icons == false %} navlink--toplevel{% endif %}" title="{{ 'customer.account.title' | t }}">
-          {%- render 'icon-profile-circled' -%}
-          <span class="{% if show_icons == false %}navtext{% else %}visually-hidden{% endif %}">{{ 'layout.header.account' | t }}</span>
-        </a>
-      </div>
-    {%- endif -%}
+  <div class="header__desktop__button">
+    <a href="{{ routes.account_url }}"
+       class="navlink{% if show_icons == false %} navlink--toplevel{% endif %}"
+       title="{{ 'customer.account.title' | t }}">
+      {%- render 'icon-profile-circled' -%}
+      <span class="{% if show_icons == false %}navtext{% else %}visually-hidden{% endif %}">
+        {{ 'layout.header.account' | t }}
+      </span>
+    </a>
+  </div>
+{%- endif -%}
 
     <div class="header__desktop__button">
       <a href="{{ routes.cart_url }}" class="navlink {{ navlink_cart_classes }}" title="{{ 'cart.general.title' | t }}" data-cart-toggle>
