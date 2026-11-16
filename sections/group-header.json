@@ -17,7 +17,7 @@
         "text_discount": {
           "type": "text",
           "settings": {
-            "text": "<p>Shop <a href=\"https://robertalton.com/collections/fairway-essentials?srsltid=AYCX9vJmF2G0sXaKm60_8eGI3y_DPI_COPajWrxsVA1qT_Yudr5UCYLf\" target=\"_blank\" title=\"https://robertalton.com/collections/fairway-essentials?srsltid=AYCX9vJmF2G0sXaKm60_8eGI3y_DPI_COPajWrxsVA1qT_Yudr5UCYLf\">Fairway Essentials</a> | Complimentary</p><p>U.S. Shipping|</p>",
+            "text": "<p>Our Black Friday Event Begins 11/19|Complimentary U.S. Shipping on All Orders</p>",
             "target_url_enabled": false,
             "target_url": "",
             "target_referrer_enabled": false,
